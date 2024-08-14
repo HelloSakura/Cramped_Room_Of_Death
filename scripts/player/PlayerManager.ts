@@ -151,6 +151,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextY = y - 2;
                 //往上直接遇到墙
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return true;
                 }
 
@@ -163,6 +164,7 @@ export class PlayerManager extends EntityManager {
                     //empty
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return true;
                 }
 
@@ -457,95 +459,39 @@ export class PlayerManager extends EntityManager {
         else if(inputDirection === CONTROLLER_ENUM.TURNLEFT){
             //输入方向向左转
             //需要判断三个瓦片
+            let nextX;
+            let nextY;
+
             if(direction === DIRECTION_ENUM.TOP){
-                //人物向上
-                //左上角三个矩形
-                const weaponNextX = x - 1;
-                const weaponCurrentY = y - 1;
-
-                //拿左上角三个tile
-                const upTile = tileInfo[x][weaponCurrentY];
-                const leftUpTile = tileInfo[weaponNextX][weaponCurrentY];
-                const leftTile = tileInfo[weaponNextX][y];
-
-                if(
-                    (!upTile || upTile.turnable)
-                &&  (!leftUpTile || leftUpTile.turnable)
-                &&  (!leftTile || leftTile.turnable)
-                ){
-                    //三个片，各自满足两种情况中的一种，要么为空，要么可转向
-                }
-                else{
-                    return true;
-                }
-
-            }
-            else if(direction === DIRECTION_ENUM.LEFT){
-                //人物向左
-                //左下角三个矩形
-                const weaponCurrentX = x - 1;
-                const weaponNextY = y + 1;
-
-                //拿左下角三个tile
-                const leftTile = tileInfo[weaponCurrentX][y];
-                const leftDownTile = tileInfo[weaponCurrentX][weaponNextY];
-                const downTile = tileInfo[x][weaponNextY];
-
-                if(
-                    (!leftTile || leftTile.turnable)
-                &&  (!leftDownTile || leftDownTile.turnable)
-                &&  (!downTile || downTile.turnable)
-                ){
-                    //三个片，各自满足两种情况中的一种，要么为空，要么可转向
-                }
-                else{
-                    return true;
-                }
+                nextX = x - 1;
+                nextY = y - 1;
             }
             else if(direction === DIRECTION_ENUM.BOTTOM){
-                //人物向下
-                //右下角三个矩形
-                const weaponNextX = x + 1;
-                const weaponCurrentY = y + 1;
-
-                //拿右下角三个tile
-                const downTile = tileInfo[x][weaponCurrentY];
-                const downRightTile = tileInfo[weaponNextX][weaponCurrentY];
-                const rightTile = tileInfo[weaponNextX][y];
-
-                if(
-                    (!downTile || downTile.turnable)
-                &&  (!downRightTile || downRightTile.turnable)
-                &&  (!rightTile || rightTile.turnable)
-                ){
-                    //三个片，各自满足两种情况中的一种，要么为空，要么可转向
-                }
-                else{
-                    return true;
-                }
+                nextX = x + 1;
+                nextY = y + 1;
+            }
+            else if(direction === DIRECTION_ENUM.LEFT){
+                nextX = x - 1;
+                nextY = y + 1;
             }
             else if(direction === DIRECTION_ENUM.RIGHT){
-                //人物向右
-                //右上角三个矩形
-                const weaponCurrentX = x + 1;
-                const weaponNextY = y - 1;
-
-                //拿右下角三个tile
-                const rightTile = tileInfo[weaponCurrentX][y];
-                const rightUpTile = tileInfo[weaponCurrentX][weaponNextY];
-                const upTile = tileInfo[x][weaponNextY];
-
-                if(
-                    (!rightTile || rightTile.turnable)
-                &&  (!rightUpTile || rightUpTile.turnable)
-                &&  (!upTile || upTile.turnable)
-                ){
-                    //三个片，各自满足两种情况中的一种，要么为空，要么可转向
-                }
-                else{
-                    return true;
-                }
+                nextX = x + 1;
+                nextY = y - 1;
             }
+
+            if(
+                   (!tileInfo[x][nextY] || tileInfo[x][nextY].turnable)
+                && (!tileInfo[nextX][y] || tileInfo[nextX][y].turnable)
+                && (!tileInfo[nextX][nextY] || tileInfo[nextX][nextY].turnable)
+            ){
+                //empty
+            }
+            else{
+                this.state = ENTITY_STATE_ENUM.BLOCKTURNLEFT;
+                return true;
+            }
+
+            return false;
         }
         else if(inputDirection === CONTROLLER_ENUM.TURNRIGHT){
             //输入方向向左转
@@ -577,7 +523,7 @@ export class PlayerManager extends EntityManager {
                 //人物向右
                 //右下角三个矩形
                 const weaponCurrentX = x + 1;
-                const weaponNextY = y - 1;
+                const weaponNextY = y + 1;
 
                 const rightTile = tileInfo[weaponCurrentX][y];
                 const rightDownTile = tileInfo[weaponCurrentX][weaponNextY];
