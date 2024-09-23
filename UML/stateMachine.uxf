@@ -1,0 +1,9 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>550</x><y>200</y><w>240</w><h>160</h></coordinates><panel_attributes>StateMachine
+--
+[Property]
+#currentState:State|SubStateMachine
+-param:Map&lt;string, IParamsValue&gt;
+-stateMachine:Map&lt;string, State|SubStateMachine&gt;
+
+--
+[Method]</panel_attributes><additional_attributes></additional_attributes></element></diagram>
