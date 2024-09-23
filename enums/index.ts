@@ -16,6 +16,8 @@ export enum TILE_TYPE_ENUM {
 export enum EVENT_ENUM{
     NEXT_LEVEL = "NEXT_LEVEL",      //下一关
     PLAYER_CTRL = "PLAYER_CTRL",    //button方向控制信号
+    PLAYER_MOVE_END = "PLAYER_CTRL", //人物移动停止
+    PLAYER_BORN = "PLAYER_BORN"      //人物出生
 }
 
 

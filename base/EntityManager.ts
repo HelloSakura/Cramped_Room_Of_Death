@@ -1,8 +1,8 @@
 import { _decorator, Component, Sprite, UITransform } from 'cc';
 import { DIRECTION_ENUM, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM, DIRECTION_ORDER_ENUM, ENTITY_TYPE_ENUM } from '../enums';
-import { PlayerStateMachine } from '../scripts/player/PlayerStateMachine';
 import { TILE_WIDTH, TILE_HEIGHT } from '../scripts/tile/TileManger';
 import { IEntity } from '../levels';
+import { StateMachine } from './StateMachine';
 
 const { ccclass, property } = _decorator;
 
@@ -16,7 +16,7 @@ export class EntityManager extends Component {
     y:number = 0;
 
     //状态机
-    fsm: PlayerStateMachine;
+    fsm: StateMachine;
 
     private _direction:DIRECTION_ENUM;
     private _state:ENTITY_STATE_ENUM;

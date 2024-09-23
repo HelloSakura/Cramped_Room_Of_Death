@@ -17,7 +17,7 @@ export class PlayerManager extends EntityManager {
     targetX:number = 0;
     targetY:number = 0;
     private  readonly _speed = 1/10;
-
+    private _isMoving:boolean = false;
 
 
     async init(){   
@@ -64,7 +64,8 @@ export class PlayerManager extends EntityManager {
         }
 
         //达到一定距离直接赋值，防止鬼畜
-        if(Math.abs(this.targetX - this.x) <= 0.1 && Math.abs(this.targetY - this.y) <= 0.1){
+        if(Math.abs(this.targetX - this.x) <= 0.1 && Math.abs(this.targetY - this.y) <= 0.1 && this._isMoving){
+            this._isMoving = false;
             this.x = this.targetX;
             this.y = this.targetY;
         }
@@ -85,19 +86,24 @@ export class PlayerManager extends EntityManager {
 
 
     move(inputDirection: CONTROLLER_ENUM){
+        
         //console.log(DataManager.Instance.tileInfo);
         //注意Y轴是相反的
         if(inputDirection === CONTROLLER_ENUM.TOP){
             this.targetY -=1;
+            this._isMoving = true;
         }
         else if(inputDirection === CONTROLLER_ENUM.BOTTOM){
             this.targetY +=1;
+            this._isMoving = true;
         }
         else if(inputDirection === CONTROLLER_ENUM.RIGHT){
             this.targetX +=1;
+            this._isMoving = true;
         }
         else if(inputDirection === CONTROLLER_ENUM.LEFT){
             this.targetX -=1;
+            this._isMoving = true;
         }
         else if(inputDirection === CONTROLLER_ENUM.TURNLEFT){
             //左转后进入该逻辑
@@ -115,6 +121,7 @@ export class PlayerManager extends EntityManager {
                 this.direction = DIRECTION_ENUM.TOP;
             }
             this.state = ENTITY_STATE_ENUM.TURNLEFT;
+            EventManager.Instance.emit(EVENT_ENUM.PLAYER_MOVE_END);
         }
         else if(inputDirection === CONTROLLER_ENUM.TURNRIGHT){
             if(this.direction === DIRECTION_ENUM.TOP){
@@ -130,6 +137,7 @@ export class PlayerManager extends EntityManager {
                 this.direction = DIRECTION_ENUM.TOP;
             }
             this.state = ENTITY_STATE_ENUM.TURNRIGHT;
+            EventManager.Instance.emit(EVENT_ENUM.PLAYER_MOVE_END);
         }
     }
 
@@ -175,6 +183,7 @@ export class PlayerManager extends EntityManager {
                 let playerNextY = y - 1;
                 let weaponNextX = x - 1;
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return;
                 }
 
@@ -186,8 +195,12 @@ export class PlayerManager extends EntityManager {
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
                     //人能走
                     //枪不存在，或者枪能转
+
+
                 }
                 else{
+                    //待定
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return true;
                 }
 
@@ -198,6 +211,7 @@ export class PlayerManager extends EntityManager {
                 //只需要下一个瓦片可走就行
                 const playerNextY = y - 1;
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return;
                 }
                 //拿到瓦片
@@ -206,6 +220,7 @@ export class PlayerManager extends EntityManager {
                     //人能走就行
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return true;
                 }
             }
@@ -216,6 +231,7 @@ export class PlayerManager extends EntityManager {
                 let weaponNextX = x + 1;
 
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return;
                 }
                 const playerTile = tileInfo[x][playerNextY];
@@ -226,6 +242,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return true;
                 }
 
@@ -239,6 +256,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextY = y - 1;
 
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return;
                 }
                 const playerTile = tileInfo[playerNextX][y];
@@ -248,6 +266,7 @@ export class PlayerManager extends EntityManager {
                     //枪不存在，或者枪能转
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return true;
                 }
 
@@ -258,6 +277,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextX = x - 2;
                 
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return;
                 }
 
@@ -268,6 +288,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return true;
                 }
 
@@ -278,6 +299,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextY = y + 1;
 
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return;
                 }
 
@@ -287,6 +309,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return true;
                 }
 
@@ -296,6 +319,7 @@ export class PlayerManager extends EntityManager {
                 //人物方向为右
                 const playerNextX = x - 1;
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return;
                 }
 
@@ -305,6 +329,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return true;
                 }
             }
@@ -315,6 +340,7 @@ export class PlayerManager extends EntityManager {
                 //人物向上
                 const playerNextY = y + 1;
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return;
                 }
                 
@@ -323,6 +349,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return true;
                 }
             }
@@ -332,6 +359,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextX = x - 1;
 
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return;
                 }
                 
@@ -342,6 +370,7 @@ export class PlayerManager extends EntityManager {
                     //枪不存在，或者枪能转
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return true;
                 }
             }
@@ -351,6 +380,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextY = y + 2;
 
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return;
                 }
                 
@@ -361,6 +391,7 @@ export class PlayerManager extends EntityManager {
                     //枪不存在，或者枪能转
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return true;
                 }
             }
@@ -370,6 +401,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextX = x + 1;
 
                 if(playerNextY < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return;
                 }
                 
@@ -380,6 +412,7 @@ export class PlayerManager extends EntityManager {
                     //枪不存在，或者枪能转
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return true;
                 }
             }
@@ -392,6 +425,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextY = y - 1;
 
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return;
                 }
 
@@ -402,6 +436,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                     return true;
                 }
             }
@@ -409,6 +444,7 @@ export class PlayerManager extends EntityManager {
                 //人物向左
                 const playerNextX = x + 1;
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return;
                 }
                 const playerTile = tileInfo[playerNextX][y];
@@ -416,6 +452,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return true;
                 }
             }
@@ -424,6 +461,7 @@ export class PlayerManager extends EntityManager {
                 const playerNextX = x + 1;
                 const weaponNextY = y + 1;
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return;
                 }
 
@@ -433,6 +471,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return true;
                 }
 
@@ -442,6 +481,7 @@ export class PlayerManager extends EntityManager {
                 const playerNextX = x + 1;
                 const weaponNextX = x + 2;
                 if(playerNextX < 0){
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return;
                 }
 
@@ -451,6 +491,7 @@ export class PlayerManager extends EntityManager {
 
                 }
                 else{
+                    this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return true;
                 }
 
@@ -496,131 +537,43 @@ export class PlayerManager extends EntityManager {
         else if(inputDirection === CONTROLLER_ENUM.TURNRIGHT){
             //输入方向向左转
             //需要判断三个瓦片
+            let nextX;
+            let nextY;
             if(direction === DIRECTION_ENUM.TOP){
-                //人物向上
-                //右上角三个片
-                const weaponNextX = x + 1;
-                const weaponCurrentY = y - 1;
-
-                const upTile = tileInfo[x][weaponCurrentY];
-                const upRightTile = tileInfo[weaponNextX][weaponCurrentY];
-                const rightTile = tileInfo[weaponNextX][y];
-
-                if(
-                    (!upTile || upTile.turnable)
-                &&  (!upRightTile || upRightTile.turnable)
-                &&  (!rightTile || rightTile.turnable)
-                ){
-
-                }
-                else{
-                    return true;
-                }
-
-
-            }
-            else if(direction === DIRECTION_ENUM.RIGHT){
-                //人物向右
-                //右下角三个矩形
-                const weaponCurrentX = x + 1;
-                const weaponNextY = y + 1;
-
-                const rightTile = tileInfo[weaponCurrentX][y];
-                const rightDownTile = tileInfo[weaponCurrentX][weaponNextY];
-                const downTile = tileInfo[x][weaponNextY];
-
-                if(
-                    (!rightTile || rightTile.turnable)
-                &&  (!rightDownTile || rightDownTile.turnable)
-                &&  (!downTile || downTile.turnable)
-                ){
-
-                }
-                else{
-                    return true;
-                }
+                nextX = x + 1;
+                nextY = y - 1;
             }
             else if(direction === DIRECTION_ENUM.BOTTOM){
-                //人物向下
-                //左下角三个矩形
-                const weaponNextX = x - 1;
-                const weaponCurrentY = y + 1;
-
-                const downTile = tileInfo[x][weaponCurrentY];
-                const downLeftTile = tileInfo[weaponNextX][weaponCurrentY];
-                const leftTile = tileInfo[weaponNextX][y];
-
-                if(
-                    (!downTile || downTile.turnable)
-                &&  (!downLeftTile || downLeftTile.turnable)
-                &&  (!leftTile || leftTile.turnable)
-                ){
-
-                }
-                else{
-                    return true;
-                }
-
+                nextX = x - 1;
+                nextY = y + 1;
             }
             else if(direction === DIRECTION_ENUM.LEFT){
-                //人物向左
-                //右上角三个矩形
-
-                const weaponCurrentX = x - 1;
-                const weaponNextY = y - 1;
-
-                const rightTile = tileInfo[weaponCurrentX][y];
-                const rightUpTile = tileInfo[weaponCurrentX][weaponNextY];
-                const upTile = tileInfo[x][weaponNextY];
-
-                if(
-                    (!rightTile || rightTile.turnable)
-                &&  (!rightUpTile || rightUpTile.turnable)
-                &&  (!upTile || upTile.turnable)
-                ){
-
-                }
-                else{
-                    return true;
-                }
+                nextX = x - 1;
+                nextY = y - 1;
             }
+            else if(direction === DIRECTION_ENUM.RIGHT){
+                nextX = x + 1;
+                nextY = y + 1;
+            }
+
+            if(
+                   (!tileInfo[x][nextY] || tileInfo[x][nextY].turnable)
+                && (!tileInfo[nextX][y] || tileInfo[nextX][y].turnable)
+                && (!tileInfo[nextX][nextY] || tileInfo[nextX][nextY].turnable)
+            ){
+                //empty
+            }
+            else{
+                this.state = ENTITY_STATE_ENUM.BLOCKTURNRIGHT;
+                return true;
+            }
+
+            return false;
         }
 
         return false;
 
     }
-    /*
-    async render(){
-         //添加一个spite组件
-        const sprite = this.addComponent(Sprite); 
-        //设置为custom模式，可以自定义宽高
-        sprite.sizeMode = Sprite.SizeMode.CUSTOM;
-        //设置宽高
-        const transform = this.getComponent(UITransform);
-        transform.setContentSize(TILE_WIDTH*4, TILE_HEIGHT*4);
-        
-
-        //加载图片资源
-        const spriteFrames = await ResourceManager.Instance.loadDir("texture/player/idle/top");
-        //添加animation组件
-        const animationComponent = this.addComponent(Animation);
-        //程序化编辑动画剪辑
-        const animationClip = new AnimationClip();
-        const track = new animation.ObjectTrack();  //使用对象轨道
-        track.path = new animation.TrackPath().toComponent(Sprite).toProperty('spriteFrame');   //找sprite组件，找对应spriteFrame属性
-        //这种切分方式，map？？
-        //对象轨道只有一条动画曲线，[时间，变化属性]
-        const frames:Array<[number, SpriteFrame]> = spriteFrames.map((item:SpriteFrame, index:number)=>[ANIMATION_SPEED*index, item]);
-        //影分身是因为把外层的idle也加载进去了，这里去掉
-        const subframes = frames.slice(0, frames.length-1);
-        track.channel.curve.assignSorted(subframes);
-
-        //轨道添加到动画剪辑以应用
-        animationClip.addTrack(track);
-        animationComponent.defaultClip = animationClip;
-        animationComponent.play(); 
-    }
-    */
 }
 
 

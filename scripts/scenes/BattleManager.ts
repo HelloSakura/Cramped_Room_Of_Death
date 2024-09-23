@@ -7,6 +7,7 @@ import EventManager from '../../runtime/EventManager';
 import { EVENT_ENUM } from '../../enums';
 import { createUINode } from '../../utils';
 import { PlayerManager } from '../player/PlayerManager';
+import { WoodenSkeletonManager } from '../woodenSkeleton/WoodenSkeletonManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('BattleManager')
@@ -40,8 +41,10 @@ export class BattleManager extends Component {
             DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
             this.generateTileMap();
+            this.generateEnemy();
             //生成player
             this.generatePlayer();
+            
         }
     }
 
@@ -64,25 +67,35 @@ export class BattleManager extends Component {
     }
 
 
-    generateTileMap(){
+    async generateTileMap(){
         //创建瓦片地图节点
         let tileMap = new Node();
         tileMap.setParent(this.stage);
 
         //执行生成逻辑，放在组件上
         const tileMapManager = tileMap.addComponent(TileMapManager);
-        tileMapManager.init();
+        await tileMapManager.init();
 
         //地图居中
         this.adaptPos();
     }
 
-    generatePlayer(){
-        let player = createUINode();
+    async generatePlayer(){
+        const player = createUINode();
         player.setParent(this.stage);
         const playManager = player.addComponent(PlayerManager);
-        playManager.init();
+        await playManager.init();
+        DataManager.Instance.player = playManager;
+        EventManager.Instance.emit(EVENT_ENUM.PLAYER_BORN, true);
         
+    }
+
+    async generateEnemy(){
+        const enemy = createUINode();
+        enemy.setParent(this.stage);
+        const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
+        await woodenSkeletonManager.init();
+        DataManager.Instance.enemies.push(WoodenSkeletonManager);
     }
 
     adaptPos(){
