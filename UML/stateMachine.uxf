@@ -1,9 +1,45 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>550</x><y>200</y><w>240</w><h>160</h></coordinates><panel_attributes>StateMachine
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>240</x><y>280</y><w>340</w><h>240</h></coordinates><panel_attributes>StateMachine
 --
 [Property]
 #currentState:State|SubStateMachine
 -param:Map&lt;string, IParamsValue&gt;
 -stateMachine:Map&lt;string, State|SubStateMachine&gt;
+-animationComponent:Animation
+-waitingList:Array&lt;Promise&lt;SpriteFrame[]&gt;&gt;
 
 --
-[Method]</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+[Method]
++resetTrigger()
++getParams()
++setParams(string, ParamsValueType)
++init():void = 0
++run():void = 0</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>740</x><y>280</y><w>250</w><h>170</h></coordinates><panel_attributes>State
+--
+[Property]
+-fsm:StateMachine
+-path:string
+-wrapMode:AnimationClip.WrapMode
+-animationClip:AnimationClip
+
+--
+[Method]
++init()
++run()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>590</y><w>210</w><h>150</h></coordinates><panel_attributes>SubStateMachine
+--
+[Property]
+-currentState:State
+fsm:StateMachine
++stateMachine:Map&lt;string, State&gt;
+
+--
+[Method]
++constructor(StateMachine)
++run():void=0
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLInterface</id><coordinates><x>310</x><y>30</y><w>200</w><h>100</h></coordinates><panel_attributes>Interface:IParamsValue
+--
+type: FSM_PARAMS_TYPE_ENUM
+value: ParamsValueType</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>340</y><w>190</w><h>30</h></coordinates><panel_attributes>lt=&lt;..&gt;</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>510</y><w>330</w><h>180</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;310;160</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>440</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element></diagram>
