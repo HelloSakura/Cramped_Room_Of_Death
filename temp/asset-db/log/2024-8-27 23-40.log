@@ -1,1183 +1,0 @@
-2024-8-27 23:40:52-log: Cannot access game frame or container.
-2024-8-27 23:40:53-debug: asset-db:require-engine-code (1552ms)
-2024-8-27 23:40:53-log: meshopt wasm decoder initialized
-2024-8-27 23:40:53-log: [box2d]:box2d wasm lib loaded.
-2024-8-27 23:40:53-log: [bullet]:bullet wasm lib loaded.
-2024-8-27 23:40:53-log: Cocos Creator v3.8.3
-2024-8-27 23:40:54-debug: [Assets Memory track]: asset-db-plugin-register: programming start:78.57MB, end 82.14MB, increase: 3.57MB
-2024-8-27 23:40:53-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:23.12MB, end 77.70MB, increase: 54.59MB
-2024-8-27 23:40:56-debug: [Assets Memory track]: asset-db-plugin-register: builder start:82.16MB, end 204.91MB, increase: 122.75MB
-2024-8-27 23:40:56-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:77.71MB, end 208.42MB, increase: 130.71MB
-2024-8-27 23:40:56-debug: [Assets Memory track]: asset-db-plugin-register: engine-extends start:205.14MB, end 208.34MB, increase: 3.20MB
-2024-8-27 23:40:56-debug: [Assets Memory track]: asset-db-plugin-register: project start:78.44MB, end 208.40MB, increase: 129.96MB
-2024-8-27 23:40:56-debug: asset-db:worker-init: initPlugin (2308ms)
-2024-8-27 23:40:56-debug: [Assets Memory track]: asset-db:worker-init start:23.11MB, end 203.43MB, increase: 180.32MB
-2024-8-27 23:40:56-debug: Run asset db hook programming:beforePreStart ...
-2024-8-27 23:40:56-debug: Run asset db hook engine-extends:beforePreStart ...
-2024-8-27 23:40:56-debug: Run asset db hook programming:beforePreStart success!
-2024-8-27 23:40:56-debug: Run asset db hook engine-extends:beforePreStart success!
-2024-8-27 23:40:56-debug: asset-db:worker-init (5067ms)
-2024-8-27 23:40:56-debug: asset-db-hook-programming-beforePreStart (304ms)
-2024-8-27 23:40:56-debug: asset-db-hook-engine-extends-beforePreStart (303ms)
-2024-8-27 23:40:56-debug: Preimport db internal success
-2024-8-27 23:40:56-debug: Preimport db assets success
-2024-8-27 23:40:56-debug: Run asset db hook programming:afterPreStart ...
-2024-8-27 23:40:56-debug: starting packer-driver...
-2024-8-27 23:40:57-debug: initialize scripting environment...
-2024-8-27 23:40:57-debug: Set detail map pack:///resolution-detail-map.json: {}
-2024-8-27 23:40:57-debug: Run asset db hook engine-extends:afterPreStart success!
-2024-8-27 23:40:57-debug: Run asset db hook engine-extends:afterPreStart ...
-2024-8-27 23:40:57-debug: Run asset db hook programming:afterPreStart success!
-2024-8-27 23:40:57-debug: [Assets Memory track]: asset-db:worker-init: preStart start:203.44MB, end 206.89MB, increase: 3.45MB
-2024-8-27 23:40:57-debug: Start up the 'internal' database...
-2024-8-27 23:40:58-debug: asset-db:worker-effect-data-processing (468ms)
-2024-8-27 23:40:58-debug: asset-db-hook-programming-afterPreStart (1328ms)
-2024-8-27 23:40:58-debug: asset-db-hook-engine-extends-afterPreStart (468ms)
-2024-8-27 23:40:58-debug: Start up the 'assets' database...
-2024-8-27 23:40:58-debug: [Assets Memory track]: asset-db:worker-startup-database[internal] start:203.49MB, end 222.23MB, increase: 18.75MB
-2024-8-27 23:40:58-debug: asset-db:worker-startup-database[internal] (2064ms)
-2024-8-27 23:40:58-debug: [Assets Memory track]: asset-db:worker-startup-database[assets] start:209.03MB, end 221.62MB, increase: 12.59MB
-2024-8-27 23:40:58-debug: lazy register asset handler directory
-2024-8-27 23:40:58-debug: [Assets Memory track]: asset-db:worker-init: startup start:206.89MB, end 221.63MB, increase: 14.73MB
-2024-8-27 23:40:58-debug: lazy register asset handler *
-2024-8-27 23:40:58-debug: lazy register asset handler text
-2024-8-27 23:40:58-debug: lazy register asset handler json
-2024-8-27 23:40:58-debug: lazy register asset handler spine-data
-2024-8-27 23:40:58-debug: lazy register asset handler dragonbones
-2024-8-27 23:40:58-debug: lazy register asset handler dragonbones-atlas
-2024-8-27 23:40:58-debug: lazy register asset handler terrain
-2024-8-27 23:40:58-debug: lazy register asset handler typescript
-2024-8-27 23:40:58-debug: lazy register asset handler scene
-2024-8-27 23:40:58-debug: lazy register asset handler javascript
-2024-8-27 23:40:58-debug: lazy register asset handler sprite-frame
-2024-8-27 23:40:58-debug: lazy register asset handler tiled-map
-2024-8-27 23:40:58-debug: lazy register asset handler prefab
-2024-8-27 23:40:58-debug: lazy register asset handler buffer
-2024-8-27 23:40:58-debug: lazy register asset handler image
-2024-8-27 23:40:58-debug: lazy register asset handler alpha-image
-2024-8-27 23:40:58-debug: lazy register asset handler sign-image
-2024-8-27 23:40:58-debug: lazy register asset handler texture
-2024-8-27 23:40:58-debug: lazy register asset handler texture-cube
-2024-8-27 23:40:58-debug: lazy register asset handler erp-texture-cube
-2024-8-27 23:40:58-debug: lazy register asset handler render-texture
-2024-8-27 23:40:58-debug: lazy register asset handler texture-cube-face
-2024-8-27 23:40:58-debug: lazy register asset handler gltf-mesh
-2024-8-27 23:40:58-debug: lazy register asset handler gltf
-2024-8-27 23:40:58-debug: lazy register asset handler rt-sprite-frame
-2024-8-27 23:40:58-debug: lazy register asset handler gltf-skeleton
-2024-8-27 23:40:58-debug: lazy register asset handler gltf-animation
-2024-8-27 23:40:58-debug: lazy register asset handler gltf-material
-2024-8-27 23:40:58-debug: lazy register asset handler gltf-scene
-2024-8-27 23:40:58-debug: lazy register asset handler gltf-embeded-image
-2024-8-27 23:40:58-debug: lazy register asset handler fbx
-2024-8-27 23:40:58-debug: lazy register asset handler material
-2024-8-27 23:40:58-debug: lazy register asset handler physics-material
-2024-8-27 23:40:58-debug: lazy register asset handler effect
-2024-8-27 23:40:58-debug: lazy register asset handler effect-header
-2024-8-27 23:40:58-debug: lazy register asset handler animation-clip
-2024-8-27 23:40:58-debug: lazy register asset handler animation-graph
-2024-8-27 23:40:58-debug: lazy register asset handler audio-clip
-2024-8-27 23:40:58-debug: lazy register asset handler animation-graph-variant
-2024-8-27 23:40:58-debug: lazy register asset handler ttf-font
-2024-8-27 23:40:58-debug: lazy register asset handler animation-mask
-2024-8-27 23:40:58-debug: lazy register asset handler bitmap-font
-2024-8-27 23:40:58-debug: lazy register asset handler sprite-atlas
-2024-8-27 23:40:58-debug: lazy register asset handler particle
-2024-8-27 23:40:58-debug: lazy register asset handler auto-atlas
-2024-8-27 23:40:58-debug: lazy register asset handler label-atlas
-2024-8-27 23:40:58-debug: lazy register asset handler render-flow
-2024-8-27 23:40:58-debug: lazy register asset handler render-stage
-2024-8-27 23:40:58-debug: lazy register asset handler render-pipeline
-2024-8-27 23:40:58-debug: lazy register asset handler instantiation-mesh
-2024-8-27 23:40:58-debug: lazy register asset handler instantiation-material
-2024-8-27 23:40:58-debug: lazy register asset handler instantiation-skeleton
-2024-8-27 23:40:58-debug: lazy register asset handler video-clip
-2024-8-27 23:40:58-debug: lazy register asset handler instantiation-animation
-2024-8-27 23:40:58-debug: asset-db:worker-startup-database[assets] (1779ms)
-2024-8-27 23:40:58-debug: asset-db:ready (10199ms)
-2024-8-27 23:40:58-debug: asset-db:start-database (2207ms)
-2024-8-27 23:40:58-debug: init worker message success
-2024-8-27 23:40:59-debug: [Build Memory track]: builder:worker-init start:221.26MB, end 232.07MB, increase: 10.81MB
-2024-8-27 23:40:58-debug: programming:execute-script (6ms)
-2024-8-27 23:40:59-debug: builder:worker-init (859ms)
-2024-8-27 23:41:14-debug: Query all assets info in project
-2024-8-27 23:41:14-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-27 23:41:14-debug: Query asset bundle start, progress: 0%
-2024-8-27 23:41:14-debug: // ---- build task Query asset bundle ----
-2024-8-27 23:41:14-debug:   Number of all scripts: 30
-2024-8-27 23:41:14-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-27 23:41:14-debug:   Number of other assets: 766
-2024-8-27 23:41:14-debug:   Number of all scenes: 1
-2024-8-27 23:41:14-debug: run build task Query asset bundle success in 42 ms√, progress: 5%
-2024-8-27 23:41:14-debug: // ---- build task Query asset bundle ---- (42ms)
-2024-8-27 23:41:14-debug: [Build Memory track]: Query asset bundle start:166.73MB, end 166.91MB, increase: 182.88KB
-2024-8-27 23:41:14-debug: Query asset bundle start, progress: 5%
-2024-8-27 23:41:14-debug: // ---- build task Query asset bundle ----
-2024-8-27 23:41:14-debug: run build task Query asset bundle success in 3 ms√, progress: 10%
-2024-8-27 23:41:14-debug: [Build Memory track]: Query asset bundle start:166.92MB, end 167.06MB, increase: 139.50KB
-2024-8-27 23:41:14-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-27 23:41:14-debug: // ---- build task Query asset bundle ---- (3ms)
-2024-8-27 23:41:14-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-27 23:41:14-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-8-27 23:41:14-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-8-27 23:41:14-debug: [Build Memory track]: Sort some build options to settings.json start:167.07MB, end 167.09MB, increase: 15.23KB
-2024-8-27 23:41:14-debug: Fill script data to settings start, progress: 12%
-2024-8-27 23:41:14-debug: // ---- build task Fill script data to settings ----
-2024-8-27 23:41:14-debug: run build task Fill script data to settings success in 3 ms√, progress: 13%
-2024-8-27 23:41:14-debug: [Build Memory track]: Fill script data to settings start:167.10MB, end 167.12MB, increase: 19.43KB
-2024-8-27 23:41:14-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-27 23:41:14-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-27 23:41:14-debug: // ---- build task Fill script data to settings ---- (3ms)
-2024-8-27 23:41:14-debug: run build task Sort some build options to settings.json success in 6 ms√, progress: 15%
-2024-8-27 23:41:14-debug: [Build Memory track]: Sort some build options to settings.json start:167.14MB, end 167.32MB, increase: 188.93KB
-2024-8-27 23:41:14-debug: // ---- build task Sort some build options to settings.json ---- (6ms)
-2024-8-27 23:44:56-debug: refresh db internal success
-2024-8-27 23:44:56-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-27 23:44:56-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-27 23:44:56-debug: refresh db assets success
-2024-8-27 23:44:56-debug: asset-db:refresh-all-database (339ms)
-2024-8-27 23:44:56-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-27 23:44:56-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-8-27 23:59:39-debug: refresh db internal success
-2024-8-27 23:59:39-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\utils\index.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-27 23:59:39-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-27 23:59:39-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-27 23:59:39-debug: refresh db assets success
-2024-8-27 23:59:39-debug: asset-db:refresh-all-database (365ms)
-2024-8-27 23:59:39-debug: asset-db:worker-effect-data-processing (2ms)
-2024-8-27 23:59:39-debug: asset-db-hook-engine-extends-afterRefresh (3ms)
-2024-8-27 23:59:40-debug: Query all assets info in project
-2024-8-27 23:59:40-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-27 23:59:40-debug: Query asset bundle start, progress: 0%
-2024-8-27 23:59:40-debug: // ---- build task Query asset bundle ----
-2024-8-27 23:59:40-debug:   Number of all scripts: 30
-2024-8-27 23:59:40-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-27 23:59:40-debug:   Number of all scenes: 1
-2024-8-27 23:59:40-debug:   Number of other assets: 766
-2024-8-27 23:59:40-debug: // ---- build task Query asset bundle ---- (25ms)
-2024-8-27 23:59:40-debug: run build task Query asset bundle success in 25 ms√, progress: 5%
-2024-8-27 23:59:40-debug: [Build Memory track]: Query asset bundle start:169.54MB, end 170.10MB, increase: 575.79KB
-2024-8-27 23:59:40-debug: // ---- build task Query asset bundle ----
-2024-8-27 23:59:40-debug: Query asset bundle start, progress: 5%
-2024-8-27 23:59:40-debug: // ---- build task Query asset bundle ---- (4ms)
-2024-8-27 23:59:40-debug: run build task Query asset bundle success in 4 ms√, progress: 10%
-2024-8-27 23:59:40-debug: [Build Memory track]: Query asset bundle start:170.12MB, end 170.42MB, increase: 306.32KB
-2024-8-27 23:59:40-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-27 23:59:40-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-27 23:59:40-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 12%
-2024-8-27 23:59:40-debug: [Build Memory track]: Sort some build options to settings.json start:170.43MB, end 170.45MB, increase: 24.47KB
-2024-8-27 23:59:40-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-8-27 23:59:40-debug: Fill script data to settings start, progress: 12%
-2024-8-27 23:59:40-debug: // ---- build task Fill script data to settings ----
-2024-8-27 23:59:40-debug: // ---- build task Fill script data to settings ---- (2ms)
-2024-8-27 23:59:40-debug: run build task Fill script data to settings success in 2 ms√, progress: 13%
-2024-8-27 23:59:40-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-27 23:59:40-debug: [Build Memory track]: Fill script data to settings start:170.47MB, end 170.49MB, increase: 17.68KB
-2024-8-27 23:59:40-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-27 23:59:40-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
-2024-8-27 23:59:40-debug: run build task Sort some build options to settings.json success in 5 ms√, progress: 15%
-2024-8-27 23:59:40-debug: [Build Memory track]: Sort some build options to settings.json start:170.73MB, end 170.84MB, increase: 120.78KB
-2024-8-27 23:59:42-debug: refresh db internal success
-2024-8-27 23:59:42-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-27 23:59:42-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-27 23:59:42-debug: refresh db assets success
-2024-8-27 23:59:42-debug: asset-db:refresh-all-database (348ms)
-2024-8-27 23:59:42-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-27 23:59:42-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-8-27 23:59:55-debug: refresh db internal success
-2024-8-27 23:59:55-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-27 23:59:55-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-27 23:59:55-debug: refresh db assets success
-2024-8-27 23:59:55-debug: asset-db:refresh-all-database (344ms)
-2024-8-27 23:59:55-debug: asset-db:worker-effect-data-processing (2ms)
-2024-8-27 23:59:55-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: refresh db internal success
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attackbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idlebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottombackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\deathbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeletonbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\leftbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\rightbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottombackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\topbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\leftbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\rightbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\topbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottombackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\leftbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\rightbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\topbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@68089background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@42074background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@38113background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b3c2ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@b42aebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7454background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b804cbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@96db9background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7c65background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@7fa7dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@3b028background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@ed576background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@f336bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@0363dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@f3760background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@896cabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@dbdd6background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@2d83abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@72f0dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@8da01background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@bc195background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@d05efbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@fbb86background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@097bebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@0d382background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@6cdb2background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@e9f27background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@2f3e6background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@0f87fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@14284background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@9b720background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@20560background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@68acbbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@6be45background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@abddfbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9a7fdbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@e0eb5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@162f5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fcd87background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@c614ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9194ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@76197background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@36d0ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@bb9acbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@80638background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fc667background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fb4f4background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@32c2ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fac29background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@cd7efbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b7dc3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@e7143background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@27214background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@f4c00background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3a61abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@b1cd5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@34361background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@72d33background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@e8c19background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@bfc52background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@60656background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@25b41background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@a948dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62403background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@80d13background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@d6e52background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b2fb0background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62838background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@530eabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c5658background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b6e7abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@87ef3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@81118background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c0f3abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1ee3bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@6b65cbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@2f0abbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@671f8background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@effc3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@ba600background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@d54ddbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1c8ccbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@567f4background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e7a14background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3b381background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@9a1cbbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f57dcbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e1accbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@664febackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@356c3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@e261bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@0461fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f4569background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@be695background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@bea50background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@64eabbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@2ef9fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@7a506background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@d1bbabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@33247background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@e05b1background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texturebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@1b624background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@0e1d5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@6c32ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: refresh db assets success
-2024-8-28 00:01:06-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:01:06-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:01:06-debug: asset-db:refresh-all-database (613ms)
-2024-8-28 00:01:06-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-28 00:01:06-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@42074background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@68089background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@38113background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@b42aebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b3c2ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@896cabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7454background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@96db9background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b804cbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@8da01background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7c65background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@3b028background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@7fa7dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@097bebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@f336bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@0363dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@ed576background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@2f3e6background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@dbdd6background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@2d83abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@14284background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@f3760background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@0f87fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@bc195background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@d05efbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@20560background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@72f0dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@9b720background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@0d382background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@6cdb2background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@fbb86background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@abddfbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@6be45background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@e9f27background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@e0eb5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@162f5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@c614ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@36d0ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fc667background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fac29background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@e7143background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@2f0abbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@b1cd5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@d54ddbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@bfc52background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e7a14background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@80d13background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e1accbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@530eabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@68acbbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@76197background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@87ef3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@27214background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9a7fdbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@80638background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@34361background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fcd87background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@32c2ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@60656background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9194ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b7dc3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62403background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@bb9acbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3a61abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62838background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fb4f4background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f57dcbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@e8c19background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@81118background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@e261bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@cd7efbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@a948dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@bea50background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@6b65cbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f4569background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@f4c00background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@7a506background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b2fb0background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@ba600background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@72d33background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@64eabbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@d1bbabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b6e7abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@567f4background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@25b41background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@e05b1background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1ee3bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@9a1cbbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@d6e52background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@effc3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@356c3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c5658background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1c8ccbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@0461fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c0f3abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3b381background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@be695background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@671f8background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@664febackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@33247background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@2ef9fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@1b624background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@0e1d5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:06-debug: %cReImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@6c32ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attackbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\deathbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: refresh db internal success
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeletonbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idlebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\leftbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\rightbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottombackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottombackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\topbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\leftbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\topbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\rightbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottombackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\rightbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\leftbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@42074background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\topbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@68089background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@38113background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@b42aebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b3c2ebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7454background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@96db9background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b804cbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7c65background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@3b028background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@7fa7dbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@f336bbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@896cabackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@0363dbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@ed576background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@dbdd6background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@8da01background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@f3760background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@2d83abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@bc195background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@097bebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@d05efbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@72f0dbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@0d382background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@2f3e6background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@6cdb2background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@fbb86background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@e9f27background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@0f87fbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@9b720background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@14284background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@6be45background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@68acbbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@20560background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@e0eb5background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9a7fdbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@abddfbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fcd87background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@162f5background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9194ebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@76197background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@27214background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@c614ebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@bb9acbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@80638background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@34361background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@36d0ebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@32c2ebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fb4f4background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@60656background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fc667background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@cd7efbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b7dc3background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62403background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fac29background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@f4c00background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3a61abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62838background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@e7143background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@72d33background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@e8c19background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@81118background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@b1cd5background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@25b41background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@6b65cbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@bfc52background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@a948dbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@2f0abbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@d6e52background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@ba600background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@80d13background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b2fb0background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@d54ddbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c5658background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@567f4background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@530eabackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b6e7abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e7a14background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c0f3abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@9a1cbbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@87ef3background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1ee3bbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e1accbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@671f8background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@356c3background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@effc3background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@0461fbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1c8ccbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f57dcbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@be695background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3b381background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@e261bbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@2ef9fbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@664febackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f4569background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@bea50background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@64eabbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@33247background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png@6c48abackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@7a506background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@1b624background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@d1bbabackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.pngbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@0e1d5background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@e05b1background: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@6c32ebackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cDestroy%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plistbackground: #ffb8b8; color: #000;color: #000;
-2024-8-28 00:01:29-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texturebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:29-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:01:29-debug: refresh db assets success
-2024-8-28 00:01:29-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:01:29-debug: asset-db:refresh-all-database (468ms)
-2024-8-28 00:01:29-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-28 00:01:29-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-8-28 00:01:54-log: The asset database is locked, asset operations(bound _refreshAsset) will delay response, please wait a moment.
-2024-8-28 00:01:54-debug: refresh db internal success
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeletonbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idlebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attackbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\deathbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottombackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\leftbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\rightbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\topbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\leftbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottombackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\rightbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\topbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottombackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\leftbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\topbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right(1.2.0)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\rightbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@68089background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@42074background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@38113background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b3c2ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@b42aebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7454background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@96db9background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@b804cbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@c7c65background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@7fa7dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@3b028background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@f336bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@ed576background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@0363dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@896cabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@dbdd6background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@8da01background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@2d83abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@f3760background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@bc195background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@d05efbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@72f0dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@097bebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@0d382background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\bottom\attack.plist@6cdb2background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\left\attack.plist@fbb86background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@2f3e6background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\right\attack.plist@e9f27background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@0f87fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@9b720background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@14284background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@6be45background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@20560background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@68acbbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\attack\top\attack.plist@e0eb5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@abddfbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9a7fdbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@162f5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fcd87background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@76197background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@c614ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@9194ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@80638background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@36d0ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@bb9acbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@32c2ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fc667background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@fb4f4background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b7dc3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@27214background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@cd7efbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@fac29background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@34361background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3a61abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@f4c00background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@e7143background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@e8c19background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@60656background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@72d33background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@b1cd5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62403background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@a948dbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@25b41background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@bfc52background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b2fb0background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@62838background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@d6e52background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@80d13background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@81118background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@b6e7abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c5658background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@530eabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1ee3bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@6b65cbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@c0f3abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\bottom\death.plist@87ef3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@ba600background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@effc3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@2f0abbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\left\death.plist@671f8background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@567f4background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@1c8ccbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@d54ddbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@9a1cbbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@3b381background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e7a14background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@356c3background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\right\death.plist@664febackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.plist@e1accbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f57dcbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\bottom\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@0461fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@e261bbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@be695background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@f4569background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@bea50background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\death\top\death.plist@2ef9fbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.plist@64eabbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@7a506background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\left\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png(1.0.23)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cMigrate%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png(1.0.27)background: #fbe5b5; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.pngbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@d1bbabackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@33247background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\right\idle.plist@e05b1background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texturebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@1b624background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@0e1d5background: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton\idle\top\idle.plist@6c32ebackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:01:54-debug: refresh db assets success
-2024-8-28 00:01:54-debug: start refresh asset from E:\cocos_project\Cramed_of_death\assets\resources\texture\woodenskeleton...
-2024-8-28 00:01:54-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:01:54-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:01:54-debug: asset-db:refresh-all-database (619ms)
-2024-8-28 00:01:54-debug: asset-db:worker-effect-data-processing (3ms)
-2024-8-28 00:01:54-debug: asset-db-hook-engine-extends-afterRefresh (5ms)
-2024-8-28 00:01:54-debug: refresh asset E:\cocos_project\Cramed_of_death\assets\resources\texture success
-2024-8-28 00:11:26-debug: refresh db internal success
-2024-8-28 00:11:26-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeleton\WoodenSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:11:26-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeleton\WoodenSkeletonManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:11:26-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeleton\IdleSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:11:26-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeletonbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:11:26-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scriptsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:11:26-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:11:26-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:11:26-debug: refresh db assets success
-2024-8-28 00:11:26-debug: asset-db:worker-effect-data-processing (2ms)
-2024-8-28 00:11:26-debug: asset-db:refresh-all-database (367ms)
-2024-8-28 00:11:26-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-8-28 00:11:27-debug: Query all assets info in project
-2024-8-28 00:11:27-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:11:27-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:11:27-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:11:27-debug:   Number of all scenes: 1
-2024-8-28 00:11:27-debug:   Number of other assets: 906
-2024-8-28 00:11:27-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:11:27-debug:   Number of all scripts: 33
-2024-8-28 00:11:27-debug: // ---- build task Query asset bundle ---- (38ms)
-2024-8-28 00:11:27-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:11:27-debug: run build task Query asset bundle success in 38 ms√, progress: 5%
-2024-8-28 00:11:27-debug: [Build Memory track]: Query asset bundle start:163.46MB, end 164.52MB, increase: 1.06MB
-2024-8-28 00:11:27-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:11:27-debug: [Build Memory track]: Query asset bundle start:164.53MB, end 164.69MB, increase: 155.19KB
-2024-8-28 00:11:27-debug: run build task Query asset bundle success in 3 ms√, progress: 10%
-2024-8-28 00:11:27-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:11:27-debug: // ---- build task Query asset bundle ---- (3ms)
-2024-8-28 00:11:27-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:11:27-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-8-28 00:11:27-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 12%
-2024-8-28 00:11:27-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:11:27-debug: [Build Memory track]: Sort some build options to settings.json start:164.70MB, end 164.72MB, increase: 14.86KB
-2024-8-28 00:11:27-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:11:27-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-8-28 00:11:27-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-8-28 00:11:27-debug: [Build Memory track]: Fill script data to settings start:164.73MB, end 164.75MB, increase: 17.10KB
-2024-8-28 00:11:27-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:11:27-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:11:27-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
-2024-8-28 00:11:27-debug: run build task Sort some build options to settings.json success in 5 ms√, progress: 15%
-2024-8-28 00:11:27-debug: [Build Memory track]: Sort some build options to settings.json start:164.76MB, end 164.95MB, increase: 199.34KB
-2024-8-28 00:11:28-debug: Query all assets info in project
-2024-8-28 00:11:28-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:11:28-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:11:28-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:11:28-debug:   Number of other assets: 906
-2024-8-28 00:11:28-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:11:28-debug:   Number of all scenes: 1
-2024-8-28 00:11:28-debug:   Number of all scripts: 33
-2024-8-28 00:11:28-debug: // ---- build task Query asset bundle ---- (19ms)
-2024-8-28 00:11:28-debug: run build task Query asset bundle success in 19 ms√, progress: 5%
-2024-8-28 00:11:28-debug: [Build Memory track]: Query asset bundle start:163.81MB, end 164.04MB, increase: 232.61KB
-2024-8-28 00:11:28-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:11:28-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:11:28-debug: // ---- build task Query asset bundle ---- (3ms)
-2024-8-28 00:11:28-debug: run build task Query asset bundle success in 3 ms√, progress: 10%
-2024-8-28 00:11:28-debug: [Build Memory track]: Query asset bundle start:164.06MB, end 164.21MB, increase: 155.92KB
-2024-8-28 00:11:28-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:11:28-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:11:28-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-8-28 00:11:28-debug: [Build Memory track]: Sort some build options to settings.json start:164.22MB, end 164.24MB, increase: 14.79KB
-2024-8-28 00:11:28-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-8-28 00:11:28-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:11:28-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:11:28-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-8-28 00:11:28-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-8-28 00:11:28-debug: [Build Memory track]: Fill script data to settings start:164.25MB, end 164.27MB, increase: 15.07KB
-2024-8-28 00:11:28-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:11:28-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:11:28-debug: [Build Memory track]: Sort some build options to settings.json start:164.28MB, end 164.40MB, increase: 124.04KB
-2024-8-28 00:11:28-debug: // ---- build task Sort some build options to settings.json ---- (8ms)
-2024-8-28 00:11:28-debug: run build task Sort some build options to settings.json success in 8 ms√, progress: 15%
-2024-8-28 00:11:31-debug: refresh db internal success
-2024-8-28 00:11:31-debug: refresh db assets success
-2024-8-28 00:11:31-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:11:31-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:11:31-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-28 00:11:31-debug: asset-db:refresh-all-database (334ms)
-2024-8-28 00:11:31-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-8-28 00:15:02-debug: refresh db internal success
-2024-8-28 00:15:02-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeleton\WoodenSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:15:02-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeleton\WoodenSkeletonManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:15:02-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\scenes\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:15:02-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\scripts\woodenSkeleton\IdleSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:15:02-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:15:02-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:15:02-debug: refresh db assets success
-2024-8-28 00:15:02-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-28 00:15:02-debug: asset-db:refresh-all-database (350ms)
-2024-8-28 00:15:02-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
-2024-8-28 00:15:04-debug: Query all assets info in project
-2024-8-28 00:15:04-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:15:04-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:15:04-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:15:04-debug:   Number of other assets: 906
-2024-8-28 00:15:04-debug:   Number of all scripts: 33
-2024-8-28 00:15:04-debug:   Number of all scenes: 1
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ---- (30ms)
-2024-8-28 00:15:04-debug: run build task Query asset bundle success in 30 ms√, progress: 5%
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:15:04-debug: [Build Memory track]: Query asset bundle start:166.21MB, end 167.21MB, increase: 1.00MB
-2024-8-28 00:15:04-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ---- (2ms)
-2024-8-28 00:15:04-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:15:04-debug: [Build Memory track]: Query asset bundle start:167.23MB, end 167.37MB, increase: 151.18KB
-2024-8-28 00:15:04-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-8-28 00:15:04-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-8-28 00:15:04-debug: [Build Memory track]: Sort some build options to settings.json start:167.39MB, end 167.40MB, increase: 16.88KB
-2024-8-28 00:15:04-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:15:04-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-8-28 00:15:04-debug: [Build Memory track]: Fill script data to settings start:167.42MB, end 167.44MB, increase: 17.16KB
-2024-8-28 00:15:04-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:15:04-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-8-28 00:15:04-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
-2024-8-28 00:15:04-debug: [Build Memory track]: Sort some build options to settings.json start:167.45MB, end 167.57MB, increase: 121.70KB
-2024-8-28 00:15:04-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
-2024-8-28 00:15:04-debug: Query all assets info in project
-2024-8-28 00:15:04-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:15:04-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:15:04-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:15:04-debug:   Number of all scripts: 33
-2024-8-28 00:15:04-debug:   Number of other assets: 906
-2024-8-28 00:15:04-debug:   Number of all scenes: 1
-2024-8-28 00:15:04-debug: run build task Query asset bundle success in 33 ms√, progress: 5%
-2024-8-28 00:15:04-debug: [Build Memory track]: Query asset bundle start:168.25MB, end 168.05MB, increase: -199.33KB
-2024-8-28 00:15:04-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ---- (33ms)
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:15:04-debug: run build task Query asset bundle success in 6 ms√, progress: 10%
-2024-8-28 00:15:04-debug: [Build Memory track]: Query asset bundle start:168.07MB, end 168.21MB, increase: 150.28KB
-2024-8-28 00:15:04-debug: // ---- build task Query asset bundle ---- (6ms)
-2024-8-28 00:15:04-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-8-28 00:15:04-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 12%
-2024-8-28 00:15:04-debug: [Build Memory track]: Sort some build options to settings.json start:168.23MB, end 168.24MB, increase: 16.23KB
-2024-8-28 00:15:04-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:15:04-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:15:04-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:15:04-debug: [Build Memory track]: Fill script data to settings start:168.26MB, end 168.28MB, increase: 17.52KB
-2024-8-28 00:15:04-debug: run build task Fill script data to settings success in 2 ms√, progress: 13%
-2024-8-28 00:15:04-debug: // ---- build task Fill script data to settings ---- (2ms)
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:15:04-debug: // ---- build task Sort some build options to settings.json ---- (8ms)
-2024-8-28 00:15:04-debug: run build task Sort some build options to settings.json success in 8 ms√, progress: 15%
-2024-8-28 00:15:04-debug: [Build Memory track]: Sort some build options to settings.json start:168.29MB, end 168.41MB, increase: 122.71KB
-2024-8-28 00:15:05-debug: refresh db internal success
-2024-8-28 00:15:06-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:15:06-debug: refresh db assets success
-2024-8-28 00:15:06-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:15:06-debug: asset-db:worker-effect-data-processing (4ms)
-2024-8-28 00:15:06-debug: asset-db-hook-engine-extends-afterRefresh (4ms)
-2024-8-28 00:15:06-debug: asset-db:refresh-all-database (356ms)
-2024-8-28 00:16:19-debug: refresh db internal success
-2024-8-28 00:16:19-debug: %cImport%c: E:\cocos_project\Cramed_of_death\assets\base\EntityManager.tsbackground: #aaff85; color: #000;color: #000;
-2024-8-28 00:16:19-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:16:19-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:16:19-debug: refresh db assets success
-2024-8-28 00:16:19-debug: asset-db:refresh-all-database (344ms)
-2024-8-28 00:16:19-debug: asset-db:worker-effect-data-processing (2ms)
-2024-8-28 00:16:19-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
-2024-8-28 00:16:19-debug: Query all assets info in project
-2024-8-28 00:16:19-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug:   Number of other assets: 906
-2024-8-28 00:16:20-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:16:20-debug:   Number of all scenes: 1
-2024-8-28 00:16:20-debug:   Number of all scripts: 33
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (51ms)
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 51 ms√, progress: 5%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:169.79MB, end 170.18MB, increase: 407.64KB
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (2ms)
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:170.20MB, end 170.35MB, increase: 151.19KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:170.36MB, end 170.38MB, increase: 17.45KB
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-8-28 00:16:20-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:16:20-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-8-28 00:16:20-debug: [Build Memory track]: Fill script data to settings start:170.39MB, end 170.40MB, increase: 14.48KB
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:170.42MB, end 168.99MB, increase: -1464.66KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
-2024-8-28 00:16:20-debug: Query all assets info in project
-2024-8-28 00:16:20-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug:   Number of all scripts: 33
-2024-8-28 00:16:20-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:16:20-debug:   Number of other assets: 906
-2024-8-28 00:16:20-debug:   Number of all scenes: 1
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (24ms)
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 24 ms√, progress: 5%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:169.55MB, end 169.46MB, increase: -89.87KB
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (4ms)
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 4 ms√, progress: 10%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:169.48MB, end 169.63MB, increase: 151.16KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 12%
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:169.64MB, end 169.66MB, increase: 17.34KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:16:20-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:16:20-debug: run build task Fill script data to settings success in 2 ms√, progress: 13%
-2024-8-28 00:16:20-debug: [Build Memory track]: Fill script data to settings start:169.67MB, end 169.69MB, increase: 16.48KB
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ---- (2ms)
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 6 ms√, progress: 15%
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:169.70MB, end 169.82MB, increase: 120.36KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (6ms)
-2024-8-28 00:16:20-debug: Query all assets info in project
-2024-8-28 00:16:20-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:16:20-debug:   Number of all scripts: 33
-2024-8-28 00:16:20-debug:   Number of all scenes: 1
-2024-8-28 00:16:20-debug:   Number of other assets: 906
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 23 ms√, progress: 5%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (23ms)
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:170.39MB, end 170.23MB, increase: -164.05KB
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (4ms)
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 4 ms√, progress: 10%
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:170.24MB, end 170.39MB, increase: 151.17KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:170.40MB, end 170.42MB, increase: 15.88KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-8-28 00:16:20-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-8-28 00:16:20-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-8-28 00:16:20-debug: [Build Memory track]: Fill script data to settings start:170.43MB, end 170.45MB, increase: 15.01KB
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:170.46MB, end 170.58MB, increase: 124.30KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (6ms)
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 6 ms√, progress: 15%
-2024-8-28 00:16:20-debug: Query all assets info in project
-2024-8-28 00:16:20-debug: init custom config: keepNodeUuid: false, useCache: true
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 0%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug:   Number of other assets: 906
-2024-8-28 00:16:20-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
-2024-8-28 00:16:20-debug:   Number of all scripts: 33
-2024-8-28 00:16:20-debug:   Number of all scenes: 1
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (24ms)
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 24 ms√, progress: 5%
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ----
-2024-8-28 00:16:20-debug: Query asset bundle start, progress: 5%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:171.18MB, end 171.05MB, increase: -134.73KB
-2024-8-28 00:16:20-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
-2024-8-28 00:16:20-debug: [Build Memory track]: Query asset bundle start:171.06MB, end 171.21MB, increase: 151.20KB
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 10%
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: // ---- build task Query asset bundle ---- (2ms)
-2024-8-28 00:16:20-debug: Fill script data to settings start, progress: 12%
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:171.23MB, end 171.24MB, increase: 17.93KB
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ----
-2024-8-28 00:16:20-debug: // ---- build task Fill script data to settings ---- (1ms)
-2024-8-28 00:16:20-debug: [Build Memory track]: Fill script data to settings start:171.26MB, end 171.27MB, increase: 16.41KB
-2024-8-28 00:16:20-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ----
-2024-8-28 00:16:20-debug: Sort some build options to settings.json start, progress: 13%
-2024-8-28 00:16:20-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
-2024-8-28 00:16:20-debug: [Build Memory track]: Sort some build options to settings.json start:171.29MB, end 171.41MB, increase: 125.57KB
-2024-8-28 00:16:20-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
-2024-8-28 00:17:00-debug: refresh db internal success
-2024-8-28 00:17:00-debug: Run asset db hook engine-extends:afterRefresh ...
-2024-8-28 00:17:00-debug: Run asset db hook engine-extends:afterRefresh success!
-2024-8-28 00:17:00-debug: refresh db assets success
-2024-8-28 00:17:00-debug: asset-db:refresh-all-database (355ms)
-2024-8-28 00:17:00-debug: asset-db:worker-effect-data-processing (1ms)
-2024-8-28 00:17:00-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
