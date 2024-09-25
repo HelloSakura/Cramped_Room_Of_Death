@@ -1,0 +1,796 @@
+23:23:02 debug: 2024/9/25下午11:23:02
+23:23:02 debug: Project: E:\git\Cramped_Room_Of_Death
+23:23:02 debug: Targets: editor,preview
+23:23:02 debug: Incremental file seems great.
+23:23:02 debug: Engine path: C:\ProgramData\cocos\editors\Creator\3.8.3\resources\resources\3d\engine
+23:23:02 debug: Initializing target [Editor]
+23:23:02 debug: Loading cache
+23:23:02 debug: Loading cache costs 3.46390000032261ms.
+23:23:02 debug: Engine features shipped in editor: base,gfx-webgl,gfx-webgl2,gfx-empty,3d,animation,skeletal-animation,2d,ui,particle,particle-2d,physics-framework,physics-2d-framework,physics-2d-box2d-wasm,intersection-2d,primitive,profiler,occlusion-query,geometry-renderer,debug-renderer,audio,video,xr,light-probe,terrain,webview,tween,tiled-map,spine,dragon-bones,marionette,procedural-animation,custom-pipeline,websocket,websocket-server,meshopt
+23:23:02 debug: Our import map(foo:/bar): {
+  "imports": {
+    "cc": "cce:/internal/x/cc"
+  }
+}
+23:23:02 debug: Initializing target [Preview]
+23:23:02 debug: Loading cache
+23:23:02 debug: Loading cache costs 3.026199999731034ms.
+23:23:02 debug: Our import map(foo:/bar): {
+  "imports": {
+    "cc": "cce:/internal/x/cc"
+  }
+}
+23:23:02 debug: Sync engine features: 2d,animation,audio,base,dragon-bones,gfx-webgl,gfx-webgl2,intersection-2d,meshopt,particle-2d,physics-2d-box2d,profiler,spine,tiled-map,tween,ui,video,webview
+23:23:02 debug: Reset databases. Enumerated domains: [
+  {
+    "root": "db://internal/",
+    "physical": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.3\\resources\\resources\\3d\\engine\\editor\\assets"
+  },
+  {
+    "root": "db://assets/",
+    "physical": "E:\\git\\Cramped_Room_Of_Death\\assets"
+  }
+]
+23:23:02 debug: Our import map(foo:/bar): {
+  "imports": {
+    "cc": "cce:/internal/x/cc",
+    "db://internal/": "file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/",
+    "db://assets/": "file:///E:/git/Cramped_Room_Of_Death/assets/"
+  }
+}
+23:23:02 debug: Our import map(foo:/bar): {
+  "imports": {
+    "cc": "cce:/internal/x/cc",
+    "db://internal/": "file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/",
+    "db://assets/": "file:///E:/git/Cramped_Room_Of_Death/assets/"
+  }
+}
+23:23:02 debug: Pulling asset-db.
+23:23:02 debug: Fetch asset-db cost: 14.862799999769777ms.
+23:23:02 debug: Build iteration starts.
+Number of accumulated asset changes: 35
+Feature changed: false
+23:23:02 debug: Target(editor) build started.
+23:23:02 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 08:00:09 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:00:08 GMT+0800 (中国标准时间)
+23:23:02 debug: Inspect cce:/internal/x/cc
+23:23:02 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
+23:23:02 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
+23:23:02 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
+23:23:02 debug: Resolve cce:/internal/x/cc-fu/gfx-empty from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-empty.
+23:23:02 debug: Resolve cce:/internal/x/cc-fu/3d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/3d.
+23:23:02 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/skeletal-animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/skeletal-animation.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/particle from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/particle-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle-2d.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/physics-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-framework.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d-wasm from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d-wasm.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/primitive from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/primitive.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/geometry-renderer from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/geometry-renderer.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/xr from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/xr.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/light-probe from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/light-probe.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/terrain from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/terrain.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tiled-map.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
+23:23:03 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
+23:23:03 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:17 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:00:09 GMT+0800 (中国标准时间)
+23:23:03 debug: Inspect cce:/internal/x/prerequisite-imports
+23:23:03 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+23:23:03 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts. Last mtime: Tue Jul 30 2024 23:18:22 GMT+0800 (中国标准时间)@8b9bf52d-9062-4e03-9b8c-a35772670a70, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@8b9bf52d-9062-4e03-9b8c-a35772670a70
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Detected change: cce:/internal/code-quality/cr.mjs. Last mtime: Wed Sep 25 2024 22:59:03 GMT+0800 (中国标准时间), Current mtime: Wed Sep 25 2024 23:22:53 GMT+0800 (中国标准时间)
+23:23:03 debug: Inspect cce:/internal/code-quality/cr.mjs
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts. Last mtime: Tue Sep 24 2024 23:37:44 GMT+0800 (中国标准时间)@82a841cd-8da7-4eef-bdd0-3648b2f67baf, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@82a841cd-8da7-4eef-bdd0-3648b2f67baf
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ./SubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts. Last mtime: Tue Jul 30 2024 06:55:46 GMT+0800 (中国标准时间)@b6e1f10f-35cc-477b-a952-a7073f7578bc, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@b6e1f10f-35cc-477b-a952-a7073f7578bc
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts. Last mtime: Wed Aug 28 2024 00:16:02 GMT+0800 (中国标准时间)@a7feba3c-c9d4-4985-97e8-a0e7004a3e0f, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@a7feba3c-c9d4-4985-97e8-a0e7004a3e0f
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ../scripts/tile/TileManger from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts. Last mtime: Fri Aug 02 2024 07:37:06 GMT+0800 (中国标准时间)@6000183d-0a4c-4b71-a6ac-c53f11661927, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@6000183d-0a4c-4b71-a6ac-c53f11661927
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts. Last mtime: Thu Jul 18 2024 00:27:05 GMT+0800 (中国标准时间)@4a4e5024-967a-45fa-8c7b-f3087af0e134, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@4a4e5024-967a-45fa-8c7b-f3087af0e134
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts. Last mtime: Thu Jul 25 2024 08:26:44 GMT+0800 (中国标准时间)@9e39b317-1c6e-45aa-953d-dccf72375f88, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@9e39b317-1c6e-45aa-953d-dccf72375f88
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../runtime/ResourceManager from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts. Last mtime: Thu Aug 08 2024 08:39:38 GMT+0800 (中国标准时间)@412ef8c5-f82f-4fe7-9f7a-047a87b8d79b, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@412ef8c5-f82f-4fe7-9f7a-047a87b8d79b
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../base/Singleton from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts. Last mtime: Thu Jul 25 2024 08:42:11 GMT+0800 (中国标准时间)@fce7c751-b2a6-4da6-b883-2fdd62a9ddd3, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@fce7c751-b2a6-4da6-b883-2fdd62a9ddd3
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts. Last mtime: Tue Jul 30 2024 23:22:54 GMT+0800 (中国标准时间)@9eae4d84-ae09-45e2-96e6-98f5bba1e772, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@9eae4d84-ae09-45e2-96e6-98f5bba1e772
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ./level1 from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts. Last mtime: Sat Jul 20 2024 00:30:28 GMT+0800 (中国标准时间)@7d67f9d5-76ba-476e-811e-d05e5e00d146, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@7d67f9d5-76ba-476e-811e-d05e5e00d146
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ./level2 from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts. Last mtime: Sat Jul 20 2024 00:26:17 GMT+0800 (中国标准时间)@77d0dafa-e1c0-4685-bc6a-40e088ee8d36, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@77d0dafa-e1c0-4685-bc6a-40e088ee8d36
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts. Last mtime: Mon Sep 02 2024 23:21:33 GMT+0800 (中国标准时间)@8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../base/Singleton from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts. Last mtime: Tue Jul 30 2024 22:38:15 GMT+0800 (中国标准时间)@754d92fd-7c22-4699-b1ee-e496614c6851, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@754d92fd-7c22-4699-b1ee-e496614c6851
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../base/Singleton from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts. Last mtime: Tue Aug 20 2024 08:24:38 GMT+0800 (中国标准时间)@6192d57f-42f3-43bf-b6a2-de9eb77702d4, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@6192d57f-42f3-43bf-b6a2-de9eb77702d4
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:03 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts. Last mtime: Wed Aug 14 2024 07:58:40 GMT+0800 (中国标准时间)@7e3ab5f2-8b41-4136-9459-2c71317b8e9a, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@7e3ab5f2-8b41-4136-9459-2c71317b8e9a
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:03 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:21:44 GMT+0800 (中国标准时间)@4087fd37-4389-45d8-9a15-11e6c017df96, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@4087fd37-4389-45d8-9a15-11e6c017df96
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:03 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:24:38 GMT+0800 (中国标准时间)@85308472-49ba-4a98-9fcf-d0abdd9883ec, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@85308472-49ba-4a98-9fcf-d0abdd9883ec
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:03 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:08:33 GMT+0800 (中国标准时间)@7e689b50-769b-4f8d-aad0-48d3bbce5a6b, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@7e689b50-769b-4f8d-aad0-48d3bbce5a6b
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts
+23:23:03 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:03 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as cce:/internal/x/cc.
+23:23:03 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:03 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:03 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:03 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts.
+23:23:03 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:24:22 GMT+0800 (中国标准时间)@76a262dc-7491-4475-ab66-eaf71fe18b1b, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@76a262dc-7491-4475-ab66-eaf71fe18b1b
+23:23:03 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts. Last mtime: Tue Sep 24 2024 23:41:10 GMT+0800 (中国标准时间)@a2dc18a1-88d7-4ea1-bbce-ec42368f5f77, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@a2dc18a1-88d7-4ea1-bbce-ec42368f5f77
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts. Last mtime: Tue Jul 30 2024 23:17:56 GMT+0800 (中国标准时间)@e6dad5be-106f-4b01-ba70-cf6ec4c365b4, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@e6dad5be-106f-4b01-ba70-cf6ec4c365b4
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts. Last mtime: Tue Sep 24 2024 23:50:25 GMT+0800 (中国标准时间)@5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:04 debug: Resolve ./PlayerStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts. Last mtime: Tue Sep 24 2024 23:46:39 GMT+0800 (中国标准时间)@c78ca860-f2c7-4b07-846b-8c1ed60de544, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@c78ca860-f2c7-4b07-846b-8c1ed60de544
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/StateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:04 debug: Resolve ./TurnLeftSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts. Last mtime: Thu Aug 08 2024 08:46:11 GMT+0800 (中国标准时间)@80fd6722-975a-48b9-abd1-46fd0af9e066, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@80fd6722-975a-48b9-abd1-46fd0af9e066
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve ./IdleSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts.
+23:23:04 debug: Resolve ./TurnRightSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts. Last mtime: Thu Aug 08 2024 08:47:12 GMT+0800 (中国标准时间)@1a10401b-8542-4ffb-a4ed-a636e6f5a657, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@1a10401b-8542-4ffb-a4ed-a636e6f5a657
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve ./BlockFrontSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts.
+23:23:04 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:04 debug: Resolve ./BlockTurnLeftSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts.
+23:23:04 debug: Resolve ./BlockLeftSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts.
+23:23:04 debug: Resolve ./BlockBackSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts.
+23:23:04 debug: Resolve ./BlockTurnRightSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts.
+23:23:04 debug: Resolve ./BlockRightSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts.
+23:23:04 debug: Resolve ./DeadSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts.
+23:23:04 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:04 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts. Last mtime: Mon Sep 02 2024 23:38:05 GMT+0800 (中国标准时间)@06de01a4-96b2-4241-8dc6-47d342f625c9, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@06de01a4-96b2-4241-8dc6-47d342f625c9
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../tile/TileMapManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts. Last mtime: Wed Jul 31 2024 23:41:32 GMT+0800 (中国标准时间)@04b23848-d406-442d-8b11-6e1f27a02ff5, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@04b23848-d406-442d-8b11-6e1f27a02ff5
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ./TileManger from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:04 debug: Resolve ../../utils from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts. Last mtime: Tue Aug 27 2024 23:59:22 GMT+0800 (中国标准时间)@ba54a383-2ef0-4070-beea-509a8715ff88, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@ba54a383-2ef0-4070-beea-509a8715ff88
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:04 debug: Resolve ../../runtime/ResourceManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:04 debug: Resolve ../../levels from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts.
+23:23:04 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:04 debug: Resolve ../tile/TileManger from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:04 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../utils from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:04 debug: Resolve ../player/PlayerManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts.
+23:23:04 debug: Resolve ../woodenSkeleton/WoodenSkeletonManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts. Last mtime: Tue Sep 24 2024 23:52:19 GMT+0800 (中国标准时间)@5223d391-61b3-405f-91db-2495599c79f7, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@5223d391-61b3-405f-91db-2495599c79f7
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:04 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:04 debug: Resolve ./WoodenSkeletonStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts. Last mtime: Tue Sep 24 2024 23:32:01 GMT+0800 (中国标准时间)@77272244-d29d-4f93-b964-48ad702c8056, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@77272244-d29d-4f93-b964-48ad702c8056
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/StateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:04 debug: Resolve ./IdleSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts. Last mtime: Wed Aug 28 2024 00:11:45 GMT+0800 (中国标准时间)@5d9a4fda-5e07-4234-b814-5622b85a9280, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@5d9a4fda-5e07-4234-b814-5622b85a9280
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve ./AttackSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts. Last mtime: Tue Sep 24 2024 23:26:09 GMT+0800 (中国标准时间)@9ac58906-4777-43bd-8458-4713e4c5e491, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@9ac58906-4777-43bd-8458-4713e4c5e491
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:04 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:04 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts.
+23:23:04 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts. Last mtime: Mon Jul 22 2024 23:47:02 GMT+0800 (中国标准时间)@d8e0d2d3-51b5-4465-b607-62fb53124f0f, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@d8e0d2d3-51b5-4465-b607-62fb53124f0f
+23:23:04 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts
+23:23:04 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/x/cc.
+23:23:04 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:04 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts.
+23:23:04 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:05 debug: Target(editor) ends with cost 2180.316899999976ms.
+23:23:05 debug: Target(preview) build started.
+23:23:05 debug: Detected change: cce:/internal/x/cc. Last mtime: Thu Jan 01 1970 08:00:09 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:00:08 GMT+0800 (中国标准时间)
+23:23:05 debug: Inspect cce:/internal/x/cc
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/sorting from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/sorting.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/audio from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/audio.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl2 from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl2.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/intersection-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/intersection-2d.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/particle-2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/particle-2d.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/physics-2d-box2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-box2d.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/physics-2d-framework from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/physics-2d-framework.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/profiler from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/profiler.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tiled-map.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/tween.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
+23:23:05 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
+23:23:05 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:17 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:00:11 GMT+0800 (中国标准时间)
+23:23:05 debug: Inspect cce:/internal/x/prerequisite-imports
+23:23:05 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+23:23:05 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts. Last mtime: Tue Jul 30 2024 23:18:22 GMT+0800 (中国标准时间)@8b9bf52d-9062-4e03-9b8c-a35772670a70, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@8b9bf52d-9062-4e03-9b8c-a35772670a70
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Detected change: cce:/internal/code-quality/cr.mjs. Last mtime: Wed Sep 25 2024 22:59:03 GMT+0800 (中国标准时间), Current mtime: Wed Sep 25 2024 23:22:53 GMT+0800 (中国标准时间)
+23:23:05 debug: Inspect cce:/internal/code-quality/cr.mjs
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts. Last mtime: Tue Sep 24 2024 23:37:44 GMT+0800 (中国标准时间)@82a841cd-8da7-4eef-bdd0-3648b2f67baf, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@82a841cd-8da7-4eef-bdd0-3648b2f67baf
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ./SubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts. Last mtime: Tue Jul 30 2024 06:55:46 GMT+0800 (中国标准时间)@b6e1f10f-35cc-477b-a952-a7073f7578bc, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@b6e1f10f-35cc-477b-a952-a7073f7578bc
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts. Last mtime: Wed Aug 28 2024 00:16:02 GMT+0800 (中国标准时间)@a7feba3c-c9d4-4985-97e8-a0e7004a3e0f, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@a7feba3c-c9d4-4985-97e8-a0e7004a3e0f
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve ../scripts/tile/TileManger from file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts. Last mtime: Fri Aug 02 2024 07:37:06 GMT+0800 (中国标准时间)@6000183d-0a4c-4b71-a6ac-c53f11661927, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@6000183d-0a4c-4b71-a6ac-c53f11661927
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts. Last mtime: Thu Jul 18 2024 00:27:05 GMT+0800 (中国标准时间)@4a4e5024-967a-45fa-8c7b-f3087af0e134, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@4a4e5024-967a-45fa-8c7b-f3087af0e134
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts. Last mtime: Thu Jul 25 2024 08:26:44 GMT+0800 (中国标准时间)@9e39b317-1c6e-45aa-953d-dccf72375f88, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@9e39b317-1c6e-45aa-953d-dccf72375f88
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../runtime/ResourceManager from file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts. Last mtime: Thu Aug 08 2024 08:39:38 GMT+0800 (中国标准时间)@412ef8c5-f82f-4fe7-9f7a-047a87b8d79b, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@412ef8c5-f82f-4fe7-9f7a-047a87b8d79b
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../base/Singleton from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts. Last mtime: Thu Jul 25 2024 08:42:11 GMT+0800 (中国标准时间)@fce7c751-b2a6-4da6-b883-2fdd62a9ddd3, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@fce7c751-b2a6-4da6-b883-2fdd62a9ddd3
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts. Last mtime: Tue Jul 30 2024 23:22:54 GMT+0800 (中国标准时间)@9eae4d84-ae09-45e2-96e6-98f5bba1e772, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@9eae4d84-ae09-45e2-96e6-98f5bba1e772
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ./level1 from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts. Last mtime: Sat Jul 20 2024 00:30:28 GMT+0800 (中国标准时间)@7d67f9d5-76ba-476e-811e-d05e5e00d146, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@7d67f9d5-76ba-476e-811e-d05e5e00d146
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve ./level2 from file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts. Last mtime: Sat Jul 20 2024 00:26:17 GMT+0800 (中国标准时间)@77d0dafa-e1c0-4685-bc6a-40e088ee8d36, Current mtime: Wed Sep 25 2024 23:17:51 GMT+0800 (中国标准时间)@77d0dafa-e1c0-4685-bc6a-40e088ee8d36
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../enums from file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts. Last mtime: Mon Sep 02 2024 23:21:33 GMT+0800 (中国标准时间)@8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../base/Singleton from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts. Last mtime: Tue Jul 30 2024 22:38:15 GMT+0800 (中国标准时间)@754d92fd-7c22-4699-b1ee-e496614c6851, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@754d92fd-7c22-4699-b1ee-e496614c6851
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../base/Singleton from file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts. Last mtime: Tue Aug 20 2024 08:24:38 GMT+0800 (中国标准时间)@6192d57f-42f3-43bf-b6a2-de9eb77702d4, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@6192d57f-42f3-43bf-b6a2-de9eb77702d4
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:05 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts. Last mtime: Wed Aug 14 2024 07:58:40 GMT+0800 (中国标准时间)@7e3ab5f2-8b41-4136-9459-2c71317b8e9a, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@7e3ab5f2-8b41-4136-9459-2c71317b8e9a
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:05 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:21:44 GMT+0800 (中国标准时间)@4087fd37-4389-45d8-9a15-11e6c017df96, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@4087fd37-4389-45d8-9a15-11e6c017df96
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:05 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:24:38 GMT+0800 (中国标准时间)@85308472-49ba-4a98-9fcf-d0abdd9883ec, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@85308472-49ba-4a98-9fcf-d0abdd9883ec
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts
+23:23:05 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:05 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as cce:/internal/x/cc.
+23:23:05 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:05 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:05 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:05 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts.
+23:23:05 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:08:33 GMT+0800 (中国标准时间)@7e689b50-769b-4f8d-aad0-48d3bbce5a6b, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@7e689b50-769b-4f8d-aad0-48d3bbce5a6b
+23:23:05 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts. Last mtime: Wed Aug 14 2024 08:24:22 GMT+0800 (中国标准时间)@76a262dc-7491-4475-ab66-eaf71fe18b1b, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@76a262dc-7491-4475-ab66-eaf71fe18b1b
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts. Last mtime: Tue Sep 24 2024 23:41:10 GMT+0800 (中国标准时间)@a2dc18a1-88d7-4ea1-bbce-ec42368f5f77, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@a2dc18a1-88d7-4ea1-bbce-ec42368f5f77
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts. Last mtime: Tue Jul 30 2024 23:17:56 GMT+0800 (中国标准时间)@e6dad5be-106f-4b01-ba70-cf6ec4c365b4, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@e6dad5be-106f-4b01-ba70-cf6ec4c365b4
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts. Last mtime: Tue Sep 24 2024 23:50:25 GMT+0800 (中国标准时间)@5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:06 debug: Resolve ./PlayerStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts. Last mtime: Tue Sep 24 2024 23:46:39 GMT+0800 (中国标准时间)@c78ca860-f2c7-4b07-846b-8c1ed60de544, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@c78ca860-f2c7-4b07-846b-8c1ed60de544
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/StateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:06 debug: Resolve ./TurnLeftSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts. Last mtime: Thu Aug 08 2024 08:46:11 GMT+0800 (中国标准时间)@80fd6722-975a-48b9-abd1-46fd0af9e066, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@80fd6722-975a-48b9-abd1-46fd0af9e066
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve ./IdleSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts.
+23:23:06 debug: Resolve ./TurnRightSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts. Last mtime: Thu Aug 08 2024 08:47:12 GMT+0800 (中国标准时间)@1a10401b-8542-4ffb-a4ed-a636e6f5a657, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@1a10401b-8542-4ffb-a4ed-a636e6f5a657
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve ./BlockFrontSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts.
+23:23:06 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:06 debug: Resolve ./BlockTurnLeftSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts.
+23:23:06 debug: Resolve ./BlockLeftSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts.
+23:23:06 debug: Resolve ./BlockBackSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts.
+23:23:06 debug: Resolve ./BlockTurnRightSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts.
+23:23:06 debug: Resolve ./BlockRightSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts.
+23:23:06 debug: Resolve ./DeadSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts.
+23:23:06 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:06 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts. Last mtime: Mon Sep 02 2024 23:38:05 GMT+0800 (中国标准时间)@06de01a4-96b2-4241-8dc6-47d342f625c9, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@06de01a4-96b2-4241-8dc6-47d342f625c9
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../tile/TileMapManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts. Last mtime: Wed Jul 31 2024 23:41:32 GMT+0800 (中国标准时间)@04b23848-d406-442d-8b11-6e1f27a02ff5, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@04b23848-d406-442d-8b11-6e1f27a02ff5
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ./TileManger from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:06 debug: Resolve ../../utils from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts. Last mtime: Tue Aug 27 2024 23:59:22 GMT+0800 (中国标准时间)@ba54a383-2ef0-4070-beea-509a8715ff88, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@ba54a383-2ef0-4070-beea-509a8715ff88
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:06 debug: Resolve ../../runtime/ResourceManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:06 debug: Resolve ../../levels from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts.
+23:23:06 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:06 debug: Resolve ../tile/TileManger from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:06 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../utils from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:06 debug: Resolve ../player/PlayerManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts.
+23:23:06 debug: Resolve ../woodenSkeleton/WoodenSkeletonManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts. Last mtime: Tue Sep 24 2024 23:52:19 GMT+0800 (中国标准时间)@5223d391-61b3-405f-91db-2495599c79f7, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@5223d391-61b3-405f-91db-2495599c79f7
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:06 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:06 debug: Resolve ./WoodenSkeletonStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts. Last mtime: Tue Sep 24 2024 23:32:01 GMT+0800 (中国标准时间)@77272244-d29d-4f93-b964-48ad702c8056, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@77272244-d29d-4f93-b964-48ad702c8056
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/StateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:06 debug: Resolve ./IdleSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts. Last mtime: Wed Aug 28 2024 00:11:45 GMT+0800 (中国标准时间)@5d9a4fda-5e07-4234-b814-5622b85a9280, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@5d9a4fda-5e07-4234-b814-5622b85a9280
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve ./AttackSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts. Last mtime: Tue Sep 24 2024 23:26:09 GMT+0800 (中国标准时间)@9ac58906-4777-43bd-8458-4713e4c5e491, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@9ac58906-4777-43bd-8458-4713e4c5e491
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../base/State from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve ../../base/DirectionSubStateMachine from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:06 debug: Resolve ../../base/EntityManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:06 debug: Resolve ../../runtime/DataManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts.
+23:23:06 debug: Detected change: file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts. Last mtime: Mon Jul 22 2024 23:47:02 GMT+0800 (中国标准时间)@d8e0d2d3-51b5-4465-b607-62fb53124f0f, Current mtime: Wed Sep 25 2024 23:17:52 GMT+0800 (中国标准时间)@d8e0d2d3-51b5-4465-b607-62fb53124f0f
+23:23:06 debug: Inspect file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts
+23:23:06 debug: Resolve cce:/internal/code-quality/cr.mjs from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/code-quality/cr.mjs.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve cc from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as cce:/internal/x/cc.
+23:23:06 debug: Resolve ../../runtime/EventManager from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:06 debug: Resolve ../../enums from file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts.
+23:23:06 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:07 debug: Target(preview) ends with cost 1966.848300000187ms.
+23:23:08 debug: Pulling asset-db.
+23:23:09 debug: Fetch asset-db cost: 939.2127000000328ms.
+23:23:09 debug: Build iteration starts.
+Number of accumulated asset changes: 35
+Feature changed: false
+23:23:09 debug: Target(editor) build started.
+23:23:09 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:09 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:00:16 GMT+0800 (中国标准时间)
+23:23:09 debug: Inspect cce:/internal/x/prerequisite-imports
+23:23:09 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts.
+23:23:09 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:10 debug: Target(editor) ends with cost 132.82279999973252ms.
+23:23:10 debug: Target(preview) build started.
+23:23:10 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:00:11 GMT+0800 (中国标准时间), Current mtime: Thu Jan 01 1970 08:00:16 GMT+0800 (中国标准时间)
+23:23:10 debug: Inspect cce:/internal/x/prerequisite-imports
+23:23:10 debug: Resolve file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts from cce:/internal/x/prerequisite-imports as file:///C:/ProgramData/cocos/editors/Creator/3.8.3/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/Singleton.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/levels/level2.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/runtime/ResourceManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts.
+23:23:10 debug: Resolve file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts from cce:/internal/x/prerequisite-imports as file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts.
+23:23:10 debug: Target(preview) ends with cost 344.83350000018254ms.
