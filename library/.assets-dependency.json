@@ -1,0 +1,382 @@
+{
+  "path": {
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\top\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\top\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\crtl\\ctrl.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\crtl\\ctrl.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\bottom\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\bottom\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\left\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\left\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\right\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\right\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\tile\\tile.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\tile\\tile.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\bottom\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\bottom\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\top\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\airdeath\\top\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\left\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\left\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\right\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\right\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\bottom\\blockback.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\bottom\\blockback.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\top\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\attack\\top\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\left\\blockback.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\left\\blockback.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\right\\blockback.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\right\\blockback.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\top\\blockback.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockback\\top\\blockback.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\bottom\\blockfront.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\bottom\\blockfront.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\left\\blockfront.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\left\\blockfront.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\right\\blockfront.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\right\\blockfront.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\top\\blockfront.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockfront\\top\\blockfront.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\bottom\\blockleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\bottom\\blockleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\left\\blockleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\left\\blockleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\right\\blockleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\right\\blockleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\top\\blockleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockleft\\top\\blockleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\bottom\\blockright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\bottom\\blockright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\left\\blockright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\left\\blockright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\right\\blockright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\right\\blockright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\top\\blockright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockright\\top\\blockright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\bottom\\blockturnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\bottom\\blockturnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\left\\blockturnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\left\\blockturnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\right\\blockturnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\right\\blockturnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\bottom\\blockturnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\bottom\\blockturnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\top\\blockturnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnleft\\top\\blockturnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\left\\blockturnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\left\\blockturnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\right\\blockturnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\right\\blockturnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\top\\blockturnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\blockturnright\\top\\blockturnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\bottom\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\bottom\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\left\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\left\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\bottom\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\bottom\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\left\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\left\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\right\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\death\\right\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\right\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\right\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\bottom\\turnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\bottom\\turnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\top\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\idle\\top\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\right\\turnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\right\\turnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\left\\turnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\left\\turnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\top\\turnleft.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\top\\turnleft.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\bottom\\turnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\bottom\\turnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\left\\turnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\left\\turnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\right\\turnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\right\\turnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\top\\turnright.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnright\\top\\turnright.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\idle\\top\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\player\\turnleft\\idle\\top\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\bottom\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\bottom\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\left\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\left\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\right\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\right\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\top\\attack.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\attack\\top\\attack.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\bottom\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\bottom\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\left\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\left\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\right\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\right\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\top\\death.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\death\\top\\death.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\bottom\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\bottom\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\left\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\left\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\right\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\right\\idle.png"
+    ],
+    "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\top\\idle.plist": [
+      "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\top\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\right\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\right\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\bottom\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\bottom\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\bottom\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\bottom\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\crtl\\ctrl.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\crtl\\ctrl.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\bottom\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\bottom\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\left\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\left\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\top\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\airdeath\\top\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\tile\\tile.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\tile\\tile.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\bottom\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\bottom\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\left\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\left\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\right\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\right\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\top\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\attack\\top\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\bottom\\blockback.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\bottom\\blockback.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\left\\blockback.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\left\\blockback.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\right\\blockback.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\right\\blockback.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\top\\blockback.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockback\\top\\blockback.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\bottom\\blockfront.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\bottom\\blockfront.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\left\\blockfront.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\left\\blockfront.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\right\\blockfront.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\right\\blockfront.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\top\\blockfront.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockfront\\top\\blockfront.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\bottom\\blockleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\bottom\\blockleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\left\\blockleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\left\\blockleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\right\\blockleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\right\\blockleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\top\\blockleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockleft\\top\\blockleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\bottom\\blockright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\bottom\\blockright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\left\\blockright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\left\\blockright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\right\\blockright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\right\\blockright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\top\\blockright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockright\\top\\blockright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\bottom\\blockturnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\bottom\\blockturnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\left\\blockturnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\left\\blockturnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\right\\blockturnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\right\\blockturnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\top\\blockturnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnleft\\top\\blockturnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\bottom\\blockturnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\bottom\\blockturnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\left\\blockturnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\left\\blockturnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\right\\blockturnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\right\\blockturnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\top\\blockturnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\blockturnright\\top\\blockturnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\bottom\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\bottom\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\left\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\left\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\left\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\left\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\right\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\right\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\top\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\death\\top\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\bottom\\turnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\bottom\\turnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\right\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\right\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\top\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\top\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\left\\turnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\left\\turnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\right\\turnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\right\\turnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\top\\turnleft.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\top\\turnleft.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\bottom\\turnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\bottom\\turnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\left\\turnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\left\\turnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\right\\turnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\right\\turnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\top\\turnright.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnright\\top\\turnright.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\bottom\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\bottom\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\left\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\left\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\right\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\right\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\top\\attack.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\attack\\top\\attack.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\left\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\left\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\bottom\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\bottom\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\left\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\left\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\right\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\right\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\top\\death.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\death\\top\\death.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\right\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\right\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\top\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\woodenskeleton\\idle\\top\\idle.png"
+    ],
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\idle\\top\\idle.plist": [
+      "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\idle\\top\\idle.png"
+    ]
+  }
+}
