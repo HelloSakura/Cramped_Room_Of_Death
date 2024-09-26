@@ -163,7 +163,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), DataManager) : DataManager).Instance.player;
 
-          if (this.x === playerX && Math.abs(this.y - playerY) <= 1 || this.y === playerY && Math.abs(this.x - playerX) <= 1 && playerState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+          if ((this.x === playerX && Math.abs(this.y - playerY) <= 1 || this.y === playerY && Math.abs(this.x - playerX) <= 1) && playerState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()
           }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH && playerState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()

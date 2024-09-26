@@ -84,6 +84,11 @@ export class PlayerManager extends EntityManager {
         if(this.state === ENTITY_STATE_ENUM.DEATH || this.state === ENTITY_STATE_ENUM.AIRDEATH){
             return;
         }
+
+        //判断攻击敌人
+        if(this._willAttack(inputDirection)){
+            return;
+        }
         //撞了不用往下走了
         if(this.willBlock(inputDirection)){
             console.log("block");
@@ -93,7 +98,15 @@ export class PlayerManager extends EntityManager {
 
     }
 
+    private _willAttack(inputDirection:CONTROLLER_ENUM):boolean{
+        const enemies = DataManager.Instance.enemies;
 
+        return false;
+    }
+
+    private _onDead(type:ENTITY_STATE_ENUM){
+        this.state = type;
+    }
 
     move(inputDirection: CONTROLLER_ENUM){
         
@@ -585,9 +598,7 @@ export class PlayerManager extends EntityManager {
 
     }
 
-    private _onDead(type:ENTITY_STATE_ENUM){
-        this.state = type;
-    }
+    
 }
 
 

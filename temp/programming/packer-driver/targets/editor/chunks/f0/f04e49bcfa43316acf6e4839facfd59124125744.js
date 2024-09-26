@@ -170,6 +170,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).AIRDEATH) {
             return;
+          } //判断攻击敌人
+
+
+          if (this._willAttack(inputDirection)) {
+            return;
           } //撞了不用往下走了
 
 
@@ -179,6 +184,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
 
           this.move(inputDirection);
+        }
+
+        _willAttack(inputDirection) {
+          const enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.enemies;
+          return false;
+        }
+
+        _onDead(type) {
+          this.state = type;
         }
 
         move(inputDirection) {
@@ -783,10 +799,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
 
           return false;
-        }
-
-        _onDead(type) {
-          this.state = type;
         }
 
       }) || _class));

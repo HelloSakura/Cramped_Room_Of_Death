@@ -94,6 +94,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         }
 
         run() {
+          var _this$fsm$animationCo;
+
+          if (((_this$fsm$animationCo = this.fsm.animationComponent) == null || (_this$fsm$animationCo = _this$fsm$animationCo.defaultClip) == null ? void 0 : _this$fsm$animationCo.name) === this.animationClip.name) {
+            return;
+          }
+
           this.fsm.animationComponent.defaultClip = this.animationClip;
           this.fsm.animationComponent.play();
         }
