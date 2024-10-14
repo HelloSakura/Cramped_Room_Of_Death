@@ -100,7 +100,18 @@ export class PlayerManager extends EntityManager {
 
     private _willAttack(inputDirection:CONTROLLER_ENUM):boolean{
         const enemies = DataManager.Instance.enemies;
-
+        for (let i = 0; i < enemies.length; i++) {
+            const {x:enemyX, y:enemyY} = enemies[i];
+            if(this.direction === DIRECTION_ENUM.TOP
+            && inputDirection === CONTROLLER_ENUM.TOP
+            && enemyX === this.x
+            && enemyY === this.targetY - 2
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return true;
+            }
+            
+        }
         return false;
     }
 

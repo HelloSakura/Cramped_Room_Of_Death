@@ -95,7 +95,8 @@ export class BattleManager extends Component {
         enemy.setParent(this.stage);
         const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
         await woodenSkeletonManager.init();
-        DataManager.Instance.enemies.push(WoodenSkeletonManager);
+        //注意名字大小写，大写是类名
+        DataManager.Instance.enemies.push(woodenSkeletonManager);
     }
 
     adaptPos(){

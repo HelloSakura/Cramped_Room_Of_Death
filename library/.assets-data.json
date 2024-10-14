@@ -6424,5 +6424,10 @@
     "url": "db://assets/scripts/player/DeadSubStateMachine.ts",
     "value": {},
     "versionCode": 1
+  },
+  "52731470-6893-4c44-bf20-aabe04fe04b9": {
+    "url": "db://assets/scripts/player/AttackSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

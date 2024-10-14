@@ -208,12 +208,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           const woodenSkeletonManager = enemy.addComponent(_crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
             error: Error()
           }), WoodenSkeletonManager) : WoodenSkeletonManager);
-          await woodenSkeletonManager.init();
+          await woodenSkeletonManager.init(); //注意名字大小写，大写是类名
+
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance.enemies.push(_crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
-            error: Error()
-          }), WoodenSkeletonManager) : WoodenSkeletonManager);
+          }), DataManager) : DataManager).Instance.enemies.push(woodenSkeletonManager);
         }
 
         adaptPos() {

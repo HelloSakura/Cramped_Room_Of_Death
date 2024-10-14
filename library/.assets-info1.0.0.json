@@ -1848,7 +1848,7 @@
       "uuid": "502d0389-dce9-4dfb-8a90-f5915b4ee23b"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player": {
-      "time": 1727278043334.5857,
+      "time": 1727536627486.635,
       "uuid": "ceb87042-d1bb-4838-87eb-e1431a04c645"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes": {
@@ -2232,7 +2232,7 @@
       "uuid": "77d0dafa-e1c0-4685-bc6a-40e088ee8d36"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\DataManager.ts": {
-      "time": 1727278043313.0237,
+      "time": 1727537703286.7683,
       "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\EventManager.ts": {
@@ -2280,11 +2280,11 @@
       "uuid": "e6dad5be-106f-4b01-ba70-cf6ec4c365b4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerManager.ts": {
-      "time": 1727282141122.936,
+      "time": 1727536959271.4514,
       "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerStateMachine.ts": {
-      "time": 1727278043331.5884,
+      "time": 1727536624830.1953,
       "uuid": "c78ca860-f2c7-4b07-846b-8c1ed60de544"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\TurnLeftSubStateMachine.ts": {
@@ -2296,7 +2296,7 @@
       "uuid": "1a10401b-8542-4ffb-a4ed-a636e6f5a657"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes\\BattleManager.ts": {
-      "time": 1727278043335.5854,
+      "time": 1727537914547.1438,
       "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileManger.ts": {
@@ -2320,7 +2320,7 @@
       "uuid": "5d9a4fda-5e07-4234-b814-5622b85a9280"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton\\WoodenSkeletonManager.ts": {
-      "time": 1727282211591.276,
+      "time": 1727537694242.404,
       "uuid": "5223d391-61b3-405f-91db-2495599c79f7"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton\\WoodenSkeletonStateMachine.ts": {
@@ -3612,6 +3612,13 @@
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\idle\\top\\idle.plist.meta": {
       "time": 1727278043240.023
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\AttackSubStateMachine.ts.meta": {
+      "time": 1727536627489.6367
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\AttackSubStateMachine.ts": {
+      "time": 1727536485312.13,
+      "uuid": "52731470-6893-4c44-bf20-aabe04fe04b9"
     }
   },
   "missing": {
