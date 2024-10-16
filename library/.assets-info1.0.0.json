@@ -1836,7 +1836,7 @@
       "uuid": "471cb7c8-f5d8-4100-b768-72606e490510"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts": {
-      "time": 1727278043342.586,
+      "time": 1728923267093.7207,
       "uuid": "67df157b-7847-48ee-a479-99f9392595eb"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\utils": {
@@ -1844,7 +1844,7 @@
       "uuid": "62402d79-4109-4b84-aa6d-40da751bfc21"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture": {
-      "time": 1727278043269.0242,
+      "time": 1729010734314.9187,
       "uuid": "502d0389-dce9-4dfb-8a90-f5915b4ee23b"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player": {
@@ -1864,7 +1864,7 @@
       "uuid": "76c86518-e04d-4ea8-856c-01657ee79a85"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton": {
-      "time": 1727278043347.588,
+      "time": 1728922370207.6106,
       "uuid": "f61123e5-a850-4ad9-9f87-93a2d64d2a5d"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\crtl": {
@@ -2196,7 +2196,7 @@
       "uuid": "8b9bf52d-9062-4e03-9b8c-a35772670a70"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\EntityManager.ts": {
-      "time": 1727278043074.0237,
+      "time": 1728921932121.233,
       "uuid": "a7feba3c-c9d4-4985-97e8-a0e7004a3e0f"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\Singleton.ts": {
@@ -2204,7 +2204,7 @@
       "uuid": "4a4e5024-967a-45fa-8c7b-f3087af0e134"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\State.ts": {
-      "time": 1727310947709.559,
+      "time": 1729011894718.4214,
       "uuid": "9e39b317-1c6e-45aa-953d-dccf72375f88"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\StateMachine.ts": {
@@ -2216,7 +2216,7 @@
       "uuid": "b6e1f10f-35cc-477b-a952-a7073f7578bc"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\enums\\index.ts": {
-      "time": 1727278043081.0217,
+      "time": 1729007838257.981,
       "uuid": "82a841cd-8da7-4eef-bdd0-3648b2f67baf"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\index.ts": {
@@ -2232,7 +2232,7 @@
       "uuid": "77d0dafa-e1c0-4685-bc6a-40e088ee8d36"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\DataManager.ts": {
-      "time": 1727537703286.7683,
+      "time": 1729008634612.537,
       "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\EventManager.ts": {
@@ -2244,7 +2244,7 @@
       "uuid": "412ef8c5-f82f-4fe7-9f7a-047a87b8d79b"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\utils\\index.ts": {
-      "time": 1727278043348.5876,
+      "time": 1728921894565.445,
       "uuid": "ba54a383-2ef0-4070-beea-509a8715ff88"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\BlockBackSubStateMachine.ts": {
@@ -2280,7 +2280,7 @@
       "uuid": "e6dad5be-106f-4b01-ba70-cf6ec4c365b4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerManager.ts": {
-      "time": 1727536959271.4514,
+      "time": 1729008400205.7124,
       "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerStateMachine.ts": {
@@ -2296,7 +2296,7 @@
       "uuid": "1a10401b-8542-4ffb-a4ed-a636e6f5a657"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes\\BattleManager.ts": {
-      "time": 1727537914547.1438,
+      "time": 1729009707998.007,
       "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileManger.ts": {
@@ -2320,11 +2320,11 @@
       "uuid": "5d9a4fda-5e07-4234-b814-5622b85a9280"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton\\WoodenSkeletonManager.ts": {
-      "time": 1727537694242.404,
+      "time": 1729007835694.387,
       "uuid": "5223d391-61b3-405f-91db-2495599c79f7"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton\\WoodenSkeletonStateMachine.ts": {
-      "time": 1727278043346.5898,
+      "time": 1728922359050.0483,
       "uuid": "77272244-d29d-4f93-b964-48ad702c8056"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\animation.meta": {
@@ -3491,7 +3491,7 @@
       "time": 1727278043236.0234
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\idle\\top\\idle.png.meta": {
-      "time": 1727278043233.0234
+      "time": 1729012003278.6582
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\player\\turnleft\\left\\turnleft.plist.meta": {
       "time": 1727278043243.023
@@ -3619,6 +3619,902 @@
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\AttackSubStateMachine.ts": {
       "time": 1727536485312.13,
       "uuid": "52731470-6893-4c44-bf20-aabe04fe04b9"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton\\DeadSubStateMachine.ts.meta": {
+      "time": 1728922370209.6113
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton\\DeadSubStateMachine.ts": {
+      "time": 1728922241001.8958,
+      "uuid": "d16fb160-785e-4831-aaa4-135dd59dab7c"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door.meta": {
+      "time": 1728923267098.717
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\DoorManager.ts.meta": {
+      "time": 1728923267099.7175
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\DoorStateMachine.ts.meta": {
+      "time": 1728923267100.7173
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door": {
+      "time": 1729007496784.8608,
+      "uuid": "3a521f48-3093-4860-abd7-16823a8b5490"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\DoorManager.ts": {
+      "time": 1729011035594.9192,
+      "uuid": "474454ef-f52a-479b-9b94-da7f247d2390"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\DoorStateMachine.ts": {
+      "time": 1729008829458.0933,
+      "uuid": "17d69691-b2b4-49d2-b182-a053efc7d831"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\IdleSubStateMachine.ts.meta": {
+      "time": 1729007173747.3103
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\IdleSubStateMachine.ts": {
+      "time": 1729007601530.0532,
+      "uuid": "1575a0d2-9b9a-4a89-b188-f847fae57f78"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton.meta": {
+      "time": 1729007337472.7842
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death.meta": {
+      "time": 1729007337473.7825
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle.meta": {
+      "time": 1729007337474.7822
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\bottom.meta": {
+      "time": 1729007337475.7837
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\left.meta": {
+      "time": 1729007337475.7837
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\right.meta": {
+      "time": 1729007337478.7825
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\top.meta": {
+      "time": 1729007337479.7815
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\bottom.meta": {
+      "time": 1729007337481.7825
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\left.meta": {
+      "time": 1729007337483.7861
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\right.meta": {
+      "time": 1729007337484.787
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\top.meta": {
+      "time": 1729007337486.7852
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton": {
+      "time": 1729007337190.7817,
+      "uuid": "d1e1b3ca-b9c8-406e-91aa-fe14e8369598"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death": {
+      "time": 1729007337223.7854,
+      "uuid": "b1d79fab-b0da-4829-b77b-8f4d02992772"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle": {
+      "time": 1729007337180.7825,
+      "uuid": "25974c6c-b3a5-4d3e-a9c6-5a56793bd2d0"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\bottom": {
+      "time": 1729007337230.7817,
+      "uuid": "1c48effc-52f3-4dea-b049-fac6bf2f4582"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\left": {
+      "time": 1729007337219.7822,
+      "uuid": "98665758-f0ba-48c0-aa0b-5a898bb4a554"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\right": {
+      "time": 1729007337210.7822,
+      "uuid": "fb14c060-ccd0-4749-826d-2e05ddcd0f9b"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\top": {
+      "time": 1729007337199.7832,
+      "uuid": "c0c123ba-bead-4b72-bd06-91c99b725f58"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\bottom": {
+      "time": 1729007337186.7822,
+      "uuid": "78b91f3f-2b5e-4861-86fe-b9a040cbe151"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\left": {
+      "time": 1729007337176.7832,
+      "uuid": "fa47b15f-0dce-45ac-94c2-90b67c9e1209"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\right": {
+      "time": 1729007337166.782,
+      "uuid": "dd1ab0cf-e2d8-4a18-8d7f-37d9d7bf2ee9"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\top": {
+      "time": 1729007337151.782,
+      "uuid": "1f44276b-9dee-43ed-8bea-58e51efc03e3"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\bottom\\death.plist.meta": {
+      "time": 1729007337658.783
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\bottom\\death.png.meta": {
+      "time": 1729007337586.785
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\left\\death.plist.meta": {
+      "time": 1729007337649.783
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\left\\death.png.meta": {
+      "time": 1729007337588.785
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\right\\death.plist.meta": {
+      "time": 1729007337654.7842
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\right\\death.png.meta": {
+      "time": 1729007337615.7832
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\top\\death.plist.meta": {
+      "time": 1729007337680.7856
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\top\\death.png.meta": {
+      "time": 1729007337635.783
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\bottom\\idle.plist.meta": {
+      "time": 1729007337673.784
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\bottom\\idle.png.meta": {
+      "time": 1729007337676.7827
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\left\\idle.plist.meta": {
+      "time": 1729007337696.783
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\left\\idle.png.meta": {
+      "time": 1729007337685.7856
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\right\\idle.plist.meta": {
+      "time": 1729007337714.7834
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\right\\idle.png.meta": {
+      "time": 1729007337705.7822
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\top\\idle.plist.meta": {
+      "time": 1729007337719.782
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\top\\idle.png.meta": {
+      "time": 1729007337711.7832
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\bottom\\death.png": {
+      "time": 1721054232593.3955,
+      "uuid": "48ee5939-6cb8-43e4-b2fa-a314a3146e62"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\left\\death.png": {
+      "time": 1721054232596.3953,
+      "uuid": "5ebc1fdf-a5db-47b8-be13-22d29caa8b43"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\right\\death.png": {
+      "time": 1721054232600.3982,
+      "uuid": "546ae41d-f7be-4100-be38-4925bc87dbcf"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\top\\death.png": {
+      "time": 1721054232603.3953,
+      "uuid": "54cbe7e0-e376-404d-b3eb-4577dc08e008"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\left\\death.plist": {
+      "time": 1721054232595.3958,
+      "uuid": "968946d9-1032-43f6-939b-381ff0089b08"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\right\\death.plist": {
+      "time": 1721054232599.3955,
+      "uuid": "391786df-2c8b-417e-aeb5-94f507af2c96"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\bottom\\death.plist": {
+      "time": 1721054232592.397,
+      "uuid": "f80ccb3a-7489-48a9-8eac-3adc79053c8d"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\bottom\\idle.plist": {
+      "time": 1721054232606.3948,
+      "uuid": "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\bottom\\idle.png": {
+      "time": 1721054232607.3938,
+      "uuid": "b09cc749-ea22-45d6-9a46-b2efd1b25532"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\death\\top\\death.plist": {
+      "time": 1721054232602.396,
+      "uuid": "5e0cb268-95b1-4c83-992b-5b7c3a411575"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\left\\idle.png": {
+      "time": 1721054232610.3958,
+      "uuid": "0cff2e2c-a415-46e2-b835-c9468a6dfdb5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\left\\idle.plist": {
+      "time": 1721054232609.3945,
+      "uuid": "9fccc2ff-7e15-4834-8598-19ec37e981f4"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\right\\idle.png": {
+      "time": 1721054232613.3965,
+      "uuid": "7f61e510-929f-4d74-890a-7af04c794162"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\top\\idle.png": {
+      "time": 1721054232616.3977,
+      "uuid": "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\right\\idle.plist": {
+      "time": 1721054232612.3955,
+      "uuid": "b86f2fe8-f77c-4abc-a10e-997c438b502e"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\ironskeleton\\idle\\top\\idle.plist": {
+      "time": 1721054232615.3965,
+      "uuid": "54c5d79c-3fe7-42be-b986-9d60af12fb66"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst.meta": {
+      "time": 1729007346136.7937
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\attack.meta": {
+      "time": 1729007346137.7937
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\death.meta": {
+      "time": 1729007346138.7935
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\idle.meta": {
+      "time": 1729007346138.7935
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\attack\\idle.plist.meta": {
+      "time": 1729007346153.793
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\attack\\idle.png.meta": {
+      "time": 1729007346319.7942
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\death\\idle.plist.meta": {
+      "time": 1729007346343.7937
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\death\\idle.png.meta": {
+      "time": 1729007346318.7937
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\idle\\idle.plist.meta": {
+      "time": 1729007346155.7935
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\idle\\idle.png.meta": {
+      "time": 1729007346352.794
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst": {
+      "time": 1729007346112.794,
+      "uuid": "df257117-8531-41c3-8c8a-a44312158c84"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\attack": {
+      "time": 1729007346120.7935,
+      "uuid": "c98f94a2-8352-4226-a441-88b2d86a433e"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\death": {
+      "time": 1729007346108.7961,
+      "uuid": "b2b8b42e-f3c4-4db3-ae83-a002c045ac20"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\idle": {
+      "time": 1729007346095.7927,
+      "uuid": "076b54a0-4480-4a0c-8b3f-58f3a7b82cad"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\attack\\idle.plist": {
+      "time": 1721054232566.395,
+      "uuid": "078d1b30-1aa1-4e17-8e39-f97fc48d93e1"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\idle\\idle.plist": {
+      "time": 1721054232572.3962,
+      "uuid": "372a30b9-2c2c-400a-9907-bc667a7aaba6"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\death\\idle.png": {
+      "time": 1721054232570.396,
+      "uuid": "1a079863-215f-4b7c-83d9-2633f2412fd5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\attack\\idle.png": {
+      "time": 1721054232568.3962,
+      "uuid": "c852154a-1ded-4a74-bb83-3a43d8ba63dd"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\death\\idle.plist": {
+      "time": 1721054232569.3967,
+      "uuid": "919797f5-657b-43b7-9db8-8761687824d6"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\burst\\idle\\idle.png": {
+      "time": 1721054232573.3958,
+      "uuid": "9706a534-7eb7-4e65-b307-239d405c6b04"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke.meta": {
+      "time": 1729007369724.7625
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\death.meta": {
+      "time": 1729007369725.764
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle.meta": {
+      "time": 1729007369726.7642
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\bottom.meta": {
+      "time": 1729007369726.7642
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\left.meta": {
+      "time": 1729007369727.764
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\right.meta": {
+      "time": 1729007369729.7673
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\top.meta": {
+      "time": 1729007369731.7656
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\bottom\\idle.plist.meta": {
+      "time": 1729007369995.7627
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\bottom\\idle.png.meta": {
+      "time": 1729007369928.7632
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\left\\idle.plist.meta": {
+      "time": 1729007369996.7637
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\left\\idle.png.meta": {
+      "time": 1729007369935.7625
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\right\\idle.plist.meta": {
+      "time": 1729007370003.7654
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\right\\idle.png.meta": {
+      "time": 1729007369972.7656
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\top\\idle.plist.meta": {
+      "time": 1729007370038.7644
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\top\\idle.png.meta": {
+      "time": 1729007370011.7686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke": {
+      "time": 1729007369700.764,
+      "uuid": "d1ff8d9a-4a24-41c0-9608-5a1fa1deae4a"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\death": {
+      "time": 1729007369705.764,
+      "uuid": "05a0c693-3de0-47d0-bdca-50307156e5e9"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle": {
+      "time": 1729007369690.7634,
+      "uuid": "4838f403-bf9d-4dd0-86bd-3380693f6a00"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\bottom": {
+      "time": 1729007369696.764,
+      "uuid": "f07384e1-a3c4-44f5-9847-496e41c9df09"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\left": {
+      "time": 1729007369686.764,
+      "uuid": "86449a77-3e87-4ce2-a558-e5b62ef5522e"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\right": {
+      "time": 1729007369674.763,
+      "uuid": "46313550-11f9-42d9-b049-4004e4f842ed"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\top": {
+      "time": 1729007369660.7622,
+      "uuid": "7ab1901e-ce23-4ba7-92a7-d71bab4f00d7"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\bottom\\idle.png": {
+      "time": 1721054232782.3955,
+      "uuid": "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\left\\idle.png": {
+      "time": 1721054232785.396,
+      "uuid": "731824c1-432a-42c1-acf7-467703ff0261"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\right\\idle.png": {
+      "time": 1721054232788.3958,
+      "uuid": "46786279-203f-4398-ac84-2c129bb7c712"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\bottom\\idle.plist": {
+      "time": 1721054232781.3955,
+      "uuid": "763b6698-6865-4049-a14a-0e46f997d7c5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\left\\idle.plist": {
+      "time": 1721054232784.396,
+      "uuid": "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\right\\idle.plist": {
+      "time": 1721054232787.3958,
+      "uuid": "6103501e-2905-4ebb-8f4e-c55f19178f22"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\top\\idle.png": {
+      "time": 1721054232791.3955,
+      "uuid": "b676cd00-a168-4810-a7d1-e4cf46dbe32f"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\smoke\\idle\\top\\idle.plist": {
+      "time": 1721054232790.3955,
+      "uuid": "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes.meta": {
+      "time": 1729007377163.571
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour.meta": {
+      "time": 1729007377164.572
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone.meta": {
+      "time": 1729007377165.5725
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree.meta": {
+      "time": 1729007377166.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo.meta": {
+      "time": 1729007377167.5684
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\five.meta": {
+      "time": 1729007377169.5696
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\four.meta": {
+      "time": 1729007377171.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\one.meta": {
+      "time": 1729007377173.5686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\three.meta": {
+      "time": 1729007377176.5713
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\two.meta": {
+      "time": 1729007377177.5696
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\zero.meta": {
+      "time": 1729007377179.5706
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\one.meta": {
+      "time": 1729007377181.5752
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\two.meta": {
+      "time": 1729007377183.5688
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\zero.meta": {
+      "time": 1729007377184.5696
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\four.meta": {
+      "time": 1729007377186.5686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\one.meta": {
+      "time": 1729007377189.5696
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\three.meta": {
+      "time": 1729007377191.5686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\two.meta": {
+      "time": 1729007377192.5728
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\zero.meta": {
+      "time": 1729007377195.5735
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\one.meta": {
+      "time": 1729007377197.5684
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\three.meta": {
+      "time": 1729007377200.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\two.meta": {
+      "time": 1729007377202.5684
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\zero.meta": {
+      "time": 1729007377204.5693
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes": {
+      "time": 1729007376980.5706,
+      "uuid": "238dc72e-2bc4-4c2c-9f23-796e96301990"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour": {
+      "time": 1729007377031.568,
+      "uuid": "ca351f44-e0a1-4471-a6e1-1ed7e9255ea1"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone": {
+      "time": 1729007376971.5698,
+      "uuid": "16dcfc89-7679-4a21-9d2d-0ad3e18d25a3"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree": {
+      "time": 1729007376941.5698,
+      "uuid": "b7831d1f-3074-4538-8c95-ba25bb5100ee"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo": {
+      "time": 1729007376891.569,
+      "uuid": "ba66875d-9aa4-4d68-b287-0f7241c3793c"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\five": {
+      "time": 1729007377038.5698,
+      "uuid": "03942af1-b13e-424b-adcc-6d8e7c6682d5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\four": {
+      "time": 1729007377028.5698,
+      "uuid": "dc5ea1ba-a331-4879-be78-6c4a8cc62ad3"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\one": {
+      "time": 1729007377019.5688,
+      "uuid": "572cad2b-eff9-4603-a374-db555cbb7539"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\three": {
+      "time": 1729007377010.5696,
+      "uuid": "af702ab0-bd92-4aa6-b2ea-51292a6c2b39"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\two": {
+      "time": 1729007376999.5686,
+      "uuid": "77df9a62-9c87-477b-a720-40ec91db79d2"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\zero": {
+      "time": 1729007376989.5703,
+      "uuid": "b04905ef-7cae-4b35-8155-489c984574ab"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\one": {
+      "time": 1729007376977.5698,
+      "uuid": "28257742-c782-4d25-88f7-86de273a6c1c"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\two": {
+      "time": 1729007376968.5696,
+      "uuid": "4154b157-8e6e-4275-abb6-ba88bc8d5ffc"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\zero": {
+      "time": 1729007376959.5698,
+      "uuid": "7dd91bbd-0225-4cbe-8836-dbfe289b0832"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\four": {
+      "time": 1729007376947.5688,
+      "uuid": "7c428e26-e129-4ce7-be23-91df7a9d29db"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\one": {
+      "time": 1729007376937.5698,
+      "uuid": "d194d677-dcac-4a97-b487-8001de2f62d3"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\three": {
+      "time": 1729007376928.5688,
+      "uuid": "19951031-c86a-4488-aa21-8e84e56a0e0f"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\two": {
+      "time": 1729007376918.5698,
+      "uuid": "c76da16f-5913-4fc7-b821-941ee2e5ac4c"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\zero": {
+      "time": 1729007376909.5718,
+      "uuid": "38647b70-dda9-4572-a896-208338964b79"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\one": {
+      "time": 1729007376897.5706,
+      "uuid": "07b4bd8b-eda5-422b-9890-171d73d40671"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\three": {
+      "time": 1729007376887.568,
+      "uuid": "0473c0fd-dbe5-4c0a-946c-f16b9b328c38"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\two": {
+      "time": 1729007376876.568,
+      "uuid": "8b64fdeb-761d-46ac-89e5-23f483bfe579"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\zero": {
+      "time": 1729007376864.5693,
+      "uuid": "21204d10-466d-4e8d-8929-d623798fb614"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\five\\five.plist.meta": {
+      "time": 1729007377310.5725
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\five\\five.png.meta": {
+      "time": 1729007377301.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\four\\four.plist.meta": {
+      "time": 1729007377295.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\four\\four.png.meta": {
+      "time": 1729007377305.5686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\one\\one.plist.meta": {
+      "time": 1729007377291.5703
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\one\\one.png.meta": {
+      "time": 1729007377319.5703
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\three\\three.plist.meta": {
+      "time": 1729007377314.5708
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\three\\three.png.meta": {
+      "time": 1729007377329.5693
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\two\\two.plist.meta": {
+      "time": 1729007377323.5688
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\two\\two.png.meta": {
+      "time": 1729007377339.5718
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\zero\\zero.plist.meta": {
+      "time": 1729007377333.5713
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\zero\\zero.png.meta": {
+      "time": 1729007377347.5698
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\one\\one.plist.meta": {
+      "time": 1729007377343.571
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\one\\one.png.meta": {
+      "time": 1729007377354.5718
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\two\\two.plist.meta": {
+      "time": 1729007377369.5764
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\two\\two.png.meta": {
+      "time": 1729007377365.5706
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\zero\\zero.plist.meta": {
+      "time": 1729007377359.5708
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\zero\\zero.png.meta": {
+      "time": 1729007377374.571
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\four\\four.plist.meta": {
+      "time": 1729007377390.5698
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\four\\four.png.meta": {
+      "time": 1729007377385.5698
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\one\\one.plist.meta": {
+      "time": 1729007377381.5718
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\one\\one.png.meta": {
+      "time": 1729007377396.572
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\three\\three.plist.meta": {
+      "time": 1729007377394.5708
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\three\\three.png.meta": {
+      "time": 1729007377408.5708
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\two\\two.plist.meta": {
+      "time": 1729007377403.5698
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\two\\two.png.meta": {
+      "time": 1729007377418.5706
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\zero\\zero.plist.meta": {
+      "time": 1729007377411.572
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\zero\\zero.png.meta": {
+      "time": 1729007377420.5686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\one\\one.plist.meta": {
+      "time": 1729007377424.571
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\one\\one.png.meta": {
+      "time": 1729007377433.5737
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\three\\three.plist.meta": {
+      "time": 1729007377446.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\three\\three.png.meta": {
+      "time": 1729007377442.5723
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\two\\two.plist.meta": {
+      "time": 1729007377436.572
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\two\\two.png.meta": {
+      "time": 1729007377444.569
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\zero\\zero.plist.meta": {
+      "time": 1729007377452.5686
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\zero\\zero.png.meta": {
+      "time": 1729007377471.5706
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\one\\one.plist": {
+      "time": 1721054232800.3955,
+      "uuid": "0e197964-f8f7-4304-bbd3-d49463b259bb"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\four\\four.plist": {
+      "time": 1721054232797.3958,
+      "uuid": "298190fd-f483-4c1e-9376-829921331aa0"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\five\\five.png": {
+      "time": 1721054232796.3958,
+      "uuid": "54b36b6e-f97b-4dae-9898-6ce06342ed33"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\four\\four.png": {
+      "time": 1721054232798.3955,
+      "uuid": "5783895e-2802-4abc-a97e-58745a73358f"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\five\\five.plist": {
+      "time": 1721054232794.3953,
+      "uuid": "53707ab8-7929-4c73-87e4-9328a7b247e5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\three\\three.plist": {
+      "time": 1721054232804.3955,
+      "uuid": "3a25a98f-0898-4d18-b3c4-a2992269c742"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\one\\one.png": {
+      "time": 1721054232802.3984,
+      "uuid": "32fe68cc-665b-4545-99d3-b79214a83021"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\two\\two.plist": {
+      "time": 1721054232807.3955,
+      "uuid": "97a8fbbc-1ca6-468d-a9db-c0afdfa48096"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\three\\three.png": {
+      "time": 1721054232805.3955,
+      "uuid": "653cfe47-3199-4f5f-837c-00a55bb0f0f1"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\zero\\zero.plist": {
+      "time": 1721054232810.3953,
+      "uuid": "6083b165-d32f-43ff-aae1-525860bae16d"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\two\\two.png": {
+      "time": 1721054232808.3955,
+      "uuid": "5ddb2fd4-5a2f-4b22-85ab-aeeb0642e1ae"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\one\\one.plist": {
+      "time": 1721054232814.3955,
+      "uuid": "82ba1c19-c874-401b-84d8-f1fb6a7e25b6"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesfour\\zero\\zero.png": {
+      "time": 1721054232811.3955,
+      "uuid": "9fad8ffd-b5e6-408f-93a8-e23887ed61ca"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\one\\one.png": {
+      "time": 1721054232815.3975,
+      "uuid": "7c80c3bc-9cb9-4bd3-90bf-6cd0473196d7"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\zero\\zero.plist": {
+      "time": 1721054232820.3972,
+      "uuid": "d8c93eb0-a32f-43d0-b4c9-f5ca3f8e1d7b"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\two\\two.png": {
+      "time": 1721054232818.396,
+      "uuid": "616391f1-2ede-4d23-a2fa-d70c5fefa322"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\two\\two.plist": {
+      "time": 1721054232817.3967,
+      "uuid": "c7ffdd4d-48d6-4f30-86a3-609e17aa3689"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesone\\zero\\zero.png": {
+      "time": 1721054232821.3977,
+      "uuid": "e8549e00-cd66-4099-97be-b6af28cc8006"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\one\\one.plist": {
+      "time": 1721054232826.396,
+      "uuid": "3260810e-eb95-4757-b469-b9021dc9a3c6"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\four\\four.png": {
+      "time": 1721054232824.3958,
+      "uuid": "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\four\\four.plist": {
+      "time": 1721054232824.3958,
+      "uuid": "7b0ca2a0-1fd0-403e-8117-6234698a877f"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\three\\three.plist": {
+      "time": 1721054232829.3965,
+      "uuid": "d3dc4196-bb83-43e2-b7dc-839e5f629a0e"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\one\\one.png": {
+      "time": 1721054232827.3955,
+      "uuid": "07d752fe-fed5-413d-90f7-865e76294e62"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\two\\two.plist": {
+      "time": 1721054232832.3958,
+      "uuid": "d1c1e4e4-8f21-4c59-b333-b354a20e87c1"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\three\\three.png": {
+      "time": 1721054232830.396,
+      "uuid": "0b248f91-56c9-4115-8282-9927f3dd07a4"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\zero\\zero.plist": {
+      "time": 1721054232835.3955,
+      "uuid": "e80f5554-1dc8-4111-9d3d-fd9ee2891a15"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\two\\two.png": {
+      "time": 1721054232834.3962,
+      "uuid": "c2eea861-11c7-40ba-87c1-eaa1d5e6427c"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikesthree\\zero\\zero.png": {
+      "time": 1721054232836.396,
+      "uuid": "cc0a5460-6056-4b15-b095-f6694c327b9d"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\one\\one.plist": {
+      "time": 1721054232839.3962,
+      "uuid": "ae4387ff-6e76-4feb-8085-5e71ec54f92f"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\one\\one.png": {
+      "time": 1721054232840.3994,
+      "uuid": "40d9acdc-cdc6-467e-9892-3c10d32db80f"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\two\\two.plist": {
+      "time": 1721054232845.396,
+      "uuid": "9077f514-31f3-4fac-9bad-e73091049b8b"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\three\\three.png": {
+      "time": 1721054232843.3958,
+      "uuid": "6eb39132-5388-4f03-a649-0cf23bbc6b95"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\two\\two.png": {
+      "time": 1721054232846.3953,
+      "uuid": "04b97190-e458-45e7-b088-caf2cc7e41d2"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\three\\three.plist": {
+      "time": 1721054232842.3962,
+      "uuid": "90a66264-e6e4-437b-b4ac-4df509220270"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\zero\\zero.plist": {
+      "time": 1721054232848.3953,
+      "uuid": "e93fd8b9-51f6-4e0f-8f0d-3f563a0762a2"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\spikes\\spikestwo\\zero\\zero.png": {
+      "time": 1721054232849.3965,
+      "uuid": "89bdadaa-c90d-43bb-a52a-12e2052a16bf"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\DeathSubStateMachine.ts.meta": {
+      "time": 1729007496786.8604
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\door\\DeathSubStateMachine.ts": {
+      "time": 1729007707979.5237,
+      "uuid": "1fcf7be9-ad93-43ce-bd69-009776620820"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door.meta": {
+      "time": 1729010734315.9204
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door": {
+      "time": 1729010746008.9934,
+      "uuid": "decbb24e-9cb6-4e61-beb3-05c652ee27dd"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle.meta": {
+      "time": 1729010739825.9514
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle": {
+      "time": 1729010756736.5342,
+      "uuid": "56009dc0-101b-4426-b4bf-bc66598d5d79"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death.meta": {
+      "time": 1729010746010.994
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death": {
+      "time": 1729010853461.768,
+      "uuid": "6956cb15-3e1b-4ef7-8788-cb89eaa506c2"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top.meta": {
+      "time": 1729010751303.0364
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top": {
+      "time": 1729010829341.0374,
+      "uuid": "c31f94ca-d49a-40f5-85e1-750e9a2745f7"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left.meta": {
+      "time": 1729010756737.5337
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left": {
+      "time": 1729010838866.8718,
+      "uuid": "94c5b6ad-d716-4060-81ac-4279d1ed18cf"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top\\idle.png.meta": {
+      "time": 1729010799556.6255
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top\\idle.plist.meta": {
+      "time": 1729010829356.0405
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top\\idle.png": {
+      "time": 1721054232588.3955,
+      "uuid": "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top\\idle.plist": {
+      "time": 1721054232587.3965,
+      "uuid": "96817283-01f9-43f6-9dc5-d31b8ed67581"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left\\idle.png.meta": {
+      "time": 1729010838883.8687
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left\\idle.plist.meta": {
+      "time": 1729010838889.8674
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left\\idle.png": {
+      "time": 1721054232585.3955,
+      "uuid": "e480916f-0543-4192-87c4-a86fb1876186"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left\\idle.plist": {
+      "time": 1721054232584.396,
+      "uuid": "8415b5bc-061c-480d-b1ea-183d87786ec8"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death\\death.png.meta": {
+      "time": 1729010853471.7666
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death\\death.plist.meta": {
+      "time": 1729010853477.7705
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death\\death.png": {
+      "time": 1721054232581.396,
+      "uuid": "a881ee54-5281-40fc-b7c8-692273b006c5"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death\\death.plist": {
+      "time": 1721054232580.396,
+      "uuid": "bb79db3e-f3f1-4996-903f-a1e79103bc3c"
     }
   },
   "missing": {
@@ -3821,6 +4717,61 @@
       "path": "E:\\cocos_project\\Cramed_of_death\\assets\\resources\\texture\\woodenskeleton\\idle\\top\\idle.png",
       "time": 1721054232894.3955,
       "removeTime": 1724774489088
+    },
+    "c768ca76-b186-4597-984c-24cb0748220a": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door",
+      "time": 1729007318204.6096,
+      "removeTime": 1729010727568
+    },
+    "0ca565a1-71d6-4530-9feb-6989fe2dac7a": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death",
+      "time": 1729007318179.6116,
+      "removeTime": 1729010727568
+    },
+    "bb79db3e-f3f1-4996-903f-a1e79103bc3c": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death\\death.plist",
+      "time": 1721054232580.396,
+      "removeTime": 1729010727568
+    },
+    "a881ee54-5281-40fc-b7c8-692273b006c5": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\death\\death.png",
+      "time": 1721054232581.396,
+      "removeTime": 1729010727568
+    },
+    "f4ef8dae-553c-4955-aafa-825ed14a9aca": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle",
+      "time": 1729007318187.6096,
+      "removeTime": 1729010727569
+    },
+    "14c6c0c8-72c9-490f-b8a0-2845e12e7c65": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left",
+      "time": 1729007318198.6096,
+      "removeTime": 1729010727569
+    },
+    "71357945-8e8f-44dc-9b8b-1e27bc30b1fc": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top",
+      "time": 1729007318183.6108,
+      "removeTime": 1729010727569
+    },
+    "96817283-01f9-43f6-9dc5-d31b8ed67581": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left\\idle.plist",
+      "time": 1721054232584.396,
+      "removeTime": 1729010727569
+    },
+    "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\left\\idle.png",
+      "time": 1721054232585.3955,
+      "removeTime": 1729010727569
+    },
+    "a0291cb4-d737-4dbc-bcc8-1a34c8303be6": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top\\idle.plist",
+      "time": 1721054232587.3965,
+      "removeTime": 1729010727569
+    },
+    "36e0d14e-931f-4821-8665-33c46251a1fa": {
+      "path": "E:\\git\\Cramped_Room_Of_Death\\assets\\resources\\texture\\door\\idle\\top\\idle.png",
+      "time": 1721054232588.3955,
+      "removeTime": 1729010727570
     }
   }
 }

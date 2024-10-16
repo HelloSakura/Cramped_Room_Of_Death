@@ -76,6 +76,30 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       _export("WoodenSkeletonManager", WoodenSkeletonManager = (_dec = ccclass('WoodenSkeletonManager'), _dec(_class = class WoodenSkeletonManager extends (_crd && EntityManager === void 0 ? (_reportPossibleCrUseOfEntityManager({
         error: Error()
       }), EntityManager) : EntityManager) {
+        onDestroy() {
+          super.onDestroy();
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_BORN, this._onChangeDirection);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._onChangeDirection);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._onAttack);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).ATTACK_ENEMY, this._onDead);
+        }
+
         init() {
           var _superprop_getInit = () => super.init,
               _this = this;
@@ -88,11 +112,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             yield _this.fsm.init();
 
             _superprop_getInit().call(_this, {
-              x: 2,
-              y: 4,
+              x: 5,
+              y: 2,
               type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
                 error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).PLAYER,
+              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_WOODEN,
               direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
                 error: Error()
               }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
@@ -115,7 +139,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
               error: Error()
-            }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, _this._onAttack, _this); //保证不管是敌人先生成or玩家先生成都会判断
+            }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, _this._onAttack, _this);
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).ATTACK_ENEMY, _this._onDead, _this); //保证不管是敌人先生成or玩家先生成都会判断
 
             _this._onChangeDirection(true);
           })();
@@ -126,7 +155,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             isInit = false;
           }
 
-          if (!(_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+          if (this.state === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH || !(_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.player) return;
           var {
@@ -170,6 +201,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         _onAttack() {
+          if (this.state === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH || !(_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.player) return;
           var {
             x: playerX,
             y: playerY,
@@ -197,6 +233,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
               error: Error()
             }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE;
+          }
+        }
+
+        _onDead(id) {
+          if (this.state === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH) {
+            return;
+          }
+
+          if (this.id === id) {
+            this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+              error: Error()
+            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH;
           }
         }
 

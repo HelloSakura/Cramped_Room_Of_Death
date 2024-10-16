@@ -81,12 +81,18 @@ export class PlayerManager extends EntityManager {
             return;
         }
         //人物死亡return掉
-        if(this.state === ENTITY_STATE_ENUM.DEATH || this.state === ENTITY_STATE_ENUM.AIRDEATH){
+        if(this.state === ENTITY_STATE_ENUM.DEATH 
+        || this.state === ENTITY_STATE_ENUM.AIRDEATH 
+        || this.state === ENTITY_STATE_ENUM.ATTACK
+        ){
             return;
         }
 
         //判断攻击敌人
-        if(this._willAttack(inputDirection)){
+        const id = this._willAttack(inputDirection)
+        if(id){
+            EventManager.Instance.emit(EVENT_ENUM.ATTACK_ENEMY, id);
+            EventManager.Instance.emit(EVENT_ENUM.DOOR_OPEN);
             return;
         }
         //撞了不用往下走了
@@ -99,20 +105,44 @@ export class PlayerManager extends EntityManager {
     }
 
     private _willAttack(inputDirection:CONTROLLER_ENUM):boolean{
-        const enemies = DataManager.Instance.enemies;
+        const enemies = DataManager.Instance.enemies.filter(enemy => enemy.state !== ENTITY_STATE_ENUM.DEATH);
         for (let i = 0; i < enemies.length; i++) {
-            const {x:enemyX, y:enemyY} = enemies[i];
+            const {x:enemyX, y:enemyY, id:enemyId} = enemies[i];
             if(this.direction === DIRECTION_ENUM.TOP
             && inputDirection === CONTROLLER_ENUM.TOP
             && enemyX === this.x
             && enemyY === this.targetY - 2
             ){
                 this.state = ENTITY_STATE_ENUM.ATTACK;
-                return true;
+                return enemyId;
             }
-            
+            else if(this.direction === DIRECTION_ENUM.LEFT
+            && inputDirection === CONTROLLER_ENUM.LEFT
+            && enemyX === this.x - 2
+            && enemyY === this.targetY
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+            else if(this.direction === DIRECTION_ENUM.RIGHT
+            && inputDirection === CONTROLLER_ENUM.RIGHT
+            && enemyX === this.x + 2
+            && enemyY === this.targetY
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+            if(this.direction === DIRECTION_ENUM.BOTTOM
+            && inputDirection === CONTROLLER_ENUM.BOTTOM
+            && enemyX === this.x
+            && enemyY === this.targetY + 2
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+        
         }
-        return false;
+        return null;
     }
 
     private _onDead(type:ENTITY_STATE_ENUM){

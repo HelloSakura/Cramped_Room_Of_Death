@@ -16,9 +16,11 @@ export enum TILE_TYPE_ENUM {
 export enum EVENT_ENUM{
     NEXT_LEVEL = "NEXT_LEVEL",      //下一关
     PLAYER_CTRL = "PLAYER_CTRL",    //button方向控制信号
-    PLAYER_MOVE_END = "PLAYER_CTRL", //人物移动停止
+    PLAYER_MOVE_END = "PLAYER_MOVE_END", //人物移动停止
     PLAYER_BORN = "PLAYER_BORN",      //人物出生
-    ATTACK_PLAYER = "ATTACK_PLAYER"   //攻击
+    ATTACK_PLAYER = "ATTACK_PLAYER",   //攻击
+    ATTACK_ENEMY = "ATTACK_ENEMY",       //人物攻击
+    DOOR_OPEN = "DOOR_OPEN"             //门开了
 }
 
 
@@ -94,4 +96,6 @@ export enum ENTITY_STATE_ENUM{
 //实体类型
 export enum ENTITY_TYPE_ENUM{
     PLAYER = "PLAYER",
+    SKELETON_WOODEN = "SKELETON_WOODEN",
+    DOOR = "DOOR"
 }

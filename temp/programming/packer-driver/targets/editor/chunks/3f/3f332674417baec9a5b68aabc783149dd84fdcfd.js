@@ -30,9 +30,11 @@ System.register(["cc"], function (_export, _context) {
       _export("EVENT_ENUM", EVENT_ENUM = /*#__PURE__*/function (EVENT_ENUM) {
         EVENT_ENUM["NEXT_LEVEL"] = "NEXT_LEVEL";
         EVENT_ENUM["PLAYER_CTRL"] = "PLAYER_CTRL";
-        EVENT_ENUM["PLAYER_MOVE_END"] = "PLAYER_CTRL";
+        EVENT_ENUM["PLAYER_MOVE_END"] = "PLAYER_MOVE_END";
         EVENT_ENUM["PLAYER_BORN"] = "PLAYER_BORN";
         EVENT_ENUM["ATTACK_PLAYER"] = "ATTACK_PLAYER";
+        EVENT_ENUM["ATTACK_ENEMY"] = "ATTACK_ENEMY";
+        EVENT_ENUM["DOOR_OPEN"] = "DOOR_OPEN";
         return EVENT_ENUM;
       }({})); //方向枚举
 
@@ -110,6 +112,8 @@ System.register(["cc"], function (_export, _context) {
 
       _export("ENTITY_TYPE_ENUM", ENTITY_TYPE_ENUM = /*#__PURE__*/function (ENTITY_TYPE_ENUM) {
         ENTITY_TYPE_ENUM["PLAYER"] = "PLAYER";
+        ENTITY_TYPE_ENUM["SKELETON_WOODEN"] = "SKELETON_WOODEN";
+        ENTITY_TYPE_ENUM["DOOR"] = "DOOR";
         return ENTITY_TYPE_ENUM;
       }({}));
 

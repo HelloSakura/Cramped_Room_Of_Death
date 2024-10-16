@@ -81,7 +81,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
             var frames = spriteFrames.map((item, index) => [ANIMATION_SPEED * index, item]); //影分身是因为把外层的idle也加载进去了，这里去掉
 
-            var subframes = frames.slice(0, frames.length - 1);
+            var subframes = frames.slice(0, frames.length);
             track.channel.curve.assignSorted(subframes); //track.channel.curve.assignSorted(frames);
             //轨道添加到动画剪辑以应用
 

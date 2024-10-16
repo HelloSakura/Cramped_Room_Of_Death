@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, _dec, _class, _crd, ccclass, property, BattleManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, _dec, _class, _crd, ccclass, property, BattleManager;
 
   function _reportPossibleCrUseOfTileMapManager(extras) {
     _reporterNs.report("TileMapManager", "../tile/TileMapManager", _context.meta, extras);
@@ -47,6 +47,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("WoodenSkeletonManager", "../woodenSkeleton/WoodenSkeletonManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfDoorManager(extras) {
+    _reporterNs.report("DoorManager", "../door/DoorManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -76,6 +80,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       PlayerManager = _unresolved_9.PlayerManager;
     }, function (_unresolved_10) {
       WoodenSkeletonManager = _unresolved_10.WoodenSkeletonManager;
+    }, function (_unresolved_11) {
+      DoorManager = _unresolved_11.DoorManager;
     }],
     execute: function () {
       _crd = true;
@@ -140,6 +146,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DataManager) : DataManager).Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
             this.generateTileMap();
+            this.generateDoor();
             this.generateEnemy(); //生成player
 
             this.generatePlayer();
@@ -198,6 +205,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
           }), EVENT_ENUM) : EVENT_ENUM).PLAYER_BORN, true);
+        }
+
+        async generateDoor() {
+          const door = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
+            error: Error()
+          }), createUINode) : createUINode)();
+          door.setParent(this.stage);
+          const doorManager = door.addComponent(_crd && DoorManager === void 0 ? (_reportPossibleCrUseOfDoorManager({
+            error: Error()
+          }), DoorManager) : DoorManager);
+          await doorManager.init();
+          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.door = doorManager;
         }
 
         async generateEnemy() {

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Sprite, UITransform, PARAMS_NAME_ENUM, DIRECTION_ORDER_ENUM, TILE_WIDTH, TILE_HEIGHT, _dec, _class, _crd, ccclass, property, EntityManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Sprite, UITransform, PARAMS_NAME_ENUM, DIRECTION_ORDER_ENUM, TILE_WIDTH, TILE_HEIGHT, randomByLen, _dec, _class, _crd, ccclass, property, EntityManager;
 
   function _reportPossibleCrUseOfDIRECTION_ENUM(extras) {
     _reporterNs.report("DIRECTION_ENUM", "../enums", _context.meta, extras);
@@ -39,6 +39,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("StateMachine", "./StateMachine", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfrandomByLen(extras) {
+    _reporterNs.report("randomByLen", "../utils", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -56,6 +60,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     }, function (_unresolved_3) {
       TILE_WIDTH = _unresolved_3.TILE_WIDTH;
       TILE_HEIGHT = _unresolved_3.TILE_HEIGHT;
+    }, function (_unresolved_4) {
+      randomByLen = _unresolved_4.randomByLen;
     }],
     execute: function () {
       _crd = true;
@@ -72,6 +78,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       _export("EntityManager", EntityManager = (_dec = ccclass('EntityManager'), _dec(_class = class EntityManager extends Component {
         constructor(...args) {
           super(...args);
+          this.id = (_crd && randomByLen === void 0 ? (_reportPossibleCrUseOfrandomByLen({
+            error: Error()
+          }), randomByLen) : randomByLen)(12);
           this.x = 0;
           this.y = 0;
           //状态机
@@ -137,6 +146,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             error: Error()
           }), TILE_HEIGHT) : TILE_HEIGHT) * 1.5);
         }
+
+        onDestroy() {}
 
       }) || _class));
 

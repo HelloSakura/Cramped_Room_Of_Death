@@ -40,7 +40,7 @@ export default class State{
         //对象轨道只有一条动画曲线，[时间，变化属性]
         const frames:Array<[number, SpriteFrame]> = spriteFrames.map((item:SpriteFrame, index:number)=>[ANIMATION_SPEED*index, item]);
         //影分身是因为把外层的idle也加载进去了，这里去掉
-        const subframes = frames.slice(0, frames.length-1);
+        const subframes = frames.slice(0, frames.length);
         track.channel.curve.assignSorted(subframes);
         //track.channel.curve.assignSorted(frames);
 

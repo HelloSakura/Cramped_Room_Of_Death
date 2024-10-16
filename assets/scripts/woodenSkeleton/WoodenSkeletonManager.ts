@@ -11,27 +11,37 @@ const { ccclass, property } = _decorator;
 
 @ccclass('WoodenSkeletonManager')
 export class WoodenSkeletonManager extends EntityManager {
+    
+    onDestroy(): void {
+        super.onDestroy();
+        EventManager.Instance.off(EVENT_ENUM.PLAYER_BORN, this._onChangeDirection);
+        EventManager.Instance.off(EVENT_ENUM.PLAYER_MOVE_END, this._onChangeDirection);
+        EventManager.Instance.off(EVENT_ENUM.PLAYER_MOVE_END, this._onAttack);
+        EventManager.Instance.off(EVENT_ENUM.ATTACK_ENEMY, this._onDead);    
+    }
+    
     async init(){   
         //添加状态机
         this.fsm = this.addComponent(WoodenSkeletonStateMachine);
         await this.fsm.init();
         super.init({
-            x:2,
-            y:4,
-            type: ENTITY_TYPE_ENUM.PLAYER,
+            x:5,
+            y:2,
+            type: ENTITY_TYPE_ENUM.SKELETON_WOODEN,
             direction:DIRECTION_ENUM.TOP,
             state:ENTITY_STATE_ENUM.IDLE
         });
         EventManager.Instance.on(EVENT_ENUM.PLAYER_BORN, this._onChangeDirection, this);
         EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._onChangeDirection, this);
         EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._onAttack, this);
+        EventManager.Instance.on(EVENT_ENUM.ATTACK_ENEMY, this._onDead, this);
 
         //保证不管是敌人先生成or玩家先生成都会判断
         this._onChangeDirection(true);
     }
 
     private _onChangeDirection(isInit:boolean = false){
-        if(!DataManager.Instance.player) return;
+        if(this.state === ENTITY_STATE_ENUM.DEATH || !DataManager.Instance.player) return;
 
         const {x:playerX, y:playerY} = DataManager.Instance.player;
         const disX = Math.abs(this.x - playerX);
@@ -56,6 +66,8 @@ export class WoodenSkeletonManager extends EntityManager {
     }
 
     private _onAttack(){
+        if(this.state === ENTITY_STATE_ENUM.DEATH || !DataManager.Instance.player) return;
+
         const {x:playerX, y:playerY, state:playerState} = DataManager.Instance.player;
         if(
            ((this.x === playerX && Math.abs(this.y - playerY) <= 1)
@@ -70,6 +82,16 @@ export class WoodenSkeletonManager extends EntityManager {
             this.state = ENTITY_STATE_ENUM.IDLE;
         }
          
+    }
+
+    private _onDead(id:string){
+        if(this.state === ENTITY_STATE_ENUM.DEATH){
+            return
+        }
+
+        if(this.id === id){
+            this.state = ENTITY_STATE_ENUM.DEATH;
+        }
     }
 }
 

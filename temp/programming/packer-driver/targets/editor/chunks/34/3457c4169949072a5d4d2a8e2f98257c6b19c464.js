@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, Layers, Node, UITransform, _crd, createUINode, randomByRange, reg, getNumberWithinString, sortSpriteFrame;
+  var _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, Layers, Node, UITransform, _crd, createUINode, randomByRange, reg, getNumberWithinString, sortSpriteFrame, randomByLen;
 
   return {
     setters: [function (_cc) {
@@ -41,7 +41,12 @@ System.register(["cc"], function (_export, _context) {
 
       _export("sortSpriteFrame", sortSpriteFrame = spriteFrames => {
         spriteFrames.sort((a, b) => getNumberWithinString(a.name) - getNumberWithinString(b.name));
-      });
+      }); //根据长度生成随机字符串
+
+
+      _export("randomByLen", randomByLen = len => Array.from({
+        length: len
+      }).reduce((total, item) => total + Math.floor(Math.random() * 10), ''));
 
       _cclegacy._RF.pop();
 

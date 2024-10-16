@@ -168,12 +168,26 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH || this.state === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()
-          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).AIRDEATH) {
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).AIRDEATH || this.state === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK) {
             return;
           } //判断攻击敌人
 
 
-          if (this._willAttack(inputDirection)) {
+          const id = this._willAttack(inputDirection);
+
+          if (id) {
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).ATTACK_ENEMY, id);
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).DOOR_OPEN);
             return;
           } //撞了不用往下走了
 
@@ -189,12 +203,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         _willAttack(inputDirection) {
           const enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance.enemies;
+          }), DataManager) : DataManager).Instance.enemies.filter(enemy => enemy.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH);
 
           for (let i = 0; i < enemies.length; i++) {
             const {
               x: enemyX,
-              y: enemyY
+              y: enemyY,
+              id: enemyId
             } = enemies[i];
 
             if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
@@ -205,11 +222,40 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
               }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
-              return true;
+              return enemyId;
+            } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+              error: Error()
+            }), DIRECTION_ENUM) : DIRECTION_ENUM).LEFT && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).LEFT && enemyX === this.x - 2 && enemyY === this.targetY) {
+              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
+              return enemyId;
+            } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+              error: Error()
+            }), DIRECTION_ENUM) : DIRECTION_ENUM).RIGHT && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).RIGHT && enemyX === this.x + 2 && enemyY === this.targetY) {
+              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
+              return enemyId;
+            }
+
+            if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+              error: Error()
+            }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).BOTTOM && enemyX === this.x && enemyY === this.targetY + 2) {
+              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
+              return enemyId;
             }
           }
 
-          return false;
+          return null;
         }
 
         _onDead(type) {
