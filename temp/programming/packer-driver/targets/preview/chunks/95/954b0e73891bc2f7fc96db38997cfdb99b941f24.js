@@ -3,6 +3,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
   var _reporterNs, _cclegacy, Singleton, DataManager, _crd;
 
+  function _reportPossibleCrUseOfEnemyManager(extras) {
+    _reporterNs.report("EnemyManager", "../base/EnemyManager", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfSingleton(extras) {
     _reporterNs.report("Singleton", "../base/Singleton", _context.meta, extras);
   }
@@ -21,10 +25,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
   function _reportPossibleCrUseOfTileManger(extras) {
     _reporterNs.report("TileManger", "../scripts/tile/TileManger", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfWoodenSkeletonManager(extras) {
-    _reporterNs.report("WoodenSkeletonManager", "../scripts/woodenSkeleton/WoodenSkeletonManager", _context.meta, extras);
   }
 
   _export("default", void 0);

@@ -4,11 +4,12 @@ import levels, { ILevel } from '../../levels';
 import DataManager from '../../runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../tile/TileManger';
 import EventManager from '../../runtime/EventManager';
-import { EVENT_ENUM } from '../../enums';
+import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM } from '../../enums';
 import { createUINode } from '../../utils';
 import { PlayerManager } from '../player/PlayerManager';
 import { WoodenSkeletonManager } from '../woodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../door/DoorManager';
+import { IronSkeletonManager } from '../ironSkeleton/IronSkeletonManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('BattleManager')
@@ -87,7 +88,13 @@ export class BattleManager extends Component {
         const player = createUINode();
         player.setParent(this.stage);
         const playManager = player.addComponent(PlayerManager);
-        await playManager.init();
+        await playManager.init({
+            x:2,
+            y:8,
+            type: ENTITY_TYPE_ENUM.PLAYER,
+            direction:DIRECTION_ENUM.TOP,
+            state:ENTITY_STATE_ENUM.IDLE
+        });
         DataManager.Instance.player = playManager;
         EventManager.Instance.emit(EVENT_ENUM.PLAYER_BORN, true);
         
@@ -105,9 +112,30 @@ export class BattleManager extends Component {
         const enemy = createUINode();
         enemy.setParent(this.stage);
         const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
-        await woodenSkeletonManager.init();
+        await woodenSkeletonManager.init({
+            x:5,
+            y:2,
+            type: ENTITY_TYPE_ENUM.SKELETON_WOODEN,
+            direction:DIRECTION_ENUM.TOP,
+            state:ENTITY_STATE_ENUM.IDLE
+        });
         //注意名字大小写，大写是类名
         DataManager.Instance.enemies.push(woodenSkeletonManager);
+
+
+        const ironSkeleton = createUINode();
+        ironSkeleton.setParent(this.stage);
+        const ironSkeletonManager = ironSkeleton.addComponent(IronSkeletonManager);
+        await ironSkeletonManager.init({
+            x:2,
+            y:2,
+            type: ENTITY_TYPE_ENUM.SKELETON_IRON,
+            direction:DIRECTION_ENUM.TOP,
+            state:ENTITY_STATE_ENUM.IDLE
+        });
+        //注意名字大小写，大写是类名
+        DataManager.Instance.enemies.push(ironSkeletonManager);
+
     }
 
     adaptPos(){

@@ -9115,5 +9115,35 @@
       ]
     },
     "versionCode": 1
+  },
+  "253de378-c692-4d2f-b3b1-befd4ec3cdee": {
+    "url": "db://assets/base/EnemyManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "2c38334c-94a4-4988-8e54-2bd76a45a3a1": {
+    "url": "db://assets/scripts/ironSkeleton/IdleSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "4b0b164f-65eb-452b-96f6-0858143e0457": {
+    "url": "db://assets/scripts/ironSkeleton/IronSkeletonManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "48e7b1a0-f7c2-48b5-83d0-6a0b135c8eaf": {
+    "url": "db://assets/scripts/ironSkeleton/IronSkeletonStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "8a2bc222-da79-4249-8bab-34eef74f06a4": {
+    "url": "db://assets/scripts/ironSkeleton",
+    "value": {},
+    "versionCode": 1
+  },
+  "9efd9d6e-8074-4b8f-aa96-cb2c2d2d8c37": {
+    "url": "db://assets/scripts/ironSkeleton/DeadSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

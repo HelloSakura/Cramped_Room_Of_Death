@@ -1,0 +1,1100 @@
+2024-10-21 23:02:44-log: Cannot access game frame or container.
+2024-10-21 23:02:46-debug: asset-db:require-engine-code (2464ms)
+2024-10-21 23:02:46-log: meshopt wasm decoder initialized
+2024-10-21 23:02:46-log: [bullet]:bullet wasm lib loaded.
+2024-10-21 23:02:46-log: [box2d]:box2d wasm lib loaded.
+2024-10-21 23:02:46-log: Cocos Creator v3.8.3
+2024-10-21 23:02:46-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:24.82MB, end 77.25MB, increase: 52.43MB
+2024-10-21 23:02:47-debug: [Assets Memory track]: asset-db-plugin-register: programming start:78.10MB, end 81.49MB, increase: 3.40MB
+2024-10-21 23:02:49-debug: [Assets Memory track]: asset-db-plugin-register: builder start:81.51MB, end 180.43MB, increase: 98.92MB
+2024-10-21 23:02:49-debug: [Assets Memory track]: asset-db-plugin-register: project start:77.96MB, end 175.97MB, increase: 98.01MB
+2024-10-21 23:02:49-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:77.26MB, end 175.99MB, increase: 98.73MB
+2024-10-21 23:02:49-debug: asset-db:worker-init: initPlugin (2369ms)
+2024-10-21 23:02:49-debug: Run asset db hook programming:beforePreStart ...
+2024-10-21 23:02:49-debug: Run asset db hook programming:beforePreStart success!
+2024-10-21 23:02:49-debug: [Assets Memory track]: asset-db:worker-init start:24.81MB, end 176.05MB, increase: 151.24MB
+2024-10-21 23:02:49-debug: Run asset db hook engine-extends:beforePreStart ...
+2024-10-21 23:02:49-debug: Run asset db hook engine-extends:beforePreStart success!
+2024-10-21 23:02:49-debug: asset-db:worker-init (5762ms)
+2024-10-21 23:02:49-debug: asset-db-hook-programming-beforePreStart (374ms)
+2024-10-21 23:02:49-debug: asset-db-hook-engine-extends-beforePreStart (373ms)
+2024-10-21 23:02:49-debug: Preimport db internal success
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\basebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\runtimebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\enumsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scriptsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\utilsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texturebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\doorbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\playerbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeletonbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burstbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\scenesbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeletonbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\doorbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smokebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikesbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\deathbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attackbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idlebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idlebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\deathbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\deathbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idlebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idlebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\deathbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfourbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesonebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthreebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\leftbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\topbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottombackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\topbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\leftbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottombackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\rightbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\leftbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\rightbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\topbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottombackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\topbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\rightbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\leftbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\topbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\fivebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\fourbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\onebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\threebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\twobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zerobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\twobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\onebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zerobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\fourbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\threebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\onebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\twobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\onebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zerobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\threebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zerobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\twobackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\base\EntityManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\base\State.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\runtime\DataManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\enums\index.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\utils\index.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\door\DeathSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\door\IdleSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\door\DoorStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\door\DoorManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\player\AttackSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\player\PlayerManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\player\PlayerStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\scenes\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeleton\DeadSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeleton\WoodenSkeletonManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeleton\WoodenSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:49-debug: Run asset db hook programming:afterPreStart ...
+2024-10-21 23:02:49-debug: Preimport db assets success
+2024-10-21 23:02:49-debug: starting packer-driver...
+2024-10-21 23:02:53-debug: initialize scripting environment...
+2024-10-21 23:02:53-debug: Run asset db hook programming:afterPreStart success!
+2024-10-21 23:02:53-debug: Set detail map pack:///resolution-detail-map.json: {}
+2024-10-21 23:02:53-debug: Run asset db hook engine-extends:afterPreStart ...
+2024-10-21 23:02:53-debug: Run asset db hook engine-extends:afterPreStart success!
+2024-10-21 23:02:53-debug: [Assets Memory track]: asset-db:worker-init: preStart start:176.06MB, end 177.53MB, increase: 1.47MB
+2024-10-21 23:02:53-debug: Start up the 'internal' database...
+2024-10-21 23:02:54-debug: asset-db-hook-programming-afterPreStart (4490ms)
+2024-10-21 23:02:54-debug: asset-db:worker-effect-data-processing (604ms)
+2024-10-21 23:02:54-debug: asset-db-hook-engine-extends-afterPreStart (605ms)
+2024-10-21 23:02:54-debug: Start up the 'assets' database...
+2024-10-21 23:02:54-debug: asset-db:worker-startup-database[internal] (5571ms)
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attack\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idle\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attack\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attack\idle.plist@74804background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idle\idle.plist@eec38background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attack\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@e7c13background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idle\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\death\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@8700fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@514ccbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\death\death.plist@2bd38background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\death\death.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@485babackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\left\idle.plist@b079abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idle\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@81b72background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\left\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\death\death.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\top\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\top\idle.plist@d5a9bbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\left\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\top\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@8a345background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@06cc1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@11c45background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@63579background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@e6153background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@66553background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@e11f7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@55f3fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@2cde8background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@9168dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@39d30background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@0cad2background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@1179ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@481b6background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@6b05fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@af2bebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@282fdbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@674d9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@0e816background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@59a86background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@cfdffbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@3a8d2background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@e9be0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@f1776background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@17157background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@f6a48background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@0bf54background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@b276fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@51745background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@d8e44background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@2d0f1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@68d59background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@b0613background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@748c0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@25e5abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@f198dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@5e7ddbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@14459background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@f4bdebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@5ca36background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@fc100background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@5a547background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@57813background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@2f11cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@a2586background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@5732ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@55decbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@03523background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@3d251background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@aba52background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@dc80cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@f8803background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@a4072background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@70c68background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@f2b48background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@17bb9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@f7dd0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@1baa0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@ede44background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@1426ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@02a91background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@5d578background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@61e32background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@bdf60background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@85f54background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@1452ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@e195bbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@dc122background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@36018background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@80f7ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:54-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@1eceabackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@f0a83background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@4d882background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@35923background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@c41b5background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@7a333background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@a10f8background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@2abcbbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@f80acbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@cf535background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@1bff4background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@8bd10background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@5ccc5background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@af78ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@b85a9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@c2cd9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@4918abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@b141ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@f6633background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@d5054background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@aca38background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@c0decbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@87bd0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\bottom\idle.plist@29ea7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@bc45bbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@8a774background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@367d1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@ca1d7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@75ab0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@7e735background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@f087dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@860d3background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@9ba85background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@b5e11background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@6c9c0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\four\four.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@3e268background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@c9dd5background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@b0caebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\four\four.plist@da7febackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@4455ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@5a0c7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@3e6acbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\four\four.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@b96aabackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\one\one.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\three\three.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\one\one.plist@bcce0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\four\four.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\three\three.plist@c0302background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\three\three.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\one\one.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\two\two.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\two\two.plist@70f41background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\three\three.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zero\zero.plist@aef61background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zero\zero.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\two\two.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\one\one.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zero\zero.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\one\one.plist@8c7b6background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\one\one.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@fcb9fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zero\zero.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@5ea2dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zero\zero.plist@5d2f3background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@d8d3cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@16db3background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zero\zero.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@11163background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\three\three.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\one\one.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\one\one.plist@524e0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@a2cd8background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@b65dcbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\three\three.plist@27e89background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@3b1a5background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\three\three.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\one\one.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\two\two.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\two\two.plist@d680fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\three\three.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zero\zero.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zero\zero.plist@0a57cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\two\two.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\one\one.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zero\zero.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\one\one.plist@7ff6fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\one\one.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@d31acbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\two\two.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@4f705background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\two\two.plist@f0d8dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@02621background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@9fb48background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\two\two.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zero\zero.plist@bb0c1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zero\zero.pngbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zero\zero.png@6c48abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attack\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idle\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\death\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\attack\idle.plist@74804background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\idle\idle.plist@eec38background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\death\death.plist@2bd38background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\left\idle.plist@b079abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@e7c13background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@8700fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\door\idle\top\idle.plist@d5a9bbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@514ccbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@485babackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\burst\death\idle.plist@81b72background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@8a345background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@14459background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@63579background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@06cc1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@55f3fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@66553background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@57813background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@11c45background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@39d30background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@2cde8background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@55decbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@17157background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@e6153background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@6b05fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@0cad2background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\bottom\idle.plist@dc80cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@51745background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@e11f7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@481b6background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@674d9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@b0613background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@9168dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@282fdbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@cfdffbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@f198dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@1179ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@59a86background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@f1776background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@5a547background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@af2bebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@e9be0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@b276fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@a2586background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@0e816background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@0bf54background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@68d59background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@aba52background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@3a8d2background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@d8e44background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@5e7ddbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@a4072background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@1baa0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@f6a48background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@748c0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@fc100background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@f2b48background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@1426ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@2d0f1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@5ca36background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@17bb9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@5732ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@5d578background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@25e5abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@2f11cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@f7dd0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@3d251background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\left\idle.plist@85f54background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\bottom\death.plist@f4bdebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\left\death.plist@03523background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@ede44background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@f8803background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@02a91background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\right\death.plist@70c68background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\death\top\death.plist@bdf60background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@61e32background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@36018background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.plist@9d41cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@1452ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@80f7ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.plist@95e25background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@e195bbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@1eceabackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.plist@fc02abackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\right\idle.plist@dc122background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\ironskeleton\idle\top\idle.plist@f0a83background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\player\idle\top\idle.plist@695babackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@4d882background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@7a333background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@af78ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\four\four.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@2abcbbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@c2cd9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@cf535background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\four\four.plist@da7febackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@f6633background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@8bd10background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@87bd0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@c9dd5background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@b85a9background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@4455ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@367d1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@b141ebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@3e6acbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@75ab0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@aca38background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@c0decbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\one\one.plist@bcce0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\five\five.plist@b96aabackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@f087dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@bc45bbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\left\idle.plist@8a774background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@9ba85background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@ca1d7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\three\three.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@7e735background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\right\idle.plist@6c9c0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@860d3background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\three\three.plist@c0302background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\two\two.plist@70f41background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@b5e11background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesfour\zero\zero.plist@aef61background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@3e268background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@b0caebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\one\one.plist@8c7b6background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\smoke\idle\top\idle.plist@5a0c7background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\zero\zero.plist@5d2f3background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@fcb9fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\three\three.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@11163background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@5ea2dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\one\one.plist@524e0background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\three\three.plist@27e89background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@a2cd8background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@d8d3cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\two\two.plist@d680fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesone\two\two.plist@16db3background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@b65dcbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\one\one.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\four\four.plist@3b1a5background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikesthree\zero\zero.plist@0a57cbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\two\two.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\one\one.plist@7ff6fbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zero\zero.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plistbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\two\two.plist@f0d8dbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\zero\zero.plist@bb0c1background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@d31acbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@4f705background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@02621background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: %cReImport%c: E:\git\Cramped_Room_Of_Death\assets\resources\texture\spikes\spikestwo\three\three.plist@9fb48background: #aaff85; color: #000;color: #000;
+2024-10-21 23:02:55-debug: lazy register asset handler directory
+2024-10-21 23:02:55-debug: lazy register asset handler json
+2024-10-21 23:02:55-debug: lazy register asset handler *
+2024-10-21 23:02:55-debug: lazy register asset handler text
+2024-10-21 23:02:55-debug: lazy register asset handler spine-data
+2024-10-21 23:02:55-debug: lazy register asset handler dragonbones
+2024-10-21 23:02:55-debug: lazy register asset handler dragonbones-atlas
+2024-10-21 23:02:55-debug: lazy register asset handler terrain
+2024-10-21 23:02:55-debug: lazy register asset handler javascript
+2024-10-21 23:02:55-debug: lazy register asset handler scene
+2024-10-21 23:02:55-debug: lazy register asset handler prefab
+2024-10-21 23:02:55-debug: lazy register asset handler typescript
+2024-10-21 23:02:55-debug: lazy register asset handler sprite-frame
+2024-10-21 23:02:55-debug: lazy register asset handler buffer
+2024-10-21 23:02:55-debug: lazy register asset handler sign-image
+2024-10-21 23:02:55-debug: lazy register asset handler alpha-image
+2024-10-21 23:02:55-debug: lazy register asset handler image
+2024-10-21 23:02:55-debug: lazy register asset handler tiled-map
+2024-10-21 23:02:55-debug: lazy register asset handler texture
+2024-10-21 23:02:55-debug: lazy register asset handler texture-cube
+2024-10-21 23:02:55-debug: lazy register asset handler erp-texture-cube
+2024-10-21 23:02:55-debug: lazy register asset handler rt-sprite-frame
+2024-10-21 23:02:55-debug: lazy register asset handler texture-cube-face
+2024-10-21 23:02:55-debug: lazy register asset handler render-texture
+2024-10-21 23:02:55-debug: lazy register asset handler gltf
+2024-10-21 23:02:55-debug: lazy register asset handler gltf-mesh
+2024-10-21 23:02:55-debug: lazy register asset handler gltf-animation
+2024-10-21 23:02:55-debug: lazy register asset handler gltf-skeleton
+2024-10-21 23:02:55-debug: lazy register asset handler gltf-material
+2024-10-21 23:02:55-debug: lazy register asset handler gltf-scene
+2024-10-21 23:02:55-debug: lazy register asset handler gltf-embeded-image
+2024-10-21 23:02:55-debug: lazy register asset handler fbx
+2024-10-21 23:02:55-debug: lazy register asset handler physics-material
+2024-10-21 23:02:55-debug: lazy register asset handler material
+2024-10-21 23:02:55-debug: lazy register asset handler effect
+2024-10-21 23:02:55-debug: lazy register asset handler effect-header
+2024-10-21 23:02:55-debug: lazy register asset handler audio-clip
+2024-10-21 23:02:55-debug: lazy register asset handler animation-clip
+2024-10-21 23:02:55-debug: lazy register asset handler animation-graph-variant
+2024-10-21 23:02:55-debug: lazy register asset handler animation-graph
+2024-10-21 23:02:55-debug: lazy register asset handler animation-mask
+2024-10-21 23:02:55-debug: lazy register asset handler ttf-font
+2024-10-21 23:02:55-debug: lazy register asset handler bitmap-font
+2024-10-21 23:02:55-debug: lazy register asset handler particle
+2024-10-21 23:02:55-debug: lazy register asset handler sprite-atlas
+2024-10-21 23:02:55-debug: lazy register asset handler auto-atlas
+2024-10-21 23:02:55-debug: lazy register asset handler label-atlas
+2024-10-21 23:02:55-debug: lazy register asset handler render-pipeline
+2024-10-21 23:02:55-debug: lazy register asset handler render-stage
+2024-10-21 23:02:55-debug: lazy register asset handler instantiation-material
+2024-10-21 23:02:55-debug: lazy register asset handler instantiation-mesh
+2024-10-21 23:02:55-debug: lazy register asset handler instantiation-skeleton
+2024-10-21 23:02:55-debug: lazy register asset handler render-flow
+2024-10-21 23:02:55-debug: lazy register asset handler instantiation-animation
+2024-10-21 23:02:55-debug: lazy register asset handler video-clip
+2024-10-21 23:02:55-debug: asset-db:worker-startup-database[assets] (5989ms)
+2024-10-21 23:02:55-debug: init worker message success
+2024-10-21 23:02:55-debug: asset-db:start-database (6501ms)
+2024-10-21 23:02:55-debug: asset-db:ready (16228ms)
+2024-10-21 23:02:55-debug: programming:execute-script (5ms)
+2024-10-21 23:02:56-debug: [Build Memory track]: builder:worker-init start:165.13MB, end 174.52MB, increase: 9.39MB
+2024-10-21 23:02:56-debug: builder:worker-init (1247ms)
+2024-10-21 23:05:21-debug: refresh db internal success
+2024-10-21 23:05:21-debug: refresh db assets success
+2024-10-21 23:05:21-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:05:21-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:05:21-debug: asset-db:refresh-all-database (444ms)
+2024-10-21 23:05:21-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-21 23:05:21-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-10-21 23:06:22-debug: refresh db internal success
+2024-10-21 23:06:23-debug: refresh db assets success
+2024-10-21 23:06:23-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:06:23-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:06:23-debug: asset-db:refresh-all-database (439ms)
+2024-10-21 23:06:23-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-21 23:06:23-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-10-21 23:06:55-debug: refresh db internal success
+2024-10-21 23:06:56-debug: refresh db assets success
+2024-10-21 23:06:56-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:06:56-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:06:56-debug: asset-db:refresh-all-database (505ms)
+2024-10-21 23:06:56-debug: asset-db:worker-effect-data-processing (2ms)
+2024-10-21 23:06:56-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-10-21 23:24:21-debug: refresh db internal success
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\base\EnemyManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\IronSkeletonManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\IdleSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\IronSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeletonbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\basebackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scriptsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeleton\WoodenSkeletonManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\scenes\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:24:21-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:24:21-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:24:21-debug: refresh db assets success
+2024-10-21 23:24:21-debug: asset-db:refresh-all-database (492ms)
+2024-10-21 23:24:21-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-21 23:24:21-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-10-21 23:25:07-debug: refresh db internal success
+2024-10-21 23:25:07-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\IdleSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:25:07-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:25:07-debug: refresh db assets success
+2024-10-21 23:25:07-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:25:07-debug: asset-db:refresh-all-database (471ms)
+2024-10-21 23:25:07-debug: asset-db:worker-effect-data-processing (3ms)
+2024-10-21 23:25:07-debug: asset-db-hook-engine-extends-afterRefresh (4ms)
+2024-10-21 23:32:08-debug: refresh db internal success
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\DeadSubStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\runtime\DataManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\enums\index.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeletonbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\player\PlayerManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\IronSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\scenes\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:32:08-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:32:08-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:32:08-debug: refresh db assets success
+2024-10-21 23:32:08-debug: asset-db:refresh-all-database (456ms)
+2024-10-21 23:32:08-debug: asset-db:worker-effect-data-processing (2ms)
+2024-10-21 23:32:08-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-10-21 23:32:12-debug: Query all assets info in project
+2024-10-21 23:32:12-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-21 23:32:12-debug: Query asset bundle start, progress: 0%
+2024-10-21 23:32:12-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:32:12-debug:   Number of all scripts: 46
+2024-10-21 23:32:12-debug:   Number of other assets: 1161
+2024-10-21 23:32:12-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-21 23:32:12-debug:   Number of all scenes: 1
+2024-10-21 23:32:12-debug: run build task Query asset bundle success in 89 ms√, progress: 5%
+2024-10-21 23:32:12-debug: [Build Memory track]: Query asset bundle start:176.11MB, end 176.79MB, increase: 704.27KB
+2024-10-21 23:32:12-debug: // ---- build task Query asset bundle ---- (89ms)
+2024-10-21 23:32:12-debug: Query asset bundle start, progress: 5%
+2024-10-21 23:32:12-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:32:12-debug: run build task Query asset bundle success in 5 ms√, progress: 10%
+2024-10-21 23:32:12-debug: [Build Memory track]: Query asset bundle start:176.81MB, end 177.00MB, increase: 198.21KB
+2024-10-21 23:32:12-debug: // ---- build task Query asset bundle ---- (5ms)
+2024-10-21 23:32:12-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-21 23:32:12-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:32:12-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-21 23:32:12-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-21 23:32:12-debug: [Build Memory track]: Sort some build options to settings.json start:177.02MB, end 177.03MB, increase: 17.42KB
+2024-10-21 23:32:12-debug: Fill script data to settings start, progress: 12%
+2024-10-21 23:32:12-debug: // ---- build task Fill script data to settings ----
+2024-10-21 23:32:12-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-21 23:32:12-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-21 23:32:12-debug: [Build Memory track]: Fill script data to settings start:177.05MB, end 177.06MB, increase: 14.10KB
+2024-10-21 23:32:12-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-21 23:32:12-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:32:12-debug: [Build Memory track]: Sort some build options to settings.json start:177.07MB, end 177.20MB, increase: 125.01KB
+2024-10-21 23:32:12-debug: // ---- build task Sort some build options to settings.json ---- (5ms)
+2024-10-21 23:32:12-debug: run build task Sort some build options to settings.json success in 5 ms√, progress: 15%
+2024-10-21 23:32:22-debug: refresh db internal success
+2024-10-21 23:32:22-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:32:22-debug: refresh db assets success
+2024-10-21 23:32:22-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:32:22-debug: asset-db:refresh-all-database (406ms)
+2024-10-21 23:32:22-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-21 23:32:22-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-10-21 23:32:26-debug: refresh db internal success
+2024-10-21 23:32:26-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:32:26-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:32:26-debug: refresh db assets success
+2024-10-21 23:32:26-debug: asset-db:refresh-all-database (389ms)
+2024-10-21 23:32:26-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-21 23:32:26-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-10-21 23:34:26-debug: refresh db internal success
+2024-10-21 23:34:26-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeleton\WoodenSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:34:26-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\ironSkeleton\IronSkeletonStateMachine.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:34:26-debug: refresh db assets success
+2024-10-21 23:34:26-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:34:26-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:34:26-debug: asset-db:refresh-all-database (422ms)
+2024-10-21 23:34:26-debug: asset-db:worker-effect-data-processing (3ms)
+2024-10-21 23:34:26-debug: asset-db-hook-engine-extends-afterRefresh (4ms)
+2024-10-21 23:34:27-debug: Query all assets info in project
+2024-10-21 23:34:27-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-21 23:34:27-debug: Query asset bundle start, progress: 0%
+2024-10-21 23:34:27-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:34:27-debug:   Number of other assets: 1161
+2024-10-21 23:34:27-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-21 23:34:27-debug:   Number of all scenes: 1
+2024-10-21 23:34:27-debug:   Number of all scripts: 46
+2024-10-21 23:34:27-debug: run build task Query asset bundle success in 52 ms√, progress: 5%
+2024-10-21 23:34:27-debug: [Build Memory track]: Query asset bundle start:164.53MB, end 164.65MB, increase: 127.21KB
+2024-10-21 23:34:27-debug: // ---- build task Query asset bundle ---- (52ms)
+2024-10-21 23:34:27-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:34:27-debug: Query asset bundle start, progress: 5%
+2024-10-21 23:34:27-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-21 23:34:27-debug: [Build Memory track]: Query asset bundle start:164.67MB, end 164.86MB, increase: 197.18KB
+2024-10-21 23:34:27-debug: run build task Query asset bundle success in 6 ms√, progress: 10%
+2024-10-21 23:34:27-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:34:27-debug: // ---- build task Query asset bundle ---- (6ms)
+2024-10-21 23:34:27-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-21 23:34:27-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-21 23:34:27-debug: [Build Memory track]: Sort some build options to settings.json start:164.87MB, end 164.89MB, increase: 14.75KB
+2024-10-21 23:34:27-debug: Fill script data to settings start, progress: 12%
+2024-10-21 23:34:27-debug: // ---- build task Fill script data to settings ----
+2024-10-21 23:34:27-debug: run build task Fill script data to settings success in √, progress: 13%
+2024-10-21 23:34:27-debug: [Build Memory track]: Fill script data to settings start:164.90MB, end 164.91MB, increase: 11.46KB
+2024-10-21 23:34:27-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-21 23:34:27-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:34:27-debug: run build task Sort some build options to settings.json success in 6 ms√, progress: 15%
+2024-10-21 23:34:27-debug: [Build Memory track]: Sort some build options to settings.json start:164.93MB, end 165.06MB, increase: 133.54KB
+2024-10-21 23:34:27-debug: // ---- build task Sort some build options to settings.json ---- (6ms)
+2024-10-21 23:36:51-debug: refresh db internal success
+2024-10-21 23:36:51-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\woodenSkeleton\WoodenSkeletonManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:36:51-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\scenes\BattleManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-21 23:36:51-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-21 23:36:51-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-21 23:36:51-debug: refresh db assets success
+2024-10-21 23:36:51-debug: asset-db:refresh-all-database (420ms)
+2024-10-21 23:36:51-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-21 23:36:51-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-10-21 23:36:52-debug: Query all assets info in project
+2024-10-21 23:36:52-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-21 23:36:52-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:36:52-debug: Query asset bundle start, progress: 0%
+2024-10-21 23:36:52-debug:   Number of all scripts: 46
+2024-10-21 23:36:52-debug:   Number of other assets: 1161
+2024-10-21 23:36:52-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-21 23:36:52-debug:   Number of all scenes: 1
+2024-10-21 23:36:52-debug: Query asset bundle start, progress: 5%
+2024-10-21 23:36:52-debug: run build task Query asset bundle success in 46 ms√, progress: 5%
+2024-10-21 23:36:52-debug: [Build Memory track]: Query asset bundle start:167.85MB, end 167.52MB, increase: -333.09KB
+2024-10-21 23:36:52-debug: // ---- build task Query asset bundle ---- (46ms)
+2024-10-21 23:36:52-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:36:52-debug: run build task Query asset bundle success in 5 ms√, progress: 10%
+2024-10-21 23:36:52-debug: [Build Memory track]: Query asset bundle start:167.53MB, end 167.72MB, increase: 192.68KB
+2024-10-21 23:36:52-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-21 23:36:52-debug: // ---- build task Query asset bundle ---- (5ms)
+2024-10-21 23:36:52-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:36:52-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-21 23:36:52-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-21 23:36:52-debug: [Build Memory track]: Sort some build options to settings.json start:167.74MB, end 167.75MB, increase: 14.79KB
+2024-10-21 23:36:52-debug: Fill script data to settings start, progress: 12%
+2024-10-21 23:36:52-debug: // ---- build task Fill script data to settings ----
+2024-10-21 23:36:52-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-21 23:36:52-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-21 23:36:52-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-21 23:36:52-debug: [Build Memory track]: Fill script data to settings start:167.76MB, end 167.78MB, increase: 17.32KB
+2024-10-21 23:36:52-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:36:52-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+2024-10-21 23:36:52-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
+2024-10-21 23:36:52-debug: [Build Memory track]: Sort some build options to settings.json start:167.80MB, end 167.91MB, increase: 121.44KB
+2024-10-21 23:36:53-debug: Query all assets info in project
+2024-10-21 23:36:53-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-21 23:36:53-debug: Query asset bundle start, progress: 0%
+2024-10-21 23:36:53-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:36:53-debug:   Number of all scripts: 46
+2024-10-21 23:36:53-debug:   Number of other assets: 1161
+2024-10-21 23:36:53-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-21 23:36:53-debug:   Number of all scenes: 1
+2024-10-21 23:36:53-debug: // ---- build task Query asset bundle ---- (32ms)
+2024-10-21 23:36:53-debug: run build task Query asset bundle success in 32 ms√, progress: 5%
+2024-10-21 23:36:53-debug: [Build Memory track]: Query asset bundle start:168.65MB, end 168.52MB, increase: -138.27KB
+2024-10-21 23:36:53-debug: Query asset bundle start, progress: 5%
+2024-10-21 23:36:53-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:36:53-debug: run build task Query asset bundle success in 3 ms√, progress: 10%
+2024-10-21 23:36:53-debug: [Build Memory track]: Query asset bundle start:168.53MB, end 168.72MB, increase: 192.76KB
+2024-10-21 23:36:53-debug: // ---- build task Query asset bundle ---- (3ms)
+2024-10-21 23:36:53-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-21 23:36:53-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:36:53-debug: Fill script data to settings start, progress: 12%
+2024-10-21 23:36:53-debug: [Build Memory track]: Sort some build options to settings.json start:168.74MB, end 168.75MB, increase: 11.31KB
+2024-10-21 23:36:53-debug: run build task Sort some build options to settings.json success in √, progress: 12%
+2024-10-21 23:36:53-debug: // ---- build task Fill script data to settings ----
+2024-10-21 23:36:53-debug: run build task Fill script data to settings success in √, progress: 13%
+2024-10-21 23:36:53-debug: [Build Memory track]: Fill script data to settings start:168.76MB, end 168.77MB, increase: 11.68KB
+2024-10-21 23:36:53-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:36:53-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-21 23:36:53-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+2024-10-21 23:36:53-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
+2024-10-21 23:36:53-debug: [Build Memory track]: Sort some build options to settings.json start:168.79MB, end 168.90MB, increase: 120.52KB
+2024-10-21 23:37:03-debug: Query all assets info in project
+2024-10-21 23:37:03-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-21 23:37:03-debug: Query asset bundle start, progress: 0%
+2024-10-21 23:37:03-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:37:03-debug:   Number of other assets: 1161
+2024-10-21 23:37:03-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-21 23:37:03-debug:   Number of all scenes: 1
+2024-10-21 23:37:03-debug:   Number of all scripts: 46
+2024-10-21 23:37:03-debug: // ---- build task Query asset bundle ---- (24ms)
+2024-10-21 23:37:03-debug: run build task Query asset bundle success in 24 ms√, progress: 5%
+2024-10-21 23:37:03-debug: Query asset bundle start, progress: 5%
+2024-10-21 23:37:03-debug: [Build Memory track]: Query asset bundle start:170.71MB, end 168.92MB, increase: -1830.80KB
+2024-10-21 23:37:03-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:37:03-debug: // ---- build task Query asset bundle ---- (2ms)
+2024-10-21 23:37:03-debug: [Build Memory track]: Query asset bundle start:168.94MB, end 169.13MB, increase: 195.93KB
+2024-10-21 23:37:03-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-21 23:37:03-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
+2024-10-21 23:37:03-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:37:03-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-21 23:37:03-debug: [Build Memory track]: Sort some build options to settings.json start:169.14MB, end 169.16MB, increase: 14.79KB
+2024-10-21 23:37:03-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-21 23:37:03-debug: Fill script data to settings start, progress: 12%
+2024-10-21 23:37:03-debug: // ---- build task Fill script data to settings ----
+2024-10-21 23:37:03-debug: run build task Fill script data to settings success in √, progress: 13%
+2024-10-21 23:37:03-debug: [Build Memory track]: Fill script data to settings start:169.17MB, end 169.18MB, increase: 12.65KB
+2024-10-21 23:37:03-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-21 23:37:03-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:37:03-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
+2024-10-21 23:37:03-debug: [Build Memory track]: Sort some build options to settings.json start:169.20MB, end 168.52MB, increase: -694.00KB
+2024-10-21 23:37:03-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+2024-10-21 23:37:17-debug: Query all assets info in project
+2024-10-21 23:37:17-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-21 23:37:17-debug: Query asset bundle start, progress: 0%
+2024-10-21 23:37:17-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:37:17-debug:   Number of all scenes: 1
+2024-10-21 23:37:17-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-21 23:37:17-debug:   Number of other assets: 1161
+2024-10-21 23:37:17-debug:   Number of all scripts: 46
+2024-10-21 23:37:17-debug: // ---- build task Query asset bundle ---- (28ms)
+2024-10-21 23:37:17-debug: run build task Query asset bundle success in 28 ms√, progress: 5%
+2024-10-21 23:37:17-debug: Query asset bundle start, progress: 5%
+2024-10-21 23:37:17-debug: [Build Memory track]: Query asset bundle start:169.95MB, end 169.14MB, increase: -836.24KB
+2024-10-21 23:37:17-debug: // ---- build task Query asset bundle ----
+2024-10-21 23:37:17-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
+2024-10-21 23:37:17-debug: [Build Memory track]: Query asset bundle start:169.15MB, end 169.34MB, increase: 192.84KB
+2024-10-21 23:37:17-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-21 23:37:17-debug: // ---- build task Query asset bundle ---- (2ms)
+2024-10-21 23:37:17-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:37:17-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-21 23:37:17-debug: [Build Memory track]: Sort some build options to settings.json start:169.35MB, end 169.37MB, increase: 15.56KB
+2024-10-21 23:37:17-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-21 23:37:17-debug: Fill script data to settings start, progress: 12%
+2024-10-21 23:37:17-debug: // ---- build task Fill script data to settings ----
+2024-10-21 23:37:17-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-21 23:37:17-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-21 23:37:17-debug: [Build Memory track]: Fill script data to settings start:169.38MB, end 169.40MB, increase: 16.86KB
+2024-10-21 23:37:17-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-21 23:37:17-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-21 23:37:17-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+2024-10-21 23:37:17-debug: [Build Memory track]: Sort some build options to settings.json start:169.41MB, end 169.53MB, increase: 121.50KB
+2024-10-21 23:37:17-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 15%
+2024-10-22 00:08:19-debug: refresh db internal success
+2024-10-22 00:08:19-debug: %cImport%c: E:\git\Cramped_Room_Of_Death\assets\scripts\player\PlayerManager.tsbackground: #aaff85; color: #000;color: #000;
+2024-10-22 00:08:20-debug: refresh db assets success
+2024-10-22 00:08:20-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-22 00:08:20-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-22 00:08:20-debug: asset-db:refresh-all-database (428ms)
+2024-10-22 00:08:20-debug: asset-db:worker-effect-data-processing (2ms)
+2024-10-22 00:08:20-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-10-22 00:08:20-debug: Query all assets info in project
+2024-10-22 00:08:20-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-22 00:08:20-debug: Query asset bundle start, progress: 0%
+2024-10-22 00:08:20-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:20-debug:   Number of all scenes: 1
+2024-10-22 00:08:20-debug:   Number of other assets: 1161
+2024-10-22 00:08:20-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-22 00:08:20-debug:   Number of all scripts: 46
+2024-10-22 00:08:20-debug: run build task Query asset bundle success in 36 ms√, progress: 5%
+2024-10-22 00:08:20-debug: [Build Memory track]: Query asset bundle start:171.54MB, end 171.60MB, increase: 56.12KB
+2024-10-22 00:08:20-debug: Query asset bundle start, progress: 5%
+2024-10-22 00:08:20-debug: // ---- build task Query asset bundle ---- (36ms)
+2024-10-22 00:08:20-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:20-debug: run build task Query asset bundle success in 6 ms√, progress: 10%
+2024-10-22 00:08:20-debug: [Build Memory track]: Query asset bundle start:171.61MB, end 171.80MB, increase: 192.78KB
+2024-10-22 00:08:20-debug: // ---- build task Query asset bundle ---- (6ms)
+2024-10-22 00:08:20-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-22 00:08:20-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:20-debug: [Build Memory track]: Sort some build options to settings.json start:171.82MB, end 171.84MB, increase: 17.35KB
+2024-10-22 00:08:20-debug: Fill script data to settings start, progress: 12%
+2024-10-22 00:08:20-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+2024-10-22 00:08:20-debug: // ---- build task Fill script data to settings ----
+2024-10-22 00:08:20-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 12%
+2024-10-22 00:08:20-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-22 00:08:20-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-22 00:08:20-debug: [Build Memory track]: Fill script data to settings start:171.85MB, end 171.87MB, increase: 14.62KB
+2024-10-22 00:08:20-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-22 00:08:20-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:20-debug: // ---- build task Sort some build options to settings.json ---- (13ms)
+2024-10-22 00:08:20-debug: run build task Sort some build options to settings.json success in 13 ms√, progress: 15%
+2024-10-22 00:08:20-debug: [Build Memory track]: Sort some build options to settings.json start:171.88MB, end 172.04MB, increase: 161.32KB
+2024-10-22 00:08:21-debug: Query all assets info in project
+2024-10-22 00:08:21-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-22 00:08:21-debug: Query asset bundle start, progress: 0%
+2024-10-22 00:08:21-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:21-debug:   Number of all scenes: 1
+2024-10-22 00:08:21-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-22 00:08:21-debug:   Number of all scripts: 46
+2024-10-22 00:08:21-debug:   Number of other assets: 1161
+2024-10-22 00:08:21-debug: run build task Query asset bundle success in 26 ms√, progress: 5%
+2024-10-22 00:08:21-debug: // ---- build task Query asset bundle ---- (26ms)
+2024-10-22 00:08:21-debug: [Build Memory track]: Query asset bundle start:172.77MB, end 172.62MB, increase: -150.27KB
+2024-10-22 00:08:21-debug: Query asset bundle start, progress: 5%
+2024-10-22 00:08:21-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:21-debug: // ---- build task Query asset bundle ---- (2ms)
+2024-10-22 00:08:21-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
+2024-10-22 00:08:21-debug: [Build Memory track]: Query asset bundle start:172.64MB, end 172.81MB, increase: 176.07KB
+2024-10-22 00:08:21-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:21-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-22 00:08:21-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-22 00:08:21-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-22 00:08:21-debug: [Build Memory track]: Sort some build options to settings.json start:172.82MB, end 172.84MB, increase: 14.69KB
+2024-10-22 00:08:21-debug: Fill script data to settings start, progress: 12%
+2024-10-22 00:08:21-debug: // ---- build task Fill script data to settings ----
+2024-10-22 00:08:21-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-22 00:08:21-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-22 00:08:21-debug: [Build Memory track]: Fill script data to settings start:172.85MB, end 172.87MB, increase: 17.44KB
+2024-10-22 00:08:21-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-22 00:08:21-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:21-debug: [Build Memory track]: Sort some build options to settings.json start:172.88MB, end 173.01MB, increase: 127.29KB
+2024-10-22 00:08:21-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+2024-10-22 00:08:21-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 15%
+2024-10-22 00:08:23-debug: refresh db internal success
+2024-10-22 00:08:23-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-22 00:08:23-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-22 00:08:23-debug: refresh db assets success
+2024-10-22 00:08:23-debug: asset-db:worker-effect-data-processing (2ms)
+2024-10-22 00:08:23-debug: asset-db:refresh-all-database (512ms)
+2024-10-22 00:08:23-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
+2024-10-22 00:08:23-debug: Query all assets info in project
+2024-10-22 00:08:23-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-22 00:08:23-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:23-debug: Query asset bundle start, progress: 0%
+2024-10-22 00:08:23-debug:   Number of other assets: 1161
+2024-10-22 00:08:23-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-22 00:08:23-debug:   Number of all scripts: 46
+2024-10-22 00:08:23-debug:   Number of all scenes: 1
+2024-10-22 00:08:23-debug: [Build Memory track]: Query asset bundle start:174.71MB, end 174.50MB, increase: -209.22KB
+2024-10-22 00:08:23-debug: Query asset bundle start, progress: 5%
+2024-10-22 00:08:23-debug: run build task Query asset bundle success in 69 ms√, progress: 5%
+2024-10-22 00:08:23-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:23-debug: // ---- build task Query asset bundle ---- (69ms)
+2024-10-22 00:08:23-debug: run build task Query asset bundle success in 31 ms√, progress: 10%
+2024-10-22 00:08:23-debug: [Build Memory track]: Query asset bundle start:174.51MB, end 174.68MB, increase: 171.01KB
+2024-10-22 00:08:23-debug: // ---- build task Query asset bundle ---- (31ms)
+2024-10-22 00:08:23-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-22 00:08:23-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:23-debug: run build task Sort some build options to settings.json success in 7 ms√, progress: 12%
+2024-10-22 00:08:23-debug: [Build Memory track]: Sort some build options to settings.json start:174.70MB, end 174.71MB, increase: 17.25KB
+2024-10-22 00:08:23-debug: Fill script data to settings start, progress: 12%
+2024-10-22 00:08:23-debug: // ---- build task Sort some build options to settings.json ---- (7ms)
+2024-10-22 00:08:23-debug: // ---- build task Fill script data to settings ----
+2024-10-22 00:08:23-debug: run build task Fill script data to settings success in 5 ms√, progress: 13%
+2024-10-22 00:08:23-debug: [Build Memory track]: Fill script data to settings start:174.73MB, end 174.74MB, increase: 18.46KB
+2024-10-22 00:08:23-debug: // ---- build task Fill script data to settings ---- (5ms)
+2024-10-22 00:08:23-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-22 00:08:23-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:23-debug: // ---- build task Sort some build options to settings.json ---- (19ms)
+2024-10-22 00:08:23-debug: run build task Sort some build options to settings.json success in 19 ms√, progress: 15%
+2024-10-22 00:08:23-debug: [Build Memory track]: Sort some build options to settings.json start:174.76MB, end 174.89MB, increase: 137.71KB
+2024-10-22 00:08:29-debug: refresh db internal success
+2024-10-22 00:08:30-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-22 00:08:30-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-22 00:08:30-debug: refresh db assets success
+2024-10-22 00:08:30-debug: asset-db:refresh-all-database (397ms)
+2024-10-22 00:08:30-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-22 00:08:30-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-10-22 00:08:31-debug: Query all assets info in project
+2024-10-22 00:08:31-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-22 00:08:31-debug: Query asset bundle start, progress: 0%
+2024-10-22 00:08:31-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:31-debug:   Number of all scripts: 46
+2024-10-22 00:08:31-debug:   Number of other assets: 1161
+2024-10-22 00:08:31-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-22 00:08:31-debug:   Number of all scenes: 1
+2024-10-22 00:08:31-debug: // ---- build task Query asset bundle ---- (26ms)
+2024-10-22 00:08:31-debug: run build task Query asset bundle success in 26 ms√, progress: 5%
+2024-10-22 00:08:31-debug: Query asset bundle start, progress: 5%
+2024-10-22 00:08:31-debug: [Build Memory track]: Query asset bundle start:174.59MB, end 174.26MB, increase: -343.84KB
+2024-10-22 00:08:31-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:08:31-debug: // ---- build task Query asset bundle ---- (6ms)
+2024-10-22 00:08:31-debug: run build task Query asset bundle success in 6 ms√, progress: 10%
+2024-10-22 00:08:31-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-22 00:08:31-debug: [Build Memory track]: Query asset bundle start:174.27MB, end 174.44MB, increase: 172.98KB
+2024-10-22 00:08:31-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:31-debug: // ---- build task Sort some build options to settings.json ---- (2ms)
+2024-10-22 00:08:31-debug: Fill script data to settings start, progress: 12%
+2024-10-22 00:08:31-debug: run build task Sort some build options to settings.json success in 2 ms√, progress: 12%
+2024-10-22 00:08:31-debug: [Build Memory track]: Sort some build options to settings.json start:174.45MB, end 174.47MB, increase: 14.64KB
+2024-10-22 00:08:31-debug: // ---- build task Fill script data to settings ----
+2024-10-22 00:08:31-debug: [Build Memory track]: Fill script data to settings start:174.48MB, end 174.50MB, increase: 19.39KB
+2024-10-22 00:08:31-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-22 00:08:31-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-22 00:08:31-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-22 00:08:31-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:08:31-debug: run build task Sort some build options to settings.json success in 8 ms√, progress: 15%
+2024-10-22 00:08:31-debug: [Build Memory track]: Sort some build options to settings.json start:174.52MB, end 174.63MB, increase: 120.88KB
+2024-10-22 00:08:31-debug: // ---- build task Sort some build options to settings.json ---- (8ms)
+2024-10-22 00:10:50-debug: Query all assets info in project
+2024-10-22 00:10:50-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-22 00:10:50-debug: Query asset bundle start, progress: 0%
+2024-10-22 00:10:50-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:10:50-debug:   Number of all scenes: 1
+2024-10-22 00:10:50-debug:   Number of all scripts: 46
+2024-10-22 00:10:50-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-22 00:10:50-debug:   Number of other assets: 1161
+2024-10-22 00:10:50-debug: // ---- build task Query asset bundle ---- (30ms)
+2024-10-22 00:10:50-debug: run build task Query asset bundle success in 30 ms√, progress: 5%
+2024-10-22 00:10:50-debug: [Build Memory track]: Query asset bundle start:175.94MB, end 174.93MB, increase: -1039.20KB
+2024-10-22 00:10:50-debug: Query asset bundle start, progress: 5%
+2024-10-22 00:10:50-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:10:50-debug: // ---- build task Query asset bundle ---- (3ms)
+2024-10-22 00:10:50-debug: [Build Memory track]: Query asset bundle start:174.94MB, end 175.11MB, increase: 173.65KB
+2024-10-22 00:10:50-debug: run build task Query asset bundle success in 3 ms√, progress: 10%
+2024-10-22 00:10:50-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-22 00:10:50-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:10:50-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-22 00:10:50-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-22 00:10:50-debug: [Build Memory track]: Sort some build options to settings.json start:175.13MB, end 175.14MB, increase: 14.59KB
+2024-10-22 00:10:50-debug: Fill script data to settings start, progress: 12%
+2024-10-22 00:10:50-debug: // ---- build task Fill script data to settings ----
+2024-10-22 00:10:50-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-22 00:10:50-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-22 00:10:50-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-22 00:10:50-debug: [Build Memory track]: Fill script data to settings start:175.15MB, end 175.17MB, increase: 15.52KB
+2024-10-22 00:10:50-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:10:50-debug: // ---- build task Sort some build options to settings.json ---- (4ms)
+2024-10-22 00:10:50-debug: run build task Sort some build options to settings.json success in 4 ms√, progress: 15%
+2024-10-22 00:10:50-debug: [Build Memory track]: Sort some build options to settings.json start:175.18MB, end 174.40MB, increase: -801.49KB
+2024-10-22 00:11:27-debug: Query all assets info in project
+2024-10-22 00:11:27-debug: init custom config: keepNodeUuid: false, useCache: true
+2024-10-22 00:11:27-debug: Query asset bundle start, progress: 0%
+2024-10-22 00:11:27-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:11:27-debug:   Number of other assets: 1161
+2024-10-22 00:11:27-debug: Query preload assets from cc.config.json: 60f7195c-ec2a-45eb-ba94-8955f60e81d0,1c02ae6f-4492-4915-b8f8-7492a3b1e4cd,810e96e4-e456-4468-9b59-f4e8f39732c0,efe8e2a3-eace-427b-b4f1-cb8a937ec77d,e9aa9a3e-5b2b-4ac7-a2c7-073de2b2b24f,8bbdbcdd-5cd4-4100-b6d5-b7c9625b6107,50f4348b-c883-4e2f-8f11-ce233b859fa1,fda095cb-831d-4601-ad94-846013963de8,f92806d7-1768-443f-afe8-12bcde84d0f0,dd3a144d-ab7f-41f0-82b8-2e43a090d496,f0416e68-0200-4b77-a926-4f9d16e494da,970b0598-bcb0-4714-91fb-2e81440dccd8,bcd64cc6-2dd9-43f6-abbe-66318d332032,d930590d-bb92-4cc8-8bd1-23cd027f9edf,a3cd009f-0ab0-420d-9278-b9fdab939bbc,c27215d8-6835-4b68-bfbb-bdeac6100c04,b5d6115f-0370-4d7c-aad3-c194cc71cf98,871c3b6c-7379-419d-bda3-794b239ab90d
+2024-10-22 00:11:27-debug:   Number of all scripts: 46
+2024-10-22 00:11:27-debug:   Number of all scenes: 1
+2024-10-22 00:11:27-debug: // ---- build task Query asset bundle ---- (26ms)
+2024-10-22 00:11:27-debug: run build task Query asset bundle success in 26 ms√, progress: 5%
+2024-10-22 00:11:27-debug: [Build Memory track]: Query asset bundle start:174.44MB, end 175.12MB, increase: 696.83KB
+2024-10-22 00:11:27-debug: Query asset bundle start, progress: 5%
+2024-10-22 00:11:27-debug: // ---- build task Query asset bundle ----
+2024-10-22 00:11:27-debug: // ---- build task Query asset bundle ---- (2ms)
+2024-10-22 00:11:27-debug: run build task Query asset bundle success in 2 ms√, progress: 10%
+2024-10-22 00:11:27-debug: [Build Memory track]: Query asset bundle start:175.14MB, end 175.31MB, increase: 173.00KB
+2024-10-22 00:11:27-debug: Sort some build options to settings.json start, progress: 10%
+2024-10-22 00:11:27-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:11:27-debug: // ---- build task Sort some build options to settings.json ---- (1ms)
+2024-10-22 00:11:27-debug: run build task Sort some build options to settings.json success in 1 ms√, progress: 12%
+2024-10-22 00:11:27-debug: [Build Memory track]: Sort some build options to settings.json start:175.32MB, end 175.33MB, increase: 14.69KB
+2024-10-22 00:11:27-debug: Fill script data to settings start, progress: 12%
+2024-10-22 00:11:27-debug: // ---- build task Fill script data to settings ----
+2024-10-22 00:11:27-debug: run build task Fill script data to settings success in 1 ms√, progress: 13%
+2024-10-22 00:11:27-debug: // ---- build task Fill script data to settings ---- (1ms)
+2024-10-22 00:11:27-debug: [Build Memory track]: Fill script data to settings start:175.35MB, end 175.36MB, increase: 14.50KB
+2024-10-22 00:11:27-debug: Sort some build options to settings.json start, progress: 13%
+2024-10-22 00:11:27-debug: // ---- build task Sort some build options to settings.json ----
+2024-10-22 00:11:27-debug: // ---- build task Sort some build options to settings.json ---- (3ms)
+2024-10-22 00:11:27-debug: run build task Sort some build options to settings.json success in 3 ms√, progress: 15%
+2024-10-22 00:11:27-debug: [Build Memory track]: Sort some build options to settings.json start:175.38MB, end 175.50MB, increase: 123.46KB
+2024-10-22 00:11:38-debug: refresh db internal success
+2024-10-22 00:11:38-debug: refresh db assets success
+2024-10-22 00:11:38-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-22 00:11:38-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-22 00:11:38-debug: asset-db:refresh-all-database (411ms)
+2024-10-22 00:11:38-debug: asset-db:worker-effect-data-processing (1ms)
+2024-10-22 00:11:38-debug: asset-db-hook-engine-extends-afterRefresh (1ms)

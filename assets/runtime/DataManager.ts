@@ -1,3 +1,4 @@
+import { EnemyManager } from "../base/EnemyManager";
 import Singleton from "../base/Singleton";
 import { ITILE } from "../levels";
 import { DoorManager } from "../scripts/door/DoorManager";
@@ -17,7 +18,7 @@ export default class DataManager extends Singleton{
     levelIndex: number = 1;
     player: PlayerManager;
     door: DoorManager;
-    enemies: WoodenSkeletonManager[];
+    enemies: EnemyManager[];
     
     reset(){
         this.mapInfo = [];

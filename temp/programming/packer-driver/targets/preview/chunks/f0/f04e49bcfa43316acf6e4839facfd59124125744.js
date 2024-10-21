@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, EventManager, PlayerStateMachine, EntityManager, DataManager, _dec, _class, _crd, ccclass, property, PlayerManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM, EventManager, PlayerStateMachine, EntityManager, DataManager, _dec, _class, _crd, ccclass, property, PlayerManager;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -17,10 +17,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
     _reporterNs.report("ENTITY_STATE_ENUM", "../../enums", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfENTITY_TYPE_ENUM(extras) {
-    _reporterNs.report("ENTITY_TYPE_ENUM", "../../enums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfEVENT_ENUM(extras) {
@@ -43,6 +39,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("DataManager", "../../runtime/DataManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfIEntity(extras) {
+    _reporterNs.report("IEntity", "../../levels", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfEnemyManager(extras) {
+    _reporterNs.report("EnemyManager", "../../base/EnemyManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -55,7 +59,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       CONTROLLER_ENUM = _unresolved_2.CONTROLLER_ENUM;
       DIRECTION_ENUM = _unresolved_2.DIRECTION_ENUM;
       ENTITY_STATE_ENUM = _unresolved_2.ENTITY_STATE_ENUM;
-      ENTITY_TYPE_ENUM = _unresolved_2.ENTITY_TYPE_ENUM;
       EVENT_ENUM = _unresolved_2.EVENT_ENUM;
     }, function (_unresolved_3) {
       EventManager = _unresolved_3.default;
@@ -89,7 +92,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this._isMoving = false;
         }
 
-        init() {
+        init(params) {
           var _superprop_getInit = () => super.init,
               _this = this;
 
@@ -100,19 +103,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), PlayerStateMachine) : PlayerStateMachine);
             yield _this.fsm.init();
 
-            _superprop_getInit().call(_this, {
-              x: 2,
-              y: 8,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-                error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).PLAYER,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-                error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-            });
+            _superprop_getInit().call(_this, params);
 
             _this.targetX = _this.x;
             _this.targetY = _this.y; //await this.render();
@@ -388,20 +379,34 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             tileInfo
           } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance;
+          }), DataManager) : DataManager).Instance; //解构出门的信息
+
+          var {
+            x: doorX,
+            y: doorY,
+            state: doorState
+          } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.door; //解构出未死亡的敌人信息
+
+          var enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.enemies.filter(enemy => enemy.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH);
 
           if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
             error: Error()
           }), CONTROLLER_ENUM) : CONTROLLER_ENUM).TOP) {
             //输入方向为上
+            //拿到下一个y坐标(用二维坐标来表示角色位置而不是position)
+            var playerNextY = y - 1;
+
             if (direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP) {
               //人当前方向也是上
-              //拿到下一个y坐标(用二维坐标来表示角色位置而不是position)
-              var playerNextY = y - 1;
-              var weaponNextY = y - 2; //往上直接遇到墙
-
+              //往上直接遇到墙
               if (playerNextY < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
@@ -410,8 +415,33 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               } //拿到下两个瓦片，一个是人物，一个是枪，总不能枪怼墙上
 
 
+              var weaponNextY = y - 2;
               var playerTile = tileInfo[x][playerNextY];
-              var weaponTile = tileInfo[x][weaponNextY];
+              var weaponTile = tileInfo[x][weaponNextY]; //判断是否碰到了门
+
+              if ((x === doorX && playerNextY === doorY || x === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH) {
+                this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                  error: Error()
+                }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
+                return true;
+              } //判断是否碰到了敌人
+
+
+              enemies.forEach(enemy => {
+                var {
+                  x: enemyX,
+                  y: enemyY
+                } = enemy;
+
+                if (x === enemyX && playerNextY === enemyY || x === enemyX && weaponNextY === enemyY) {
+                  this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                    error: Error()
+                  }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
+                  return true;
+                }
+              }); //判断地图元素
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)) {//人能走 且 枪能走，要么瓦片不存在要么瓦片可以转动
                 //empty
@@ -426,11 +456,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), DIRECTION_ENUM) : DIRECTION_ENUM).LEFT) {
               //当前方向为左
               //需要三个瓦片，左上角
-              var _playerNextY = y - 1;
-
               var weaponNextX = x - 1;
 
-              if (_playerNextY < 0) {
+              if (playerNextY < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKLEFT;
@@ -439,8 +467,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               //这个时候枪是横向左，人可能不被挡住，但是枪会
 
 
-              var _playerTile = tileInfo[x][_playerNextY];
-              var _weaponTile = tileInfo[weaponNextX][_playerNextY];
+              var _playerTile = tileInfo[x][playerNextY];
+              var _weaponTile = tileInfo[weaponNextX][playerNextY];
 
               if (_playerTile && _playerTile.moveable && (!_weaponTile || _weaponTile.turnable)) {//人能走
                 //枪不存在，或者枪能转
@@ -456,9 +484,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM) {
               //当前方向为下
               //只需要下一个瓦片可走就行
-              var _playerNextY2 = y - 1;
-
-              if (_playerNextY2 < 0) {
+              if (playerNextY < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKBACK;
@@ -466,7 +492,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               } //拿到瓦片
 
 
-              var _playerTile2 = tileInfo[x][_playerNextY2];
+              var _playerTile2 = tileInfo[x][playerNextY];
 
               if (_playerTile2 && _playerTile2.moveable) {//人能走就行
               } else {
@@ -480,19 +506,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), DIRECTION_ENUM) : DIRECTION_ENUM).RIGHT) {
               //当前方向为右
               //需要三个瓦片，右上角
-              var _playerNextY3 = y - 1;
-
               var _weaponNextX = x + 1;
 
-              if (_playerNextY3 < 0) {
+              if (playerNextY < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKRIGHT;
                 return;
               }
 
-              var _playerTile3 = tileInfo[x][_playerNextY3];
-              var _weaponTile2 = tileInfo[_weaponNextX][_playerNextY3];
+              var _playerTile3 = tileInfo[x][playerNextY];
+              var _weaponTile2 = tileInfo[_weaponNextX][playerNextY];
 
               if (_playerTile3 && _playerTile3.moveable && (!_weaponTile2 || _weaponTile2.moveable)) {//人物：下一个瓦片且可移动
                 //枪：不存在或能转动
@@ -611,16 +635,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP) {
               //人物向上
-              var _playerNextY4 = y + 1;
+              var _playerNextY = y + 1;
 
-              if (_playerNextY4 < 0) {
+              if (_playerNextY < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
                 return;
               }
 
-              var _playerTile8 = tileInfo[x][_playerNextY4];
+              var _playerTile8 = tileInfo[x][_playerNextY];
 
               if (_playerTile8 && _playerTile8.moveable) {} else {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
@@ -632,19 +656,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).LEFT) {
               //人物向左
-              var _playerNextY5 = y + 1;
+              var _playerNextY2 = y + 1;
 
               var _weaponNextX3 = x - 1;
 
-              if (_playerNextY5 < 0) {
+              if (_playerNextY2 < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKLEFT;
                 return;
               }
 
-              var _playerTile9 = tileInfo[x][_playerNextY5];
-              var _weaponTile6 = tileInfo[_weaponNextX3][_playerNextY5];
+              var _playerTile9 = tileInfo[x][_playerNextY2];
+              var _weaponTile6 = tileInfo[_weaponNextX3][_playerNextY2];
 
               if (_playerTile9 && _playerTile9.moveable && (!_weaponTile6 || _weaponTile6.moveable)) {//人可走
                 //枪不存在，或者枪能转
@@ -658,18 +682,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM) {
               //人物向下
-              var _playerNextY6 = y + 1;
+              var _playerNextY3 = y + 1;
 
               var _weaponNextY3 = y + 2;
 
-              if (_playerNextY6 < 0) {
+              if (_playerNextY3 < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKBACK;
                 return;
               }
 
-              var _playerTile10 = tileInfo[x][_playerNextY6];
+              var _playerTile10 = tileInfo[x][_playerNextY3];
               var _weaponTile7 = tileInfo[x][_weaponNextY3];
 
               if (_playerTile10 && _playerTile10.moveable && (!_weaponTile7 || _weaponTile7.moveable)) {//人可走
@@ -684,19 +708,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).RIGHT) {
               //人物向右
-              var _playerNextY7 = y + 1;
+              var _playerNextY4 = y + 1;
 
               var _weaponNextX4 = x + 1;
 
-              if (_playerNextY7 < 0) {
+              if (_playerNextY4 < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                   error: Error()
                 }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKRIGHT;
                 return;
               }
 
-              var _playerTile11 = tileInfo[x][_playerNextY7];
-              var _weaponTile8 = tileInfo[_weaponNextX4][_playerNextY7];
+              var _playerTile11 = tileInfo[x][_playerNextY4];
+              var _weaponTile8 = tileInfo[_weaponNextX4][_playerNextY4];
 
               if (_playerTile11 && _playerTile11.moveable && (!_weaponTile8 || _weaponTile8.moveable)) {//人可走
                 //枪不存在，或者枪能转
