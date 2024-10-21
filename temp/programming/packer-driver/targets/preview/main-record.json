@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 3941764.434400022,
+      "mTimestamp": 5154105.128500044,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -5071,7 +5071,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts": {
       "mTimestamp": {
-        "mtime": 1729524676372.6384,
+        "mtime": 1729528054654.019,
         "uuid": "82a841cd-8da7-4eef-bdd0-3648b2f67baf"
       },
       "chunkId": "3f332674417baec9a5b68aabc783149dd84fdcfd",
@@ -5156,7 +5156,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts": {
       "mTimestamp": {
-        "mtime": 1729094988037.3926,
+        "mtime": 1729528054652.0188,
         "uuid": "a7feba3c-c9d4-4985-97e8-a0e7004a3e0f"
       },
       "chunkId": "54609e97eb7e8be7281cb0d4539d5808b6f5e5ae",
@@ -5388,7 +5388,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts": {
       "mTimestamp": {
-        "mtime": 1729094988038.3933,
+        "mtime": 1729528054653.0193,
         "uuid": "9e39b317-1c6e-45aa-953d-dccf72375f88"
       },
       "chunkId": "aefbc31920e06f6582cf07197d5807ff9f269d61",
@@ -5823,7 +5823,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts": {
       "mTimestamp": {
-        "mtime": 1729524711554.4639,
+        "mtime": 1729528054784.0198,
         "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
       },
       "chunkId": "954b0e73891bc2f7fc96db38997cfdb99b941f24",
@@ -6729,7 +6729,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts": {
       "mTimestamp": {
-        "mtime": 1729526780116.1414,
+        "mtime": 1729528054797.032,
         "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
       },
       "chunkId": "f04e49bcfa43316acf6e4839facfd59124125744",
@@ -6897,7 +6897,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729094988181.3938,
+        "mtime": 1729528054798.0198,
         "uuid": "c78ca860-f2c7-4b07-846b-8c1ed60de544"
       },
       "chunkId": "acefe1f1d8dc98d6990718b1166e38b4d4a25355",
@@ -7446,7 +7446,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts": {
       "mTimestamp": {
-        "mtime": 1729525008484.678,
+        "mtime": 1729528054799.0188,
         "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
       },
       "chunkId": "909d6415b43c7fb74274ece2b0628d7c767b31f6",
@@ -7887,7 +7887,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts": {
       "mTimestamp": {
-        "mtime": 1729094988185.3933,
+        "mtime": 1729528054803.0215,
         "uuid": "ba54a383-2ef0-4070-beea-509a8715ff88"
       },
       "chunkId": "3457c4169949072a5d4d2a8e2f98257c6b19c464",
@@ -7939,7 +7939,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts": {
       "mTimestamp": {
-        "mtime": 1729524971307.2722,
+        "mtime": 1729528054801.0176,
         "uuid": "5223d391-61b3-405f-91db-2495599c79f7"
       },
       "chunkId": "a0557f42358468d2eda5fd057f2d2b74761d414d",
@@ -8107,7 +8107,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729524851389.3708,
+        "mtime": 1729528054802.019,
         "uuid": "77272244-d29d-4f93-b964-48ad702c8056"
       },
       "chunkId": "bb6d13fe94430d1d0c06252b2541449dc6b7a94a",
@@ -8633,7 +8633,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AttackSubStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729094988178.3933,
+        "mtime": 1729528054795.0212,
         "uuid": "52731470-6893-4c44-bf20-aabe04fe04b9"
       },
       "chunkId": "affee3abfa934b301a36d835f4931cd011283948",
@@ -8729,7 +8729,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/DeadSubStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729094988182.3933,
+        "mtime": 1729528054800.0203,
         "uuid": "d16fb160-785e-4831-aaa4-135dd59dab7c"
       },
       "chunkId": "3805f924615f1ad1e0aaaf0de412c55156f05cc0",
@@ -8825,7 +8825,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorManager.ts": {
       "mTimestamp": {
-        "mtime": 1729094988175.396,
+        "mtime": 1729528054786.0183,
         "uuid": "474454ef-f52a-479b-9b94-da7f247d2390"
       },
       "chunkId": "923a94c8578d4328f3f66c667ca63fd6a8311288",
@@ -8993,7 +8993,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729094988176.3936,
+        "mtime": 1729528054787.0188,
         "uuid": "17d69691-b2b4-49d2-b182-a053efc7d831"
       },
       "chunkId": "3266377250563f5f82c3c0da26fedd260504cff9",
@@ -9140,7 +9140,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/IdleSubStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729094988177.3928,
+        "mtime": 1729528054788.0183,
         "uuid": "1575a0d2-9b9a-4a89-b188-f847fae57f78"
       },
       "chunkId": "0d09009f5f724dfc45e62f1e743beeb1cd2cfcbb",
@@ -9246,7 +9246,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DeathSubStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729094988174.3933,
+        "mtime": 1729528054785.0188,
         "uuid": "1fcf7be9-ad93-43ce-bd69-009776620820"
       },
       "chunkId": "4cfbbb424fa0ffad8a72d28a151ddccd05c7c4e4",
@@ -9352,7 +9352,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/base/EnemyManager.ts": {
       "mTimestamp": {
-        "mtime": 1729523921515.1538,
+        "mtime": 1729528054651.0193,
         "uuid": "253de378-c692-4d2f-b3b1-befd4ec3cdee"
       },
       "chunkId": "b19869bd7cf7a15ccbef399dccca93c0c5a04a11",
@@ -9499,7 +9499,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IdleSubStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729524275712.13,
+        "mtime": 1729528054791.0176,
         "uuid": "2c38334c-94a4-4988-8e54-2bd76a45a3a1"
       },
       "chunkId": "7ec9e58aa498902f92a7b61790a0e4424dd0016e",
@@ -9625,7 +9625,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IronSkeletonManager.ts": {
       "mTimestamp": {
-        "mtime": 1729524149755.4365,
+        "mtime": 1729528054792.0188,
         "uuid": "4b0b164f-65eb-452b-96f6-0858143e0457"
       },
       "chunkId": "6038d49a71cbb4725c6971bdcd7a6cd84f207f50",
@@ -9730,7 +9730,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IronSkeletonStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729524859134.422,
+        "mtime": 1729528054794.018,
         "uuid": "48e7b1a0-f7c2-48b5-83d0-6a0b135c8eaf"
       },
       "chunkId": "708a5201fb09b736aa8eaa1e11f1beaa5c365f27",
@@ -9877,7 +9877,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/DeadSubStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729524434696.1719,
+        "mtime": 1729528054790.0186,
         "uuid": "9efd9d6e-8074-4b8f-aa96-cb2c2d2d8c37"
       },
       "chunkId": "88c975d5189877bb658c5c6ef0c114dda8f2e96b",
