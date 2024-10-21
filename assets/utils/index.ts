@@ -29,3 +29,6 @@ export const sortSpriteFrame = (spriteFrames: SpriteFrame[])=>{
     spriteFrames.sort((a,b)=>getNumberWithinString(a.name) - getNumberWithinString(b.name));
 }
 
+
+//根据长度生成随机字符串
+export const randomByLen = (len:number) => Array.from({length:len}).reduce<string>((total:string, item)=>total+Math.floor(Math.random()*10), '');

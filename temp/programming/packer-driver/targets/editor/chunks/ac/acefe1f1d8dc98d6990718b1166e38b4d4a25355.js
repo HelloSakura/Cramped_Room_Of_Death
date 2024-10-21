@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Animation, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM, getInitParamsNumber, getInitParamsTrigger, StateMachine, TurnLeftSubStateMachine, IdleSubStateMachine, TurnRightSubStateMachine, BlockFrontSubStateMachine, EntityManager, BlockTurnLeftSubStateMachine, BlockLeftSubStateMachine, BlockBackSubStateMachine, BlockTurnRightSubStateMachine, BlockRightSubStateMachine, DeadSubStateMachine, _dec, _class, _crd, ccclass, property, PlayerStateMachine;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Animation, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM, getInitParamsNumber, getInitParamsTrigger, StateMachine, TurnLeftSubStateMachine, IdleSubStateMachine, TurnRightSubStateMachine, BlockFrontSubStateMachine, EntityManager, BlockTurnLeftSubStateMachine, BlockLeftSubStateMachine, BlockBackSubStateMachine, BlockTurnRightSubStateMachine, BlockRightSubStateMachine, DeadSubStateMachine, AttackSubStateMachine, _dec, _class, _crd, ccclass, property, PlayerStateMachine;
 
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
     _reporterNs.report("ENTITY_STATE_ENUM", "../../enums", _context.meta, extras);
@@ -67,6 +67,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("DeadSubStateMachine", "./DeadSubStateMachine", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfAttackSubStateMachine(extras) {
+    _reporterNs.report("AttackSubStateMachine", "./AttackSubStateMachine", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -105,6 +109,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       BlockRightSubStateMachine = _unresolved_13.default;
     }, function (_unresolved_14) {
       DeadSubStateMachine = _unresolved_14.default;
+    }, function (_unresolved_15) {
+      AttackSubStateMachine = _unresolved_15.default;
     }],
     execute: function () {
       _crd = true;
@@ -187,6 +193,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH, (_crd && getInitParamsTrigger === void 0 ? (_reportPossibleCrUseOfgetInitParamsTrigger({
             error: Error()
           }), getInitParamsTrigger) : getInitParamsTrigger)());
+          this.params.set((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+            error: Error()
+          }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK, (_crd && getInitParamsTrigger === void 0 ? (_reportPossibleCrUseOfgetInitParamsTrigger({
+            error: Error()
+          }), getInitParamsTrigger) : getInitParamsTrigger)());
         }
 
         initStateMachine() {
@@ -240,13 +251,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH, new (_crd && DeadSubStateMachine === void 0 ? (_reportPossibleCrUseOfDeadSubStateMachine({
             error: Error()
           }), DeadSubStateMachine) : DeadSubStateMachine)(this));
+          this.stateMachine.set((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+            error: Error()
+          }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK, new (_crd && AttackSubStateMachine === void 0 ? (_reportPossibleCrUseOfAttackSubStateMachine({
+            error: Error()
+          }), AttackSubStateMachine) : AttackSubStateMachine)(this));
         }
 
         initAnimationEvent() {
           //注册动画播放结束事件，检测
           this.animationComponent.on(Animation.EventType.FINISHED, () => {
             const name = this.animationComponent.defaultClip.name;
-            const whiteList = ['block', 'turn'];
+            const whiteList = ['block', 'turn', 'attack'];
 
             if (whiteList.some(v => name.includes(v))) {
               this.node.getComponent(_crd && EntityManager === void 0 ? (_reportPossibleCrUseOfEntityManager({
@@ -297,7 +313,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             case this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
               error: Error()
             }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH):
+            case this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+              error: Error()
+            }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK):
               if (this.params.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+                error: Error()
+              }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK).value) {
+                this.currentState = this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+                  error: Error()
+                }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK);
+              } else if (this.params.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
                 error: Error()
               }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH).value) {
                 this.currentState = this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({

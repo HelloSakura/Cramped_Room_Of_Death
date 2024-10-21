@@ -5,9 +5,9 @@
     "module": "ES2015",
     "strict": true,
     "types": [
-      "./temp/declarations/cc.custom-macro",
       "./temp/declarations/cc",
       "./temp/declarations/jsb",
+      "./temp/declarations/cc.custom-macro",
       "./temp/declarations/cc.env"
     ],
     "paths": {
@@ -15,7 +15,7 @@
         "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.3\\resources\\resources\\3d\\engine\\editor\\assets\\*"
       ],
       "db://assets/*": [
-        "G:\\github\\Cramped_Room_Of_Death\\assets\\*"
+        "E:\\git\\Cramped_Room_Of_Death\\assets\\*"
       ]
     },
     "experimentalDecorators": true,

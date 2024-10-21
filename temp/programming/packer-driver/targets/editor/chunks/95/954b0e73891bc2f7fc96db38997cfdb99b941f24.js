@@ -3,6 +3,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
 
   var _reporterNs, _cclegacy, Singleton, DataManager, _crd;
 
+  function _reportPossibleCrUseOfEnemyManager(extras) {
+    _reporterNs.report("EnemyManager", "../base/EnemyManager", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfSingleton(extras) {
     _reporterNs.report("Singleton", "../base/Singleton", _context.meta, extras);
   }
@@ -11,16 +15,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
     _reporterNs.report("ITILE", "../levels", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfDoorManager(extras) {
+    _reporterNs.report("DoorManager", "../scripts/door/DoorManager", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfPlayerManager(extras) {
     _reporterNs.report("PlayerManager", "../scripts/player/PlayerManager", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfTileManger(extras) {
     _reporterNs.report("TileManger", "../scripts/tile/TileManger", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfWoodenSkeletonManager(extras) {
-    _reporterNs.report("WoodenSkeletonManager", "../scripts/woodenSkeleton/WoodenSkeletonManager", _context.meta, extras);
   }
 
   _export("default", void 0);
@@ -49,6 +53,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.mapColumnCount = 0;
           this.levelIndex = 1;
           this.player = void 0;
+          this.door = void 0;
           this.enemies = void 0;
         }
 
@@ -62,6 +67,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.mapColumnCount = 0;
           this.mapRowCount = 0;
           this.player = null;
+          this.door = null;
           this.enemies = [];
         }
 

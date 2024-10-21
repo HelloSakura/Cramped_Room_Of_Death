@@ -6,6 +6,8 @@ import EventManager from '../../runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 import { EntityManager } from '../../base/EntityManager';
 import DataManager from '../../runtime/DataManager';
+import { IEntity } from '../../levels';
+import { EnemyManager } from '../../base/EnemyManager';
 const { ccclass, property } = _decorator;
 
 
@@ -20,17 +22,11 @@ export class PlayerManager extends EntityManager {
     private _isMoving:boolean = false;
 
 
-    async init(){   
+    async init(params: IEntity){   
         //添加状态机
         this.fsm = this.addComponent(PlayerStateMachine);
         await this.fsm.init();
-        super.init({
-            x:2,
-            y:8,
-            type: ENTITY_TYPE_ENUM.PLAYER,
-            direction:DIRECTION_ENUM.TOP,
-            state:ENTITY_STATE_ENUM.IDLE
-        });
+        super.init(params);
 
         this.targetX = this.x;
         this.targetY = this.y;
@@ -81,7 +77,18 @@ export class PlayerManager extends EntityManager {
             return;
         }
         //人物死亡return掉
-        if(this.state === ENTITY_STATE_ENUM.DEATH || this.state === ENTITY_STATE_ENUM.AIRDEATH){
+        if(this.state === ENTITY_STATE_ENUM.DEATH 
+        || this.state === ENTITY_STATE_ENUM.AIRDEATH 
+        || this.state === ENTITY_STATE_ENUM.ATTACK
+        ){
+            return;
+        }
+
+        //判断攻击敌人
+        const id = this._willAttack(inputDirection)
+        if(id){
+            EventManager.Instance.emit(EVENT_ENUM.ATTACK_ENEMY, id);
+            EventManager.Instance.emit(EVENT_ENUM.DOOR_OPEN);
             return;
         }
         //撞了不用往下走了
@@ -93,7 +100,50 @@ export class PlayerManager extends EntityManager {
 
     }
 
+    private _willAttack(inputDirection:CONTROLLER_ENUM):boolean{
+        const enemies = DataManager.Instance.enemies.filter(enemy => enemy.state !== ENTITY_STATE_ENUM.DEATH);
+        for (let i = 0; i < enemies.length; i++) {
+            const {x:enemyX, y:enemyY, id:enemyId} = enemies[i];
+            if(this.direction === DIRECTION_ENUM.TOP
+            && inputDirection === CONTROLLER_ENUM.TOP
+            && enemyX === this.x
+            && enemyY === this.targetY - 2
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+            else if(this.direction === DIRECTION_ENUM.LEFT
+            && inputDirection === CONTROLLER_ENUM.LEFT
+            && enemyX === this.x - 2
+            && enemyY === this.targetY
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+            else if(this.direction === DIRECTION_ENUM.RIGHT
+            && inputDirection === CONTROLLER_ENUM.RIGHT
+            && enemyX === this.x + 2
+            && enemyY === this.targetY
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+            if(this.direction === DIRECTION_ENUM.BOTTOM
+            && inputDirection === CONTROLLER_ENUM.BOTTOM
+            && enemyX === this.x
+            && enemyY === this.targetY + 2
+            ){
+                this.state = ENTITY_STATE_ENUM.ATTACK;
+                return enemyId;
+            }
+        
+        }
+        return null;
+    }
 
+    private _onDead(type:ENTITY_STATE_ENUM){
+        this.state = type;
+    }
 
     move(inputDirection: CONTROLLER_ENUM){
         
@@ -158,15 +208,19 @@ export class PlayerManager extends EntityManager {
         const {targetX:x, targetY:y, direction} = this;
         //解构出地图信息
         const {tileInfo} = DataManager.Instance;
+        //解构出门的信息
+        const {x:doorX, y:doorY, state:doorState} = DataManager.Instance.door;
+        //解构出未死亡的敌人信息
+        const enemies:EnemyManager[] = DataManager.Instance.enemies.filter(enemy=>enemy.state !== ENTITY_STATE_ENUM.DEATH);
+
 
         
         if(inputDirection === CONTROLLER_ENUM.TOP){
             //输入方向为上
+            //拿到下一个y坐标(用二维坐标来表示角色位置而不是position)
+            const playerNextY = y - 1;
             if(direction === DIRECTION_ENUM.TOP){
                 //人当前方向也是上
-                //拿到下一个y坐标(用二维坐标来表示角色位置而不是position)
-                const playerNextY = y - 1;
-                const weaponNextY = y - 2;
                 //往上直接遇到墙
                 if(playerNextY < 0){
                     this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
@@ -174,9 +228,31 @@ export class PlayerManager extends EntityManager {
                 }
 
                 //拿到下两个瓦片，一个是人物，一个是枪，总不能枪怼墙上
+                const weaponNextY = y - 2;
                 const playerTile = tileInfo[x][playerNextY];
                 const weaponTile = tileInfo[x][weaponNextY];
 
+                //判断是否碰到了门
+                if(((x === doorX && playerNextY === doorY)|| (x === doorX && weaponNextY === doorY))
+                && doorState !== ENTITY_STATE_ENUM.DEATH
+                ){
+                    this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
+                    return true;    
+                }
+
+                //判断是否碰到了敌人
+                enemies.forEach((enemy)=>{
+                    const {x:enemyX, y:enemyY} = enemy;
+                    if((x === enemyX && playerNextY === enemyY)
+                    || (x === enemyX && weaponNextY === enemyY)
+                    ){
+                            this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
+                            return true;    
+                    }
+                });
+
+
+                //判断地图元素
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
                     //人能走 且 枪能走，要么瓦片不存在要么瓦片可以转动
                     //empty
@@ -190,7 +266,6 @@ export class PlayerManager extends EntityManager {
             else if(direction === DIRECTION_ENUM.LEFT){
                 //当前方向为左
                 //需要三个瓦片，左上角
-                let playerNextY = y - 1;
                 let weaponNextX = x - 1;
                 if(playerNextY < 0){
                     this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
@@ -219,7 +294,6 @@ export class PlayerManager extends EntityManager {
             else if(direction === DIRECTION_ENUM.BOTTOM){
                 //当前方向为下
                 //只需要下一个瓦片可走就行
-                const playerNextY = y - 1;
                 if(playerNextY < 0){
                     this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                     return;
@@ -237,7 +311,6 @@ export class PlayerManager extends EntityManager {
             else if(direction === DIRECTION_ENUM.RIGHT){
                 //当前方向为右
                 //需要三个瓦片，右上角
-                let playerNextY = y - 1;
                 let weaponNextX = x + 1;
 
                 if(playerNextY < 0){
@@ -585,9 +658,7 @@ export class PlayerManager extends EntityManager {
 
     }
 
-    private _onDead(type:ENTITY_STATE_ENUM){
-        this.state = type;
-    }
+    
 }
 
 

@@ -23,5 +23,60 @@
     "texture": {
       "mipfilter": "none"
     }
+  },
+  "dfd957f6-2918-4e10-a191-ce64ef4f9578@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "b087f45f-22ee-4035-87d2-731cce96046f@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "36e0d14e-931f-4821-8665-33c46251a1fa@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "bc31bf02-13e5-4c9c-9918-928072ec6c2c@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "a2ea894a-b1a5-4c1c-bdcc-c0b9929f3528@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "1c669892-5063-4c2b-bcd8-acb20fd2d76c@6c48a": {
+    "texture": {
+      "mipfilter": "nearest"
+    }
+  },
+  "e480916f-0543-4192-87c4-a86fb1876186@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "ee1b3846-0a46-4746-b7c6-37f024eb8c95@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "4587d893-cdca-4964-b6cd-5e3d6c4ed5c1@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
+  },
+  "c185edc2-c3a7-4bed-b43b-9b8626335cb4@6c48a": {
+    "texture": {
+      "mipfilter": "none"
+    }
   }
 }

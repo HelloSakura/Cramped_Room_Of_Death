@@ -3,6 +3,7 @@ import { DIRECTION_ENUM, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM, DIRECTION_ORDER_EN
 import { TILE_WIDTH, TILE_HEIGHT } from '../scripts/tile/TileManger';
 import { IEntity } from '../levels';
 import { StateMachine } from './StateMachine';
+import { randomByLen } from '../utils';
 
 const { ccclass, property } = _decorator;
 
@@ -11,7 +12,7 @@ const { ccclass, property } = _decorator;
 
 @ccclass('EntityManager')
 export class EntityManager extends Component {
-
+    id:string = randomByLen(12);
     x:number = 0;
     y:number = 0;
 
@@ -64,6 +65,10 @@ export class EntityManager extends Component {
         //瓦片地图左上角为原点
         //注意人物大小与瓦片之间的偏移
         this.node.setPosition(this.x * TILE_WIDTH - TILE_WIDTH * 1.5, -this.y * TILE_HEIGHT + TILE_HEIGHT * 1.5);
+    }
+
+    onDestroy(): void {
+        
     }
 
 }

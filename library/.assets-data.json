@@ -6424,5 +6424,2726 @@
     "url": "db://assets/scripts/player/DeadSubStateMachine.ts",
     "value": {},
     "versionCode": 1
+  },
+  "52731470-6893-4c44-bf20-aabe04fe04b9": {
+    "url": "db://assets/scripts/player/AttackSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "d16fb160-785e-4831-aaa4-135dd59dab7c": {
+    "url": "db://assets/scripts/woodenSkeleton/DeadSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "474454ef-f52a-479b-9b94-da7f247d2390": {
+    "url": "db://assets/scripts/door/DoorManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "17d69691-b2b4-49d2-b182-a053efc7d831": {
+    "url": "db://assets/scripts/door/DoorStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "3a521f48-3093-4860-abd7-16823a8b5490": {
+    "url": "db://assets/scripts/door",
+    "value": {},
+    "versionCode": 1
+  },
+  "1575a0d2-9b9a-4a89-b188-f847fae57f78": {
+    "url": "db://assets/scripts/door/IdleSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c768ca76-b186-4597-984c-24cb0748220a": {
+    "url": "db://assets/resources/texture/door",
+    "value": {},
+    "versionCode": 1
+  },
+  "0ca565a1-71d6-4530-9feb-6989fe2dac7a": {
+    "url": "db://assets/resources/texture/door/death",
+    "value": {},
+    "versionCode": 1
+  },
+  "bb79db3e-f3f1-4996-903f-a1e79103bc3c": {
+    "url": "db://assets/resources/texture/door/death/death.plist",
+    "value": {
+      "depends": [
+        "bb79db3e-f3f1-4996-903f-a1e79103bc3c@2bd38"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a881ee54-5281-40fc-b7c8-692273b006c5": {
+    "url": "db://assets/resources/texture/door/death/death.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "bb79db3e-f3f1-4996-903f-a1e79103bc3c@2bd38": {
+    "url": "db://assets/resources/texture/door/death/death.plist@2bd38",
+    "value": {
+      "depends": [
+        "a881ee54-5281-40fc-b7c8-692273b006c5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a881ee54-5281-40fc-b7c8-692273b006c5@6c48a": {
+    "url": "db://assets/resources/texture/door/death/death.png@6c48a",
+    "value": {
+      "depends": [
+        "a881ee54-5281-40fc-b7c8-692273b006c5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f4ef8dae-553c-4955-aafa-825ed14a9aca": {
+    "url": "db://assets/resources/texture/door/idle",
+    "value": {},
+    "versionCode": 1
+  },
+  "14c6c0c8-72c9-490f-b8a0-2845e12e7c65": {
+    "url": "db://assets/resources/texture/door/idle/left",
+    "value": {},
+    "versionCode": 1
+  },
+  "71357945-8e8f-44dc-9b8b-1e27bc30b1fc": {
+    "url": "db://assets/resources/texture/door/idle/top",
+    "value": {},
+    "versionCode": 1
+  },
+  "96817283-01f9-43f6-9dc5-d31b8ed67581": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.plist",
+    "value": {
+      "depends": [
+        "96817283-01f9-43f6-9dc5-d31b8ed67581@d5a9b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "96817283-01f9-43f6-9dc5-d31b8ed67581@b079a": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.plist@b079a",
+    "value": {
+      "depends": [
+        "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2@6c48a": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a0291cb4-d737-4dbc-bcc8-1a34c8303be6": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.plist",
+    "value": {},
+    "versionCode": 1
+  },
+  "a0291cb4-d737-4dbc-bcc8-1a34c8303be6@d5a9b": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.plist@d5a9b",
+    "value": {
+      "depends": [
+        "36e0d14e-931f-4821-8665-33c46251a1fa@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "36e0d14e-931f-4821-8665-33c46251a1fa": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.png",
+    "value": {},
+    "versionCode": 1
+  },
+  "36e0d14e-931f-4821-8665-33c46251a1fa@6c48a": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "36e0d14e-931f-4821-8665-33c46251a1fa"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d1e1b3ca-b9c8-406e-91aa-fe14e8369598": {
+    "url": "db://assets/resources/texture/ironskeleton",
+    "value": {},
+    "versionCode": 1
+  },
+  "b1d79fab-b0da-4829-b77b-8f4d02992772": {
+    "url": "db://assets/resources/texture/ironskeleton/death",
+    "value": {},
+    "versionCode": 1
+  },
+  "25974c6c-b3a5-4d3e-a9c6-5a56793bd2d0": {
+    "url": "db://assets/resources/texture/ironskeleton/idle",
+    "value": {},
+    "versionCode": 1
+  },
+  "1c48effc-52f3-4dea-b049-fac6bf2f4582": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom",
+    "value": {},
+    "versionCode": 1
+  },
+  "98665758-f0ba-48c0-aa0b-5a898bb4a554": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left",
+    "value": {},
+    "versionCode": 1
+  },
+  "fb14c060-ccd0-4749-826d-2e05ddcd0f9b": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right",
+    "value": {},
+    "versionCode": 1
+  },
+  "c0c123ba-bead-4b72-bd06-91c99b725f58": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top",
+    "value": {},
+    "versionCode": 1
+  },
+  "78b91f3f-2b5e-4861-86fe-b9a040cbe151": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom",
+    "value": {},
+    "versionCode": 1
+  },
+  "fa47b15f-0dce-45ac-94c2-90b67c9e1209": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left",
+    "value": {},
+    "versionCode": 1
+  },
+  "dd1ab0cf-e2d8-4a18-8d7f-37d9d7bf2ee9": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right",
+    "value": {},
+    "versionCode": 1
+  },
+  "1f44276b-9dee-43ed-8bea-58e51efc03e3": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top",
+    "value": {},
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist",
+    "value": {
+      "depends": [
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@8a345",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@06cc1",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@11c45",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@e6153",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@e11f7",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@9168d",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@1179e",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@af2be",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@0e816",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@3a8d2",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@f6a48",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@2d0f1",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@25e5a",
+        "f80ccb3a-7489-48a9-8eac-3adc79053c8d@f4bde"
+      ]
+    },
+    "versionCode": 1
+  },
+  "48ee5939-6cb8-43e4-b2fa-a314a3146e62": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist",
+    "value": {
+      "depends": [
+        "968946d9-1032-43f6-939b-381ff0089b08@66553",
+        "968946d9-1032-43f6-939b-381ff0089b08@2cde8",
+        "968946d9-1032-43f6-939b-381ff0089b08@0cad2",
+        "968946d9-1032-43f6-939b-381ff0089b08@481b6",
+        "968946d9-1032-43f6-939b-381ff0089b08@282fd",
+        "968946d9-1032-43f6-939b-381ff0089b08@59a86",
+        "968946d9-1032-43f6-939b-381ff0089b08@e9be0",
+        "968946d9-1032-43f6-939b-381ff0089b08@0bf54",
+        "968946d9-1032-43f6-939b-381ff0089b08@d8e44",
+        "968946d9-1032-43f6-939b-381ff0089b08@748c0",
+        "968946d9-1032-43f6-939b-381ff0089b08@5ca36",
+        "968946d9-1032-43f6-939b-381ff0089b08@2f11c",
+        "968946d9-1032-43f6-939b-381ff0089b08@03523",
+        "968946d9-1032-43f6-939b-381ff0089b08@63579"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5ebc1fdf-a5db-47b8-be13-22d29caa8b43": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist",
+    "value": {
+      "depends": [
+        "391786df-2c8b-417e-aeb5-94f507af2c96@55f3f",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@39d30",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@6b05f",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@674d9",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@cfdff",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@f1776",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@b276f",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@68d59",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@5e7dd",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@fc100",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@5732e",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@3d251",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@f8803",
+        "391786df-2c8b-417e-aeb5-94f507af2c96@70c68"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@63579": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@63579",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@8a345": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@8a345",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@55f3f": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@55f3f",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@66553": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@66553",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@06cc1": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@06cc1",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@39d30": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@39d30",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.png@6c48a",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.png@6c48a",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43"
+      ]
+    },
+    "versionCode": 1
+  },
+  "546ae41d-f7be-4100-be38-4925bc87dbcf": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist",
+    "value": {
+      "depends": [
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@b0613",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@f198d",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@5a547",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@a2586",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@aba52",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@17157",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@a4072",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@f2b48",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@17bb9",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@f7dd0",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@ede44",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@02a91",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@51745",
+        "5e0cb268-95b1-4c83-992b-5b7c3a411575@bdf60"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@2cde8": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@2cde8",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@6b05f": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@6b05f",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@11c45": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@11c45",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@0cad2": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@0cad2",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@674d9": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@674d9",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@e6153": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@e6153",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@481b6": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@481b6",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@cfdff": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@cfdff",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@e11f7": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@e11f7",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@17157": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@17157",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@282fd": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@282fd",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@f1776": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@f1776",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@9168d": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@9168d",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@51745": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@51745",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.png@6c48a",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@59a86": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@59a86",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54cbe7e0-e376-404d-b3eb-4577dc08e008": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@b276f": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@b276f",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@1179e": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@1179e",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@b0613": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@b0613",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@e9be0": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@e9be0",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@68d59": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@68d59",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@af2be": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@af2be",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@f198d": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@f198d",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@0bf54": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@0bf54",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@5e7dd": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@5e7dd",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@0e816": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@0e816",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@5a547": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@5a547",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@d8e44": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@d8e44",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@fc100": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@fc100",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@3a8d2": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@3a8d2",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@a2586": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@a2586",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@748c0": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@748c0",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@5732e": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@5732e",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.png@6c48a",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008"
+      ]
+    },
+    "versionCode": 1
+  },
+  "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.plist",
+    "value": {
+      "depends": [
+        "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@57813",
+        "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@14459",
+        "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@55dec",
+        "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@dc80c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@f6a48": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@f6a48",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@aba52": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@aba52",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@5ca36": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@5ca36",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@3d251": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@3d251",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@2d0f1": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@2d0f1",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@a4072": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@a4072",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@2f11c": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@2f11c",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@f8803": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@f8803",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@25e5a": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@25e5a",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@f2b48": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@f2b48",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "968946d9-1032-43f6-939b-381ff0089b08@03523": {
+    "url": "db://assets/resources/texture/ironskeleton/death/left/death.plist@03523",
+    "value": {
+      "depends": [
+        "5ebc1fdf-a5db-47b8-be13-22d29caa8b43@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b09cc749-ea22-45d6-9a46-b2efd1b25532": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "391786df-2c8b-417e-aeb5-94f507af2c96@70c68": {
+    "url": "db://assets/resources/texture/ironskeleton/death/right/death.plist@70c68",
+    "value": {
+      "depends": [
+        "546ae41d-f7be-4100-be38-4925bc87dbcf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9fccc2ff-7e15-4834-8598-19ec37e981f4": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.plist",
+    "value": {
+      "depends": [
+        "9fccc2ff-7e15-4834-8598-19ec37e981f4@1baa0",
+        "9fccc2ff-7e15-4834-8598-19ec37e981f4@1426e",
+        "9fccc2ff-7e15-4834-8598-19ec37e981f4@5d578",
+        "9fccc2ff-7e15-4834-8598-19ec37e981f4@85f54"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f80ccb3a-7489-48a9-8eac-3adc79053c8d@f4bde": {
+    "url": "db://assets/resources/texture/ironskeleton/death/bottom/death.plist@f4bde",
+    "value": {
+      "depends": [
+        "48ee5939-6cb8-43e4-b2fa-a314a3146e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@14459": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.plist@14459",
+    "value": {
+      "depends": [
+        "b09cc749-ea22-45d6-9a46-b2efd1b25532@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@17bb9": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@17bb9",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0cff2e2c-a415-46e2-b835-c9468a6dfdb5": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@57813": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.plist@57813",
+    "value": {
+      "depends": [
+        "b09cc749-ea22-45d6-9a46-b2efd1b25532@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@f7dd0": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@f7dd0",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@ede44": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@ede44",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@55dec": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.plist@55dec",
+    "value": {
+      "depends": [
+        "b09cc749-ea22-45d6-9a46-b2efd1b25532@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9fccc2ff-7e15-4834-8598-19ec37e981f4@1baa0": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.plist@1baa0",
+    "value": {
+      "depends": [
+        "0cff2e2c-a415-46e2-b835-c9468a6dfdb5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@02a91": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@02a91",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "264a1d6b-e3fd-4f3d-8ecf-aec682c35b76@dc80c": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.plist@dc80c",
+    "value": {
+      "depends": [
+        "b09cc749-ea22-45d6-9a46-b2efd1b25532@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b86f2fe8-f77c-4abc-a10e-997c438b502e": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.plist",
+    "value": {
+      "depends": [
+        "b86f2fe8-f77c-4abc-a10e-997c438b502e@61e32",
+        "b86f2fe8-f77c-4abc-a10e-997c438b502e@1452e",
+        "b86f2fe8-f77c-4abc-a10e-997c438b502e@e195b",
+        "b86f2fe8-f77c-4abc-a10e-997c438b502e@dc122"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b09cc749-ea22-45d6-9a46-b2efd1b25532@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/bottom/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "b09cc749-ea22-45d6-9a46-b2efd1b25532"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9fccc2ff-7e15-4834-8598-19ec37e981f4@1426e": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.plist@1426e",
+    "value": {
+      "depends": [
+        "0cff2e2c-a415-46e2-b835-c9468a6dfdb5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7f61e510-929f-4d74-890a-7af04c794162": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5e0cb268-95b1-4c83-992b-5b7c3a411575@bdf60": {
+    "url": "db://assets/resources/texture/ironskeleton/death/top/death.plist@bdf60",
+    "value": {
+      "depends": [
+        "54cbe7e0-e376-404d-b3eb-4577dc08e008@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c5d79c-3fe7-42be-b986-9d60af12fb66": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.plist",
+    "value": {
+      "depends": [
+        "54c5d79c-3fe7-42be-b986-9d60af12fb66@36018",
+        "54c5d79c-3fe7-42be-b986-9d60af12fb66@80f7e",
+        "54c5d79c-3fe7-42be-b986-9d60af12fb66@1ecea",
+        "54c5d79c-3fe7-42be-b986-9d60af12fb66@f0a83"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0cff2e2c-a415-46e2-b835-c9468a6dfdb5@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "0cff2e2c-a415-46e2-b835-c9468a6dfdb5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9fccc2ff-7e15-4834-8598-19ec37e981f4@5d578": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.plist@5d578",
+    "value": {
+      "depends": [
+        "0cff2e2c-a415-46e2-b835-c9468a6dfdb5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9fccc2ff-7e15-4834-8598-19ec37e981f4@85f54": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/left/idle.plist@85f54",
+    "value": {
+      "depends": [
+        "0cff2e2c-a415-46e2-b835-c9468a6dfdb5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b86f2fe8-f77c-4abc-a10e-997c438b502e@61e32": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.plist@61e32",
+    "value": {
+      "depends": [
+        "7f61e510-929f-4d74-890a-7af04c794162@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c5d79c-3fe7-42be-b986-9d60af12fb66@36018": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.plist@36018",
+    "value": {
+      "depends": [
+        "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b86f2fe8-f77c-4abc-a10e-997c438b502e@1452e": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.plist@1452e",
+    "value": {
+      "depends": [
+        "7f61e510-929f-4d74-890a-7af04c794162@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c5d79c-3fe7-42be-b986-9d60af12fb66@80f7e": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.plist@80f7e",
+    "value": {
+      "depends": [
+        "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7f61e510-929f-4d74-890a-7af04c794162@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "7f61e510-929f-4d74-890a-7af04c794162"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b86f2fe8-f77c-4abc-a10e-997c438b502e@e195b": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.plist@e195b",
+    "value": {
+      "depends": [
+        "7f61e510-929f-4d74-890a-7af04c794162@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd@6c48a": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c5d79c-3fe7-42be-b986-9d60af12fb66@1ecea": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.plist@1ecea",
+    "value": {
+      "depends": [
+        "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b86f2fe8-f77c-4abc-a10e-997c438b502e@dc122": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/right/idle.plist@dc122",
+    "value": {
+      "depends": [
+        "7f61e510-929f-4d74-890a-7af04c794162@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c5d79c-3fe7-42be-b986-9d60af12fb66@f0a83": {
+    "url": "db://assets/resources/texture/ironskeleton/idle/top/idle.plist@f0a83",
+    "value": {
+      "depends": [
+        "6e0191e9-f28b-4e0a-8cb6-5a0f564118cd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "df257117-8531-41c3-8c8a-a44312158c84": {
+    "url": "db://assets/resources/texture/burst",
+    "value": {},
+    "versionCode": 1
+  },
+  "c98f94a2-8352-4226-a441-88b2d86a433e": {
+    "url": "db://assets/resources/texture/burst/attack",
+    "value": {},
+    "versionCode": 1
+  },
+  "b2b8b42e-f3c4-4db3-ae83-a002c045ac20": {
+    "url": "db://assets/resources/texture/burst/death",
+    "value": {},
+    "versionCode": 1
+  },
+  "076b54a0-4480-4a0c-8b3f-58f3a7b82cad": {
+    "url": "db://assets/resources/texture/burst/idle",
+    "value": {},
+    "versionCode": 1
+  },
+  "078d1b30-1aa1-4e17-8e39-f97fc48d93e1": {
+    "url": "db://assets/resources/texture/burst/attack/idle.plist",
+    "value": {
+      "depends": [
+        "078d1b30-1aa1-4e17-8e39-f97fc48d93e1@74804"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c852154a-1ded-4a74-bb83-3a43d8ba63dd": {
+    "url": "db://assets/resources/texture/burst/attack/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "919797f5-657b-43b7-9db8-8761687824d6": {
+    "url": "db://assets/resources/texture/burst/death/idle.plist",
+    "value": {
+      "depends": [
+        "919797f5-657b-43b7-9db8-8761687824d6@e7c13",
+        "919797f5-657b-43b7-9db8-8761687824d6@8700f",
+        "919797f5-657b-43b7-9db8-8761687824d6@514cc",
+        "919797f5-657b-43b7-9db8-8761687824d6@485ba",
+        "919797f5-657b-43b7-9db8-8761687824d6@81b72"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1a079863-215f-4b7c-83d9-2633f2412fd5": {
+    "url": "db://assets/resources/texture/burst/death/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "372a30b9-2c2c-400a-9907-bc667a7aaba6": {
+    "url": "db://assets/resources/texture/burst/idle/idle.plist",
+    "value": {
+      "depends": [
+        "372a30b9-2c2c-400a-9907-bc667a7aaba6@eec38"
+      ]
+    },
+    "versionCode": 1
+  },
+  "919797f5-657b-43b7-9db8-8761687824d6@e7c13": {
+    "url": "db://assets/resources/texture/burst/death/idle.plist@e7c13",
+    "value": {
+      "depends": [
+        "1a079863-215f-4b7c-83d9-2633f2412fd5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "078d1b30-1aa1-4e17-8e39-f97fc48d93e1@74804": {
+    "url": "db://assets/resources/texture/burst/attack/idle.plist@74804",
+    "value": {
+      "depends": [
+        "c852154a-1ded-4a74-bb83-3a43d8ba63dd@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9706a534-7eb7-4e65-b307-239d405c6b04": {
+    "url": "db://assets/resources/texture/burst/idle/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "372a30b9-2c2c-400a-9907-bc667a7aaba6@eec38": {
+    "url": "db://assets/resources/texture/burst/idle/idle.plist@eec38",
+    "value": {
+      "depends": [
+        "9706a534-7eb7-4e65-b307-239d405c6b04@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "919797f5-657b-43b7-9db8-8761687824d6@8700f": {
+    "url": "db://assets/resources/texture/burst/death/idle.plist@8700f",
+    "value": {
+      "depends": [
+        "1a079863-215f-4b7c-83d9-2633f2412fd5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1a079863-215f-4b7c-83d9-2633f2412fd5@6c48a": {
+    "url": "db://assets/resources/texture/burst/death/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "1a079863-215f-4b7c-83d9-2633f2412fd5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c852154a-1ded-4a74-bb83-3a43d8ba63dd@6c48a": {
+    "url": "db://assets/resources/texture/burst/attack/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "c852154a-1ded-4a74-bb83-3a43d8ba63dd"
+      ]
+    },
+    "versionCode": 1
+  },
+  "919797f5-657b-43b7-9db8-8761687824d6@514cc": {
+    "url": "db://assets/resources/texture/burst/death/idle.plist@514cc",
+    "value": {
+      "depends": [
+        "1a079863-215f-4b7c-83d9-2633f2412fd5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "919797f5-657b-43b7-9db8-8761687824d6@485ba": {
+    "url": "db://assets/resources/texture/burst/death/idle.plist@485ba",
+    "value": {
+      "depends": [
+        "1a079863-215f-4b7c-83d9-2633f2412fd5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "919797f5-657b-43b7-9db8-8761687824d6@81b72": {
+    "url": "db://assets/resources/texture/burst/death/idle.plist@81b72",
+    "value": {
+      "depends": [
+        "1a079863-215f-4b7c-83d9-2633f2412fd5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9706a534-7eb7-4e65-b307-239d405c6b04@6c48a": {
+    "url": "db://assets/resources/texture/burst/idle/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "9706a534-7eb7-4e65-b307-239d405c6b04"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d1ff8d9a-4a24-41c0-9608-5a1fa1deae4a": {
+    "url": "db://assets/resources/texture/smoke",
+    "value": {},
+    "versionCode": 1
+  },
+  "05a0c693-3de0-47d0-bdca-50307156e5e9": {
+    "url": "db://assets/resources/texture/smoke/death",
+    "value": {},
+    "versionCode": 1
+  },
+  "4838f403-bf9d-4dd0-86bd-3380693f6a00": {
+    "url": "db://assets/resources/texture/smoke/idle",
+    "value": {},
+    "versionCode": 1
+  },
+  "f07384e1-a3c4-44f5-9847-496e41c9df09": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom",
+    "value": {},
+    "versionCode": 1
+  },
+  "86449a77-3e87-4ce2-a558-e5b62ef5522e": {
+    "url": "db://assets/resources/texture/smoke/idle/left",
+    "value": {},
+    "versionCode": 1
+  },
+  "46313550-11f9-42d9-b049-4004e4f842ed": {
+    "url": "db://assets/resources/texture/smoke/idle/right",
+    "value": {},
+    "versionCode": 1
+  },
+  "7ab1901e-ce23-4ba7-92a7-d71bab4f00d7": {
+    "url": "db://assets/resources/texture/smoke/idle/top",
+    "value": {},
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist",
+    "value": {
+      "depends": [
+        "763b6698-6865-4049-a14a-0e46f997d7c5@c41b5",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@35923",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@a10f8",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@f80ac",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@1bff4",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@5ccc5",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@4918a",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@d5054",
+        "763b6698-6865-4049-a14a-0e46f997d7c5@29ea7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist",
+    "value": {
+      "depends": [
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@4d882",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@7a333",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@2abcb",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@cf535",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@8bd10",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@b85a9",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@b141e",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@c0dec",
+        "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@8a774"
+      ]
+    },
+    "versionCode": 1
+  },
+  "731824c1-432a-42c1-acf7-467703ff0261": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist",
+    "value": {
+      "depends": [
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@af78e",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@c2cd9",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@f6633",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@87bd0",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@367d1",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@75ab0",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@f087d",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@9ba85",
+        "6103501e-2905-4ebb-8f4e-c55f19178f22@6c9c0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@4d882": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@4d882",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@35923": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@35923",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@af78e": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@af78e",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@c41b5": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@c41b5",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@7a333": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@7a333",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef"
+      ]
+    },
+    "versionCode": 1
+  },
+  "46786279-203f-4398-ac84-2c129bb7c712": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@c2cd9": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@c2cd9",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "731824c1-432a-42c1-acf7-467703ff0261@6c48a": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist",
+    "value": {
+      "depends": [
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@aca38",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@bc45b",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@ca1d7",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@7e735",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@860d3",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@b5e11",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@3e268",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@b0cae",
+        "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@5a0c7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@2abcb": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@2abcb",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@a10f8": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@a10f8",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@f6633": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@f6633",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@f80ac": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@f80ac",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@cf535": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@cf535",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@87bd0": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@87bd0",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@1bff4": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@1bff4",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@8bd10": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@8bd10",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@aca38": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@aca38",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@367d1": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@367d1",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@b85a9": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@b85a9",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@5ccc5": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@5ccc5",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@bc45b": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@bc45b",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@75ab0": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@75ab0",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "46786279-203f-4398-ac84-2c129bb7c712@6c48a": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@4918a": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@4918a",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@b141e": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@b141e",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b676cd00-a168-4810-a7d1-e4cf46dbe32f": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@f087d": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@f087d",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@ca1d7": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@ca1d7",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@c0dec": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@c0dec",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@d5054": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@d5054",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@7e735": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@7e735",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@9ba85": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@9ba85",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "763b6698-6865-4049-a14a-0e46f997d7c5@29ea7": {
+    "url": "db://assets/resources/texture/smoke/idle/bottom/idle.plist@29ea7",
+    "value": {
+      "depends": [
+        "1b5e7928-e56d-4eaf-9a0e-a3e996b2f6ef@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54c17eb3-38f4-4ace-aa5d-5ccc3bce3bf9@8a774": {
+    "url": "db://assets/resources/texture/smoke/idle/left/idle.plist@8a774",
+    "value": {
+      "depends": [
+        "731824c1-432a-42c1-acf7-467703ff0261@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6103501e-2905-4ebb-8f4e-c55f19178f22@6c9c0": {
+    "url": "db://assets/resources/texture/smoke/idle/right/idle.plist@6c9c0",
+    "value": {
+      "depends": [
+        "46786279-203f-4398-ac84-2c129bb7c712@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@860d3": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@860d3",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@b5e11": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@b5e11",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@3e268": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@3e268",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@b0cae": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@b0cae",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "f7a996dd-26f7-4ad9-8a6e-2a7b5a4c4f0c@5a0c7": {
+    "url": "db://assets/resources/texture/smoke/idle/top/idle.plist@5a0c7",
+    "value": {
+      "depends": [
+        "b676cd00-a168-4810-a7d1-e4cf46dbe32f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "238dc72e-2bc4-4c2c-9f23-796e96301990": {
+    "url": "db://assets/resources/texture/spikes",
+    "value": {},
+    "versionCode": 1
+  },
+  "ca351f44-e0a1-4471-a6e1-1ed7e9255ea1": {
+    "url": "db://assets/resources/texture/spikes/spikesfour",
+    "value": {},
+    "versionCode": 1
+  },
+  "16dcfc89-7679-4a21-9d2d-0ad3e18d25a3": {
+    "url": "db://assets/resources/texture/spikes/spikesone",
+    "value": {},
+    "versionCode": 1
+  },
+  "b7831d1f-3074-4538-8c95-ba25bb5100ee": {
+    "url": "db://assets/resources/texture/spikes/spikesthree",
+    "value": {},
+    "versionCode": 1
+  },
+  "ba66875d-9aa4-4d68-b287-0f7241c3793c": {
+    "url": "db://assets/resources/texture/spikes/spikestwo",
+    "value": {},
+    "versionCode": 1
+  },
+  "03942af1-b13e-424b-adcc-6d8e7c6682d5": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five",
+    "value": {},
+    "versionCode": 1
+  },
+  "dc5ea1ba-a331-4879-be78-6c4a8cc62ad3": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/four",
+    "value": {},
+    "versionCode": 1
+  },
+  "572cad2b-eff9-4603-a374-db555cbb7539": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/one",
+    "value": {},
+    "versionCode": 1
+  },
+  "af702ab0-bd92-4aa6-b2ea-51292a6c2b39": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/three",
+    "value": {},
+    "versionCode": 1
+  },
+  "77df9a62-9c87-477b-a720-40ec91db79d2": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/two",
+    "value": {},
+    "versionCode": 1
+  },
+  "b04905ef-7cae-4b35-8155-489c984574ab": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/zero",
+    "value": {},
+    "versionCode": 1
+  },
+  "28257742-c782-4d25-88f7-86de273a6c1c": {
+    "url": "db://assets/resources/texture/spikes/spikesone/one",
+    "value": {},
+    "versionCode": 1
+  },
+  "4154b157-8e6e-4275-abb6-ba88bc8d5ffc": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two",
+    "value": {},
+    "versionCode": 1
+  },
+  "7dd91bbd-0225-4cbe-8836-dbfe289b0832": {
+    "url": "db://assets/resources/texture/spikes/spikesone/zero",
+    "value": {},
+    "versionCode": 1
+  },
+  "7c428e26-e129-4ce7-be23-91df7a9d29db": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four",
+    "value": {},
+    "versionCode": 1
+  },
+  "d194d677-dcac-4a97-b487-8001de2f62d3": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/one",
+    "value": {},
+    "versionCode": 1
+  },
+  "19951031-c86a-4488-aa21-8e84e56a0e0f": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/three",
+    "value": {},
+    "versionCode": 1
+  },
+  "c76da16f-5913-4fc7-b821-941ee2e5ac4c": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/two",
+    "value": {},
+    "versionCode": 1
+  },
+  "38647b70-dda9-4572-a896-208338964b79": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/zero",
+    "value": {},
+    "versionCode": 1
+  },
+  "07b4bd8b-eda5-422b-9890-171d73d40671": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/one",
+    "value": {},
+    "versionCode": 1
+  },
+  "0473c0fd-dbe5-4c0a-946c-f16b9b328c38": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three",
+    "value": {},
+    "versionCode": 1
+  },
+  "8b64fdeb-761d-46ac-89e5-23f483bfe579": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/two",
+    "value": {},
+    "versionCode": 1
+  },
+  "21204d10-466d-4e8d-8929-d623798fb614": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/zero",
+    "value": {},
+    "versionCode": 1
+  },
+  "53707ab8-7929-4c73-87e4-9328a7b247e5": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.plist",
+    "value": {
+      "depends": [
+        "53707ab8-7929-4c73-87e4-9328a7b247e5@c9dd5",
+        "53707ab8-7929-4c73-87e4-9328a7b247e5@4455e",
+        "53707ab8-7929-4c73-87e4-9328a7b247e5@3e6ac",
+        "53707ab8-7929-4c73-87e4-9328a7b247e5@b96aa"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54b36b6e-f97b-4dae-9898-6ce06342ed33": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "298190fd-f483-4c1e-9376-829921331aa0": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/four/four.plist",
+    "value": {
+      "depends": [
+        "298190fd-f483-4c1e-9376-829921331aa0@da7fe"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5783895e-2802-4abc-a97e-58745a73358f": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/four/four.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0e197964-f8f7-4304-bbd3-d49463b259bb": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/one/one.plist",
+    "value": {
+      "depends": [
+        "0e197964-f8f7-4304-bbd3-d49463b259bb@bcce0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0e197964-f8f7-4304-bbd3-d49463b259bb@bcce0": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/one/one.plist@bcce0",
+    "value": {
+      "depends": [
+        "32fe68cc-665b-4545-99d3-b79214a83021@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "53707ab8-7929-4c73-87e4-9328a7b247e5@c9dd5": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.plist@c9dd5",
+    "value": {
+      "depends": [
+        "54b36b6e-f97b-4dae-9898-6ce06342ed33@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "32fe68cc-665b-4545-99d3-b79214a83021": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/one/one.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "298190fd-f483-4c1e-9376-829921331aa0@da7fe": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/four/four.plist@da7fe",
+    "value": {
+      "depends": [
+        "5783895e-2802-4abc-a97e-58745a73358f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3a25a98f-0898-4d18-b3c4-a2992269c742": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/three/three.plist",
+    "value": {
+      "depends": [
+        "3a25a98f-0898-4d18-b3c4-a2992269c742@c0302"
+      ]
+    },
+    "versionCode": 1
+  },
+  "53707ab8-7929-4c73-87e4-9328a7b247e5@4455e": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.plist@4455e",
+    "value": {
+      "depends": [
+        "54b36b6e-f97b-4dae-9898-6ce06342ed33@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54b36b6e-f97b-4dae-9898-6ce06342ed33@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.png@6c48a",
+    "value": {
+      "depends": [
+        "54b36b6e-f97b-4dae-9898-6ce06342ed33"
+      ]
+    },
+    "versionCode": 1
+  },
+  "653cfe47-3199-4f5f-837c-00a55bb0f0f1": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/three/three.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5783895e-2802-4abc-a97e-58745a73358f@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/four/four.png@6c48a",
+    "value": {
+      "depends": [
+        "5783895e-2802-4abc-a97e-58745a73358f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "97a8fbbc-1ca6-468d-a9db-c0afdfa48096": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/two/two.plist",
+    "value": {
+      "depends": [
+        "97a8fbbc-1ca6-468d-a9db-c0afdfa48096@70f41"
+      ]
+    },
+    "versionCode": 1
+  },
+  "53707ab8-7929-4c73-87e4-9328a7b247e5@3e6ac": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.plist@3e6ac",
+    "value": {
+      "depends": [
+        "54b36b6e-f97b-4dae-9898-6ce06342ed33@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "53707ab8-7929-4c73-87e4-9328a7b247e5@b96aa": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/five/five.plist@b96aa",
+    "value": {
+      "depends": [
+        "54b36b6e-f97b-4dae-9898-6ce06342ed33@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5ddb2fd4-5a2f-4b22-85ab-aeeb0642e1ae": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/two/two.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3a25a98f-0898-4d18-b3c4-a2992269c742@c0302": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/three/three.plist@c0302",
+    "value": {
+      "depends": [
+        "653cfe47-3199-4f5f-837c-00a55bb0f0f1@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6083b165-d32f-43ff-aae1-525860bae16d": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/zero/zero.plist",
+    "value": {
+      "depends": [
+        "6083b165-d32f-43ff-aae1-525860bae16d@aef61"
+      ]
+    },
+    "versionCode": 1
+  },
+  "32fe68cc-665b-4545-99d3-b79214a83021@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/one/one.png@6c48a",
+    "value": {
+      "depends": [
+        "32fe68cc-665b-4545-99d3-b79214a83021"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9fad8ffd-b5e6-408f-93a8-e23887ed61ca": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/zero/zero.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "97a8fbbc-1ca6-468d-a9db-c0afdfa48096@70f41": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/two/two.plist@70f41",
+    "value": {
+      "depends": [
+        "5ddb2fd4-5a2f-4b22-85ab-aeeb0642e1ae@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "82ba1c19-c874-401b-84d8-f1fb6a7e25b6": {
+    "url": "db://assets/resources/texture/spikes/spikesone/one/one.plist",
+    "value": {
+      "depends": [
+        "82ba1c19-c874-401b-84d8-f1fb6a7e25b6@8c7b6"
+      ]
+    },
+    "versionCode": 1
+  },
+  "653cfe47-3199-4f5f-837c-00a55bb0f0f1@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/three/three.png@6c48a",
+    "value": {
+      "depends": [
+        "653cfe47-3199-4f5f-837c-00a55bb0f0f1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7c80c3bc-9cb9-4bd3-90bf-6cd0473196d7": {
+    "url": "db://assets/resources/texture/spikes/spikesone/one/one.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6083b165-d32f-43ff-aae1-525860bae16d@aef61": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/zero/zero.plist@aef61",
+    "value": {
+      "depends": [
+        "9fad8ffd-b5e6-408f-93a8-e23887ed61ca@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c7ffdd4d-48d6-4f30-86a3-609e17aa3689": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.plist",
+    "value": {
+      "depends": [
+        "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@fcb9f",
+        "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@5ea2d",
+        "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@d8d3c",
+        "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@16db3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5ddb2fd4-5a2f-4b22-85ab-aeeb0642e1ae@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/two/two.png@6c48a",
+    "value": {
+      "depends": [
+        "5ddb2fd4-5a2f-4b22-85ab-aeeb0642e1ae"
+      ]
+    },
+    "versionCode": 1
+  },
+  "616391f1-2ede-4d23-a2fa-d70c5fefa322": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "82ba1c19-c874-401b-84d8-f1fb6a7e25b6@8c7b6": {
+    "url": "db://assets/resources/texture/spikes/spikesone/one/one.plist@8c7b6",
+    "value": {
+      "depends": [
+        "7c80c3bc-9cb9-4bd3-90bf-6cd0473196d7@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d8c93eb0-a32f-43d0-b4c9-f5ca3f8e1d7b": {
+    "url": "db://assets/resources/texture/spikes/spikesone/zero/zero.plist",
+    "value": {
+      "depends": [
+        "d8c93eb0-a32f-43d0-b4c9-f5ca3f8e1d7b@5d2f3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9fad8ffd-b5e6-408f-93a8-e23887ed61ca@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesfour/zero/zero.png@6c48a",
+    "value": {
+      "depends": [
+        "9fad8ffd-b5e6-408f-93a8-e23887ed61ca"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e8549e00-cd66-4099-97be-b6af28cc8006": {
+    "url": "db://assets/resources/texture/spikes/spikesone/zero/zero.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@fcb9f": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.plist@fcb9f",
+    "value": {
+      "depends": [
+        "616391f1-2ede-4d23-a2fa-d70c5fefa322@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7c80c3bc-9cb9-4bd3-90bf-6cd0473196d7@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesone/one/one.png@6c48a",
+    "value": {
+      "depends": [
+        "7c80c3bc-9cb9-4bd3-90bf-6cd0473196d7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7b0ca2a0-1fd0-403e-8117-6234698a877f": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.plist",
+    "value": {
+      "depends": [
+        "7b0ca2a0-1fd0-403e-8117-6234698a877f@a2cd8",
+        "7b0ca2a0-1fd0-403e-8117-6234698a877f@b65dc",
+        "7b0ca2a0-1fd0-403e-8117-6234698a877f@11163",
+        "7b0ca2a0-1fd0-403e-8117-6234698a877f@3b1a5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@5ea2d": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.plist@5ea2d",
+    "value": {
+      "depends": [
+        "616391f1-2ede-4d23-a2fa-d70c5fefa322@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d8c93eb0-a32f-43d0-b4c9-f5ca3f8e1d7b@5d2f3": {
+    "url": "db://assets/resources/texture/spikes/spikesone/zero/zero.plist@5d2f3",
+    "value": {
+      "depends": [
+        "e8549e00-cd66-4099-97be-b6af28cc8006@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@d8d3c": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.plist@d8d3c",
+    "value": {
+      "depends": [
+        "616391f1-2ede-4d23-a2fa-d70c5fefa322@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "616391f1-2ede-4d23-a2fa-d70c5fefa322@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.png@6c48a",
+    "value": {
+      "depends": [
+        "616391f1-2ede-4d23-a2fa-d70c5fefa322"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3260810e-eb95-4757-b469-b9021dc9a3c6": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/one/one.plist",
+    "value": {
+      "depends": [
+        "3260810e-eb95-4757-b469-b9021dc9a3c6@524e0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c7ffdd4d-48d6-4f30-86a3-609e17aa3689@16db3": {
+    "url": "db://assets/resources/texture/spikes/spikesone/two/two.plist@16db3",
+    "value": {
+      "depends": [
+        "616391f1-2ede-4d23-a2fa-d70c5fefa322@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "07d752fe-fed5-413d-90f7-865e76294e62": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/one/one.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "7b0ca2a0-1fd0-403e-8117-6234698a877f@11163": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.plist@11163",
+    "value": {
+      "depends": [
+        "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e8549e00-cd66-4099-97be-b6af28cc8006@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesone/zero/zero.png@6c48a",
+    "value": {
+      "depends": [
+        "e8549e00-cd66-4099-97be-b6af28cc8006"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d3dc4196-bb83-43e2-b7dc-839e5f629a0e": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/three/three.plist",
+    "value": {
+      "depends": [
+        "d3dc4196-bb83-43e2-b7dc-839e5f629a0e@27e89"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7b0ca2a0-1fd0-403e-8117-6234698a877f@a2cd8": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.plist@a2cd8",
+    "value": {
+      "depends": [
+        "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3260810e-eb95-4757-b469-b9021dc9a3c6@524e0": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/one/one.plist@524e0",
+    "value": {
+      "depends": [
+        "07d752fe-fed5-413d-90f7-865e76294e62@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0b248f91-56c9-4115-8282-9927f3dd07a4": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/three/three.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "7b0ca2a0-1fd0-403e-8117-6234698a877f@b65dc": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.plist@b65dc",
+    "value": {
+      "depends": [
+        "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.png@6c48a",
+    "value": {
+      "depends": [
+        "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d1c1e4e4-8f21-4c59-b333-b354a20e87c1": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/two/two.plist",
+    "value": {
+      "depends": [
+        "d1c1e4e4-8f21-4c59-b333-b354a20e87c1@d680f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7b0ca2a0-1fd0-403e-8117-6234698a877f@3b1a5": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/four/four.plist@3b1a5",
+    "value": {
+      "depends": [
+        "5f1a8cf6-62f9-4f60-9fd6-20d6cb4343c5@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c2eea861-11c7-40ba-87c1-eaa1d5e6427c": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/two/two.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d3dc4196-bb83-43e2-b7dc-839e5f629a0e@27e89": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/three/three.plist@27e89",
+    "value": {
+      "depends": [
+        "0b248f91-56c9-4115-8282-9927f3dd07a4@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e80f5554-1dc8-4111-9d3d-fd9ee2891a15": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/zero/zero.plist",
+    "value": {
+      "depends": [
+        "e80f5554-1dc8-4111-9d3d-fd9ee2891a15@0a57c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "07d752fe-fed5-413d-90f7-865e76294e62@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/one/one.png@6c48a",
+    "value": {
+      "depends": [
+        "07d752fe-fed5-413d-90f7-865e76294e62"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cc0a5460-6056-4b15-b095-f6694c327b9d": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/zero/zero.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d1c1e4e4-8f21-4c59-b333-b354a20e87c1@d680f": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/two/two.plist@d680f",
+    "value": {
+      "depends": [
+        "c2eea861-11c7-40ba-87c1-eaa1d5e6427c@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ae4387ff-6e76-4feb-8085-5e71ec54f92f": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/one/one.plist",
+    "value": {
+      "depends": [
+        "ae4387ff-6e76-4feb-8085-5e71ec54f92f@7ff6f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0b248f91-56c9-4115-8282-9927f3dd07a4@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/three/three.png@6c48a",
+    "value": {
+      "depends": [
+        "0b248f91-56c9-4115-8282-9927f3dd07a4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "40d9acdc-cdc6-467e-9892-3c10d32db80f": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/one/one.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e80f5554-1dc8-4111-9d3d-fd9ee2891a15@0a57c": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/zero/zero.plist@0a57c",
+    "value": {
+      "depends": [
+        "cc0a5460-6056-4b15-b095-f6694c327b9d@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "90a66264-e6e4-437b-b4ac-4df509220270": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.plist",
+    "value": {
+      "depends": [
+        "90a66264-e6e4-437b-b4ac-4df509220270@d31ac",
+        "90a66264-e6e4-437b-b4ac-4df509220270@4f705",
+        "90a66264-e6e4-437b-b4ac-4df509220270@02621",
+        "90a66264-e6e4-437b-b4ac-4df509220270@9fb48"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c2eea861-11c7-40ba-87c1-eaa1d5e6427c@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/two/two.png@6c48a",
+    "value": {
+      "depends": [
+        "c2eea861-11c7-40ba-87c1-eaa1d5e6427c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cc0a5460-6056-4b15-b095-f6694c327b9d@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikesthree/zero/zero.png@6c48a",
+    "value": {
+      "depends": [
+        "cc0a5460-6056-4b15-b095-f6694c327b9d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6eb39132-5388-4f03-a649-0cf23bbc6b95": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9077f514-31f3-4fac-9bad-e73091049b8b": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/two/two.plist",
+    "value": {
+      "depends": [
+        "9077f514-31f3-4fac-9bad-e73091049b8b@f0d8d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ae4387ff-6e76-4feb-8085-5e71ec54f92f@7ff6f": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/one/one.plist@7ff6f",
+    "value": {
+      "depends": [
+        "40d9acdc-cdc6-467e-9892-3c10d32db80f@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "04b97190-e458-45e7-b088-caf2cc7e41d2": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/two/two.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "90a66264-e6e4-437b-b4ac-4df509220270@d31ac": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.plist@d31ac",
+    "value": {
+      "depends": [
+        "6eb39132-5388-4f03-a649-0cf23bbc6b95@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "90a66264-e6e4-437b-b4ac-4df509220270@4f705": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.plist@4f705",
+    "value": {
+      "depends": [
+        "6eb39132-5388-4f03-a649-0cf23bbc6b95@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "40d9acdc-cdc6-467e-9892-3c10d32db80f@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/one/one.png@6c48a",
+    "value": {
+      "depends": [
+        "40d9acdc-cdc6-467e-9892-3c10d32db80f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e93fd8b9-51f6-4e0f-8f0d-3f563a0762a2": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/zero/zero.plist",
+    "value": {
+      "depends": [
+        "e93fd8b9-51f6-4e0f-8f0d-3f563a0762a2@bb0c1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9077f514-31f3-4fac-9bad-e73091049b8b@f0d8d": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/two/two.plist@f0d8d",
+    "value": {
+      "depends": [
+        "04b97190-e458-45e7-b088-caf2cc7e41d2@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "89bdadaa-c90d-43bb-a52a-12e2052a16bf": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/zero/zero.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "90a66264-e6e4-437b-b4ac-4df509220270@02621": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.plist@02621",
+    "value": {
+      "depends": [
+        "6eb39132-5388-4f03-a649-0cf23bbc6b95@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6eb39132-5388-4f03-a649-0cf23bbc6b95@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.png@6c48a",
+    "value": {
+      "depends": [
+        "6eb39132-5388-4f03-a649-0cf23bbc6b95"
+      ]
+    },
+    "versionCode": 1
+  },
+  "04b97190-e458-45e7-b088-caf2cc7e41d2@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/two/two.png@6c48a",
+    "value": {
+      "depends": [
+        "04b97190-e458-45e7-b088-caf2cc7e41d2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "90a66264-e6e4-437b-b4ac-4df509220270@9fb48": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/three/three.plist@9fb48",
+    "value": {
+      "depends": [
+        "6eb39132-5388-4f03-a649-0cf23bbc6b95@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e93fd8b9-51f6-4e0f-8f0d-3f563a0762a2@bb0c1": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/zero/zero.plist@bb0c1",
+    "value": {
+      "depends": [
+        "89bdadaa-c90d-43bb-a52a-12e2052a16bf@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "89bdadaa-c90d-43bb-a52a-12e2052a16bf@6c48a": {
+    "url": "db://assets/resources/texture/spikes/spikestwo/zero/zero.png@6c48a",
+    "value": {
+      "depends": [
+        "89bdadaa-c90d-43bb-a52a-12e2052a16bf"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1fcf7be9-ad93-43ce-bd69-009776620820": {
+    "url": "db://assets/scripts/door/DeathSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "decbb24e-9cb6-4e61-beb3-05c652ee27dd": {
+    "url": "db://assets/resources/texture/door",
+    "value": {},
+    "versionCode": 1
+  },
+  "56009dc0-101b-4426-b4bf-bc66598d5d79": {
+    "url": "db://assets/resources/texture/door/idle",
+    "value": {},
+    "versionCode": 1
+  },
+  "6956cb15-3e1b-4ef7-8788-cb89eaa506c2": {
+    "url": "db://assets/resources/texture/door/death",
+    "value": {},
+    "versionCode": 1
+  },
+  "c31f94ca-d49a-40f5-85e1-750e9a2745f7": {
+    "url": "db://assets/resources/texture/door/idle/top",
+    "value": {},
+    "versionCode": 1
+  },
+  "94c5b6ad-d716-4060-81ac-4279d1ed18cf": {
+    "url": "db://assets/resources/texture/door/idle/left",
+    "value": {},
+    "versionCode": 1
+  },
+  "96817283-01f9-43f6-9dc5-d31b8ed67581@d5a9b": {
+    "url": "db://assets/resources/texture/door/idle/top/idle.plist@d5a9b",
+    "value": {
+      "depends": [
+        "81e0e0ff-10db-40b6-9fc4-0a08ca2fe0a2@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e480916f-0543-4192-87c4-a86fb1876186": {
+    "url": "db://assets/resources/texture/door/idle/left/idle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e480916f-0543-4192-87c4-a86fb1876186@6c48a": {
+    "url": "db://assets/resources/texture/door/idle/left/idle.png@6c48a",
+    "value": {
+      "depends": [
+        "e480916f-0543-4192-87c4-a86fb1876186"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8415b5bc-061c-480d-b1ea-183d87786ec8": {
+    "url": "db://assets/resources/texture/door/idle/left/idle.plist",
+    "value": {
+      "depends": [
+        "8415b5bc-061c-480d-b1ea-183d87786ec8@b079a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8415b5bc-061c-480d-b1ea-183d87786ec8@b079a": {
+    "url": "db://assets/resources/texture/door/idle/left/idle.plist@b079a",
+    "value": {
+      "depends": [
+        "e480916f-0543-4192-87c4-a86fb1876186@6c48a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "253de378-c692-4d2f-b3b1-befd4ec3cdee": {
+    "url": "db://assets/base/EnemyManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "2c38334c-94a4-4988-8e54-2bd76a45a3a1": {
+    "url": "db://assets/scripts/ironSkeleton/IdleSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "4b0b164f-65eb-452b-96f6-0858143e0457": {
+    "url": "db://assets/scripts/ironSkeleton/IronSkeletonManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "48e7b1a0-f7c2-48b5-83d0-6a0b135c8eaf": {
+    "url": "db://assets/scripts/ironSkeleton/IronSkeletonStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "8a2bc222-da79-4249-8bab-34eef74f06a4": {
+    "url": "db://assets/scripts/ironSkeleton",
+    "value": {},
+    "versionCode": 1
+  },
+  "9efd9d6e-8074-4b8f-aa96-cb2c2d2d8c37": {
+    "url": "db://assets/scripts/ironSkeleton/DeadSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

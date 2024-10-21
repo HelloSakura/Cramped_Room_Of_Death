@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Animation, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM, getInitParamsNumber, getInitParamsTrigger, StateMachine, IdleSubStateMachine, AttackSubStateMachine, EntityManager, _dec, _class, _crd, ccclass, property, WoodenSkeletonStateMachine;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Animation, ENTITY_STATE_ENUM, PARAMS_NAME_ENUM, getInitParamsNumber, getInitParamsTrigger, StateMachine, IdleSubStateMachine, AttackSubStateMachine, EntityManager, DeadSubStateMachine, _dec, _class, _crd, ccclass, property, WoodenSkeletonStateMachine;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -39,6 +39,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("EntityManager", "../../base/EntityManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfDeadSubStateMachine(extras) {
+    _reporterNs.report("DeadSubStateMachine", "./DeadSubStateMachine", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -61,6 +65,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       AttackSubStateMachine = _unresolved_5.default;
     }, function (_unresolved_6) {
       EntityManager = _unresolved_6.EntityManager;
+    }, function (_unresolved_7) {
+      DeadSubStateMachine = _unresolved_7.default;
     }],
     execute: function () {
       _crd = true;
@@ -111,6 +117,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DIRECTION, (_crd && getInitParamsNumber === void 0 ? (_reportPossibleCrUseOfgetInitParamsNumber({
             error: Error()
           }), getInitParamsNumber) : getInitParamsNumber)());
+          this.params.set((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+            error: Error()
+          }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH, (_crd && getInitParamsTrigger === void 0 ? (_reportPossibleCrUseOfgetInitParamsTrigger({
+            error: Error()
+          }), getInitParamsTrigger) : getInitParamsTrigger)());
         }
 
         initStateMachine() {
@@ -124,6 +135,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK, new (_crd && AttackSubStateMachine === void 0 ? (_reportPossibleCrUseOfAttackSubStateMachine({
             error: Error()
           }), AttackSubStateMachine) : AttackSubStateMachine)(this));
+          this.stateMachine.set((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+            error: Error()
+          }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH, new (_crd && DeadSubStateMachine === void 0 ? (_reportPossibleCrUseOfDeadSubStateMachine({
+            error: Error()
+          }), DeadSubStateMachine) : DeadSubStateMachine)(this));
         }
 
         initAnimationEvent() {
@@ -157,7 +173,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             case this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
               error: Error()
             }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK):
+            case this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+              error: Error()
+            }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH):
               if (this.params.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+                error: Error()
+              }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH).value) {
+                this.currentState = this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
+                  error: Error()
+                }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).DEATH);
+              } else if (this.params.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
                 error: Error()
               }), PARAMS_NAME_ENUM) : PARAMS_NAME_ENUM).ATTACK).value) {
                 this.currentState = this.stateMachine.get((_crd && PARAMS_NAME_ENUM === void 0 ? (_reportPossibleCrUseOfPARAMS_NAME_ENUM({
