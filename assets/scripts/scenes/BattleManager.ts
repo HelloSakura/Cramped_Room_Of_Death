@@ -113,7 +113,7 @@ export class BattleManager extends Component {
         enemy.setParent(this.stage);
         const woodenSkeletonManager = enemy.addComponent(WoodenSkeletonManager);
         await woodenSkeletonManager.init({
-            x:5,
+            x:2,
             y:2,
             type: ENTITY_TYPE_ENUM.SKELETON_WOODEN,
             direction:DIRECTION_ENUM.TOP,
@@ -127,8 +127,8 @@ export class BattleManager extends Component {
         ironSkeleton.setParent(this.stage);
         const ironSkeletonManager = ironSkeleton.addComponent(IronSkeletonManager);
         await ironSkeletonManager.init({
-            x:2,
-            y:2,
+            x:1,
+            y:7,
             type: ENTITY_TYPE_ENUM.SKELETON_IRON,
             direction:DIRECTION_ENUM.TOP,
             state:ENTITY_STATE_ENUM.IDLE

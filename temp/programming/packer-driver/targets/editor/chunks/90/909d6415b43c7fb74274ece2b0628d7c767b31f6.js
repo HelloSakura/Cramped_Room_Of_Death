@@ -263,7 +263,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), WoodenSkeletonManager) : WoodenSkeletonManager);
           await woodenSkeletonManager.init({
-            x: 5,
+            x: 2,
             y: 2,
             type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
               error: Error()
@@ -287,8 +287,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), IronSkeletonManager) : IronSkeletonManager);
           await ironSkeletonManager.init({
-            x: 2,
-            y: 2,
+            x: 1,
+            y: 7,
             type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
               error: Error()
             }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_IRON,

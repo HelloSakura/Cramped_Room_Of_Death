@@ -1674,3 +1674,10 @@
 2024-10-22 00:28:44-debug: asset-db:refresh-all-database (423ms)
 2024-10-22 00:28:44-debug: asset-db:worker-effect-data-processing (1ms)
 2024-10-22 00:28:44-debug: asset-db-hook-engine-extends-afterRefresh (1ms)
+2024-10-22 00:36:24-debug: refresh db internal success
+2024-10-22 00:36:24-debug: Run asset db hook engine-extends:afterRefresh ...
+2024-10-22 00:36:24-debug: refresh db assets success
+2024-10-22 00:36:24-debug: Run asset db hook engine-extends:afterRefresh success!
+2024-10-22 00:36:24-debug: asset-db:worker-effect-data-processing (2ms)
+2024-10-22 00:36:24-debug: asset-db:refresh-all-database (411ms)
+2024-10-22 00:36:24-debug: asset-db-hook-engine-extends-afterRefresh (2ms)
