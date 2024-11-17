@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 32887.12779998779,
+      "mTimestamp": 11039.775099992752,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -640,7 +640,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 4752391.322099924,
+      "mTimestamp": 7139833.72329998,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -854,7 +854,7 @@
           }
         },
         {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DeathSubStateMachine.ts",
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstManager.ts",
           "resolved": "__unresolved_15",
           "loc": {
             "start": {
@@ -863,17 +863,17 @@
             },
             "end": {
               "line": 5,
-              "column": 1411
+              "column": 1404
             }
           }
         },
         {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorManager.ts",
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstStateMachine.ts",
           "resolved": "__unresolved_16",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1427
+              "column": 1420
             },
             "end": {
               "line": 5,
@@ -882,7 +882,7 @@
           }
         },
         {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorStateMachine.ts",
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DeathSubStateMachine.ts",
           "resolved": "__unresolved_17",
           "loc": {
             "start": {
@@ -891,227 +891,227 @@
             },
             "end": {
               "line": 5,
-              "column": 1594
+              "column": 1598
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorManager.ts",
+          "resolved": "__unresolved_18",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1614
+            },
+            "end": {
+              "line": 5,
+              "column": 1687
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorStateMachine.ts",
+          "resolved": "__unresolved_19",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1703
+            },
+            "end": {
+              "line": 5,
+              "column": 1781
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/IdleSubStateMachine.ts",
-          "resolved": "__unresolved_18",
+          "resolved": "__unresolved_20",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1610
+              "column": 1797
             },
             "end": {
               "line": 5,
-              "column": 1691
+              "column": 1878
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/DeadSubStateMachine.ts",
-          "resolved": "__unresolved_19",
+          "resolved": "__unresolved_21",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1707
+              "column": 1894
             },
             "end": {
               "line": 5,
-              "column": 1796
+              "column": 1983
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IdleSubStateMachine.ts",
-          "resolved": "__unresolved_20",
+          "resolved": "__unresolved_22",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1812
+              "column": 1999
             },
             "end": {
               "line": 5,
-              "column": 1901
+              "column": 2088
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IronSkeletonManager.ts",
-          "resolved": "__unresolved_21",
+          "resolved": "__unresolved_23",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1917
+              "column": 2104
             },
             "end": {
               "line": 5,
-              "column": 2006
+              "column": 2193
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IronSkeletonStateMachine.ts",
-          "resolved": "__unresolved_22",
+          "resolved": "__unresolved_24",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2022
+              "column": 2209
             },
             "end": {
               "line": 5,
-              "column": 2116
+              "column": 2303
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AirDeathSubStateMachine.ts",
+          "resolved": "__unresolved_25",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2319
+            },
+            "end": {
+              "line": 5,
+              "column": 2406
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AttackSubStateMachine.ts",
-          "resolved": "__unresolved_23",
+          "resolved": "__unresolved_26",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2132
+              "column": 2422
             },
             "end": {
               "line": 5,
-              "column": 2217
+              "column": 2507
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockBackSubStateMachine.ts",
-          "resolved": "__unresolved_24",
+          "resolved": "__unresolved_27",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2233
+              "column": 2523
             },
             "end": {
               "line": 5,
-              "column": 2321
+              "column": 2611
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockFrontSubStateMachine.ts",
-          "resolved": "__unresolved_25",
+          "resolved": "__unresolved_28",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2337
+              "column": 2627
             },
             "end": {
               "line": 5,
-              "column": 2426
+              "column": 2716
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockLeftSubStateMachine.ts",
-          "resolved": "__unresolved_26",
+          "resolved": "__unresolved_29",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2442
+              "column": 2732
             },
             "end": {
               "line": 5,
-              "column": 2530
+              "column": 2820
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockRightSubStateMachine.ts",
-          "resolved": "__unresolved_27",
+          "resolved": "__unresolved_30",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2546
+              "column": 2836
             },
             "end": {
               "line": 5,
-              "column": 2635
+              "column": 2925
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnLeftSubStateMachine.ts",
-          "resolved": "__unresolved_28",
+          "resolved": "__unresolved_31",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2651
+              "column": 2941
             },
             "end": {
               "line": 5,
-              "column": 2743
+              "column": 3033
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/BlockTurnRightSubStateMachine.ts",
-          "resolved": "__unresolved_29",
+          "resolved": "__unresolved_32",
           "loc": {
             "start": {
               "line": 5,
-              "column": 2759
+              "column": 3049
             },
             "end": {
               "line": 5,
-              "column": 2852
+              "column": 3142
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/DeadSubStateMachine.ts",
-          "resolved": "__unresolved_30",
-          "loc": {
-            "start": {
-              "line": 5,
-              "column": 2868
-            },
-            "end": {
-              "line": 5,
-              "column": 2951
-            }
-          }
-        },
-        {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts",
-          "resolved": "__unresolved_31",
-          "loc": {
-            "start": {
-              "line": 5,
-              "column": 2967
-            },
-            "end": {
-              "line": 5,
-              "column": 3050
-            }
-          }
-        },
-        {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts",
-          "resolved": "__unresolved_32",
-          "loc": {
-            "start": {
-              "line": 5,
-              "column": 3066
-            },
-            "end": {
-              "line": 5,
-              "column": 3143
-            }
-          }
-        },
-        {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts",
           "resolved": "__unresolved_33",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3159
+              "column": 3158
             },
             "end": {
               "line": 5,
@@ -1120,7 +1120,7 @@
           }
         },
         {
-          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts",
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/IdleSubStateMachine.ts",
           "resolved": "__unresolved_34",
           "loc": {
             "start": {
@@ -1129,161 +1129,301 @@
             },
             "end": {
               "line": 5,
-              "column": 3344
+              "column": 3340
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts",
+          "resolved": "__unresolved_35",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 3356
+            },
+            "end": {
+              "line": 5,
+              "column": 3433
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts",
+          "resolved": "__unresolved_36",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 3449
+            },
+            "end": {
+              "line": 5,
+              "column": 3531
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnLeftSubStateMachine.ts",
+          "resolved": "__unresolved_37",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 3547
+            },
+            "end": {
+              "line": 5,
+              "column": 3634
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/TurnRightSubStateMachine.ts",
-          "resolved": "__unresolved_35",
+          "resolved": "__unresolved_38",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3360
+              "column": 3650
             },
             "end": {
               "line": 5,
-              "column": 3448
+              "column": 3738
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts",
-          "resolved": "__unresolved_36",
+          "resolved": "__unresolved_39",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3464
+              "column": 3754
             },
             "end": {
               "line": 5,
-              "column": 3541
+              "column": 3831
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeFourSubStateMachine.ts",
+          "resolved": "__unresolved_40",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 3847
+            },
+            "end": {
+              "line": 5,
+              "column": 3935
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeManager.ts",
+          "resolved": "__unresolved_41",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 3951
+            },
+            "end": {
+              "line": 5,
+              "column": 4027
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeOneSubStateMachine.ts",
+          "resolved": "__unresolved_42",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 4043
+            },
+            "end": {
+              "line": 5,
+              "column": 4130
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeStateMachine.ts",
+          "resolved": "__unresolved_43",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 4146
+            },
+            "end": {
+              "line": 5,
+              "column": 4227
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts",
+          "resolved": "__unresolved_44",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 4243
+            },
+            "end": {
+              "line": 5,
+              "column": 4327
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeThreeSubStateMachine.ts",
+          "resolved": "__unresolved_45",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 4343
+            },
+            "end": {
+              "line": 5,
+              "column": 4432
+            }
+          }
+        },
+        {
+          "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeTwoSubStateMachine.ts",
+          "resolved": "__unresolved_46",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 4448
+            },
+            "end": {
+              "line": 5,
+              "column": 4535
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts",
-          "resolved": "__unresolved_37",
+          "resolved": "__unresolved_47",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3557
+              "column": 4551
             },
             "end": {
               "line": 5,
-              "column": 3629
+              "column": 4623
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileMapManager.ts",
-          "resolved": "__unresolved_38",
+          "resolved": "__unresolved_48",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3645
+              "column": 4639
             },
             "end": {
               "line": 5,
-              "column": 3721
+              "column": 4715
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ui/ControllerManager.ts",
-          "resolved": "__unresolved_39",
+          "resolved": "__unresolved_49",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3737
+              "column": 4731
             },
             "end": {
               "line": 5,
-              "column": 3814
+              "column": 4808
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/AttackSubStateMachine.ts",
-          "resolved": "__unresolved_40",
+          "resolved": "__unresolved_50",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3830
+              "column": 4824
             },
             "end": {
               "line": 5,
-              "column": 3923
+              "column": 4917
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/DeadSubStateMachine.ts",
-          "resolved": "__unresolved_41",
+          "resolved": "__unresolved_51",
           "loc": {
             "start": {
               "line": 5,
-              "column": 3939
+              "column": 4933
             },
             "end": {
               "line": 5,
-              "column": 4030
+              "column": 5024
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/IdleSubStateMachine.ts",
-          "resolved": "__unresolved_42",
+          "resolved": "__unresolved_52",
           "loc": {
             "start": {
               "line": 5,
-              "column": 4046
+              "column": 5040
             },
             "end": {
               "line": 5,
-              "column": 4137
+              "column": 5131
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonManager.ts",
-          "resolved": "__unresolved_43",
+          "resolved": "__unresolved_53",
           "loc": {
             "start": {
               "line": 5,
-              "column": 4153
+              "column": 5147
             },
             "end": {
               "line": 5,
-              "column": 4246
+              "column": 5240
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/woodenSkeleton/WoodenSkeletonStateMachine.ts",
-          "resolved": "__unresolved_44",
+          "resolved": "__unresolved_54",
           "loc": {
             "start": {
               "line": 5,
-              "column": 4262
+              "column": 5256
             },
             "end": {
               "line": 5,
-              "column": 4360
+              "column": 5354
             }
           }
         },
         {
           "value": "file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts",
-          "resolved": "__unresolved_45",
+          "resolved": "__unresolved_55",
           "loc": {
             "start": {
               "line": 5,
-              "column": 4376
+              "column": 5370
             },
             "end": {
               "line": 5,
-              "column": 4436
+              "column": 5430
             }
           }
         }
@@ -1398,6 +1538,20 @@
         {
           "resolved": {
             "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
             "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DeathSubStateMachine.ts"
           },
           "messages": []
@@ -1448,6 +1602,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IronSkeletonStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AirDeathSubStateMachine.ts"
           },
           "messages": []
         },
@@ -1546,6 +1707,55 @@
           "resolved": {
             "type": "module",
             "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeFourSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeOneSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeThreeSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeTwoSubStateMachine.ts"
           },
           "messages": []
         },
@@ -1773,7 +1983,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1729697731543,
+      "mTimestamp": 1731847065793,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -5302,7 +5512,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts": {
       "mTimestamp": {
-        "mtime": 1729528054654.019,
+        "mtime": 1731848558768.246,
         "uuid": "82a841cd-8da7-4eef-bdd0-3648b2f67baf"
       },
       "chunkId": "3f332674417baec9a5b68aabc783149dd84fdcfd",
@@ -5871,7 +6081,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/levels/index.ts": {
       "mTimestamp": {
-        "mtime": 1727278043084.0244,
+        "mtime": 1731544422399.218,
         "uuid": "9eae4d84-ae09-45e2-96e6-98f5bba1e772"
       },
       "chunkId": "c3df5982a2137810b4641a241ff9e526ef0c22b0",
@@ -5946,7 +6156,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/levels/level1.ts": {
       "mTimestamp": {
-        "mtime": 1727278043085.0232,
+        "mtime": 1730133032579.41,
         "uuid": "7d67f9d5-76ba-476e-811e-d05e5e00d146"
       },
       "chunkId": "8e2343a8b80aa0f1249638c72df7dd138f9e1e8e",
@@ -6054,7 +6264,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts": {
       "mTimestamp": {
-        "mtime": 1729528054784.0198,
+        "mtime": 1731848311721.5967,
         "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
       },
       "chunkId": "954b0e73891bc2f7fc96db38997cfdb99b941f24",
@@ -6960,7 +7170,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts": {
       "mTimestamp": {
-        "mtime": 1729702474259.3274,
+        "mtime": 1730132984400.2163,
         "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
       },
       "chunkId": "f04e49bcfa43316acf6e4839facfd59124125744",
@@ -7128,7 +7338,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerStateMachine.ts": {
       "mTimestamp": {
-        "mtime": 1729528054798.0198,
+        "mtime": 1730130654810.7266,
         "uuid": "c78ca860-f2c7-4b07-846b-8c1ed60de544"
       },
       "chunkId": "acefe1f1d8dc98d6990718b1166e38b4d4a25355",
@@ -7351,6 +7561,20 @@
               "column": 59
             }
           }
+        },
+        {
+          "value": "./AirDeathSubStateMachine",
+          "resolved": "__unresolved_15",
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 36
+            },
+            "end": {
+              "line": 18,
+              "column": 63
+            }
+          }
         }
       ],
       "type": "esm",
@@ -7478,6 +7702,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AttackSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AirDeathSubStateMachine.ts"
           },
           "messages": []
         }
@@ -7677,7 +7908,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts": {
       "mTimestamp": {
-        "mtime": 1729702482055.5574,
+        "mtime": 1731852929169.3672,
         "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
       },
       "chunkId": "909d6415b43c7fb74274ece2b0628d7c767b31f6",
@@ -7858,6 +8089,34 @@
               "column": 73
             }
           }
+        },
+        {
+          "value": "../burst/BurstManager",
+          "resolved": "__unresolved_12",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 29
+            },
+            "end": {
+              "line": 13,
+              "column": 52
+            }
+          }
+        },
+        {
+          "value": "../spikes/SpikeManager",
+          "resolved": "__unresolved_13",
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 29
+            },
+            "end": {
+              "line": 14,
+              "column": 53
+            }
+          }
         }
       ],
       "type": "esm",
@@ -7964,6 +8223,20 @@
           "resolved": {
             "type": "module",
             "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/ironSkeleton/IronSkeletonManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeManager.ts"
           },
           "messages": []
         }
@@ -9056,7 +9329,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/door/DoorManager.ts": {
       "mTimestamp": {
-        "mtime": 1729528054786.0183,
+        "mtime": 1730130260149.9065,
         "uuid": "474454ef-f52a-479b-9b94-da7f247d2390"
       },
       "chunkId": "923a94c8578d4328f3f66c667ca63fd6a8311288",
@@ -10197,6 +10470,1305 @@
           "resolved": {
             "type": "module",
             "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstManager.ts": {
+      "mTimestamp": {
+        "mtime": 1730130874541.4756,
+        "uuid": "05b8c58f-6bcc-4104-9eb6-19327c5fb9cc"
+      },
+      "chunkId": "702d3c04f41eca4e6b94302db40f7fd06b660e1f",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 40
+            },
+            "end": {
+              "line": 1,
+              "column": 44
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 81
+            },
+            "end": {
+              "line": 2,
+              "column": 94
+            }
+          }
+        },
+        {
+          "value": "../../runtime/EventManager",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 25
+            },
+            "end": {
+              "line": 3,
+              "column": 53
+            }
+          }
+        },
+        {
+          "value": "../../runtime/DataManager",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 24
+            },
+            "end": {
+              "line": 4,
+              "column": 51
+            }
+          }
+        },
+        {
+          "value": "../../base/EntityManager",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 30
+            },
+            "end": {
+              "line": 5,
+              "column": 56
+            }
+          }
+        },
+        {
+          "value": "./BurstStateMachine",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 34
+            },
+            "end": {
+              "line": 6,
+              "column": 55
+            }
+          }
+        },
+        {
+          "value": "../tile/TileManger",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 40
+            },
+            "end": {
+              "line": 7,
+              "column": 60
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/EntityManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/burst/BurstStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1730129613690.5364,
+        "uuid": "06d32aee-f3ca-439e-b0f9-08176058899f"
+      },
+      "chunkId": "6d49ecb4f363ab01fcf5a4e889032619a8bc3c13",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 76
+            },
+            "end": {
+              "line": 1,
+              "column": 80
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 74
+            },
+            "end": {
+              "line": 2,
+              "column": 87
+            }
+          }
+        },
+        {
+          "value": "../../base/StateMachine",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 72
+            },
+            "end": {
+              "line": 3,
+              "column": 97
+            }
+          }
+        },
+        {
+          "value": "../../base/State",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 18
+            },
+            "end": {
+              "line": 4,
+              "column": 36
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/AirDeathSubStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1730130564234.389,
+        "uuid": "0ab5cc14-6bcc-4bfb-be86-ea33460d7860"
+      },
+      "chunkId": "738dc56b97ec955569ab600a26970f16bfcc84b3",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../../base/State",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 18
+            },
+            "end": {
+              "line": 1,
+              "column": 36
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 31
+            },
+            "end": {
+              "line": 3,
+              "column": 44
+            }
+          }
+        },
+        {
+          "value": "../../base/DirectionSubStateMachine",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 37
+            },
+            "end": {
+              "line": 4,
+              "column": 74
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/DirectionSubStateMachine.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeManager.ts": {
+      "mTimestamp": {
+        "mtime": 1731854194696.6035,
+        "uuid": "5adabfec-cc25-41c9-8a0a-0fb44895be10"
+      },
+      "chunkId": "440c057e32dd4e6849e2be6e881f2c3a59562c9f",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 59
+            },
+            "end": {
+              "line": 1,
+              "column": 63
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 116
+            },
+            "end": {
+              "line": 3,
+              "column": 129
+            }
+          }
+        },
+        {
+          "value": "../../utils",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 28
+            },
+            "end": {
+              "line": 5,
+              "column": 41
+            }
+          }
+        },
+        {
+          "value": "../tile/TileManger",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 40
+            },
+            "end": {
+              "line": 6,
+              "column": 60
+            }
+          }
+        },
+        {
+          "value": "./SpikeStateMachine",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 34
+            },
+            "end": {
+              "line": 7,
+              "column": 55
+            }
+          }
+        },
+        {
+          "value": "../../runtime/EventManager",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 25
+            },
+            "end": {
+              "line": 8,
+              "column": 53
+            }
+          }
+        },
+        {
+          "value": "../../runtime/DataManager",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 24
+            },
+            "end": {
+              "line": 9,
+              "column": 51
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/utils/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/tile/TileManger.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/EventManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1731853817482.8906,
+        "uuid": "d2ec13ec-4725-4f40-a47e-fe75c52952f8"
+      },
+      "chunkId": "c17f7a08de51a6a0af3b301c0c314e82b27ac14f",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 38
+            },
+            "end": {
+              "line": 1,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 116
+            },
+            "end": {
+              "line": 2,
+              "column": 129
+            }
+          }
+        },
+        {
+          "value": "../../base/StateMachine",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 72
+            },
+            "end": {
+              "line": 3,
+              "column": 97
+            }
+          }
+        },
+        {
+          "value": "./SpikeOneSubStateMachine",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 36
+            },
+            "end": {
+              "line": 4,
+              "column": 63
+            }
+          }
+        },
+        {
+          "value": "./SpikeTwoSubStateMachine",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 36
+            },
+            "end": {
+              "line": 5,
+              "column": 63
+            }
+          }
+        },
+        {
+          "value": "./SpikeFourSubStateMachine",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 37
+            },
+            "end": {
+              "line": 6,
+              "column": 65
+            }
+          }
+        },
+        {
+          "value": "./SpikeThreeSubStateMachine",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 38
+            },
+            "end": {
+              "line": 7,
+              "column": 67
+            }
+          }
+        },
+        {
+          "value": "./SpikeManager",
+          "resolved": "__unresolved_7",
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 29
+            },
+            "end": {
+              "line": 9,
+              "column": 45
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/StateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeOneSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeTwoSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeFourSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeThreeSubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1731849398017.2327,
+        "uuid": "c51cd9b8-b504-41a4-8aa2-3e1f37df59b9"
+      },
+      "chunkId": "102f047e149cb5297bd274e4392a545e8f0405ed",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../../base/SubStateMachine",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 32
+            },
+            "end": {
+              "line": 1,
+              "column": 60
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 63
+            },
+            "end": {
+              "line": 2,
+              "column": 76
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/SubStateMachine.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeOneSubStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1731850040096.7278,
+        "uuid": "9eefa6de-d41c-4798-aca2-787d2accc60b"
+      },
+      "chunkId": "4aaebf65c1c37e9e30b32b9e3b74f0c934a8ca2d",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../../base/State",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 18
+            },
+            "end": {
+              "line": 1,
+              "column": 36
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 33
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            }
+          }
+        },
+        {
+          "value": "./SpikeSubStateMachine",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 33
+            },
+            "end": {
+              "line": 4,
+              "column": 57
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeTwoSubStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1731849561312.3127,
+        "uuid": "e0d5d84b-b715-4c85-b0c7-164336d02b29"
+      },
+      "chunkId": "551f5edbee4fdd229c2f0cf0141ea21ca7089d0a",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../../base/State",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 18
+            },
+            "end": {
+              "line": 2,
+              "column": 36
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 33
+            },
+            "end": {
+              "line": 4,
+              "column": 46
+            }
+          }
+        },
+        {
+          "value": "./SpikeSubStateMachine",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 33
+            },
+            "end": {
+              "line": 5,
+              "column": 57
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeFourSubStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1731849896390.9568,
+        "uuid": "48b1372f-64c9-4a86-b8b4-a7eb83b1e01e"
+      },
+      "chunkId": "25f1a2ea8f03638d6f77895945d50a1abf106a15",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../../base/State",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 18
+            },
+            "end": {
+              "line": 2,
+              "column": 36
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 81
+            },
+            "end": {
+              "line": 4,
+              "column": 94
+            }
+          }
+        },
+        {
+          "value": "./SpikeSubStateMachine",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 33
+            },
+            "end": {
+              "line": 5,
+              "column": 57
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeThreeSubStateMachine.ts": {
+      "mTimestamp": {
+        "mtime": 1731849683892.0286,
+        "uuid": "0290bf01-0827-4271-a98e-3692a6305268"
+      },
+      "chunkId": "da86a93f000f86659a0c06882f1a725bbe413fa5",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "../../base/State",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 18
+            },
+            "end": {
+              "line": 2,
+              "column": 36
+            }
+          }
+        },
+        {
+          "value": "../../enums",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 33
+            },
+            "end": {
+              "line": 4,
+              "column": 46
+            }
+          }
+        },
+        {
+          "value": "./SpikeSubStateMachine",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 33
+            },
+            "end": {
+              "line": 5,
+              "column": 57
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/base/State.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/enums/index.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeSubStateMachine.ts"
           },
           "messages": []
         }

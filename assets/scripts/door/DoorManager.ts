@@ -4,6 +4,7 @@ import EventManager from '../../runtime/EventManager';
 import { EntityManager } from '../../base/EntityManager';
 import { DoorStateMachine } from './DoorStateMachine';
 import DataManager from '../../runtime/DataManager';
+import { IEntity } from '../../levels';
 const { ccclass, property } = _decorator;
 
 
@@ -17,17 +18,11 @@ export class DoorManager extends EntityManager {
         EventManager.Instance.off(EVENT_ENUM.DOOR_OPEN, this._onOpen); 
     }
     
-    async init(){   
+    async init(params:IEntity){   
         //添加状态机
         this.fsm = this.addComponent(DoorStateMachine);
         await this.fsm.init();
-        super.init({
-            x:7,
-            y:8,
-            type: ENTITY_TYPE_ENUM.DOOR,
-            direction:DIRECTION_ENUM.TOP,
-            state:ENTITY_STATE_ENUM.IDLE
-        });
+        super.init(params);
         EventManager.Instance.on(EVENT_ENUM.DOOR_OPEN, this._onOpen, this);
    
     }

@@ -8,6 +8,7 @@ import { EntityManager } from '../../base/EntityManager';
 import DataManager from '../../runtime/DataManager';
 import { IEntity } from '../../levels';
 import { EnemyManager } from '../../base/EnemyManager';
+import { BurstManager } from '../burst/BurstManager';
 const { ccclass, property } = _decorator;
 
 
@@ -212,7 +213,8 @@ export class PlayerManager extends EntityManager {
         const {x:doorX, y:doorY, state:doorState} = DataManager.Instance.door;
         //解构出未死亡的敌人信息
         const enemies:EnemyManager[] = DataManager.Instance.enemies.filter(enemy=>enemy.state !== ENTITY_STATE_ENUM.DEATH);
-
+        //解构出地裂信息
+        const bursts:BurstManager[] = DataManager.Instance.bursts.filter(burst=>burst.state !== ENTITY_STATE_ENUM.DEATH);
 
         
         if(inputDirection === CONTROLLER_ENUM.TOP){
@@ -251,7 +253,14 @@ export class PlayerManager extends EntityManager {
                     }
                 }
 
-
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.turnable)){
+                        return false;
+                    }
+                }
 
                 //判断地图元素
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
@@ -286,13 +295,21 @@ export class PlayerManager extends EntityManager {
                     this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return true;
                 }
-
+                
                 //是否碰到了敌人
                 for(let i = 0; i < enemies.length; ++i){
                     const {x:enemyX, y:enemyY} = enemies[i];
                     if((x === enemyX && playerNextY === enemyY) || (weaponNextX === enemyX && playerNextY === enemyY)){
                         this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                         return true;
+                    }
+                }
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.turnable)){
+                        return false;
                     }
                 }
 
@@ -332,6 +349,16 @@ export class PlayerManager extends EntityManager {
                     }
                 }
 
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if(x === burstX && playerNextY === burstY){
+                        return false;
+                    }
+                }
+
+
                 if(playerTile && playerTile.moveable){
                     //人能走就行
                 }
@@ -369,6 +396,16 @@ export class PlayerManager extends EntityManager {
                     }
                 }
 
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
+
                 
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
                     //人物：下一个瓦片且可移动
@@ -405,12 +442,21 @@ export class PlayerManager extends EntityManager {
                 //判断是否碰到了敌人
                 for(let i = 0; i < enemies.length; ++i){
                     const {x:enemyX, y:enemyY} = enemies[i];
-                    if((playerNextX === enemyX && y === enemyY)|| (x === enemyX && weaponNextY === enemyY)){
+                    if((playerNextX === enemyX && y === enemyY) || (x === enemyX && weaponNextY === enemyY)){
                         this.state = ENTITY_STATE_ENUM.BLOCKFRONT;
                         return true;    
                     }
                 }
-                
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
                     //人：能走
                     //枪不存在，或者枪能转
@@ -447,6 +493,15 @@ export class PlayerManager extends EntityManager {
                     }
                 }
                 
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+                
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
 
                 }
@@ -465,7 +520,7 @@ export class PlayerManager extends EntityManager {
                 const weaponNextY = y + 1;
                 const playerTile = tileInfo[playerNextX][y];
                 const weaponTile = tileInfo[playerNextX][weaponNextY];
-                if(((playerNextX === doorX && y === doorY)|| (x === doorX && weaponNextY === doorY))
+                if(((playerNextX === doorX && y === doorY)|| (playerNextX === doorX && weaponNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
                 ){
                     this.state = ENTITY_STATE_ENUM.BLOCKBACK;
@@ -475,11 +530,20 @@ export class PlayerManager extends EntityManager {
                 //判断是否碰到了敌人
                 for(let i = 0; i < enemies.length; ++i){
                     const {x:enemyX, y:enemyY} = enemies[i];
-                    if((playerNextX === enemyX && y === enemyY)|| (x === enemyX && weaponNextY === enemyY)){
+                    if((playerNextX === enemyX && y === enemyY)|| (playerNextX === enemyX && weaponNextY === enemyY)){
                         this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                         return true;    
                     }
                 }
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
 
                 }
@@ -548,6 +612,16 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if(x === burstX && playerNextY === burstY){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable){
 
                 }
@@ -581,6 +655,16 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
                     //人可走
                     //枪不存在，或者枪能转
@@ -614,6 +698,15 @@ export class PlayerManager extends EntityManager {
                     if((x === enemyX && playerNextY === enemyY)|| (x === enemyX && weaponNextY === enemyY)){
                         this.state = ENTITY_STATE_ENUM.BLOCKBACK;
                         return true;    
+                    }
+                }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
                     }
                 }
 
@@ -651,6 +744,16 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
                     //人可走
                     //枪不存在，或者枪能转
@@ -690,6 +793,16 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
 
                 }
@@ -721,6 +834,17 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if(playerNextX === burstX && y === burstY){
+                        return false;
+                    }
+                }
+
+
                 if(playerTile && playerTile.moveable){
 
                 }
@@ -755,6 +879,15 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
 
                 }
@@ -789,6 +922,16 @@ export class PlayerManager extends EntityManager {
                         return true;    
                     }
                 }
+
+                //判断地裂
+                for (let i = 0; i < bursts.length; i++) {
+                    const {x:burstX, y:burstY} = bursts[i];
+                    //人能走且枪能走
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                        return false;
+                    }
+                }
+
                 if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
 
                 }
@@ -838,6 +981,8 @@ export class PlayerManager extends EntityManager {
                     return true;    
                 }
             }
+
+            
 
             if(
                    (!tileInfo[x][nextY] || tileInfo[x][nextY].turnable)

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, _dec, _class, _crd, ccclass, property, BattleManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, _dec, _class, _crd, ccclass, property, BattleManager;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -71,6 +71,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("IronSkeletonManager", "../ironSkeleton/IronSkeletonManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfBurstManager(extras) {
+    _reporterNs.report("BurstManager", "../burst/BurstManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfSpikeManager(extras) {
+    _reporterNs.report("SpikeManager", "../spikes/SpikeManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -107,6 +115,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       DoorManager = _unresolved_11.DoorManager;
     }, function (_unresolved_12) {
       IronSkeletonManager = _unresolved_12.IronSkeletonManager;
+    }, function (_unresolved_13) {
+      BurstManager = _unresolved_13.BurstManager;
+    }, function (_unresolved_14) {
+      SpikeManager = _unresolved_14.SpikeManager;
     }],
     execute: function () {
       _crd = true;
@@ -171,6 +183,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), DataManager) : DataManager).Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
             this.generateTileMap();
+            this.generateBurst();
+            this.generateSpikes();
             this.generateDoor();
             this.generateEnemy(); //生成player
 
@@ -217,14 +231,44 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           })();
         }
 
-        generatePlayer() {
+        generateBurst() {
           var _this2 = this;
+
+          return _asyncToGenerator(function* () {
+            var burst = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
+              error: Error()
+            }), createUINode) : createUINode)();
+            burst.setParent(_this2.stage);
+            var burstManager = burst.addComponent(_crd && BurstManager === void 0 ? (_reportPossibleCrUseOfBurstManager({
+              error: Error()
+            }), BurstManager) : BurstManager);
+            yield burstManager.init({
+              x: 2,
+              y: 6,
+              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+                error: Error()
+              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).BURST,
+              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
+              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
+            });
+            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+              error: Error()
+            }), DataManager) : DataManager).Instance.bursts.push(burstManager);
+          })();
+        }
+
+        generatePlayer() {
+          var _this3 = this;
 
           return _asyncToGenerator(function* () {
             var player = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
             }), createUINode) : createUINode)();
-            player.setParent(_this2.stage);
+            player.setParent(_this3.stage);
             var playManager = player.addComponent(_crd && PlayerManager === void 0 ? (_reportPossibleCrUseOfPlayerManager({
               error: Error()
             }), PlayerManager) : PlayerManager);
@@ -252,18 +296,55 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           })();
         }
 
+        generateSpikes() {
+          var _this4 = this;
+
+          return _asyncToGenerator(function* () {
+            var spikes = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
+              error: Error()
+            }), createUINode) : createUINode)();
+            spikes.setParent(_this4.stage);
+            var spikesManager = spikes.addComponent(_crd && SpikeManager === void 0 ? (_reportPossibleCrUseOfSpikeManager({
+              error: Error()
+            }), SpikeManager) : SpikeManager);
+            yield spikesManager.init({
+              x: 2,
+              y: 5,
+              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+                error: Error()
+              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SPIKES_FOUR,
+              count: 0
+            });
+            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+              error: Error()
+            }), DataManager) : DataManager).Instance.spikes.push(spikesManager);
+          })();
+        }
+
         generateDoor() {
-          var _this3 = this;
+          var _this5 = this;
 
           return _asyncToGenerator(function* () {
             var door = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
             }), createUINode) : createUINode)();
-            door.setParent(_this3.stage);
+            door.setParent(_this5.stage);
             var doorManager = door.addComponent(_crd && DoorManager === void 0 ? (_reportPossibleCrUseOfDoorManager({
               error: Error()
             }), DoorManager) : DoorManager);
-            yield doorManager.init();
+            yield doorManager.init({
+              x: 7,
+              y: 8,
+              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+                error: Error()
+              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).DOOR,
+              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
+              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
+            });
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.door = doorManager;
@@ -271,13 +352,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         generateEnemy() {
-          var _this4 = this;
+          var _this6 = this;
 
           return _asyncToGenerator(function* () {
             var enemy = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
             }), createUINode) : createUINode)();
-            enemy.setParent(_this4.stage);
+            enemy.setParent(_this6.stage);
             var woodenSkeletonManager = enemy.addComponent(_crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
               error: Error()
             }), WoodenSkeletonManager) : WoodenSkeletonManager);
@@ -301,7 +382,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             var ironSkeleton = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
             }), createUINode) : createUINode)();
-            ironSkeleton.setParent(_this4.stage);
+            ironSkeleton.setParent(_this6.stage);
             var ironSkeletonManager = ironSkeleton.addComponent(_crd && IronSkeletonManager === void 0 ? (_reportPossibleCrUseOfIronSkeletonManager({
               error: Error()
             }), IronSkeletonManager) : IronSkeletonManager);

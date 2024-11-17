@@ -9145,5 +9145,65 @@
     "url": "db://assets/scripts/ironSkeleton/DeadSubStateMachine.ts",
     "value": {},
     "versionCode": 1
+  },
+  "05b8c58f-6bcc-4104-9eb6-19327c5fb9cc": {
+    "url": "db://assets/scripts/burst/BurstManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "06d32aee-f3ca-439e-b0f9-08176058899f": {
+    "url": "db://assets/scripts/burst/BurstStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "ccdc3872-a1fb-43f0-9ac4-df72e708a33f": {
+    "url": "db://assets/scripts/burst",
+    "value": {},
+    "versionCode": 1
+  },
+  "0ab5cc14-6bcc-4bfb-be86-ea33460d7860": {
+    "url": "db://assets/scripts/player/AirDeathSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "9281e316-b80d-41b9-b1ee-e3ae63322165": {
+    "url": "db://assets/scripts/spikes",
+    "value": {},
+    "versionCode": 1
+  },
+  "5adabfec-cc25-41c9-8a0a-0fb44895be10": {
+    "url": "db://assets/scripts/spikes/SpikeManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "d2ec13ec-4725-4f40-a47e-fe75c52952f8": {
+    "url": "db://assets/scripts/spikes/SpikeStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c51cd9b8-b504-41a4-8aa2-3e1f37df59b9": {
+    "url": "db://assets/scripts/spikes/SpikeSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "9eefa6de-d41c-4798-aca2-787d2accc60b": {
+    "url": "db://assets/scripts/spikes/SpikeOneSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "48b1372f-64c9-4a86-b8b4-a7eb83b1e01e": {
+    "url": "db://assets/scripts/spikes/SpikeFourSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "0290bf01-0827-4271-a98e-3692a6305268": {
+    "url": "db://assets/scripts/spikes/SpikeThreeSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e0d5d84b-b715-4c85-b0c7-164336d02b29": {
+    "url": "db://assets/scripts/spikes/SpikeTwoSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

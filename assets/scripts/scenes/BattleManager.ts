@@ -10,6 +10,8 @@ import { PlayerManager } from '../player/PlayerManager';
 import { WoodenSkeletonManager } from '../woodenSkeleton/WoodenSkeletonManager';
 import { DoorManager } from '../door/DoorManager';
 import { IronSkeletonManager } from '../ironSkeleton/IronSkeletonManager';
+import { BurstManager } from '../burst/BurstManager';
+import { SpikeManager } from '../spikes/SpikeManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('BattleManager')
@@ -43,6 +45,8 @@ export class BattleManager extends Component {
             DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
 
             this.generateTileMap();
+            this.generateBurst();
+            this.generateSpikes();
             this.generateDoor();
             this.generateEnemy();
             //生成player
@@ -84,6 +88,21 @@ export class BattleManager extends Component {
         this.adaptPos();
     }
 
+
+    async generateBurst(){
+        const burst = createUINode();
+        burst.setParent(this.stage);
+        const burstManager = burst.addComponent(BurstManager);
+        await burstManager.init({
+            x:2,
+            y:6,
+            type: ENTITY_TYPE_ENUM.BURST,
+            direction:DIRECTION_ENUM.TOP,
+            state:ENTITY_STATE_ENUM.IDLE
+        });
+        DataManager.Instance.bursts.push(burstManager);
+    }
+
     async generatePlayer(){
         const player = createUINode();
         player.setParent(this.stage);
@@ -100,11 +119,29 @@ export class BattleManager extends Component {
         
     }
 
+    async generateSpikes(){
+        const spikes = createUINode();
+        spikes.setParent(this.stage);
+        const spikesManager = spikes.addComponent(SpikeManager);
+        await spikesManager.init({
+            x:2,
+            y:5,
+            type: ENTITY_TYPE_ENUM.SPIKES_FOUR,
+            count: 0
+        });
+        DataManager.Instance.spikes.push(spikesManager);
+    }
     async generateDoor(){
         const door = createUINode();
         door.setParent(this.stage);
         const doorManager = door.addComponent(DoorManager);
-        await doorManager.init();
+        await doorManager.init({
+            x:7,
+            y:8,
+            type: ENTITY_TYPE_ENUM.DOOR,
+            direction:DIRECTION_ENUM.TOP,
+            state:ENTITY_STATE_ENUM.IDLE
+        });
         DataManager.Instance.door = doorManager;
     }
 

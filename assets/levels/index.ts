@@ -10,6 +10,13 @@ export interface IEntity{
     state:ENTITY_STATE_ENUM;
 };
 
+export interface ISpikes{
+    x:number
+    y:number
+    type:ENTITY_TYPE_ENUM
+    count:number
+}
+
 export interface ITILE{
     src : number | null,
     type : TILE_TYPE_ENUM | null

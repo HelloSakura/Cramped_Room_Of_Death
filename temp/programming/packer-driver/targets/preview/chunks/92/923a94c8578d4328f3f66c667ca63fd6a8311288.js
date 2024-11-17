@@ -1,22 +1,14 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, EventManager, EntityManager, DoorStateMachine, DataManager, _dec, _class, _crd, ccclass, property, DoorManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, ENTITY_STATE_ENUM, EVENT_ENUM, EventManager, EntityManager, DoorStateMachine, DataManager, _dec, _class, _crd, ccclass, property, DoorManager;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
   function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-  function _reportPossibleCrUseOfDIRECTION_ENUM(extras) {
-    _reporterNs.report("DIRECTION_ENUM", "../../enums", _context.meta, extras);
-  }
-
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
     _reporterNs.report("ENTITY_STATE_ENUM", "../../enums", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfENTITY_TYPE_ENUM(extras) {
-    _reporterNs.report("ENTITY_TYPE_ENUM", "../../enums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfEVENT_ENUM(extras) {
@@ -39,6 +31,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("DataManager", "../../runtime/DataManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfIEntity(extras) {
+    _reporterNs.report("IEntity", "../../levels", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -48,9 +44,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       _decorator = _cc._decorator;
     }, function (_unresolved_2) {
-      DIRECTION_ENUM = _unresolved_2.DIRECTION_ENUM;
       ENTITY_STATE_ENUM = _unresolved_2.ENTITY_STATE_ENUM;
-      ENTITY_TYPE_ENUM = _unresolved_2.ENTITY_TYPE_ENUM;
       EVENT_ENUM = _unresolved_2.EVENT_ENUM;
     }, function (_unresolved_3) {
       EventManager = _unresolved_3.default;
@@ -85,7 +79,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), EVENT_ENUM) : EVENT_ENUM).DOOR_OPEN, this._onOpen);
         }
 
-        init() {
+        init(params) {
           var _superprop_getInit = () => super.init,
               _this = this;
 
@@ -96,19 +90,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), DoorStateMachine) : DoorStateMachine);
             yield _this.fsm.init();
 
-            _superprop_getInit().call(_this, {
-              x: 7,
-              y: 8,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-                error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).DOOR,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-                error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-            });
+            _superprop_getInit().call(_this, params);
 
             (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
               error: Error()

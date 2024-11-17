@@ -43,6 +43,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("EnemyManager", "../../base/EnemyManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfBurstManager(extras) {
+    _reporterNs.report("BurstManager", "../burst/BurstManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -382,6 +386,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), DataManager) : DataManager).Instance.enemies.filter(enemy => enemy.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH); //解构出地裂信息
+
+          const bursts = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.bursts.filter(burst => burst.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
           }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH);
 
           if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
@@ -429,6 +439,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY && (!weaponTile || weaponTile.turnable)) {
+                  return false;
                 }
               } //判断地图元素
 
@@ -481,6 +503,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKLEFT;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY && (!weaponTile || weaponTile.turnable)) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)) {//人能走
@@ -529,6 +563,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKBACK;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable) {//人能走就行
@@ -575,6 +621,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKRIGHT;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
                 }
               }
 
@@ -630,6 +688,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)) {//人：能走
@@ -677,6 +747,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKLEFT;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)) {} else {
@@ -700,7 +782,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               const playerTile = tileInfo[playerNextX][y];
               const weaponTile = tileInfo[playerNextX][weaponNextY];
 
-              if ((playerNextX === doorX && y === doorY || x === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+              if ((playerNextX === doorX && y === doorY || playerNextX === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
               }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
@@ -716,11 +798,23 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   y: enemyY
                 } = enemies[i];
 
-                if (playerNextX === enemyX && y === enemyY || x === enemyX && weaponNextY === enemyY) {
+                if (playerNextX === enemyX && y === enemyY || playerNextX === enemyX && weaponNextY === enemyY) {
                   this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKBACK;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
                 }
               }
 
@@ -815,6 +909,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable) {} else {
@@ -859,6 +965,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKLEFT;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
                 }
               }
 
@@ -907,6 +1025,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKBACK;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)) {//人可走
@@ -953,6 +1083,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKRIGHT;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (x === burstX && playerNextY === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
                 }
               }
 
@@ -1008,6 +1150,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKFRONT;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)) {} else {
@@ -1050,6 +1204,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKLEFT;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY) {
+                  return false;
                 }
               }
 
@@ -1096,6 +1262,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKBACK;
                   return true;
                 }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
+                }
               }
 
               if (playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)) {} else {
@@ -1140,6 +1318,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                     error: Error()
                   }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).BLOCKRIGHT;
                   return true;
+                }
+              } //判断地裂
+
+
+              for (let i = 0; i < bursts.length; i++) {
+                const {
+                  x: burstX,
+                  y: burstY
+                } = bursts[i]; //人能走且枪能走
+
+                if (playerNextX === burstX && y === burstY && (!weaponTile || weaponTile.moveable)) {
+                  return false;
                 }
               }
 

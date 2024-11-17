@@ -15,12 +15,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
     _reporterNs.report("ITILE", "../levels", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfBurstManager(extras) {
+    _reporterNs.report("BurstManager", "../scripts/burst/BurstManager", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfDoorManager(extras) {
     _reporterNs.report("DoorManager", "../scripts/door/DoorManager", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfPlayerManager(extras) {
     _reporterNs.report("PlayerManager", "../scripts/player/PlayerManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfSpikeManager(extras) {
+    _reporterNs.report("SpikeManager", "../scripts/spikes/SpikeManager", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfTileManger(extras) {
@@ -54,7 +62,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.levelIndex = 1;
           this.player = void 0;
           this.door = void 0;
+          this.bursts = void 0;
           this.enemies = void 0;
+          this.spikes = void 0;
         }
 
         static get Instance() {
@@ -68,7 +78,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.mapRowCount = 0;
           this.player = null;
           this.door = null;
+          this.bursts = [];
           this.enemies = [];
+          this.spikes = [];
         }
 
       });

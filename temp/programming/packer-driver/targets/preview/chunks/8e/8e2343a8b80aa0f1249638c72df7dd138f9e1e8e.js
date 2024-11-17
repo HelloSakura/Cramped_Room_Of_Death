@@ -148,10 +148,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           error: Error()
         }), TILE_TYPE_ENUM) : TILE_TYPE_ENUM).FLOOR
       }, {
-        src: 1,
-        type: (_crd && TILE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfTILE_TYPE_ENUM({
-          error: Error()
-        }), TILE_TYPE_ENUM) : TILE_TYPE_ENUM).FLOOR
+        // src: 1,
+        // type: TILE_TYPE_ENUM.FLOOR,
+        src: null,
+        type: null
       }, {
         src: 1,
         type: (_crd && TILE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfTILE_TYPE_ENUM({
