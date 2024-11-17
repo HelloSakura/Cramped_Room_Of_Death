@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, _dec, _class, _crd, ccclass, property, BattleManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, _dec, _class, _crd, ccclass, property, BattleManager;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -33,10 +33,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfEventManager(extras) {
     _reporterNs.report("EventManager", "../../runtime/EventManager", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfDIRECTION_ENUM(extras) {
-    _reporterNs.report("DIRECTION_ENUM", "../../enums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
@@ -101,7 +97,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_6) {
       EventManager = _unresolved_6.default;
     }, function (_unresolved_7) {
-      DIRECTION_ENUM = _unresolved_7.DIRECTION_ENUM;
       ENTITY_STATE_ENUM = _unresolved_7.ENTITY_STATE_ENUM;
       ENTITY_TYPE_ENUM = _unresolved_7.ENTITY_TYPE_ENUM;
       EVENT_ENUM = _unresolved_7.EVENT_ENUM;
@@ -141,12 +136,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         //
         onLoad() {
-          //绑定切换关卡
+          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.levelIndex = 1; //绑定切换关卡
+
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()
           }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
-          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this.nextLevel, this);
+          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this._nextLevel, this);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._checkArrivedDoor, this);
         }
 
         onDestroy() {
@@ -155,7 +158,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
-          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this.nextLevel);
+          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this._nextLevel);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._checkArrivedDoor);
         }
 
         start() {
@@ -192,11 +200,38 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
         }
 
-        nextLevel() {
+        _nextLevel() {
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.levelIndex++;
           this.initLevel();
+        } //检测玩家是否到门，且敌人全部死亡
+
+
+        _checkArrivedDoor() {
+          var {
+            x: playerX,
+            y: playerY
+          } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.player;
+          var {
+            x: doorX,
+            y: doorY,
+            state: doorState
+          } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.door;
+
+          if (playerX === doorX && playerY === doorY && doorState === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH) {
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL);
+          }
         }
 
         clearLevel() {
@@ -235,29 +270,26 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           var _this2 = this;
 
           return _asyncToGenerator(function* () {
-            var burst = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-              error: Error()
-            }), createUINode) : createUINode)();
-            burst.setParent(_this2.stage);
-            var burstManager = burst.addComponent(_crd && BurstManager === void 0 ? (_reportPossibleCrUseOfBurstManager({
-              error: Error()
-            }), BurstManager) : BurstManager);
-            yield burstManager.init({
-              x: 2,
-              y: 6,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+            var promise = [];
+
+            _this2.level.bursts.forEach(burst => {
+              var node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
                 error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).BURST,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+              }), createUINode) : createUINode)();
+              node.setParent(_this2.stage);
+              var manger = node.addComponent(_crd && BurstManager === void 0 ? (_reportPossibleCrUseOfBurstManager({
                 error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+              }), BurstManager) : BurstManager); //使用promise，避免等一个创造一个
+              //可以一起等待，提高资源加载速度
+
+              promise.push(manger.init(burst)); //注意名字大小写，大写是类名
+
+              (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
                 error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
+              }), DataManager) : DataManager).Instance.burst.push(manger);
             });
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-              error: Error()
-            }), DataManager) : DataManager).Instance.bursts.push(burstManager);
+
+            yield Promise.all(promise);
           })();
         }
 
@@ -272,19 +304,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             var playManager = player.addComponent(_crd && PlayerManager === void 0 ? (_reportPossibleCrUseOfPlayerManager({
               error: Error()
             }), PlayerManager) : PlayerManager);
-            yield playManager.init({
-              x: 2,
-              y: 8,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-                error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).PLAYER,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-                error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-            });
+            yield playManager.init(_this3.level.player);
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.player = playManager;
@@ -300,24 +320,26 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           var _this4 = this;
 
           return _asyncToGenerator(function* () {
-            var spikes = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-              error: Error()
-            }), createUINode) : createUINode)();
-            spikes.setParent(_this4.stage);
-            var spikesManager = spikes.addComponent(_crd && SpikeManager === void 0 ? (_reportPossibleCrUseOfSpikeManager({
-              error: Error()
-            }), SpikeManager) : SpikeManager);
-            yield spikesManager.init({
-              x: 2,
-              y: 5,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+            var promise = [];
+
+            _this4.level.spikes.forEach(spike => {
+              var node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
                 error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SPIKES_FOUR,
-              count: 0
+              }), createUINode) : createUINode)();
+              node.setParent(_this4.stage);
+              var manger = node.addComponent(_crd && SpikeManager === void 0 ? (_reportPossibleCrUseOfSpikeManager({
+                error: Error()
+              }), SpikeManager) : SpikeManager); //使用promise，避免等一个创造一个
+              //可以一起等待，提高资源加载速度
+
+              promise.push(manger.init(spike)); //注意名字大小写，大写是类名
+
+              (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+                error: Error()
+              }), DataManager) : DataManager).Instance.spikes.push(manger);
             });
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-              error: Error()
-            }), DataManager) : DataManager).Instance.spikes.push(spikesManager);
+
+            yield Promise.all(promise);
           })();
         }
 
@@ -332,19 +354,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             var doorManager = door.addComponent(_crd && DoorManager === void 0 ? (_reportPossibleCrUseOfDoorManager({
               error: Error()
             }), DoorManager) : DoorManager);
-            yield doorManager.init({
-              x: 7,
-              y: 8,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-                error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).DOOR,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-                error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-            });
+            yield doorManager.init(_this5.level.door);
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.door = doorManager;
@@ -355,54 +365,31 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           var _this6 = this;
 
           return _asyncToGenerator(function* () {
-            var enemy = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-              error: Error()
-            }), createUINode) : createUINode)();
-            enemy.setParent(_this6.stage);
-            var woodenSkeletonManager = enemy.addComponent(_crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
-              error: Error()
-            }), WoodenSkeletonManager) : WoodenSkeletonManager);
-            yield woodenSkeletonManager.init({
-              x: 2,
-              y: 2,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-                error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_WOODEN,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-                error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-            }); //注意名字大小写，大写是类名
+            var promise = [];
 
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-              error: Error()
-            }), DataManager) : DataManager).Instance.enemies.push(woodenSkeletonManager);
-            var ironSkeleton = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-              error: Error()
-            }), createUINode) : createUINode)();
-            ironSkeleton.setParent(_this6.stage);
-            var ironSkeletonManager = ironSkeleton.addComponent(_crd && IronSkeletonManager === void 0 ? (_reportPossibleCrUseOfIronSkeletonManager({
-              error: Error()
-            }), IronSkeletonManager) : IronSkeletonManager);
-            yield ironSkeletonManager.init({
-              x: 1,
-              y: 7,
-              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+            _this6.level.enemies.forEach(enemy => {
+              var node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
                 error: Error()
-              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_IRON,
-              direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+              }), createUINode) : createUINode)();
+              node.setParent(_this6.stage);
+              var Manger = enemy.type === (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
                 error: Error()
-              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_WOODEN ? _crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
                 error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-            }); //注意名字大小写，大写是类名
+              }), WoodenSkeletonManager) : WoodenSkeletonManager : _crd && IronSkeletonManager === void 0 ? (_reportPossibleCrUseOfIronSkeletonManager({
+                error: Error()
+              }), IronSkeletonManager) : IronSkeletonManager;
+              var manger = node.addComponent(Manger); //使用promise，避免等一个创造一个
+              //可以一起等待，提高资源加载速度
 
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-              error: Error()
-            }), DataManager) : DataManager).Instance.enemies.push(ironSkeletonManager);
+              promise.push(manger.init(enemy)); //注意名字大小写，大写是类名
+
+              (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+                error: Error()
+              }), DataManager) : DataManager).Instance.enemies.push(manger);
+            });
+
+            yield Promise.all(promise);
           })();
         }
 

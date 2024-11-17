@@ -9205,5 +9205,100 @@
     "url": "db://assets/scripts/spikes/SpikeTwoSubStateMachine.ts",
     "value": {},
     "versionCode": 1
+  },
+  "5c97d55a-5b1b-417e-bccd-a73ba68971a3": {
+    "url": "db://assets/levels/level10.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "b28dfe43-b90f-4ab2-92b0-6b6f0da2f99c": {
+    "url": "db://assets/levels/level11.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "ab12ef55-b87f-41cb-8d0e-bba90530a235": {
+    "url": "db://assets/levels/level12.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "117079c2-a519-44cd-95f9-84567710596e": {
+    "url": "db://assets/levels/level13.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "0acccab3-8fa0-4e48-9696-a1d586b317e4": {
+    "url": "db://assets/levels/level14.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "5b9c7695-915d-4d5e-98c1-95ddf216c95c": {
+    "url": "db://assets/levels/level15.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6c42f61e-9d30-45cd-92b2-b648c22493cd": {
+    "url": "db://assets/levels/level16.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "83b5b685-3326-42cd-8826-653be8a07ecc": {
+    "url": "db://assets/levels/level17.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "e183ea7b-925e-4826-8e48-1db29d86e965": {
+    "url": "db://assets/levels/level18.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "6c8ad0b0-f14c-40dc-b256-6ad3a8e77cba": {
+    "url": "db://assets/levels/level19.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "c58047ef-ad0f-4028-ad29-6bd2ee0cd54a": {
+    "url": "db://assets/levels/level20.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "ff563f5f-2c4e-4f46-a44a-98fcbd363cab": {
+    "url": "db://assets/levels/level21.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "acd960c1-b56c-4976-80b0-c6c788ce4110": {
+    "url": "db://assets/levels/level3.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "cb41df15-69a6-4a74-9643-e613547a1003": {
+    "url": "db://assets/levels/level4.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "971813d3-6ef8-4beb-a477-a9a8a06f9464": {
+    "url": "db://assets/levels/level5.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "b071d134-e058-4322-a252-dd81889a3e8a": {
+    "url": "db://assets/levels/level6.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "521e9fe1-a765-42ee-8d28-57ff9dee798a": {
+    "url": "db://assets/levels/level7.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "9634c075-173b-43f9-8b51-cc3bd29f5fd4": {
+    "url": "db://assets/levels/level8.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "696e0ac6-54bc-46cc-a8a2-0caa4c30179d": {
+    "url": "db://assets/levels/level9.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

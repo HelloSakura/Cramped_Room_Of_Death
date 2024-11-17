@@ -24,7 +24,12 @@ export interface ITILE{
 
 //地图类型
 export interface ILevel{
-    mapInfo : Array<Array<ITILE>>
+    mapInfo : Array<Array<ITILE>>,
+    player:IEntity,
+    enemies:IEntity[],
+    spikes:ISpikes[],
+    bursts:IEntity[],
+    door:IEntity
 }
 
 

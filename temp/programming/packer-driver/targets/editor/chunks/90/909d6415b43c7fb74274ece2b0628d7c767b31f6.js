@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, _dec, _class, _crd, ccclass, property, BattleManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, _dec, _class, _crd, ccclass, property, BattleManager;
 
   function _reportPossibleCrUseOfTileMapManager(extras) {
     _reporterNs.report("TileMapManager", "../tile/TileMapManager", _context.meta, extras);
@@ -29,10 +29,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfEventManager(extras) {
     _reporterNs.report("EventManager", "../../runtime/EventManager", _context.meta, extras);
-  }
-
-  function _reportPossibleCrUseOfDIRECTION_ENUM(extras) {
-    _reporterNs.report("DIRECTION_ENUM", "../../enums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
@@ -97,7 +93,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     }, function (_unresolved_6) {
       EventManager = _unresolved_6.default;
     }, function (_unresolved_7) {
-      DIRECTION_ENUM = _unresolved_7.DIRECTION_ENUM;
       ENTITY_STATE_ENUM = _unresolved_7.ENTITY_STATE_ENUM;
       ENTITY_TYPE_ENUM = _unresolved_7.ENTITY_TYPE_ENUM;
       EVENT_ENUM = _unresolved_7.EVENT_ENUM;
@@ -137,12 +132,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         //
         onLoad() {
-          //绑定切换关卡
+          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.levelIndex = 1; //绑定切换关卡
+
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()
           }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
-          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this.nextLevel, this);
+          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this._nextLevel, this);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._checkArrivedDoor, this);
         }
 
         onDestroy() {
@@ -151,7 +154,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
-          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this.nextLevel);
+          }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL, this._nextLevel);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._checkArrivedDoor);
         }
 
         start() {
@@ -188,11 +196,38 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }
         }
 
-        nextLevel() {
+        _nextLevel() {
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.levelIndex++;
           this.initLevel();
+        } //检测玩家是否到门，且敌人全部死亡
+
+
+        _checkArrivedDoor() {
+          let {
+            x: playerX,
+            y: playerY
+          } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.player;
+          let {
+            x: doorX,
+            y: doorY,
+            state: doorState
+          } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.door;
+
+          if (playerX === doorX && playerY === doorY && doorState === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            error: Error()
+          }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH) {
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).NEXT_LEVEL);
+          }
         }
 
         clearLevel() {
@@ -224,29 +259,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         async generateBurst() {
-          const burst = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-            error: Error()
-          }), createUINode) : createUINode)();
-          burst.setParent(this.stage);
-          const burstManager = burst.addComponent(_crd && BurstManager === void 0 ? (_reportPossibleCrUseOfBurstManager({
-            error: Error()
-          }), BurstManager) : BurstManager);
-          await burstManager.init({
-            x: 2,
-            y: 6,
-            type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+          let promise = [];
+          this.level.bursts.forEach(burst => {
+            const node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
-            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).BURST,
-            direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+            }), createUINode) : createUINode)();
+            node.setParent(this.stage);
+            const manger = node.addComponent(_crd && BurstManager === void 0 ? (_reportPossibleCrUseOfBurstManager({
               error: Error()
-            }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-            state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            }), BurstManager) : BurstManager); //使用promise，避免等一个创造一个
+            //可以一起等待，提高资源加载速度
+
+            promise.push(manger.init(burst)); //注意名字大小写，大写是类名
+
+            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
-            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
+            }), DataManager) : DataManager).Instance.burst.push(manger);
           });
-          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-            error: Error()
-          }), DataManager) : DataManager).Instance.bursts.push(burstManager);
+          await Promise.all(promise);
         }
 
         async generatePlayer() {
@@ -257,19 +287,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           const playManager = player.addComponent(_crd && PlayerManager === void 0 ? (_reportPossibleCrUseOfPlayerManager({
             error: Error()
           }), PlayerManager) : PlayerManager);
-          await playManager.init({
-            x: 2,
-            y: 8,
-            type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-              error: Error()
-            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).PLAYER,
-            direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-              error: Error()
-            }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-            state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-              error: Error()
-            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-          });
+          await playManager.init(this.level.player);
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.player = playManager;
@@ -281,24 +299,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         async generateSpikes() {
-          const spikes = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-            error: Error()
-          }), createUINode) : createUINode)();
-          spikes.setParent(this.stage);
-          const spikesManager = spikes.addComponent(_crd && SpikeManager === void 0 ? (_reportPossibleCrUseOfSpikeManager({
-            error: Error()
-          }), SpikeManager) : SpikeManager);
-          await spikesManager.init({
-            x: 2,
-            y: 5,
-            type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+          let promise = [];
+          this.level.spikes.forEach(spike => {
+            const node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
-            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SPIKES_FOUR,
-            count: 0
+            }), createUINode) : createUINode)();
+            node.setParent(this.stage);
+            const manger = node.addComponent(_crd && SpikeManager === void 0 ? (_reportPossibleCrUseOfSpikeManager({
+              error: Error()
+            }), SpikeManager) : SpikeManager); //使用promise，避免等一个创造一个
+            //可以一起等待，提高资源加载速度
+
+            promise.push(manger.init(spike)); //注意名字大小写，大写是类名
+
+            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+              error: Error()
+            }), DataManager) : DataManager).Instance.spikes.push(manger);
           });
-          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-            error: Error()
-          }), DataManager) : DataManager).Instance.spikes.push(spikesManager);
+          await Promise.all(promise);
         }
 
         async generateDoor() {
@@ -309,73 +327,36 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           const doorManager = door.addComponent(_crd && DoorManager === void 0 ? (_reportPossibleCrUseOfDoorManager({
             error: Error()
           }), DoorManager) : DoorManager);
-          await doorManager.init({
-            x: 7,
-            y: 8,
-            type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-              error: Error()
-            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).DOOR,
-            direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-              error: Error()
-            }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-            state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-              error: Error()
-            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-          });
+          await doorManager.init(this.level.door);
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.door = doorManager;
         }
 
         async generateEnemy() {
-          const enemy = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-            error: Error()
-          }), createUINode) : createUINode)();
-          enemy.setParent(this.stage);
-          const woodenSkeletonManager = enemy.addComponent(_crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
-            error: Error()
-          }), WoodenSkeletonManager) : WoodenSkeletonManager);
-          await woodenSkeletonManager.init({
-            x: 2,
-            y: 2,
-            type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+          let promise = [];
+          this.level.enemies.forEach(enemy => {
+            const node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
-            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_WOODEN,
-            direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+            }), createUINode) : createUINode)();
+            node.setParent(this.stage);
+            const Manger = enemy.type === (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
               error: Error()
-            }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-            state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_WOODEN ? _crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
               error: Error()
-            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-          }); //注意名字大小写，大写是类名
+            }), WoodenSkeletonManager) : WoodenSkeletonManager : _crd && IronSkeletonManager === void 0 ? (_reportPossibleCrUseOfIronSkeletonManager({
+              error: Error()
+            }), IronSkeletonManager) : IronSkeletonManager;
+            const manger = node.addComponent(Manger); //使用promise，避免等一个创造一个
+            //可以一起等待，提高资源加载速度
 
-          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-            error: Error()
-          }), DataManager) : DataManager).Instance.enemies.push(woodenSkeletonManager);
-          const ironSkeleton = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
-            error: Error()
-          }), createUINode) : createUINode)();
-          ironSkeleton.setParent(this.stage);
-          const ironSkeletonManager = ironSkeleton.addComponent(_crd && IronSkeletonManager === void 0 ? (_reportPossibleCrUseOfIronSkeletonManager({
-            error: Error()
-          }), IronSkeletonManager) : IronSkeletonManager);
-          await ironSkeletonManager.init({
-            x: 1,
-            y: 7,
-            type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
-              error: Error()
-            }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_IRON,
-            direction: (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
-              error: Error()
-            }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP,
-            state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-              error: Error()
-            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE
-          }); //注意名字大小写，大写是类名
+            promise.push(manger.init(enemy)); //注意名字大小写，大写是类名
 
-          (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-            error: Error()
-          }), DataManager) : DataManager).Instance.enemies.push(ironSkeletonManager);
+            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+              error: Error()
+            }), DataManager) : DataManager).Instance.enemies.push(manger);
+          });
+          await Promise.all(promise);
         }
 
         adaptPos() {

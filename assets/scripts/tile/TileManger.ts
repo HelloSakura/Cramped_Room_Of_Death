@@ -39,6 +39,7 @@ export class TileManger extends Component {
             this.turnable = true;
             this.moveable = true;
         }
+        
 
         
         const sprite = this.node.addComponent(Sprite);

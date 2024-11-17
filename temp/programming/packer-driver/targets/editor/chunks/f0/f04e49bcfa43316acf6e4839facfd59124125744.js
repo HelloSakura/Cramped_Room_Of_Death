@@ -3,6 +3,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM, EventManager, PlayerStateMachine, EntityManager, DataManager, _dec, _class, _crd, ccclass, property, PlayerManager;
 
+  function _reportPossibleCrUseOfTileManger(extras) {
+    _reporterNs.report("TileManger", "../tile/TileManger", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfCONTROLLER_ENUM(extras) {
     _reporterNs.report("CONTROLLER_ENUM", "../../enums", _context.meta, extras);
   }
@@ -170,7 +174,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           } //判断攻击敌人
 
 
-          const id = this._willAttack(inputDirection);
+          let id = this._willAttack(inputDirection);
 
           if (id) {
             (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
@@ -196,14 +200,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         _willAttack(inputDirection) {
-          const enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+          let enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.enemies.filter(enemy => enemy.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()
           }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH);
 
           for (let i = 0; i < enemies.length; i++) {
-            const {
+            let {
               x: enemyX,
               y: enemyY,
               id: enemyId
@@ -362,19 +366,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         willBlock(inputDirection) {
           //解构出自己数据
-          const {
+          let {
             targetX: x,
             targetY: y,
             direction
           } = this; //解构出地图信息
 
-          const {
+          let {
             tileInfo
           } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance; //解构出门的信息
 
-          const {
+          let {
             x: doorX,
             y: doorY,
             state: doorState
@@ -382,13 +386,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), DataManager) : DataManager).Instance.door; //解构出未死亡的敌人信息
 
-          const enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+          let enemies = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.enemies.filter(enemy => enemy.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()
           }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH); //解构出地裂信息
 
-          const bursts = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+          let bursts = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
           }), DataManager) : DataManager).Instance.bursts.filter(burst => burst.state !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
             error: Error()
@@ -399,7 +403,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), CONTROLLER_ENUM) : CONTROLLER_ENUM).TOP) {
             //输入方向为上
             //拿到下一个y坐标(用二维坐标来表示角色位置而不是position)
-            const playerNextY = y - 1;
+            let playerNextY = y - 1;
 
             if (direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
@@ -414,9 +418,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               } //拿到下两个瓦片，一个是人物，一个是枪，总不能枪怼墙上
 
 
-              const weaponNextY = y - 2;
-              const playerTile = tileInfo[x][playerNextY];
-              const weaponTile = tileInfo[x][weaponNextY]; //判断是否碰到了门
+              let weaponNextY = y - 2;
+              let playerTile = tileInfo[x][playerNextY];
+              let weaponTile = tileInfo[x][weaponNextY]; //判断是否碰到了门
 
               if ((x === doorX && playerNextY === doorY || x === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -429,7 +433,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -444,7 +448,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -478,8 +482,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               let weaponNextX = x - 1;
-              const playerTile = tileInfo[x][playerNextY];
-              const weaponTile = tileInfo[weaponNextX][playerNextY]; //是否碰到了门
+              let playerTile = tileInfo[x][playerNextY];
+              let weaponTile = tileInfo[weaponNextX][playerNextY]; //是否碰到了门
 
               if ((x === doorX && playerNextY === doorY || weaponNextX === doorX && playerNextY === doorY) && doorState != (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -492,7 +496,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -507,7 +511,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -539,7 +543,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               } //拿到瓦片
 
 
-              const playerTile = tileInfo[x][playerNextY]; //是否碰到了门
+              let playerTile = tileInfo[x][playerNextY]; //是否碰到了门
 
               if (x === doorX && playerNextY === doorY && doorState != (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -552,7 +556,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -567,7 +571,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -597,8 +601,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }
 
               let weaponNextX = x + 1;
-              const playerTile = tileInfo[x][playerNextY];
-              const weaponTile = tileInfo[weaponNextX][playerNextY]; //是否碰到了门
+              let playerTile = tileInfo[x][playerNextY];
+              let weaponTile = tileInfo[weaponNextX][playerNextY]; //是否碰到了门
 
               if (x === doorX && playerNextY === doorY && doorState != (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -611,7 +615,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -626,7 +630,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -649,7 +653,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), CONTROLLER_ENUM) : CONTROLLER_ENUM).LEFT) {
             //输入方向为左
-            const playerNextX = x - 1;
+            let playerNextX = x - 1;
 
             if (direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
@@ -662,9 +666,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextY = y - 1;
-              const playerTile = tileInfo[playerNextX][y];
-              const weaponTile = tileInfo[playerNextX][weaponNextY]; //判断是否碰到了门
+              let weaponNextY = y - 1;
+              let playerTile = tileInfo[playerNextX][y];
+              let weaponTile = tileInfo[playerNextX][weaponNextY]; //判断是否碰到了门
 
               if ((playerNextX === doorX && y === doorY || x === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -677,7 +681,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -692,7 +696,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -721,9 +725,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextX = x - 2;
-              const playerTile = tileInfo[playerNextX][y];
-              const weaponTile = tileInfo[weaponNextX][y];
+              let weaponNextX = x - 2;
+              let playerTile = tileInfo[playerNextX][y];
+              let weaponTile = tileInfo[weaponNextX][y];
 
               if ((playerNextX === doorX && y === doorY || weaponNextX === doorX && y === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -736,7 +740,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -751,7 +755,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -778,9 +782,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextY = y + 1;
-              const playerTile = tileInfo[playerNextX][y];
-              const weaponTile = tileInfo[playerNextX][weaponNextY];
+              let weaponNextY = y + 1;
+              let playerTile = tileInfo[playerNextX][y];
+              let weaponTile = tileInfo[playerNextX][weaponNextY];
 
               if ((playerNextX === doorX && y === doorY || playerNextX === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -793,7 +797,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -808,7 +812,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -835,7 +839,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const playerTile = tileInfo[playerNextX][y];
+              let playerTile = tileInfo[playerNextX][y];
 
               if (playerNextX === doorX && y === doorY && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -848,7 +852,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -872,7 +876,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), CONTROLLER_ENUM) : CONTROLLER_ENUM).BOTTOM) {
             //输入方向向下
-            const playerNextY = y + 1;
+            let playerNextY = y + 1;
 
             if (direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
@@ -885,7 +889,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const playerTile = tileInfo[x][playerNextY]; //判断是否碰到了门
+              let playerTile = tileInfo[x][playerNextY]; //判断是否碰到了门
 
               if (x === doorX && playerNextY === doorY && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -898,7 +902,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -913,7 +917,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -940,9 +944,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextX = x - 1;
-              const playerTile = tileInfo[x][playerNextY];
-              const weaponTile = tileInfo[weaponNextX][playerNextY]; //判断是否碰到了门
+              let weaponNextX = x - 1;
+              let playerTile = tileInfo[x][playerNextY];
+              let weaponTile = tileInfo[weaponNextX][playerNextY]; //判断是否碰到了门
 
               if ((x === doorX && playerNextY === doorY || weaponNextX === doorX && playerNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -955,7 +959,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -970,7 +974,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -999,9 +1003,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextY = y + 2;
-              const playerTile = tileInfo[x][playerNextY];
-              const weaponTile = tileInfo[x][weaponNextY]; //判断是否碰到了门
+              let weaponNextY = y + 2;
+              let playerTile = tileInfo[x][playerNextY];
+              let weaponTile = tileInfo[x][weaponNextY]; //判断是否碰到了门
 
               if ((x === doorX && playerNextY === doorY || x === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1014,7 +1018,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -1029,7 +1033,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -1058,9 +1062,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextX = x + 1;
-              const playerTile = tileInfo[x][playerNextY];
-              const weaponTile = tileInfo[weaponNextX][playerNextY]; //判断是否碰到了门
+              let weaponNextX = x + 1;
+              let playerTile = tileInfo[x][playerNextY];
+              let weaponTile = tileInfo[weaponNextX][playerNextY]; //判断是否碰到了门
 
               if ((x === doorX && playerNextY === doorY || weaponNextX === doorX && playerNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1073,7 +1077,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -1088,7 +1092,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -1111,7 +1115,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), CONTROLLER_ENUM) : CONTROLLER_ENUM).RIGHT) {
             //输入方向向右
-            const playerNextX = x + 1;
+            let playerNextX = x + 1;
 
             if (direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
@@ -1124,9 +1128,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextY = y - 1;
-              const playerTile = tileInfo[playerNextX][y];
-              const weaponTile = tileInfo[playerNextX][weaponNextY]; //判断是否碰到了门
+              let weaponNextY = y - 1;
+              let playerTile = tileInfo[playerNextX][y];
+              let weaponTile = tileInfo[playerNextX][weaponNextY]; //判断是否碰到了门
 
               if ((playerNextX === doorX && y === doorY || playerNextX === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1139,7 +1143,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -1154,7 +1158,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -1181,7 +1185,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const playerTile = tileInfo[playerNextX][y]; //判断是否碰到了门
+              let playerTile = tileInfo[playerNextX][y]; //判断是否碰到了门
 
               if (playerNextX === doorX && y === doorY && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1194,7 +1198,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -1209,7 +1213,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -1236,9 +1240,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextY = y + 1;
-              const playerTile = tileInfo[playerNextX][y];
-              const weaponTile = tileInfo[playerNextX][weaponNextY]; //判断是否碰到了门
+              let weaponNextY = y + 1;
+              let playerTile = tileInfo[playerNextX][y];
+              let weaponTile = tileInfo[playerNextX][weaponNextY]; //判断是否碰到了门
 
               if ((playerNextX === doorX && y === doorY || playerNextX === doorX && weaponNextY === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1251,7 +1255,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -1266,7 +1270,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -1293,9 +1297,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                 return;
               }
 
-              const weaponNextX = x + 2;
-              const playerTile = tileInfo[playerNextX][y];
-              const weaponTile = tileInfo[weaponNextX][y]; //判断是否碰到了门
+              let weaponNextX = x + 2;
+              let playerTile = tileInfo[playerNextX][y];
+              let weaponTile = tileInfo[weaponNextX][y]; //判断是否碰到了门
 
               if ((playerNextX === doorX && y === doorY || weaponNextX === doorX && y === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1308,7 +1312,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < enemies.length; ++i) {
-                const {
+                let {
                   x: enemyX,
                   y: enemyY
                 } = enemies[i];
@@ -1323,7 +1327,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
               for (let i = 0; i < bursts.length; i++) {
-                const {
+                let {
                   x: burstX,
                   y: burstY
                 } = bursts[i]; //人能走且枪能走
@@ -1382,7 +1386,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
             for (let i = 0; i < enemies.length; ++i) {
-              const {
+              let {
                 x: enemyX,
                 y: enemyY
               } = enemies[i];
@@ -1446,7 +1450,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
             for (let i = 0; i < enemies.length; ++i) {
-              const {
+              let {
                 x: enemyX,
                 y: enemyY
               } = enemies[i];
