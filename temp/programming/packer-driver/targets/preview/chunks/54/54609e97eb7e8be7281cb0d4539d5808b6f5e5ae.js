@@ -137,7 +137,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             _this.x = params.x;
             _this.y = params.y;
             _this.type = params.type;
-            _this._direction = params.direction;
+            _this.direction = params.direction;
             _this.state = params.state;
           })();
         }

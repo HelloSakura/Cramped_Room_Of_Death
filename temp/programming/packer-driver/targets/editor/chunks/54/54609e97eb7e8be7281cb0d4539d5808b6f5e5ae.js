@@ -128,7 +128,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.x = params.x;
           this.y = params.y;
           this.type = params.type;
-          this._direction = params.direction;
+          this.direction = params.direction;
           this.state = params.state;
         }
 

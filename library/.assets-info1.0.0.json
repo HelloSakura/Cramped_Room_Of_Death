@@ -2196,7 +2196,7 @@
       "uuid": "8b9bf52d-9062-4e03-9b8c-a35772670a70"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\EntityManager.ts": {
-      "time": 1729528054652.0188,
+      "time": 1731942999835.506,
       "uuid": "a7feba3c-c9d4-4985-97e8-a0e7004a3e0f"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\Singleton.ts": {
@@ -2220,7 +2220,7 @@
       "uuid": "82a841cd-8da7-4eef-bdd0-3648b2f67baf"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\index.ts": {
-      "time": 1731854970468.0486,
+      "time": 1731942898681.0227,
       "uuid": "9eae4d84-ae09-45e2-96e6-98f5bba1e772"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level1.ts": {
@@ -2280,7 +2280,7 @@
       "uuid": "e6dad5be-106f-4b01-ba70-cf6ec4c365b4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerManager.ts": {
-      "time": 1731857042306.8555,
+      "time": 1731943835247.7253,
       "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerStateMachine.ts": {
@@ -2296,7 +2296,7 @@
       "uuid": "1a10401b-8542-4ffb-a4ed-a636e6f5a657"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes\\BattleManager.ts": {
-      "time": 1731855891276.0747,
+      "time": 1731943506466.7185,
       "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileManger.ts": {
@@ -4599,7 +4599,7 @@
       "uuid": "d2ec13ec-4725-4f40-a47e-fe75c52952f8"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes\\SpikeSubStateMachine.ts": {
-      "time": 1731854328033.4324,
+      "time": 1731943247506.6226,
       "uuid": "c51cd9b8-b504-41a4-8aa2-3e1f37df59b9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes.meta": {
@@ -4748,7 +4748,7 @@
       "uuid": "ff563f5f-2c4e-4f46-a44a-98fcbd363cab"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level3.ts": {
-      "time": 1731854783068.7593,
+      "time": 1731942599991.1245,
       "uuid": "acd960c1-b56c-4976-80b0-c6c788ce4110"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level4.ts": {

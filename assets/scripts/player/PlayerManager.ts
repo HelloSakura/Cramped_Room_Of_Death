@@ -45,7 +45,12 @@ export class PlayerManager extends EntityManager {
         //注意人物大小与瓦片之间的偏移
         super.update();
     }
-
+    
+    onDestroy(): void {
+        super.onDestroy();
+        EventManager.Instance.off(EVENT_ENUM.PLAYER_CTRL, this.inputHandle);
+        EventManager.Instance.off(EVENT_ENUM.ATTACK_PLAYER, this._onDead);
+    }
     updateXY(){
         if(this.targetX < this.x){  //在目标右侧
             this.x -= this._speed;  //向左移动
@@ -208,7 +213,7 @@ export class PlayerManager extends EntityManager {
         //解构出自己数据
         let {targetX:x, targetY:y, direction} = this;
         //解构出地图信息
-        let {tileInfo} = DataManager.Instance;
+        let tileInfo = DataManager.Instance.tileInfo;
         //解构出门的信息
         let {x:doorX, y:doorY, state:doorState} = DataManager.Instance.door;
         //解构出未死亡的敌人信息
@@ -681,8 +686,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextY:number = y + 2;
-                let playerTile:TileManger = tileInfo[x][playerNextY];
-                let weaponTile:TileManger = tileInfo[x][weaponNextY];
+                let playerTile = tileInfo[x][playerNextY];
+                let weaponTile = tileInfo[x][weaponNextY] ?? null;
 
                 //判断是否碰到了门
                 if(((x === doorX && playerNextY === doorY)|| (x === doorX && weaponNextY === doorY))
@@ -705,12 +710,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile|| weaponTile.turnable)){
                     //人可走
                     //枪不存在，或者枪能转
                 }

@@ -134,7 +134,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         onLoad() {
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance.levelIndex = 1; //绑定切换关卡
+          }), DataManager) : DataManager).Instance.levelIndex = 4; //绑定切换关卡
 
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()

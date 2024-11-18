@@ -138,6 +138,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           super.update();
         }
 
+        onDestroy() {
+          super.onDestroy();
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).PLAYER_CTRL, this.inputHandle);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).ATTACK_PLAYER, this._onDead);
+        }
+
         updateXY() {
           if (this.targetX < this.x) {
             //在目标右侧
@@ -383,11 +397,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             direction
           } = this; //解构出地图信息
 
-          var {
-            tileInfo
-          } = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+          var tileInfo = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance; //解构出门的信息
+          }), DataManager) : DataManager).Instance.tileInfo; //解构出门的信息
 
           var {
             x: doorX,
@@ -1011,6 +1023,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             } else if (direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM) {
+              var _tileInfo$x$_weaponNe;
+
               //人物向下
               if (_playerNextY < 0) {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
@@ -1022,7 +1036,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               var _weaponNextY3 = y + 2;
 
               var _playerTile10 = tileInfo[x][_playerNextY];
-              var _weaponTile7 = tileInfo[x][_weaponNextY3]; //判断是否碰到了门
+
+              var _weaponTile7 = (_tileInfo$x$_weaponNe = tileInfo[x][_weaponNextY3]) != null ? _tileInfo$x$_weaponNe : null; //判断是否碰到了门
+
 
               if ((x === doorX && _playerNextY === doorY || x === doorX && _weaponNextY3 === doorY) && doorState !== (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
                 error: Error()
@@ -1055,12 +1071,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
                   y: _burstY9
                 } = bursts[_i20]; //人能走且枪能走
 
-                if (x === _burstX9 && _playerNextY === _burstY9 && (!_weaponTile7 || _weaponTile7.moveable)) {
+                if (x === _burstX9 && _playerNextY === _burstY9 && (!_weaponTile7 || _weaponTile7.turnable)) {
                   return false;
                 }
               }
 
-              if (_playerTile10 && _playerTile10.moveable && (!_weaponTile7 || _weaponTile7.moveable)) {//人可走
+              if (_playerTile10 && _playerTile10.moveable && (!_weaponTile7 || _weaponTile7.turnable)) {//人可走
                 //枪不存在，或者枪能转
               } else {
                 this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({

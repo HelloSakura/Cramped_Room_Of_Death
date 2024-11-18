@@ -56,7 +56,7 @@ export class EntityManager extends Component {
         this.x = params.x;
         this.y = params.y;
         this.type = params.type;
-        this._direction = params.direction;
+        this.direction = params.direction;
         this.state = params.state;
     }
 

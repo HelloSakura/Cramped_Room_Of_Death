@@ -21,7 +21,7 @@ export class BattleManager extends Component {
 
     //
     onLoad(){
-        DataManager.Instance.levelIndex = 1;
+        DataManager.Instance.levelIndex = 4;
         //绑定切换关卡
         EventManager.Instance.on(EVENT_ENUM.NEXT_LEVEL, this._nextLevel, this);
         EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._checkArrivedDoor, this);
