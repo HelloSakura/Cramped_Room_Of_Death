@@ -183,13 +183,19 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         onDestroy() {
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()
-          }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
           }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._onLoop);
         }
 
         _onLoop() {
-          this.CurCount++;
+          if (this.CurCount == this.TotalCount) {
+            this.CurCount = 1;
+          } else {
+            this.CurCount++;
+          }
+
+          this.onAttack();
         } //播放的次数回到零
 
 
@@ -214,7 +220,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), DataManager) : DataManager).Instance.player;
 
-          if (this.x === playerX && this.y === playerY) {
+          if (this.x === playerX && this.y === playerY && this.CurCount == this.TotalCount) {
             (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
               error: Error()
             }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({

@@ -21,7 +21,7 @@ export class BattleManager extends Component {
 
     //
     onLoad(){
-        DataManager.Instance.levelIndex = 4;
+        DataManager.Instance.levelIndex = 12;
         //绑定切换关卡
         EventManager.Instance.on(EVENT_ENUM.NEXT_LEVEL, this._nextLevel, this);
         EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._checkArrivedDoor, this);
@@ -38,7 +38,7 @@ export class BattleManager extends Component {
         this.initLevel();
     }
 
-    initLevel(){
+    async initLevel(){
         const level = levels[`level${DataManager.Instance.levelIndex}`];
         if(level){
             this.clearLevel();
@@ -46,14 +46,16 @@ export class BattleManager extends Component {
             DataManager.Instance.mapInfo = this.level.mapInfo;
             DataManager.Instance.mapRowCount = this.level.mapInfo.length || 0;
             DataManager.Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
-
-            this.generateTileMap();
-            this.generateBurst();
-            this.generateSpikes();
-            this.generateDoor();
-            this.generateEnemy();
+            
+            await Promise.all([
+                this.generateTileMap(),
+                this.generateBurst(),
+                this.generateSpikes(),
+                this.generateDoor(),
+                this.generateEnemy(),    
+            ]);
             //生成player
-            this.generatePlayer();
+            await this.generatePlayer()
             
             
         }
@@ -112,7 +114,7 @@ export class BattleManager extends Component {
             //可以一起等待，提高资源加载速度
             promise.push(manger.init(burst));
             //注意名字大小写，大写是类名
-            DataManager.Instance.burst.push(manger); 
+            DataManager.Instance.bursts.push(manger); 
         })
 
         await Promise.all(promise);

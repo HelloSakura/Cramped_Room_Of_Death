@@ -74,11 +74,17 @@ export class SpikeManager extends Component {
     }
 
     onDestroy(): void {
-        EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._onLoop);
+        EventManager.Instance.off(EVENT_ENUM.PLAYER_MOVE_END, this._onLoop);
     }
 
     private _onLoop(){
-        this.CurCount++;
+        if(this.CurCount == this.TotalCount){
+            this.CurCount = 1;
+        }
+        else{
+            this.CurCount++;
+        }
+        this.onAttack();
     }
 
     //播放的次数回到零
@@ -95,7 +101,7 @@ export class SpikeManager extends Component {
     onAttack(){
         if(!DataManager.Instance.player) return;
         const {x:playerX, y:playerY} = DataManager.Instance.player;
-        if(this.x === playerX && this.y === playerY){
+        if(this.x === playerX && this.y === playerY && this.CurCount == this.TotalCount){
             EventManager.Instance.emit(EVENT_ENUM.ATTACK_PLAYER, ENTITY_STATE_ENUM.DEATH);
         }
     }

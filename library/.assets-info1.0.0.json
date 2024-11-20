@@ -2232,7 +2232,7 @@
       "uuid": "77d0dafa-e1c0-4685-bc6a-40e088ee8d36"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\DataManager.ts": {
-      "time": 1731854328018.4329,
+      "time": 1732033135018.263,
       "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\EventManager.ts": {
@@ -2280,7 +2280,7 @@
       "uuid": "e6dad5be-106f-4b01-ba70-cf6ec4c365b4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerManager.ts": {
-      "time": 1731943835247.7253,
+      "time": 1732033660734.4934,
       "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerStateMachine.ts": {
@@ -2296,7 +2296,7 @@
       "uuid": "1a10401b-8542-4ffb-a4ed-a636e6f5a657"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes\\BattleManager.ts": {
-      "time": 1731943506466.7185,
+      "time": 1732117397014.1694,
       "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileManger.ts": {
@@ -4591,7 +4591,7 @@
       "uuid": "9281e316-b80d-41b9-b1ee-e3ae63322165"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes\\SpikeManager.ts": {
-      "time": 1731854328029.4314,
+      "time": 1732117456431.0842,
       "uuid": "5adabfec-cc25-41c9-8a0a-0fb44895be10"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes\\SpikeStateMachine.ts": {

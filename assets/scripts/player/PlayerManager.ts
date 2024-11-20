@@ -1,7 +1,6 @@
-import { _decorator, Component, Node, Sprite, UITransform, Animation, AnimationClip, animation, SpriteFrame } from 'cc';
-import { TILE_HEIGHT, TILE_WIDTH, TileManger } from '../tile/TileManger';
-import ResourceManager from '../../runtime/ResourceManager';
-import { CONTROLLER_ENUM, DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, PARAMS_NAME_ENUM } from '../../enums';
+import { _decorator } from 'cc';
+import { TileManger } from '../tile/TileManger';
+import { CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM } from '../../enums';
 import EventManager from '../../runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 import { EntityManager } from '../../base/EntityManager';
@@ -213,9 +212,9 @@ export class PlayerManager extends EntityManager {
         //解构出自己数据
         let {targetX:x, targetY:y, direction} = this;
         //解构出地图信息
-        let tileInfo = DataManager.Instance.tileInfo;
+        let {tileInfo: tileInfo} = DataManager.Instance;
         //解构出门的信息
-        let {x:doorX, y:doorY, state:doorState} = DataManager.Instance.door;
+        let {x:doorX, y:doorY, state:doorState} = DataManager.Instance.door || {};
         //解构出未死亡的敌人信息
         let enemies:EnemyManager[] = DataManager.Instance.enemies.filter(enemy=>enemy.state !== ENTITY_STATE_ENUM.DEATH);
         //解构出地裂信息
@@ -236,8 +235,8 @@ export class PlayerManager extends EntityManager {
 
                 //拿到下两个瓦片，一个是人物，一个是枪，总不能枪怼墙上
                 let weaponNextY = y - 2;
-                let playerTile = tileInfo[x][playerNextY];
-                let weaponTile = tileInfo[x][weaponNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
+                let weaponTile = tileInfo[x]?.[weaponNextY];
 
                 //判断是否碰到了门
                 if(((x === doorX && playerNextY === doorY)|| (x === doorX && weaponNextY === doorY))
@@ -290,8 +289,8 @@ export class PlayerManager extends EntityManager {
                 //拿到下两个瓦片
                 //这个时候枪是横向左，人可能不被挡住，但是枪会
                 let weaponNextX = x - 1;
-                let playerTile = tileInfo[x][playerNextY];
-                let weaponTile = tileInfo[weaponNextX][playerNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
+                let weaponTile = tileInfo[weaponNextX]?.[playerNextY];
 
                 //是否碰到了门
                 if(((x === doorX && playerNextY === doorY) || (weaponNextX === doorX && playerNextY === doorY))
@@ -338,7 +337,7 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 //拿到瓦片
-                let playerTile = tileInfo[x][playerNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
                 //是否碰到了门
                 if((x === doorX && playerNextY === doorY) && doorState != ENTITY_STATE_ENUM.DEATH){
                     this.state = ENTITY_STATE_ENUM.BLOCKBACK;
@@ -381,8 +380,8 @@ export class PlayerManager extends EntityManager {
                 }
 
                 let weaponNextX = x + 1;
-                let playerTile = tileInfo[x][playerNextY];
-                let weaponTile = tileInfo[weaponNextX][playerNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
+                let weaponTile = tileInfo[weaponNextX]?.[playerNextY];
 
                 //是否碰到了门
                 if((x === doorX && playerNextY === doorY) && doorState != ENTITY_STATE_ENUM.DEATH){
@@ -405,14 +404,14 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
 
                 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
                     //人物：下一个瓦片且可移动
                     //枪：不存在或能转动
 
@@ -434,8 +433,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextY = y - 1;
-                let playerTile = tileInfo[playerNextX][y];
-                let weaponTile = tileInfo[playerNextX][weaponNextY]
+                let playerTile = tileInfo[playerNextX]?.[y];
+                let weaponTile = tileInfo[playerNextX]?.[weaponNextY]
                 //判断是否碰到了门
                 if(((playerNextX === doorX && y === doorY)|| (x === doorX && weaponNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -457,12 +456,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
                     //人：能走
                     //枪不存在，或者枪能转
                 }
@@ -479,8 +478,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextX = x - 2;
-                let playerTile = tileInfo[playerNextX][y];
-                let weaponTile = tileInfo[weaponNextX][y];
+                let playerTile = tileInfo[playerNextX]?.[y];
+                let weaponTile = tileInfo[weaponNextX]?.[y];
 
                 if(((playerNextX === doorX && y === doorY)|| (weaponNextX === doorX && y === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -502,12 +501,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
                 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
 
                 }
                 else{
@@ -523,8 +522,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextY = y + 1;
-                let playerTile:TileManger = tileInfo[playerNextX][y];
-                let weaponTile:TileManger = tileInfo[playerNextX][weaponNextY];
+                let playerTile:TileManger = tileInfo[playerNextX]?.[y];
+                let weaponTile:TileManger = tileInfo[playerNextX]?.[weaponNextY];
                 if(((playerNextX === doorX && y === doorY)|| (playerNextX === doorX && weaponNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
                 ){
@@ -544,12 +543,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
 
                 }
                 else{
@@ -566,7 +565,7 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
 
-                let playerTile = tileInfo[playerNextX][y];
+                let playerTile = tileInfo[playerNextX]?.[y];
                 if((playerNextX === doorX && y === doorY) && doorState !== ENTITY_STATE_ENUM.DEATH){
                     this.state = ENTITY_STATE_ENUM.BLOCKRIGHT;
                     return true;  
@@ -600,7 +599,7 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 
-                let playerTile = tileInfo[x][playerNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
                 //判断是否碰到了门
                 if((x === doorX && playerNextY === doorY)
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -642,8 +641,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextX = x - 1;
-                let playerTile = tileInfo[x][playerNextY];
-                let weaponTile = tileInfo[weaponNextX][playerNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
+                let weaponTile = tileInfo[weaponNextX]?.[playerNextY];
                 //判断是否碰到了门
                 if(((x === doorX && playerNextY === doorY)|| (weaponNextX === doorX && playerNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -665,12 +664,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
                     //人可走
                     //枪不存在，或者枪能转
                 }
@@ -686,8 +685,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextY:number = y + 2;
-                let playerTile = tileInfo[x][playerNextY];
-                let weaponTile = tileInfo[x][weaponNextY] ?? null;
+                let playerTile = tileInfo[x]?.[playerNextY];
+                let weaponTile = tileInfo[x]?.[weaponNextY];
 
                 //判断是否碰到了门
                 if(((x === doorX && playerNextY === doorY)|| (x === doorX && weaponNextY === doorY))
@@ -731,8 +730,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextX = x + 1;
-                let playerTile = tileInfo[x][playerNextY];
-                let weaponTile = tileInfo[weaponNextX][playerNextY];
+                let playerTile = tileInfo[x]?.[playerNextY];
+                let weaponTile = tileInfo[weaponNextX]?.[playerNextY];
                 //判断是否碰到了门
                 if(((x === doorX && playerNextY === doorY)|| (weaponNextX === doorX && playerNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -754,12 +753,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((x === burstX && playerNextY === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
                     //人可走
                     //枪不存在，或者枪能转
                 }
@@ -780,8 +779,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextY = y - 1;
-                let playerTile = tileInfo[playerNextX][y];
-                let weaponTile = tileInfo[playerNextX][weaponNextY];
+                let playerTile = tileInfo[playerNextX]?.[y];
+                let weaponTile = tileInfo[playerNextX]?.[weaponNextY];
                 //判断是否碰到了门
                 if(((playerNextX === doorX && y === doorY)|| (playerNextX === doorX && weaponNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -803,12 +802,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
 
                 }
                 else{
@@ -822,7 +821,7 @@ export class PlayerManager extends EntityManager {
                     this.state = ENTITY_STATE_ENUM.BLOCKLEFT;
                     return;
                 }
-                let playerTile = tileInfo[playerNextX][y];
+                let playerTile = tileInfo[playerNextX]?.[y];
                 //判断是否碰到了门
                 if((playerNextX === doorX && y === doorY)
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -866,8 +865,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextY = y + 1;
-                let playerTile = tileInfo[playerNextX][y];
-                let weaponTile = tileInfo[playerNextX][weaponNextY];
+                let playerTile = tileInfo[playerNextX]?.[y];
+                let weaponTile = tileInfo[playerNextX]?.[weaponNextY];
                 //判断是否碰到了门
                 if(((playerNextX === doorX && y === doorY)|| (playerNextX === doorX && weaponNextY === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -888,12 +887,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
 
                 }
                 else{
@@ -909,8 +908,8 @@ export class PlayerManager extends EntityManager {
                     return;
                 }
                 let weaponNextX = x + 2;
-                let playerTile = tileInfo[playerNextX][y];
-                let weaponTile = tileInfo[weaponNextX][y];
+                let playerTile = tileInfo[playerNextX]?.[y];
+                let weaponTile = tileInfo[weaponNextX]?.[y];
                 //判断是否碰到了门
                 if(((playerNextX === doorX && y === doorY)|| (weaponNextX === doorX && y === doorY))
                     && doorState !== ENTITY_STATE_ENUM.DEATH
@@ -932,12 +931,12 @@ export class PlayerManager extends EntityManager {
                 for (let i = 0; i < bursts.length; i++) {
                     let {x:burstX, y:burstY} = bursts[i];
                     //人能走且枪能走
-                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.moveable)){
+                    if((playerNextX === burstX && y === burstY) && (!weaponTile || weaponTile.turnable)){
                         return false;
                     }
                 }
 
-                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.moveable)){
+                if(playerTile && playerTile.moveable && (!weaponTile || weaponTile.turnable)){
 
                 }
                 else{

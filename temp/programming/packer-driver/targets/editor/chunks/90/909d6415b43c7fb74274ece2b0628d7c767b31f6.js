@@ -134,7 +134,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         onLoad() {
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance.levelIndex = 4; //绑定切换关卡
+          }), DataManager) : DataManager).Instance.levelIndex = 12; //绑定切换关卡
 
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()
@@ -167,7 +167,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.initLevel();
         }
 
-        initLevel() {
+        async initLevel() {
           const level = (_crd && levels === void 0 ? (_reportPossibleCrUseOflevels({
             error: Error()
           }), levels) : levels)[`level${(_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
@@ -186,13 +186,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
-            this.generateTileMap();
-            this.generateBurst();
-            this.generateSpikes();
-            this.generateDoor();
-            this.generateEnemy(); //生成player
+            await Promise.all([this.generateTileMap(), this.generateBurst(), this.generateSpikes(), this.generateDoor(), this.generateEnemy()]); //生成player
 
-            this.generatePlayer();
+            await this.generatePlayer();
           }
         }
 
@@ -274,7 +270,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
-            }), DataManager) : DataManager).Instance.burst.push(manger);
+            }), DataManager) : DataManager).Instance.bursts.push(manger);
           });
           await Promise.all(promise);
         }

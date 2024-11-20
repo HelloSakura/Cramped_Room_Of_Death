@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 10141.132299900055,
+      "mTimestamp": 10126.71749997139,
       "chunkId": "93ba276ea7b26ffcdc433fab14afc1ed6f05647b",
       "imports": [
         {
@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 4213291.448299885,
+      "mTimestamp": 4104981.126399994,
       "chunkId": "6d8fd2b0177941b032ddc0733af48a561fb60657",
       "imports": [
         {
@@ -2151,7 +2151,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1731939624955,
+      "mTimestamp": 1732113360921,
       "chunkId": "6a5019a719a9014c047e67aa1cf34453ab8392ce",
       "imports": [],
       "type": "esm",
@@ -6831,7 +6831,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/runtime/DataManager.ts": {
       "mTimestamp": {
-        "mtime": 1731854328018.4329,
+        "mtime": 1732033135018.263,
         "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
       },
       "chunkId": "954b0e73891bc2f7fc96db38997cfdb99b941f24",
@@ -7737,7 +7737,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/player/PlayerManager.ts": {
       "mTimestamp": {
-        "mtime": 1731943835247.7253,
+        "mtime": 1732033660734.4934,
         "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
       },
       "chunkId": "f04e49bcfa43316acf6e4839facfd59124125744",
@@ -7757,11 +7757,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 115
+              "column": 27
             },
             "end": {
               "line": 1,
-              "column": 119
+              "column": 31
             }
           }
         },
@@ -7770,12 +7770,12 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 4,
-              "column": 137
+              "line": 3,
+              "column": 79
             },
             "end": {
-              "line": 4,
-              "column": 150
+              "line": 3,
+              "column": 92
             }
           }
         },
@@ -7784,11 +7784,11 @@
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
-              "line": 5,
+              "line": 4,
               "column": 25
             },
             "end": {
-              "line": 5,
+              "line": 4,
               "column": 53
             }
           }
@@ -7798,11 +7798,11 @@
           "resolved": "__unresolved_3",
           "loc": {
             "start": {
-              "line": 6,
+              "line": 5,
               "column": 35
             },
             "end": {
-              "line": 6,
+              "line": 5,
               "column": 57
             }
           }
@@ -7812,11 +7812,11 @@
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
-              "line": 7,
+              "line": 6,
               "column": 30
             },
             "end": {
-              "line": 7,
+              "line": 6,
               "column": 56
             }
           }
@@ -7826,11 +7826,11 @@
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
-              "line": 8,
+              "line": 7,
               "column": 24
             },
             "end": {
-              "line": 8,
+              "line": 7,
               "column": 51
             }
           }
@@ -8475,7 +8475,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/scenes/BattleManager.ts": {
       "mTimestamp": {
-        "mtime": 1731943506466.7185,
+        "mtime": 1732117397014.1694,
         "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
       },
       "chunkId": "909d6415b43c7fb74274ece2b0628d7c767b31f6",
@@ -11455,7 +11455,7 @@
     },
     "file:///E:/git/Cramped_Room_Of_Death/assets/scripts/spikes/SpikeManager.ts": {
       "mTimestamp": {
-        "mtime": 1731854328029.4314,
+        "mtime": 1732117456431.0842,
         "uuid": "5adabfec-cc25-41c9-8a0a-0fb44895be10"
       },
       "chunkId": "440c057e32dd4e6849e2be6e881f2c3a59562c9f",

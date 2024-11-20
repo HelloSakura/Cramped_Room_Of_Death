@@ -138,7 +138,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         onLoad() {
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance.levelIndex = 4; //绑定切换关卡
+          }), DataManager) : DataManager).Instance.levelIndex = 12; //绑定切换关卡
 
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()
@@ -172,32 +172,33 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         initLevel() {
-          var level = (_crd && levels === void 0 ? (_reportPossibleCrUseOflevels({
-            error: Error()
-          }), levels) : levels)["level" + (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-            error: Error()
-          }), DataManager) : DataManager).Instance.levelIndex];
+          var _this = this;
 
-          if (level) {
-            this.clearLevel();
-            this.level = level;
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+          return _asyncToGenerator(function* () {
+            var level = (_crd && levels === void 0 ? (_reportPossibleCrUseOflevels({
               error: Error()
-            }), DataManager) : DataManager).Instance.mapInfo = this.level.mapInfo;
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            }), levels) : levels)["level" + (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
-            }), DataManager) : DataManager).Instance.mapRowCount = this.level.mapInfo.length || 0;
-            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
-              error: Error()
-            }), DataManager) : DataManager).Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
-            this.generateTileMap();
-            this.generateBurst();
-            this.generateSpikes();
-            this.generateDoor();
-            this.generateEnemy(); //生成player
+            }), DataManager) : DataManager).Instance.levelIndex];
 
-            this.generatePlayer();
-          }
+            if (level) {
+              _this.clearLevel();
+
+              _this.level = level;
+              (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+                error: Error()
+              }), DataManager) : DataManager).Instance.mapInfo = _this.level.mapInfo;
+              (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+                error: Error()
+              }), DataManager) : DataManager).Instance.mapRowCount = _this.level.mapInfo.length || 0;
+              (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+                error: Error()
+              }), DataManager) : DataManager).Instance.mapColumnCount = _this.level.mapInfo[0].length || 0;
+              yield Promise.all([_this.generateTileMap(), _this.generateBurst(), _this.generateSpikes(), _this.generateDoor(), _this.generateEnemy()]); //生成player
+
+              yield _this.generatePlayer();
+            }
+          })();
         }
 
         _nextLevel() {
@@ -250,33 +251,33 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         generateTileMap() {
-          var _this = this;
+          var _this2 = this;
 
           return _asyncToGenerator(function* () {
             //创建瓦片地图节点
             var tileMap = new Node();
-            tileMap.setParent(_this.stage); //执行生成逻辑，放在组件上
+            tileMap.setParent(_this2.stage); //执行生成逻辑，放在组件上
 
             var tileMapManager = tileMap.addComponent(_crd && TileMapManager === void 0 ? (_reportPossibleCrUseOfTileMapManager({
               error: Error()
             }), TileMapManager) : TileMapManager);
             yield tileMapManager.init(); //地图居中
 
-            _this.adaptPos();
+            _this2.adaptPos();
           })();
         }
 
         generateBurst() {
-          var _this2 = this;
+          var _this3 = this;
 
           return _asyncToGenerator(function* () {
             var promise = [];
 
-            _this2.level.bursts.forEach(burst => {
+            _this3.level.bursts.forEach(burst => {
               var node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
                 error: Error()
               }), createUINode) : createUINode)();
-              node.setParent(_this2.stage);
+              node.setParent(_this3.stage);
               var manger = node.addComponent(_crd && BurstManager === void 0 ? (_reportPossibleCrUseOfBurstManager({
                 error: Error()
               }), BurstManager) : BurstManager); //使用promise，避免等一个创造一个
@@ -286,7 +287,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
               (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
                 error: Error()
-              }), DataManager) : DataManager).Instance.burst.push(manger);
+              }), DataManager) : DataManager).Instance.bursts.push(manger);
             });
 
             yield Promise.all(promise);
@@ -294,17 +295,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         generatePlayer() {
-          var _this3 = this;
+          var _this4 = this;
 
           return _asyncToGenerator(function* () {
             var player = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
             }), createUINode) : createUINode)();
-            player.setParent(_this3.stage);
+            player.setParent(_this4.stage);
             var playManager = player.addComponent(_crd && PlayerManager === void 0 ? (_reportPossibleCrUseOfPlayerManager({
               error: Error()
             }), PlayerManager) : PlayerManager);
-            yield playManager.init(_this3.level.player);
+            yield playManager.init(_this4.level.player);
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.player = playManager;
@@ -317,16 +318,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         generateSpikes() {
-          var _this4 = this;
+          var _this5 = this;
 
           return _asyncToGenerator(function* () {
             var promise = [];
 
-            _this4.level.spikes.forEach(spike => {
+            _this5.level.spikes.forEach(spike => {
               var node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
                 error: Error()
               }), createUINode) : createUINode)();
-              node.setParent(_this4.stage);
+              node.setParent(_this5.stage);
               var manger = node.addComponent(_crd && SpikeManager === void 0 ? (_reportPossibleCrUseOfSpikeManager({
                 error: Error()
               }), SpikeManager) : SpikeManager); //使用promise，避免等一个创造一个
@@ -344,17 +345,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         generateDoor() {
-          var _this5 = this;
+          var _this6 = this;
 
           return _asyncToGenerator(function* () {
             var door = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
               error: Error()
             }), createUINode) : createUINode)();
-            door.setParent(_this5.stage);
+            door.setParent(_this6.stage);
             var doorManager = door.addComponent(_crd && DoorManager === void 0 ? (_reportPossibleCrUseOfDoorManager({
               error: Error()
             }), DoorManager) : DoorManager);
-            yield doorManager.init(_this5.level.door);
+            yield doorManager.init(_this6.level.door);
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.door = doorManager;
@@ -362,16 +363,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         }
 
         generateEnemy() {
-          var _this6 = this;
+          var _this7 = this;
 
           return _asyncToGenerator(function* () {
             var promise = [];
 
-            _this6.level.enemies.forEach(enemy => {
+            _this7.level.enemies.forEach(enemy => {
               var node = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
                 error: Error()
               }), createUINode) : createUINode)();
-              node.setParent(_this6.stage);
+              node.setParent(_this7.stage);
               var Manger = enemy.type === (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
                 error: Error()
               }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SKELETON_WOODEN ? _crd && WoodenSkeletonManager === void 0 ? (_reportPossibleCrUseOfWoodenSkeletonManager({
