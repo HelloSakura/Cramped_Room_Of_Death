@@ -1828,7 +1828,7 @@
       "uuid": "3e77c30b-c32f-486c-b1c5-7472ebaca862"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime": {
-      "time": 1731854328018.4329,
+      "time": 1732462688997.4075,
       "uuid": "11361d76-5c9c-49a9-9f0a-1765ae35775b"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scenes": {
@@ -1860,7 +1860,7 @@
       "uuid": "3b4d7415-ab2a-4f69-ac22-4da9518e3fb6"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\ui": {
-      "time": 1727278043341.5857,
+      "time": 1732462688998.4075,
       "uuid": "76c86518-e04d-4ea8-856c-01657ee79a85"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\woodenSkeleton": {
@@ -2296,7 +2296,7 @@
       "uuid": "1a10401b-8542-4ffb-a4ed-a636e6f5a657"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes\\BattleManager.ts": {
-      "time": 1732460909714.407,
+      "time": 1732463143553.775,
       "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileManger.ts": {
@@ -4809,6 +4809,20 @@
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\SmokeStateMachine.ts": {
       "time": 1732459998268.3948,
       "uuid": "7e18a8f1-dcb7-4699-b12d-fe08eed91999"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\FadeManager.ts.meta": {
+      "time": 1732462689000.4097
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\ui\\DrawManager.ts.meta": {
+      "time": 1732462689001.4077
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\FadeManager.ts": {
+      "time": 1732462617822.1277,
+      "uuid": "99f28171-f974-41f7-8919-b74ae06f5965"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\ui\\DrawManager.ts": {
+      "time": 1732463277496.0874,
+      "uuid": "2dbfda4a-ad6c-4c15-a86b-92c8d60b1796"
     }
   },
   "missing": {

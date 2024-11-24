@@ -9325,5 +9325,15 @@
     "url": "db://assets/scripts/smoke",
     "value": {},
     "versionCode": 1
+  },
+  "99f28171-f974-41f7-8919-b74ae06f5965": {
+    "url": "db://assets/runtime/FadeManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "2dbfda4a-ad6c-4c15-a86b-92c8d60b1796": {
+    "url": "db://assets/scripts/ui/DrawManager.ts",
+    "value": {},
+    "versionCode": 1
   }
 }

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14", "__unresolved_15"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, SmokeManager, _dec, _class, _crd, ccclass, property, BattleManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, SmokeManager, FadeManager, _dec, _class, _crd, ccclass, property, BattleManager;
 
   function _reportPossibleCrUseOfTileMapManager(extras) {
     _reporterNs.report("TileMapManager", "../tile/TileMapManager", _context.meta, extras);
@@ -79,6 +79,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("SmokeManager", "../smoke/SmokeManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfFadeManager(extras) {
+    _reporterNs.report("FadeManager", "../../runtime/FadeManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -120,6 +124,8 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       SpikeManager = _unresolved_14.SpikeManager;
     }, function (_unresolved_15) {
       SmokeManager = _unresolved_15.SmokeManager;
+    }, function (_unresolved_16) {
+      FadeManager = _unresolved_16.default;
     }],
     execute: function () {
       _crd = true;
@@ -197,6 +203,9 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), DataManager) : DataManager).Instance.levelIndex}`];
 
           if (level) {
+            await (_crd && FadeManager === void 0 ? (_reportPossibleCrUseOfFadeManager({
+              error: Error()
+            }), FadeManager) : FadeManager).Instance.fadeIn();
             this.clearLevel();
             this.level = level;
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
@@ -208,10 +217,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
               error: Error()
             }), DataManager) : DataManager).Instance.mapColumnCount = this.level.mapInfo[0].length || 0;
-            await Promise.all([this.generateTileMap(), this.generateBurst(), this.generateSpikes(), this.generateDoor(), this.generateEnemy()]); //生成player
+            await Promise.all([this.generateTileMap(), this.generateBurst(), this.generateSpikes(), this.generateSmokeLayer(), this.generateDoor(), this.generateEnemy(), this.generatePlayer()]); //生成player
 
-            await this.generateSmokeLayer();
-            await this.generatePlayer();
+            await (_crd && FadeManager === void 0 ? (_reportPossibleCrUseOfFadeManager({
+              error: Error()
+            }), FadeManager) : FadeManager).Instance.fadeOut();
           }
         }
 
