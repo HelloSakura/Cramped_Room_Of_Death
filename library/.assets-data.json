@@ -9300,5 +9300,30 @@
     "url": "db://assets/levels/level9.ts",
     "value": {},
     "versionCode": 1
+  },
+  "2d9f45fe-2ba0-497e-bf39-700ae326423a": {
+    "url": "db://assets/scripts/smoke/DeadSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "86673d63-ed79-4dcd-a803-33fac3f91357": {
+    "url": "db://assets/scripts/smoke/IdleSubStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "4b4419e8-9bad-4a0b-b468-234ef0ca1581": {
+    "url": "db://assets/scripts/smoke/SmokeManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "7e18a8f1-dcb7-4699-b12d-fe08eed91999": {
+    "url": "db://assets/scripts/smoke/SmokeStateMachine.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "5a177e73-afe1-46b5-bb8a-48d7f80b372a": {
+    "url": "db://assets/scripts/smoke",
+    "value": {},
+    "versionCode": 1
   }
 }

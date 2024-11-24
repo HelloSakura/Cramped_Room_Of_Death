@@ -89,13 +89,7 @@ export class SpikeManager extends Component {
 
     //播放的次数回到零
     public backZero(){
-        if(this._curCount == this._totalCount){
-            this.CurCount = 1;
-        }
-        else{
-            this.CurCount = 0;
-        }
-        this.onAttack();
+        this.CurCount = 0;
     }
 
     onAttack(){

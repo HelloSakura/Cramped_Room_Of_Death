@@ -1812,7 +1812,7 @@
       "uuid": "e6924202-6745-4e4d-8db2-fd1cec1ffabd"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base": {
-      "time": 1729528054653.0193,
+      "time": 1732118096652.6072,
       "uuid": "26447ab4-2686-4f0c-bcee-6b6378edfaa8"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\enums": {
@@ -1820,7 +1820,7 @@
       "uuid": "b6ba5ba1-f7a7-447a-ac80-1cb9942499eb"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels": {
-      "time": 1731855589174.0159,
+      "time": 1732118096676.608,
       "uuid": "6f44de47-2a8a-4eea-83f5-6bf57b4ceb1a"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\resources": {
@@ -1836,7 +1836,7 @@
       "uuid": "471cb7c8-f5d8-4100-b768-72606e490510"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts": {
-      "time": 1731854328027.432,
+      "time": 1732459671882.1255,
       "uuid": "67df157b-7847-48ee-a479-99f9392595eb"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\utils": {
@@ -1848,15 +1848,15 @@
       "uuid": "502d0389-dce9-4dfb-8a90-f5915b4ee23b"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player": {
-      "time": 1731854328026.4314,
+      "time": 1732118096678.6074,
       "uuid": "ceb87042-d1bb-4838-87eb-e1431a04c645"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes": {
-      "time": 1731854328026.4314,
+      "time": 1732118096678.6074,
       "uuid": "8440ce75-b5da-4a59-9a3b-8369b513996e"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile": {
-      "time": 1727278043339.5857,
+      "time": 1732118096680.6077,
       "uuid": "3b4d7415-ab2a-4f69-ac22-4da9518e3fb6"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\ui": {
@@ -2196,7 +2196,7 @@
       "uuid": "8b9bf52d-9062-4e03-9b8c-a35772670a70"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\EntityManager.ts": {
-      "time": 1731942999835.506,
+      "time": 1732118096652.6072,
       "uuid": "a7feba3c-c9d4-4985-97e8-a0e7004a3e0f"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\Singleton.ts": {
@@ -2204,7 +2204,7 @@
       "uuid": "4a4e5024-967a-45fa-8c7b-f3087af0e134"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\State.ts": {
-      "time": 1729528054653.0193,
+      "time": 1732460083093.657,
       "uuid": "9e39b317-1c6e-45aa-953d-dccf72375f88"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\base\\StateMachine.ts": {
@@ -2216,23 +2216,23 @@
       "uuid": "b6e1f10f-35cc-477b-a952-a7073f7578bc"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\enums\\index.ts": {
-      "time": 1731854328016.4329,
+      "time": 1732459536900.9087,
       "uuid": "82a841cd-8da7-4eef-bdd0-3648b2f67baf"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\index.ts": {
-      "time": 1731942898681.0227,
+      "time": 1732118096654.6113,
       "uuid": "9eae4d84-ae09-45e2-96e6-98f5bba1e772"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level1.ts": {
-      "time": 1731854783650.7173,
+      "time": 1732118096655.6084,
       "uuid": "7d67f9d5-76ba-476e-811e-d05e5e00d146"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level2.ts": {
-      "time": 1731854784377.606,
+      "time": 1732118096667.6074,
       "uuid": "77d0dafa-e1c0-4685-bc6a-40e088ee8d36"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\DataManager.ts": {
-      "time": 1732033135018.263,
+      "time": 1732459612494.025,
       "uuid": "8016bcdb-f9c4-4a2f-9ba2-5b8783eaddd6"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\runtime\\EventManager.ts": {
@@ -2280,7 +2280,7 @@
       "uuid": "e6dad5be-106f-4b01-ba70-cf6ec4c365b4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerManager.ts": {
-      "time": 1732033660734.4934,
+      "time": 1732459328961.3193,
       "uuid": "5e9cbdd1-dc6f-46ec-9a8d-caebd4e5d8b5"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\player\\PlayerStateMachine.ts": {
@@ -2296,11 +2296,11 @@
       "uuid": "1a10401b-8542-4ffb-a4ed-a636e6f5a657"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\scenes\\BattleManager.ts": {
-      "time": 1732117397014.1694,
+      "time": 1732460909714.407,
       "uuid": "06de01a4-96b2-4241-8dc6-47d342f625c9"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileManger.ts": {
-      "time": 1731857254173.6292,
+      "time": 1732118096680.6077,
       "uuid": "6000183d-0a4c-4b71-a6ac-c53f11661927"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\tile\\TileMapManager.ts": {
@@ -4587,11 +4587,11 @@
       "uuid": "0ab5cc14-6bcc-4bfb-be86-ea33460d7860"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes": {
-      "time": 1731854328036.4324,
+      "time": 1732118096679.6074,
       "uuid": "9281e316-b80d-41b9-b1ee-e3ae63322165"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes\\SpikeManager.ts": {
-      "time": 1732117456431.0842,
+      "time": 1732458386657.1753,
       "uuid": "5adabfec-cc25-41c9-8a0a-0fb44895be10"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\spikes\\SpikeStateMachine.ts": {
@@ -4643,137 +4643,172 @@
       "uuid": "e0d5d84b-b715-4c85-b0c7-164336d02b29"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level10.ts.meta": {
-      "time": 1731855589178.016
+      "time": 1732118096656.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level11.ts.meta": {
-      "time": 1731855589179.017
+      "time": 1732118096657.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level12.ts.meta": {
-      "time": 1731855589180.016
+      "time": 1732118096658.6082
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level13.ts.meta": {
-      "time": 1731855589181.0156
+      "time": 1732118096659.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level14.ts.meta": {
-      "time": 1731855589183.017
+      "time": 1732118096660.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level15.ts.meta": {
-      "time": 1731855589186.0193
+      "time": 1732118096661.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level16.ts.meta": {
-      "time": 1731855589188.02
+      "time": 1732118096663.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level17.ts.meta": {
-      "time": 1731855589189.0195
+      "time": 1732118096664.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level18.ts.meta": {
-      "time": 1731855589190.015
+      "time": 1732118096665.6106
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level19.ts.meta": {
-      "time": 1731855589191.015
+      "time": 1732118096666.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level20.ts.meta": {
-      "time": 1731855589194.0156
+      "time": 1732118096668.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level21.ts.meta": {
-      "time": 1731855589196.0173
+      "time": 1732118096669.6077
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level3.ts.meta": {
-      "time": 1731855589197.0154
+      "time": 1732118096670.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level4.ts.meta": {
-      "time": 1731855589198.02
+      "time": 1732118096671.607
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level5.ts.meta": {
-      "time": 1731855589200.016
+      "time": 1732118096672.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level6.ts.meta": {
-      "time": 1731855589202.0159
+      "time": 1732118096673.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level7.ts.meta": {
-      "time": 1731855589205.021
+      "time": 1732118096674.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level8.ts.meta": {
-      "time": 1731855589207.0164
+      "time": 1732118096675.6074
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level9.ts.meta": {
-      "time": 1731855589208.0156
+      "time": 1732118096676.608
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level10.ts": {
-      "time": 1731854816971.2488,
+      "time": 1732118096655.6084,
       "uuid": "5c97d55a-5b1b-417e-bccd-a73ba68971a3"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level11.ts": {
-      "time": 1731854820163.7527,
+      "time": 1732118096656.6074,
       "uuid": "b28dfe43-b90f-4ab2-92b0-6b6f0da2f99c"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level12.ts": {
-      "time": 1731854823443.913,
+      "time": 1732118096658.6082,
       "uuid": "ab12ef55-b87f-41cb-8d0e-bba90530a235"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level13.ts": {
-      "time": 1731854827455.9912,
+      "time": 1732118096659.6074,
       "uuid": "117079c2-a519-44cd-95f9-84567710596e"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level14.ts": {
-      "time": 1731854843697.1907,
+      "time": 1732118096660.6074,
       "uuid": "0acccab3-8fa0-4e48-9696-a1d586b317e4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level15.ts": {
-      "time": 1731854904376.0198,
+      "time": 1732118096661.6074,
       "uuid": "5b9c7695-915d-4d5e-98c1-95ddf216c95c"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level16.ts": {
-      "time": 1731854847219.9895,
+      "time": 1732118096662.6074,
       "uuid": "6c42f61e-9d30-45cd-92b2-b648c22493cd"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level17.ts": {
-      "time": 1731854849973.0315,
+      "time": 1732118096663.6074,
       "uuid": "83b5b685-3326-42cd-8826-653be8a07ecc"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level18.ts": {
-      "time": 1731854853342.8374,
+      "time": 1732118096664.6074,
       "uuid": "e183ea7b-925e-4826-8e48-1db29d86e965"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level19.ts": {
-      "time": 1731854856238.7656,
+      "time": 1732118096665.6106,
       "uuid": "6c8ad0b0-f14c-40dc-b256-6ad3a8e77cba"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level20.ts": {
-      "time": 1731854859287.6145,
+      "time": 1732118096667.6074,
       "uuid": "c58047ef-ad0f-4028-ad29-6bd2ee0cd54a"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level21.ts": {
-      "time": 1731854862202.8767,
+      "time": 1732118096668.6074,
       "uuid": "ff563f5f-2c4e-4f46-a44a-98fcbd363cab"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level3.ts": {
-      "time": 1731942599991.1245,
+      "time": 1732118096669.6077,
       "uuid": "acd960c1-b56c-4976-80b0-c6c788ce4110"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level4.ts": {
-      "time": 1731854782448.0881,
+      "time": 1732118096670.6074,
       "uuid": "cb41df15-69a6-4a74-9643-e613547a1003"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level5.ts": {
-      "time": 1731854791142.911,
+      "time": 1732118096672.6074,
       "uuid": "971813d3-6ef8-4beb-a477-a9a8a06f9464"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level6.ts": {
-      "time": 1731854800337.3813,
+      "time": 1732118096673.6074,
       "uuid": "b071d134-e058-4322-a252-dd81889a3e8a"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level7.ts": {
-      "time": 1731854808017.6167,
+      "time": 1732118096674.6074,
       "uuid": "521e9fe1-a765-42ee-8d28-57ff9dee798a"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level8.ts": {
-      "time": 1731854811109.7388,
+      "time": 1732118096675.6074,
       "uuid": "9634c075-173b-43f9-8b51-cc3bd29f5fd4"
     },
     "E:\\git\\Cramped_Room_Of_Death\\assets\\levels\\level9.ts": {
-      "time": 1731854814087.7769,
+      "time": 1732118096676.608,
       "uuid": "696e0ac6-54bc-46cc-a8a2-0caa4c30179d"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke.meta": {
+      "time": 1732459671889.1255
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\DeadSubStateMachine.ts.meta": {
+      "time": 1732459671890.1272
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\IdleSubStateMachine.ts.meta": {
+      "time": 1732459671891.126
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\SmokeManager.ts.meta": {
+      "time": 1732459671892.125
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\SmokeStateMachine.ts.meta": {
+      "time": 1732459671893.1255
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke": {
+      "time": 1732459671885.1262,
+      "uuid": "5a177e73-afe1-46b5-bb8a-48d7f80b372a"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\DeadSubStateMachine.ts": {
+      "time": 1732458853837.0332,
+      "uuid": "2d9f45fe-2ba0-497e-bf39-700ae326423a"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\IdleSubStateMachine.ts": {
+      "time": 1732460175265.432,
+      "uuid": "86673d63-ed79-4dcd-a803-33fac3f91357"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\SmokeManager.ts": {
+      "time": 1732458705528.1094,
+      "uuid": "4b4419e8-9bad-4a0b-b468-234ef0ca1581"
+    },
+    "E:\\git\\Cramped_Room_Of_Death\\assets\\scripts\\smoke\\SmokeStateMachine.ts": {
+      "time": 1732459998268.3948,
+      "uuid": "7e18a8f1-dcb7-4699-b12d-fe08eed91999"
     }
   },
   "missing": {

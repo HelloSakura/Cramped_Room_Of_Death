@@ -36,18 +36,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
       __checkObsolete__(['animation', 'AnimationClip', 'Sprite', 'SpriteFrame', 'UITransform']);
 
       //帧率1秒八帧
-      ANIMATION_SPEED = 1 / 8; //需要播放动画的组件
+      _export("ANIMATION_SPEED", ANIMATION_SPEED = 1 / 8); //需要播放动画的组件
+
 
       _export("default", State = class State {
         //fsm状态机状态
         //path资源路径
         //wrapMode播放类型
-        constructor(fsm, path, wrapMode = AnimationClip.WrapMode.Normal) {
+        constructor(fsm, path, wrapMode = AnimationClip.WrapMode.Normal, speed = ANIMATION_SPEED) {
           //动画相关
           this.animationClip = void 0;
           this.fsm = fsm;
           this.path = path;
           this.wrapMode = wrapMode;
+          this.speed = speed;
           this.init();
         }
 

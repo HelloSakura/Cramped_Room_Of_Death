@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, Component, director, Node } from 'cc';
 import { TileMapManager } from '../tile/TileMapManager';
 import levels, { ILevel } from '../../levels';
 import DataManager from '../../runtime/DataManager';
@@ -12,25 +12,30 @@ import { DoorManager } from '../door/DoorManager';
 import { IronSkeletonManager } from '../ironSkeleton/IronSkeletonManager';
 import { BurstManager } from '../burst/BurstManager';
 import { SpikeManager } from '../spikes/SpikeManager';
+import { SmokeManager } from '../smoke/SmokeManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('BattleManager')
 export class BattleManager extends Component {
     level:ILevel;
     stage:Node;
+    //分层渲染的思想很重要
+    private _smokeLayer:Node;
 
     //
     onLoad(){
-        DataManager.Instance.levelIndex = 12;
+        DataManager.Instance.levelIndex = 4;
         //绑定切换关卡
         EventManager.Instance.on(EVENT_ENUM.NEXT_LEVEL, this._nextLevel, this);
         EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._checkArrivedDoor, this);
+        EventManager.Instance.on(EVENT_ENUM.SHOW_SMOKE, this.generateSmoke, this);
     }
 
     onDestroy(){
         //解绑切换关卡
         EventManager.Instance.off(EVENT_ENUM.NEXT_LEVEL, this._nextLevel)
         EventManager.Instance.off(EVENT_ENUM.PLAYER_MOVE_END, this._checkArrivedDoor);
+        EventManager.Instance.off(EVENT_ENUM.SHOW_SMOKE, this.generateSmoke, this);
     }
 
     start() {
@@ -55,11 +60,13 @@ export class BattleManager extends Component {
                 this.generateEnemy(),    
             ]);
             //生成player
-            await this.generatePlayer()
+            await this.generateSmokeLayer();
+            await this.generatePlayer();
             
             
         }
     }
+
 
     private _nextLevel(){
         DataManager.Instance.levelIndex++;
@@ -68,6 +75,7 @@ export class BattleManager extends Component {
 
     //检测玩家是否到门，且敌人全部死亡
     private _checkArrivedDoor(){
+        if(!DataManager.Instance.player || !DataManager.Instance.door) return;
         let {x:playerX, y:playerY} = DataManager.Instance.player;
         let {x:doorX, y:doorY, state:doorState} = DataManager.Instance.door;
         
@@ -169,6 +177,35 @@ export class BattleManager extends Component {
         await Promise.all(promise);
     }
 
+    async generateSmoke(x:number, y:number, direction:DIRECTION_ENUM){
+        //循环利用
+        const item = DataManager.Instance.smokes.find(smoke=>smoke.state === ENTITY_STATE_ENUM.DEATH);
+        if(item){
+            item.x = x;
+            item.y = y;
+            item.direction = direction;
+            //重新设置一下位置，保证烟雾生成的位置是实际希望的位置
+            this.node.setPosition(x * TILE_WIDTH - TILE_WIDTH * 1.5, -y * TILE_HEIGHT + TILE_HEIGHT * 1.5);
+            return;
+        }
+        
+        const smoke = createUINode();
+        smoke.setParent(this._smokeLayer);
+        const smokeManager = smoke.addComponent(SmokeManager);
+        await smokeManager.init({
+            x,
+            y,
+            direction,
+            state:ENTITY_STATE_ENUM.IDLE,
+            type:ENTITY_TYPE_ENUM.SMOKE
+        });
+        DataManager.Instance.smokes.push(smokeManager);
+    }
+
+    async generateSmokeLayer(){
+        this._smokeLayer = createUINode();
+        this._smokeLayer.setParent(this.stage);
+    }
     adaptPos(){
         //将舞台置为中间位置
         //解包

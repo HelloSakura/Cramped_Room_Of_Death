@@ -157,18 +157,22 @@ export class PlayerManager extends EntityManager {
         if(inputDirection === CONTROLLER_ENUM.TOP){
             this.targetY -=1;
             this._isMoving = true;
+            this._showSmoke(DIRECTION_ENUM.TOP);
         }
         else if(inputDirection === CONTROLLER_ENUM.BOTTOM){
             this.targetY +=1;
             this._isMoving = true;
+            this._showSmoke(DIRECTION_ENUM.BOTTOM);
         }
         else if(inputDirection === CONTROLLER_ENUM.RIGHT){
             this.targetX +=1;
             this._isMoving = true;
+            this._showSmoke(DIRECTION_ENUM.RIGHT);
         }
         else if(inputDirection === CONTROLLER_ENUM.LEFT){
             this.targetX -=1;
             this._isMoving = true;
+            this._showSmoke(DIRECTION_ENUM.LEFT);
         }
         else if(inputDirection === CONTROLLER_ENUM.TURNLEFT){
             //左转后进入该逻辑
@@ -1060,7 +1064,9 @@ export class PlayerManager extends EntityManager {
 
     }
 
-    
+    private _showSmoke(type: DIRECTION_ENUM){
+        EventManager.Instance.emit(EVENT_ENUM.SHOW_SMOKE, this.x, this.y, type);
+    }
 }
 
 

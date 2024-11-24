@@ -35,6 +35,7 @@ System.register(["cc"], function (_export, _context) {
         EVENT_ENUM["ATTACK_PLAYER"] = "ATTACK_PLAYER";
         EVENT_ENUM["ATTACK_ENEMY"] = "ATTACK_ENEMY";
         EVENT_ENUM["DOOR_OPEN"] = "DOOR_OPEN";
+        EVENT_ENUM["SHOW_SMOKE"] = "SHOW_SMOKE";
         return EVENT_ENUM;
       }({})); //方向枚举
 
@@ -122,6 +123,7 @@ System.register(["cc"], function (_export, _context) {
         ENTITY_TYPE_ENUM["SPIKES_TWO"] = "SPIKES_TWO";
         ENTITY_TYPE_ENUM["SPIKES_THREE"] = "SPIKES_THREE";
         ENTITY_TYPE_ENUM["SPIKES_FOUR"] = "SPIKES_FOUR";
+        ENTITY_TYPE_ENUM["SMOKE"] = "SMOKE";
         return ENTITY_TYPE_ENUM;
       }({}));
 

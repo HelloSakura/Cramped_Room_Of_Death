@@ -20,7 +20,8 @@ export enum EVENT_ENUM{
     PLAYER_BORN = "PLAYER_BORN",      //人物出生
     ATTACK_PLAYER = "ATTACK_PLAYER",   //攻击
     ATTACK_ENEMY = "ATTACK_ENEMY",       //人物攻击
-    DOOR_OPEN = "DOOR_OPEN"             //门开了
+    DOOR_OPEN = "DOOR_OPEN",             //门开了
+    SHOW_SMOKE = "SHOW_SMOKE"
 }
 
 
@@ -106,6 +107,7 @@ export enum ENTITY_TYPE_ENUM{
     SPIKES_TWO = "SPIKES_TWO",
     SPIKES_THREE = "SPIKES_THREE",
     SPIKES_FOUR = "SPIKES_FOUR",
+    SMOKE = "SMOKE"
 }
 
 export enum SPIKES_TYPE_MAP_TOTAL_COUNT_ENUM{

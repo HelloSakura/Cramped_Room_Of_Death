@@ -27,6 +27,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
     _reporterNs.report("PlayerManager", "../scripts/player/PlayerManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfSmokeManager(extras) {
+    _reporterNs.report("SmokeManager", "../scripts/smoke/SmokeManager", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfSpikeManager(extras) {
     _reporterNs.report("SpikeManager", "../scripts/spikes/SpikeManager", _context.meta, extras);
   }
@@ -65,6 +69,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.bursts = void 0;
           this.enemies = void 0;
           this.spikes = void 0;
+          this.smokes = void 0;
         }
 
         static get Instance() {
@@ -81,6 +86,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.bursts = [];
           this.enemies = [];
           this.spikes = [];
+          this.smokes = [];
         }
 
       });

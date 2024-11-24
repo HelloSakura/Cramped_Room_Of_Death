@@ -7,7 +7,7 @@ import { TILE_WIDTH, TILE_HEIGHT } from "../scripts/tile/TileManger";
 import { StateMachine } from "./StateMachine";
 
 //帧率1秒八帧
-const ANIMATION_SPEED = 1/8;
+export const ANIMATION_SPEED = 1/8;
 
 //需要播放动画的组件
 export default class State{
@@ -20,7 +20,8 @@ export default class State{
     constructor(
         private fsm: StateMachine, 
         private path: string, 
-        private wrapMode: AnimationClip.WrapMode = AnimationClip.WrapMode.Normal
+        private wrapMode: AnimationClip.WrapMode = AnimationClip.WrapMode.Normal,
+        private speed:number = ANIMATION_SPEED
     ){
         this.init();
     }

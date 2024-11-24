@@ -210,13 +210,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         backZero() {
-          if (this._curCount == this._totalCount) {
-            this.CurCount = 1;
-          } else {
-            this.CurCount = 0;
-          }
-
-          this.onAttack();
+          this.CurCount = 0;
         }
 
         onAttack() {

@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6", "__unresolved_7", "__unresolved_8", "__unresolved_9", "__unresolved_10", "__unresolved_11", "__unresolved_12", "__unresolved_13", "__unresolved_14"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, _dec, _class, _crd, ccclass, property, BattleManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, Component, Node, TileMapManager, levels, DataManager, TILE_HEIGHT, TILE_WIDTH, EventManager, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, createUINode, PlayerManager, WoodenSkeletonManager, DoorManager, IronSkeletonManager, BurstManager, SpikeManager, SmokeManager, _dec, _class, _crd, ccclass, property, BattleManager;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -33,6 +33,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfEventManager(extras) {
     _reporterNs.report("EventManager", "../../runtime/EventManager", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfDIRECTION_ENUM(extras) {
+    _reporterNs.report("DIRECTION_ENUM", "../../enums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
@@ -75,6 +79,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
     _reporterNs.report("SpikeManager", "../spikes/SpikeManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfSmokeManager(extras) {
+    _reporterNs.report("SmokeManager", "../smoke/SmokeManager", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -114,13 +122,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       BurstManager = _unresolved_13.BurstManager;
     }, function (_unresolved_14) {
       SpikeManager = _unresolved_14.SpikeManager;
+    }, function (_unresolved_15) {
+      SmokeManager = _unresolved_15.SmokeManager;
     }],
     execute: function () {
       _crd = true;
 
       _cclegacy._RF.push({}, "06de0GklrJCQY3GR9NC9iXJ", "BattleManager", undefined);
 
-      __checkObsolete__(['_decorator', 'Component', 'Node']);
+      __checkObsolete__(['_decorator', 'Component', 'director', 'Node']);
 
       ({
         ccclass,
@@ -132,13 +142,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           super(...arguments);
           this.level = void 0;
           this.stage = void 0;
+          //分层渲染的思想很重要
+          this._smokeLayer = void 0;
         }
 
         //
         onLoad() {
           (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
             error: Error()
-          }), DataManager) : DataManager).Instance.levelIndex = 12; //绑定切换关卡
+          }), DataManager) : DataManager).Instance.levelIndex = 4; //绑定切换关卡
 
           (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
             error: Error()
@@ -150,6 +162,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
           }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._checkArrivedDoor, this);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.on((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).SHOW_SMOKE, this.generateSmoke, this);
         }
 
         onDestroy() {
@@ -164,6 +181,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
           }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END, this._checkArrivedDoor);
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.off((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).SHOW_SMOKE, this.generateSmoke, this);
         }
 
         start() {
@@ -196,6 +218,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               }), DataManager) : DataManager).Instance.mapColumnCount = _this.level.mapInfo[0].length || 0;
               yield Promise.all([_this.generateTileMap(), _this.generateBurst(), _this.generateSpikes(), _this.generateDoor(), _this.generateEnemy()]); //生成player
 
+              yield _this.generateSmokeLayer();
               yield _this.generatePlayer();
             }
           })();
@@ -210,6 +233,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
 
         _checkArrivedDoor() {
+          if (!(_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.player || !(_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+            error: Error()
+          }), DataManager) : DataManager).Instance.door) return;
           var {
             x: playerX,
             y: playerY
@@ -391,6 +419,71 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             });
 
             yield Promise.all(promise);
+          })();
+        }
+
+        generateSmoke(x, y, direction) {
+          var _this8 = this;
+
+          return _asyncToGenerator(function* () {
+            //循环利用
+            var item = (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+              error: Error()
+            }), DataManager) : DataManager).Instance.smokes.find(smoke => smoke.state === (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+              error: Error()
+            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH);
+
+            if (item) {
+              item.x = x;
+              item.y = y;
+              item.direction = direction; //重新设置一下位置，保证烟雾生成的位置是实际希望的位置
+
+              _this8.node.setPosition(x * (_crd && TILE_WIDTH === void 0 ? (_reportPossibleCrUseOfTILE_WIDTH({
+                error: Error()
+              }), TILE_WIDTH) : TILE_WIDTH) - (_crd && TILE_WIDTH === void 0 ? (_reportPossibleCrUseOfTILE_WIDTH({
+                error: Error()
+              }), TILE_WIDTH) : TILE_WIDTH) * 1.5, -y * (_crd && TILE_HEIGHT === void 0 ? (_reportPossibleCrUseOfTILE_HEIGHT({
+                error: Error()
+              }), TILE_HEIGHT) : TILE_HEIGHT) + (_crd && TILE_HEIGHT === void 0 ? (_reportPossibleCrUseOfTILE_HEIGHT({
+                error: Error()
+              }), TILE_HEIGHT) : TILE_HEIGHT) * 1.5);
+
+              return;
+            }
+
+            var smoke = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
+              error: Error()
+            }), createUINode) : createUINode)();
+            smoke.setParent(_this8._smokeLayer);
+            var smokeManager = smoke.addComponent(_crd && SmokeManager === void 0 ? (_reportPossibleCrUseOfSmokeManager({
+              error: Error()
+            }), SmokeManager) : SmokeManager);
+            yield smokeManager.init({
+              x,
+              y,
+              direction,
+              state: (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+                error: Error()
+              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).IDLE,
+              type: (_crd && ENTITY_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_TYPE_ENUM({
+                error: Error()
+              }), ENTITY_TYPE_ENUM) : ENTITY_TYPE_ENUM).SMOKE
+            });
+            (_crd && DataManager === void 0 ? (_reportPossibleCrUseOfDataManager({
+              error: Error()
+            }), DataManager) : DataManager).Instance.smokes.push(smokeManager);
+          })();
+        }
+
+        generateSmokeLayer() {
+          var _this9 = this;
+
+          return _asyncToGenerator(function* () {
+            _this9._smokeLayer = (_crd && createUINode === void 0 ? (_reportPossibleCrUseOfcreateUINode({
+              error: Error()
+            }), createUINode) : createUINode)();
+
+            _this9._smokeLayer.setParent(_this9.stage);
           })();
         }
 
