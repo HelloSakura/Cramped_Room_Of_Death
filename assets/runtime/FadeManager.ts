@@ -1,13 +1,8 @@
-import {director, RenderRoot2D } from "cc";
+import {director, RenderRoot2D, Vec3 } from "cc";
 import Singleton from "../base/Singleton";
 import { DEFAULT_DURATION, DrawManager } from "../scripts/ui/DrawManager";
 import { createUINode } from "../utils";
 
-
-interface IItem{
-    func: Function;
-    ctx: unknown;
-}
 
 export default class FadeManager extends Singleton{
     static get Instance(){
@@ -24,9 +19,9 @@ export default class FadeManager extends Singleton{
 
         const root = createUINode();
         root.addComponent(RenderRoot2D);
-
         const faderNode = createUINode();
         faderNode.setParent(root);
+        faderNode.setPosition(Vec3.ZERO);
         this._fader = faderNode.addComponent(DrawManager);
         this._fader.init();
         //声明为常驻节点
@@ -48,6 +43,10 @@ export default class FadeManager extends Singleton{
 
     fadeOut(duration:number = DEFAULT_DURATION){
         return this.Fader.fadeOut(duration);
+    }
+
+    mask(){
+        return this.Fader.mask();
     }
 
 }

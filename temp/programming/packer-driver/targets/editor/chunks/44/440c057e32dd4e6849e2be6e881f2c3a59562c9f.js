@@ -103,11 +103,11 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), randomByLen) : randomByLen)(12);
           this.x = 0;
           this.y = 0;
+          this.type = void 0;
           //状态机
           this.fsm = void 0;
           this._curCount = void 0;
           this._totalCount = void 0;
-          this.type = void 0;
         }
 
         get CurCount() {

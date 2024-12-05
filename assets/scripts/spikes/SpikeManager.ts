@@ -16,13 +16,12 @@ export class SpikeManager extends Component {
     id:string = randomByLen(12);
     x:number = 0;
     y:number = 0;
-
+    type:ENTITY_TYPE_ENUM;
     //状态机
     fsm: StateMachine;
 
     private _curCount:number;
     private _totalCount:number;
-    private type:ENTITY_TYPE_ENUM;
 
     get CurCount(){
         return this._curCount;

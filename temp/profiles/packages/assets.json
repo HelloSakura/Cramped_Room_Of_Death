@@ -2,7 +2,6 @@
   "state": {
     "expandUuids": [
       "db://assets",
-      "67df157b-7847-48ee-a479-99f9392595eb",
       "f61123e5-a850-4ad9-9f87-93a2d64d2a5d",
       "3e77c30b-c32f-486c-b1c5-7472ebaca862",
       "502d0389-dce9-4dfb-8a90-f5915b4ee23b",
@@ -16,8 +15,6 @@
       "da7f2a09-2442-423a-bd8c-e18748d962c3",
       "30ea9f17-6510-493c-91f7-88a1ecc3849a",
       "0c251cb4-7c8f-4f38-a996-6f0239a6eeca",
-      "8440ce75-b5da-4a59-9a3b-8369b513996e",
-      "ceb87042-d1bb-4838-87eb-e1431a04c645",
       "f4bfdf4a-3ee3-4c31-a83a-eab7e3089a7e",
       "dd5a21c4-ec96-460b-a361-1dcf25432c76",
       "4fb6f3c1-ff0d-437c-9aa4-5cdf22093d62",
@@ -26,8 +23,9 @@
       "0dbeef88-8855-4d01-a70e-91f286936cf8",
       "22f5a935-663a-40ad-b0a8-f165ab222c12",
       "0394b5c9-8e68-4869-984a-77f0e105ed6f",
-      "6f44de47-2a8a-4eea-83f5-6bf57b4ceb1a",
-      "238dc72e-2bc4-4c2c-9f23-796e96301990"
+      "471cb7c8-f5d8-4100-b768-72606e490510",
+      "fcbaf2d7-b553-4745-b61a-033c041a9f18",
+      "d2b58b7a-53bf-479b-a531-e5cd44c13571"
     ],
     "sortType": "name"
   }

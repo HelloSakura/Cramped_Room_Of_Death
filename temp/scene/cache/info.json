@@ -1,0 +1,13 @@
+{
+    "systemInfo": {
+        "arch": "x64",
+        "cpu": "AMD Ryzen 7 5800H with Radeon Graphics         ",
+        "version": "Windows 10 Home China"
+    },
+    "sceneListMap": {
+        "9e1a378d-c0f5-4eae-93ef-7c2f616cd392": "E:\\git\\Cramped_Room_Of_Death\\assets\\scenes\\Battle.scene",
+        "b0121ff4-96ce-4fca-9488-ec625e6a5abe": "E:\\git\\Cramped_Room_Of_Death\\assets\\scenes\\Start.scene",
+        "13305459-0573-426d-bf30-17f1449751f4": "E:\\git\\Cramped_Room_Of_Death\\assets\\scenes\\Loading.scene"
+    },
+    "deviceMd5": "a59039fddc4d36a8be9abb0b32038a7c"
+}

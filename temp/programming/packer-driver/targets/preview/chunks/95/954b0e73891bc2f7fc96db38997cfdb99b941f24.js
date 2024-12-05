@@ -11,6 +11,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
     _reporterNs.report("Singleton", "../base/Singleton", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfILevel(extras) {
+    _reporterNs.report("ILevel", "../levels", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfITILE(extras) {
     _reporterNs.report("ITILE", "../levels", _context.meta, extras);
   }
@@ -70,6 +74,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.enemies = void 0;
           this.spikes = void 0;
           this.smokes = void 0;
+          this.records = void 0;
         }
 
         static get Instance() {
@@ -87,6 +92,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
           this.enemies = [];
           this.spikes = [];
           this.smokes = [];
+          this.records = [];
         }
 
       });

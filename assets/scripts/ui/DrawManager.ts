@@ -18,8 +18,8 @@ export const DEFAULT_DURATION = 2000;
 export class DrawManager extends Component {
     private _ctx:Graphics;
     private _state:FADE_STATE_ENUM;
-    private _oldTime:number;
-    private _duration:number;
+    private _oldTime:number = 0;
+    private _duration:number = 0;
     private _fadeResolve:(value:PromiseLike<null>)=>void;
     private _block:BlockInputEvents;    //防止输入穿透到下层节点，一般用于上层UI的背景
 
@@ -27,7 +27,7 @@ export class DrawManager extends Component {
         this._block = this.addComponent(BlockInputEvents);
         this._ctx = this.addComponent(Graphics);
         const transform = this.getComponent(UITransform);
-        transform.setAnchorPoint(0.5, 0.5);
+        transform.setAnchorPoint(0, 0);
         transform.setContentSize(SCREEN_WIDTH, SCREEN_HEIGHT);
         this.setAlpha(1);
     }
@@ -46,7 +46,7 @@ export class DrawManager extends Component {
 
     update(){
         const percent = (game.totalTime - this._oldTime) / this._duration;
-        console.log(percent);
+        ////console.log(percent);
         switch(this._state){
             case FADE_STATE_ENUM.FADE_IN:
                 if(percent < 1){
@@ -89,6 +89,13 @@ export class DrawManager extends Component {
         this._state = FADE_STATE_ENUM.FADE_OUT;
         return new Promise((resolve)=>{
             this._fadeResolve = resolve;
+        });
+    }
+
+    mask(){
+        this.setAlpha(1);
+        return new Promise((resolve)=>{
+            setTimeout(resolve, DEFAULT_DURATION);
         });
     }
 }

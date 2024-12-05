@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM, EventManager, PlayerStateMachine, EntityManager, DataManager, _dec, _class, _crd, ccclass, property, PlayerManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM, SHAKE_TYPE_ENUM, EventManager, PlayerStateMachine, EntityManager, DataManager, _dec, _class, _crd, ccclass, property, PlayerManager;
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -25,6 +25,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
   function _reportPossibleCrUseOfEVENT_ENUM(extras) {
     _reporterNs.report("EVENT_ENUM", "../../enums", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfSHAKE_TYPE_ENUM(extras) {
+    _reporterNs.report("SHAKE_TYPE_ENUM", "../../enums", _context.meta, extras);
   }
 
   function _reportPossibleCrUseOfEventManager(extras) {
@@ -68,6 +72,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       DIRECTION_ENUM = _unresolved_2.DIRECTION_ENUM;
       ENTITY_STATE_ENUM = _unresolved_2.ENTITY_STATE_ENUM;
       EVENT_ENUM = _unresolved_2.EVENT_ENUM;
+      SHAKE_TYPE_ENUM = _unresolved_2.SHAKE_TYPE_ENUM;
     }, function (_unresolved_3) {
       EventManager = _unresolved_3.default;
     }, function (_unresolved_4) {
@@ -206,21 +211,172 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
               error: Error()
             }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
               error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).RECORD_STEP);
+            this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
+              error: Error()
+            }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
             }), EVENT_ENUM) : EVENT_ENUM).ATTACK_ENEMY, id);
             (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
               error: Error()
             }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
               error: Error()
             }), EVENT_ENUM) : EVENT_ENUM).DOOR_OPEN);
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).PLAYER_MOVE_END);
             return;
           } //撞了不用往下走了
 
 
           if (this.willBlock(inputDirection)) {
             console.log("block");
+
+            if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).TOP) {
+              (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                error: Error()
+              }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                error: Error()
+              }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                error: Error()
+              }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).TOP);
+            } else if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).LEFT) {
+              (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                error: Error()
+              }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                error: Error()
+              }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                error: Error()
+              }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).LEFT);
+            } else if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).RIGHT) {
+              (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                error: Error()
+              }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                error: Error()
+              }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                error: Error()
+              }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).RIGHT);
+            } else if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).BOTTOM) {
+              (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                error: Error()
+              }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                error: Error()
+              }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                error: Error()
+              }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).BOTTOM);
+            } else if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).TURNLEFT) {
+              //判断旋转时候的方向
+              if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).LEFT);
+              } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).RIGHT);
+              } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).LEFT) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).BOTTOM);
+              } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).RIGHT) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).TOP);
+              }
+            } else if (inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
+              error: Error()
+            }), CONTROLLER_ENUM) : CONTROLLER_ENUM).TURNRIGHT) {
+              //判断旋转时候的方向
+              if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).RIGHT);
+              } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).LEFT);
+              } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).LEFT) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).TOP);
+              } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+                error: Error()
+              }), DIRECTION_ENUM) : DIRECTION_ENUM).RIGHT) {
+                (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+                  error: Error()
+                }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+                  error: Error()
+                }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && SHAKE_TYPE_ENUM === void 0 ? (_reportPossibleCrUseOfSHAKE_TYPE_ENUM({
+                  error: Error()
+                }), SHAKE_TYPE_ENUM) : SHAKE_TYPE_ENUM).BOTTOM);
+              }
+            }
+
             return;
           }
 
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).RECORD_STEP);
           this.move(inputDirection);
         }
 
@@ -243,27 +399,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), DIRECTION_ENUM) : DIRECTION_ENUM).TOP && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
               error: Error()
             }), CONTROLLER_ENUM) : CONTROLLER_ENUM).TOP && enemyX === this.x && enemyY === this.targetY - 2) {
-              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
               return enemyId;
             } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).LEFT && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
               error: Error()
             }), CONTROLLER_ENUM) : CONTROLLER_ENUM).LEFT && enemyX === this.x - 2 && enemyY === this.targetY) {
-              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
               return enemyId;
             } else if (this.direction === (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
               error: Error()
             }), DIRECTION_ENUM) : DIRECTION_ENUM).RIGHT && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
               error: Error()
             }), CONTROLLER_ENUM) : CONTROLLER_ENUM).RIGHT && enemyX === this.x + 2 && enemyY === this.targetY) {
-              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
               return enemyId;
             }
 
@@ -272,9 +419,6 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM && inputDirection === (_crd && CONTROLLER_ENUM === void 0 ? (_reportPossibleCrUseOfCONTROLLER_ENUM({
               error: Error()
             }), CONTROLLER_ENUM) : CONTROLLER_ENUM).BOTTOM && enemyX === this.x && enemyY === this.targetY + 2) {
-              this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
-                error: Error()
-              }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).ATTACK;
               return enemyId;
             }
           }
@@ -1591,6 +1735,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
             error: Error()
           }), EVENT_ENUM) : EVENT_ENUM).SHOW_SMOKE, this.x, this.y, type);
+        }
+
+        onAttackShake(type) {
+          (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+            error: Error()
+          }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+            error: Error()
+          }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, type);
         }
 
       }) || _class));

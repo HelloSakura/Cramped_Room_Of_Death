@@ -47,7 +47,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
         //fsm状态机状态
         //path资源路径
         //wrapMode播放类型
-        constructor(fsm, path, wrapMode, speed) {
+        constructor(fsm, path, wrapMode, speed, events) {
           if (wrapMode === void 0) {
             wrapMode = AnimationClip.WrapMode.Normal;
           }
@@ -56,12 +56,17 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             speed = ANIMATION_SPEED;
           }
 
+          if (events === void 0) {
+            events = [];
+          }
+
           //动画相关
           this.animationClip = void 0;
           this.fsm = fsm;
           this.path = path;
           this.wrapMode = wrapMode;
           this.speed = speed;
+          this.events = events;
           this.init();
         }
 
@@ -96,6 +101,12 @@ System.register(["__unresolved_0", "cc", "__unresolved_1"], function (_export, _
             _this.animationClip.name = _this.path;
             _this.animationClip.duration = frames.length * ANIMATION_SPEED;
             _this.animationClip.wrapMode = _this.wrapMode;
+
+            for (var event of _this.events) {
+              _this.animationClip.events.push(event);
+            }
+
+            _this.animationClip.updateEventDatas();
           })();
         }
 

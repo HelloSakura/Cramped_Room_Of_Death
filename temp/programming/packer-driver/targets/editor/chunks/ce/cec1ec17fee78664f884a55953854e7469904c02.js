@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, director, RenderRoot2D, Singleton, DEFAULT_DURATION, DrawManager, createUINode, FadeManager, _crd;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, director, RenderRoot2D, Vec3, Singleton, DEFAULT_DURATION, DrawManager, createUINode, FadeManager, _crd;
 
   function _reportPossibleCrUseOfSingleton(extras) {
     _reporterNs.report("Singleton", "../base/Singleton", _context.meta, extras);
@@ -30,6 +30,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       __checkObsoleteInNamespace__ = _cc.__checkObsoleteInNamespace__;
       director = _cc.director;
       RenderRoot2D = _cc.RenderRoot2D;
+      Vec3 = _cc.Vec3;
     }, function (_unresolved_2) {
       Singleton = _unresolved_2.default;
     }, function (_unresolved_3) {
@@ -43,7 +44,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
       _cclegacy._RF.push({}, "99f28Fx+XRB94kZt0rgb1ll", "FadeManager", undefined);
 
-      __checkObsolete__(['director', 'RenderRoot2D']);
+      __checkObsolete__(['director', 'RenderRoot2D', 'Vec3']);
 
       _export("default", FadeManager = class FadeManager extends (_crd && Singleton === void 0 ? (_reportPossibleCrUseOfSingleton({
         error: Error()
@@ -70,6 +71,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             error: Error()
           }), createUINode) : createUINode)();
           faderNode.setParent(root);
+          faderNode.setPosition(Vec3.ZERO);
           this._fader = faderNode.addComponent(_crd && DrawManager === void 0 ? (_reportPossibleCrUseOfDrawManager({
             error: Error()
           }), DrawManager) : DrawManager);
@@ -100,6 +102,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           error: Error()
         }), DEFAULT_DURATION) : DEFAULT_DURATION) {
           return this.Fader.fadeOut(duration);
+        }
+
+        mask() {
+          return this.Fader.mask();
         }
 
       });

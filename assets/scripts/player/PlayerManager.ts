@@ -1,6 +1,6 @@
 import { _decorator } from 'cc';
 import { TileManger } from '../tile/TileManger';
-import { CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM } from '../../enums';
+import { CONTROLLER_ENUM, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM, SHAKE_TYPE_ENUM } from '../../enums';
 import EventManager from '../../runtime/EventManager';
 import { PlayerStateMachine } from './PlayerStateMachine';
 import { EntityManager } from '../../base/EntityManager';
@@ -92,15 +92,63 @@ export class PlayerManager extends EntityManager {
         //判断攻击敌人
         let id = this._willAttack(inputDirection)
         if(id){
+            EventManager.Instance.emit(EVENT_ENUM.RECORD_STEP);
+            this.state = ENTITY_STATE_ENUM.ATTACK;
             EventManager.Instance.emit(EVENT_ENUM.ATTACK_ENEMY, id);
             EventManager.Instance.emit(EVENT_ENUM.DOOR_OPEN);
+            EventManager.Instance.emit(EVENT_ENUM.PLAYER_MOVE_END);
             return;
         }
         //撞了不用往下走了
         if(this.willBlock(inputDirection)){
             console.log("block");
+            if(inputDirection === CONTROLLER_ENUM.TOP){
+                EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.TOP);
+            }
+            else if(inputDirection === CONTROLLER_ENUM.LEFT){
+                EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.LEFT);
+            }
+            else if(inputDirection === CONTROLLER_ENUM.RIGHT){
+                EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.RIGHT);
+            }
+            else if(inputDirection === CONTROLLER_ENUM.BOTTOM){
+                EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.BOTTOM);
+            }
+            else if(inputDirection === CONTROLLER_ENUM.TURNLEFT){
+                //判断旋转时候的方向
+                if(this.direction === DIRECTION_ENUM.TOP){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.LEFT);
+                }
+                else if(this.direction === DIRECTION_ENUM.BOTTOM){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.RIGHT);
+                }
+                else if(this.direction === DIRECTION_ENUM.LEFT){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.BOTTOM);
+                }
+                else if(this.direction === DIRECTION_ENUM.RIGHT){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.TOP);
+                }
+            }
+            else if(inputDirection === CONTROLLER_ENUM.TURNRIGHT){
+                //判断旋转时候的方向
+                if(this.direction === DIRECTION_ENUM.TOP){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.RIGHT);
+                }
+                else if(this.direction === DIRECTION_ENUM.BOTTOM){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.LEFT);
+                }
+                else if(this.direction === DIRECTION_ENUM.LEFT){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.TOP);
+                }
+                else if(this.direction === DIRECTION_ENUM.RIGHT){
+                    EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, SHAKE_TYPE_ENUM.BOTTOM);
+                }
+            }
+            
+
             return; 
         }
+        EventManager.Instance.emit(EVENT_ENUM.RECORD_STEP);
         this.move(inputDirection);
 
     }
@@ -114,7 +162,6 @@ export class PlayerManager extends EntityManager {
             && enemyX === this.x
             && enemyY === this.targetY - 2
             ){
-                this.state = ENTITY_STATE_ENUM.ATTACK;
                 return enemyId;
             }
             else if(this.direction === DIRECTION_ENUM.LEFT
@@ -122,7 +169,6 @@ export class PlayerManager extends EntityManager {
             && enemyX === this.x - 2
             && enemyY === this.targetY
             ){
-                this.state = ENTITY_STATE_ENUM.ATTACK;
                 return enemyId;
             }
             else if(this.direction === DIRECTION_ENUM.RIGHT
@@ -130,7 +176,6 @@ export class PlayerManager extends EntityManager {
             && enemyX === this.x + 2
             && enemyY === this.targetY
             ){
-                this.state = ENTITY_STATE_ENUM.ATTACK;
                 return enemyId;
             }
             if(this.direction === DIRECTION_ENUM.BOTTOM
@@ -138,7 +183,6 @@ export class PlayerManager extends EntityManager {
             && enemyX === this.x
             && enemyY === this.targetY + 2
             ){
-                this.state = ENTITY_STATE_ENUM.ATTACK;
                 return enemyId;
             }
         
@@ -1066,6 +1110,10 @@ export class PlayerManager extends EntityManager {
 
     private _showSmoke(type: DIRECTION_ENUM){
         EventManager.Instance.emit(EVENT_ENUM.SHOW_SMOKE, this.x, this.y, type);
+    }
+
+    public onAttackShake(type: SHAKE_TYPE_ENUM){
+        EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, type);  
     }
 }
 

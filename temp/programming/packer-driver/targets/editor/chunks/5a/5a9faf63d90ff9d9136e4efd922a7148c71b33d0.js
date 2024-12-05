@@ -47,8 +47,8 @@ System.register(["cc"], function (_export, _context) {
           super(...args);
           this._ctx = void 0;
           this._state = void 0;
-          this._oldTime = void 0;
-          this._duration = void 0;
+          this._oldTime = 0;
+          this._duration = 0;
           this._fadeResolve = void 0;
           this._block = void 0;
         }
@@ -79,8 +79,7 @@ System.register(["cc"], function (_export, _context) {
         }
 
         update() {
-          const percent = (game.totalTime - this._oldTime) / this._duration;
-          console.log(percent);
+          const percent = (game.totalTime - this._oldTime) / this._duration; ////console.log(percent);
 
           switch (this._state) {
             case FADE_STATE_ENUM.FADE_IN:
@@ -126,6 +125,13 @@ System.register(["cc"], function (_export, _context) {
           this._state = FADE_STATE_ENUM.FADE_OUT;
           return new Promise(resolve => {
             this._fadeResolve = resolve;
+          });
+        }
+
+        mask() {
+          this.setAlpha(1);
+          return new Promise(resolve => {
+            setTimeout(resolve, DEFAULT_DURATION);
           });
         }
 

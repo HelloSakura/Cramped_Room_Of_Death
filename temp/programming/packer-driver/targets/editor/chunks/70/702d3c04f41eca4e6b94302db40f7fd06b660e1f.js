@@ -1,7 +1,11 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3", "__unresolved_4", "__unresolved_5", "__unresolved_6"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, UITransform, ENTITY_STATE_ENUM, EVENT_ENUM, EventManager, DataManager, EntityManager, BurstStateMachine, TILE_WIDTH, TILE_HEIGHT, _dec, _class, _crd, ccclass, property, BurstManager;
+  var _reporterNs, _cclegacy, __checkObsolete__, __checkObsoleteInNamespace__, _decorator, UITransform, DIRECTION_ENUM, ENTITY_STATE_ENUM, EVENT_ENUM, EventManager, DataManager, EntityManager, BurstStateMachine, TILE_WIDTH, TILE_HEIGHT, _dec, _class, _crd, ccclass, property, BurstManager;
+
+  function _reportPossibleCrUseOfDIRECTION_ENUM(extras) {
+    _reporterNs.report("DIRECTION_ENUM", "../../enums", _context.meta, extras);
+  }
 
   function _reportPossibleCrUseOfENTITY_STATE_ENUM(extras) {
     _reporterNs.report("ENTITY_STATE_ENUM", "../../enums", _context.meta, extras);
@@ -45,6 +49,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       _decorator = _cc._decorator;
       UITransform = _cc.UITransform;
     }, function (_unresolved_2) {
+      DIRECTION_ENUM = _unresolved_2.DIRECTION_ENUM;
       ENTITY_STATE_ENUM = _unresolved_2.ENTITY_STATE_ENUM;
       EVENT_ENUM = _unresolved_2.EVENT_ENUM;
     }, function (_unresolved_3) {
@@ -139,6 +144,13 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
             this.state = (_crd && ENTITY_STATE_ENUM === void 0 ? (_reportPossibleCrUseOfENTITY_STATE_ENUM({
               error: Error()
             }), ENTITY_STATE_ENUM) : ENTITY_STATE_ENUM).DEATH;
+            (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({
+              error: Error()
+            }), EventManager) : EventManager).Instance.emit((_crd && EVENT_ENUM === void 0 ? (_reportPossibleCrUseOfEVENT_ENUM({
+              error: Error()
+            }), EVENT_ENUM) : EVENT_ENUM).SCREEN_SHAKE, (_crd && DIRECTION_ENUM === void 0 ? (_reportPossibleCrUseOfDIRECTION_ENUM({
+              error: Error()
+            }), DIRECTION_ENUM) : DIRECTION_ENUM).BOTTOM);
 
             if (this.x === playerX && this.y === playerY) {
               (_crd && EventManager === void 0 ? (_reportPossibleCrUseOfEventManager({

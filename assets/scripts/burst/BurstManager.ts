@@ -44,6 +44,7 @@ export class BurstManager extends EntityManager {
         }
         else if(this.state === ENTITY_STATE_ENUM.ATTACK){
             this.state = ENTITY_STATE_ENUM.DEATH;
+            EventManager.Instance.emit(EVENT_ENUM.SCREEN_SHAKE, DIRECTION_ENUM.BOTTOM);
             if(this.x === playerX && this.y === playerY){
                 EventManager.Instance.emit(EVENT_ENUM.ATTACK_PLAYER, ENTITY_STATE_ENUM.AIRDEATH);
             }

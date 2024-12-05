@@ -1,6 +1,6 @@
 import { EnemyManager } from "../base/EnemyManager";
 import Singleton from "../base/Singleton";
-import { ITILE } from "../levels";
+import { ILevel, ITILE } from "../levels";
 import { BurstManager } from "../scripts/burst/BurstManager";
 import { DoorManager } from "../scripts/door/DoorManager";
 import { PlayerManager } from "../scripts/player/PlayerManager";
@@ -8,6 +8,9 @@ import { SmokeManager } from "../scripts/smoke/SmokeManager";
 import { SpikeManager } from "../scripts/spikes/SpikeManager";
 import { TileManger } from "../scripts/tile/TileManger";
 import { WoodenSkeletonManager } from "../scripts/woodenSkeleton/WoodenSkeletonManager";
+
+
+export type IRecord = Omit<ILevel, 'mapInfo'>;
 
 export default class DataManager extends Singleton{
     static get Instance(){
@@ -25,6 +28,7 @@ export default class DataManager extends Singleton{
     enemies: EnemyManager[];
     spikes: SpikeManager[];
     smokes:SmokeManager[];
+    records:IRecord[];
     
     reset(){
         this.mapInfo = [];
@@ -37,6 +41,7 @@ export default class DataManager extends Singleton{
         this.enemies = [];
         this.spikes = [];
         this.smokes = [];
+        this.records = [];
     }
 }
 

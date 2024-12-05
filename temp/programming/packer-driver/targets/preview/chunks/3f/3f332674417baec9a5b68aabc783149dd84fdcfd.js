@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, _crd, TILE_TYPE_ENUM, EVENT_ENUM, CONTROLLER_ENUM, FSM_PARAMS_TYPE_ENUM, PARAMS_NAME_ENUM, DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, SPIKES_TYPE_MAP_TOTAL_COUNT_ENUM, SPIKE_COUNT_ENUM, SPIKES_COUNT_MAP_NUMBER_ENUM;
+  var _cclegacy, _crd, TILE_TYPE_ENUM, EVENT_ENUM, CONTROLLER_ENUM, FSM_PARAMS_TYPE_ENUM, PARAMS_NAME_ENUM, DIRECTION_ENUM, DIRECTION_ORDER_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, SPIKES_TYPE_MAP_TOTAL_COUNT_ENUM, SPIKE_COUNT_ENUM, SPIKES_COUNT_MAP_NUMBER_ENUM, SHAKE_TYPE_ENUM, SCENE_ENUM;
 
   return {
     setters: [function (_cc) {
@@ -36,6 +36,11 @@ System.register(["cc"], function (_export, _context) {
         EVENT_ENUM["ATTACK_ENEMY"] = "ATTACK_ENEMY";
         EVENT_ENUM["DOOR_OPEN"] = "DOOR_OPEN";
         EVENT_ENUM["SHOW_SMOKE"] = "SHOW_SMOKE";
+        EVENT_ENUM["SCREEN_SHAKE"] = "SCREEN_SHAKE";
+        EVENT_ENUM["RECORD_STEP"] = "RECORD_STEP";
+        EVENT_ENUM["REVOKE_STEP"] = "REVOKE_STEP";
+        EVENT_ENUM["RESTART_LEVEL"] = "RESTART_LEVEL";
+        EVENT_ENUM["OUT_BATTLE"] = "OUT_BATTLE";
         return EVENT_ENUM;
       }({})); //方向枚举
 
@@ -153,6 +158,21 @@ System.register(["cc"], function (_export, _context) {
         SPIKES_COUNT_MAP_NUMBER_ENUM[SPIKES_COUNT_MAP_NUMBER_ENUM["FOUR"] = 4] = "FOUR";
         SPIKES_COUNT_MAP_NUMBER_ENUM[SPIKES_COUNT_MAP_NUMBER_ENUM["FIVE"] = 5] = "FIVE";
         return SPIKES_COUNT_MAP_NUMBER_ENUM;
+      }({}));
+
+      _export("SHAKE_TYPE_ENUM", SHAKE_TYPE_ENUM = /*#__PURE__*/function (SHAKE_TYPE_ENUM) {
+        SHAKE_TYPE_ENUM["TOP"] = "TOP";
+        SHAKE_TYPE_ENUM["BOTTOM"] = "BOTTOM";
+        SHAKE_TYPE_ENUM["LEFT"] = "LEFT";
+        SHAKE_TYPE_ENUM["RIGHT"] = "RIGHT";
+        return SHAKE_TYPE_ENUM;
+      }({}));
+
+      _export("SCENE_ENUM", SCENE_ENUM = /*#__PURE__*/function (SCENE_ENUM) {
+        SCENE_ENUM["Loading"] = "Loading";
+        SCENE_ENUM["Start"] = "Start";
+        SCENE_ENUM["Battle"] = "Battle";
+        return SCENE_ENUM;
       }({}));
 
       _cclegacy._RF.pop();

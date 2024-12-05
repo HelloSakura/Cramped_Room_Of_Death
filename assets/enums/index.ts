@@ -13,7 +13,7 @@ export enum TILE_TYPE_ENUM {
 }
 
 
-export enum EVENT_ENUM{
+export enum EVENT_ENUM {
     NEXT_LEVEL = "NEXT_LEVEL",      //下一关
     PLAYER_CTRL = "PLAYER_CTRL",    //button方向控制信号
     PLAYER_MOVE_END = "PLAYER_MOVE_END", //人物移动停止
@@ -21,12 +21,17 @@ export enum EVENT_ENUM{
     ATTACK_PLAYER = "ATTACK_PLAYER",   //攻击
     ATTACK_ENEMY = "ATTACK_ENEMY",       //人物攻击
     DOOR_OPEN = "DOOR_OPEN",             //门开了
-    SHOW_SMOKE = "SHOW_SMOKE"
+    SHOW_SMOKE = "SHOW_SMOKE",          //显示烟雾
+    SCREEN_SHAKE = "SCREEN_SHAKE",      //屏幕震动
+    RECORD_STEP = "RECORD_STEP",        //记录步数
+    REVOKE_STEP = "REVOKE_STEP",         //撤回步数
+    RESTART_LEVEL = "RESTART_LEVEL",    //重新开始关卡
+    OUT_BATTLE = "OUT_BATTLE"           //退出
 }
 
 
 //方向枚举
-export enum CONTROLLER_ENUM{
+export enum CONTROLLER_ENUM {
     TOP = "TOP",
     BOTTOM = "BOTTOM",
     LEFT = "LEFT",
@@ -37,13 +42,13 @@ export enum CONTROLLER_ENUM{
 
 
 //状态机参数类型
-export enum FSM_PARAMS_TYPE_ENUM{
+export enum FSM_PARAMS_TYPE_ENUM {
     NUMBER = "NUMBER",
     TRIGGER = "TRIGGER"         //触发器，一般用boolean
 }
 
 //状态机参数字串
-export enum PARAMS_NAME_ENUM{
+export enum PARAMS_NAME_ENUM {
     IDLE = "IDLE",
     TURNLEFT = "TURNLEFT",
     TURNRIGHT = "TURNRIGHT",
@@ -62,7 +67,7 @@ export enum PARAMS_NAME_ENUM{
 }
 
 //方向枚举
-export enum DIRECTION_ENUM{
+export enum DIRECTION_ENUM {
     TOP = "TOP",
     BOTTOM = "BOTTOM",
     LEFT = "LEFT",
@@ -70,7 +75,7 @@ export enum DIRECTION_ENUM{
 }
 
 //数字与方向枚举映射
-export enum DIRECTION_ORDER_ENUM{
+export enum DIRECTION_ORDER_ENUM {
     TOP = 0,
     BOTTOM = 1,
     LEFT = 2,
@@ -80,7 +85,7 @@ export enum DIRECTION_ORDER_ENUM{
 
 //人物状态
 
-export enum ENTITY_STATE_ENUM{
+export enum ENTITY_STATE_ENUM {
     IDLE = "IDLE",
     TURNLEFT = "TURNLEFT",
     TURNRIGHT = "TURNRIGHT",
@@ -97,7 +102,7 @@ export enum ENTITY_STATE_ENUM{
 
 
 //实体类型
-export enum ENTITY_TYPE_ENUM{
+export enum ENTITY_TYPE_ENUM {
     PLAYER = "PLAYER",
     SKELETON_WOODEN = "SKELETON_WOODEN",
     SKELETON_IRON = "SKELETON_IRON",
@@ -110,14 +115,14 @@ export enum ENTITY_TYPE_ENUM{
     SMOKE = "SMOKE"
 }
 
-export enum SPIKES_TYPE_MAP_TOTAL_COUNT_ENUM{
+export enum SPIKES_TYPE_MAP_TOTAL_COUNT_ENUM {
     SPIKES_ONE = 2,
     SPIKES_TWO = 3,
     SPIKES_THREE = 4,
     SPIKES_FOUR = 5,
 }
 
-export enum SPIKE_COUNT_ENUM{
+export enum SPIKE_COUNT_ENUM {
     ZERO = "ZERO",
     ONE = "ONE",
     TWO = "TWO",
@@ -126,11 +131,25 @@ export enum SPIKE_COUNT_ENUM{
     FIVE = "FIVE"
 }
 
-export enum SPIKES_COUNT_MAP_NUMBER_ENUM{
+export enum SPIKES_COUNT_MAP_NUMBER_ENUM {
     ZERO = 0,
     ONE = 1,
     TWO = 2,
     THREE = 3,
     FOUR = 4,
     FIVE = 5
+}
+
+export enum SHAKE_TYPE_ENUM {
+    TOP = 'TOP',
+    BOTTOM = 'BOTTOM',
+    LEFT = 'LEFT',
+    RIGHT = 'RIGHT'
+}
+
+
+export enum SCENE_ENUM {
+    Loading = 'Loading',
+    Start = 'Start',
+    Battle = 'Battle',
 }

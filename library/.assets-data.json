@@ -517,6 +517,9 @@
       "depends": [
         "9e1a378d-c0f5-4eae-93ef-7c2f616cd392",
         "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "d2b58b7a-53bf-479b-a531-e5cd44c13571@eb528",
+        "d2b58b7a-53bf-479b-a531-e5cd44c13571@11e18",
+        "d2b58b7a-53bf-479b-a531-e5cd44c13571@fcad7",
         "d2b58b7a-53bf-479b-a531-e5cd44c13571@02de7",
         "d2b58b7a-53bf-479b-a531-e5cd44c13571@3c87d",
         "d2b58b7a-53bf-479b-a531-e5cd44c13571@d53cc",
@@ -525,6 +528,7 @@
         "d2b58b7a-53bf-479b-a531-e5cd44c13571@11037"
       ],
       "dependScripts": [
+        "83f17d9d-eb86-431a-8ad3-49cd24c654fa",
         "d8e0d2d3-51b5-4465-b607-62fb53124f0f",
         "06de01a4-96b2-4241-8dc6-47d342f625c9"
       ]
@@ -9333,6 +9337,60 @@
   },
   "2dbfda4a-ad6c-4c15-a86b-92c8d60b1796": {
     "url": "db://assets/scripts/ui/DrawManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "d3d959ec-aef9-4786-a0a9-f0a9a1ec7c80": {
+    "url": "db://assets/scripts/ui/ShakeManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "83f17d9d-eb86-431a-8ad3-49cd24c654fa": {
+    "url": "db://assets/scripts/ui/MenuManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "b0121ff4-96ce-4fca-9488-ec625e6a5abe": {
+    "url": "db://assets/scenes/Start.scene",
+    "value": {
+      "depends": [
+        "b0121ff4-96ce-4fca-9488-ec625e6a5abe",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "d2b58b7a-53bf-479b-a531-e5cd44c13571@f39b9"
+      ],
+      "dependScripts": [
+        "2506457a-43c1-4fdc-b596-9e2ce9dda0c4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "296ea96c-7ffc-41f5-a348-739413808041": {
+    "url": "db://assets/scripts/scenes/StarManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "2506457a-43c1-4fdc-b596-9e2ce9dda0c4": {
+    "url": "db://assets/scripts/scenes/StartManager.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "13305459-0573-426d-bf30-17f1449751f4": {
+    "url": "db://assets/scenes/Loading.scene",
+    "value": {
+      "depends": [
+        "13305459-0573-426d-bf30-17f1449751f4",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "24a704da-2867-446d-8d1a-5e920c75e09d@f9941",
+        "9fd900dd-221b-4f89-8f2c-fba34243c835@f9941"
+      ],
+      "dependScripts": [
+        "15929a43-57ee-4b70-9989-f4605f102ba3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "15929a43-57ee-4b70-9989-f4605f102ba3": {
+    "url": "db://assets/scripts/scenes/LoadingManager.ts",
     "value": {},
     "versionCode": 1
   }

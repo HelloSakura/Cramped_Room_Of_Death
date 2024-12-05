@@ -1,10 +1,10 @@
 import { _decorator, Component, director, Node } from 'cc';
 import { TileMapManager } from '../tile/TileMapManager';
 import levels, { ILevel } from '../../levels';
-import DataManager from '../../runtime/DataManager';
+import DataManager, { IRecord } from '../../runtime/DataManager';
 import { TILE_HEIGHT, TILE_WIDTH } from '../tile/TileManger';
 import EventManager from '../../runtime/EventManager';
-import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM } from '../../enums';
+import { DIRECTION_ENUM, ENTITY_STATE_ENUM, ENTITY_TYPE_ENUM, EVENT_ENUM, SCENE_ENUM } from '../../enums';
 import { createUINode } from '../../utils';
 import { PlayerManager } from '../player/PlayerManager';
 import { WoodenSkeletonManager } from '../woodenSkeleton/WoodenSkeletonManager';
@@ -14,6 +14,7 @@ import { BurstManager } from '../burst/BurstManager';
 import { SpikeManager } from '../spikes/SpikeManager';
 import { SmokeManager } from '../smoke/SmokeManager';
 import FadeManager from '../../runtime/FadeManager';
+import { ShakeManager } from '../ui/ShakeManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('BattleManager')
@@ -22,21 +23,30 @@ export class BattleManager extends Component {
     stage:Node;
     //分层渲染的思想很重要
     private _smokeLayer:Node;
+    private _inited:boolean = false;
 
     //
     onLoad(){
-        DataManager.Instance.levelIndex = 4;
+        DataManager.Instance.levelIndex = 1;
         //绑定切换关卡
         EventManager.Instance.on(EVENT_ENUM.NEXT_LEVEL, this._nextLevel, this);
         EventManager.Instance.on(EVENT_ENUM.PLAYER_MOVE_END, this._checkArrivedDoor, this);
         EventManager.Instance.on(EVENT_ENUM.SHOW_SMOKE, this.generateSmoke, this);
+        EventManager.Instance.on(EVENT_ENUM.RECORD_STEP, this.record, this);
+        EventManager.Instance.on(EVENT_ENUM.REVOKE_STEP, this.revoke, this);
+        EventManager.Instance.on(EVENT_ENUM.RESTART_LEVEL, this.initLevel, this);
+        EventManager.Instance.on(EVENT_ENUM.OUT_BATTLE, this.outBattle, this);
     }
 
     onDestroy(){
         //解绑切换关卡
         EventManager.Instance.off(EVENT_ENUM.NEXT_LEVEL, this._nextLevel)
         EventManager.Instance.off(EVENT_ENUM.PLAYER_MOVE_END, this._checkArrivedDoor);
-        EventManager.Instance.off(EVENT_ENUM.SHOW_SMOKE, this.generateSmoke, this);
+        EventManager.Instance.off(EVENT_ENUM.SHOW_SMOKE, this.generateSmoke);
+        EventManager.Instance.off(EVENT_ENUM.RECORD_STEP, this.record);
+        EventManager.Instance.off(EVENT_ENUM.REVOKE_STEP, this.revoke);
+        EventManager.Instance.off(EVENT_ENUM.RESTART_LEVEL, this.initLevel);
+        EventManager.Instance.off(EVENT_ENUM.OUT_BATTLE, this.outBattle, this);
     }
 
     start() {
@@ -46,8 +56,14 @@ export class BattleManager extends Component {
 
     async initLevel(){
         const level = levels[`level${DataManager.Instance.levelIndex}`];
+        console.log(this.node.getWorldPosition());
         if(level){
-            await FadeManager.Instance.fadeIn();
+            if(this._inited){
+                await FadeManager.Instance.fadeIn();
+            }
+            else{
+                await FadeManager.Instance.mask();
+            }
             this.clearLevel();
             this.level = level;
             DataManager.Instance.mapInfo = this.level.mapInfo;
@@ -67,6 +83,7 @@ export class BattleManager extends Component {
             
             
             await FadeManager.Instance.fadeOut();
+            this._inited = true;
         }
     }
 
@@ -97,6 +114,7 @@ export class BattleManager extends Component {
         //创建舞台，所有单元放在舞台上
         this.stage = new Node();
         this.stage.setParent(this.node);
+        this.stage.addComponent(ShakeManager);
         this.stage.name = "stage";
     }
 
@@ -215,9 +233,106 @@ export class BattleManager extends Component {
         const {mapRowCount, mapColumnCount} = DataManager.Instance;
         const disX = TILE_WIDTH * mapRowCount/2;
         const disY = TILE_HEIGHT * mapColumnCount/2 + 100;
+        //适配配置时取消震动
+        this.stage.getComponent(ShakeManager).stop();
         this.stage.setPosition(-disX, disY);
 
     }
+
+    record(){
+        const item:IRecord = {
+            player:{
+                x:DataManager.Instance.player.x,
+                y:DataManager.Instance.player.y,
+                type:DataManager.Instance.player.type,
+                direction:DataManager.Instance.player.direction,
+                state:
+                        DataManager.Instance.player.state === ENTITY_STATE_ENUM.IDLE ||
+                        DataManager.Instance.player.state === ENTITY_STATE_ENUM.DEATH ||
+                        DataManager.Instance.player.state === ENTITY_STATE_ENUM.AIRDEATH
+                        ? ENTITY_STATE_ENUM.IDLE : DataManager.Instance.player.state
+            },
+
+            door:{
+                x:DataManager.Instance.door.x,
+                y:DataManager.Instance.door.y,
+                type:DataManager.Instance.door.type,
+                direction:DataManager.Instance.door.direction,
+                state:DataManager.Instance.door.state,
+            },
+
+            enemies:DataManager.Instance.enemies.map(({x, y, direction, state, type})=>({
+                x,
+                y,
+                direction,
+                state,
+                type
+            })),
+
+            bursts:DataManager.Instance.bursts.map(({x, y, direction, state, type})=>({
+                x,
+                y,
+                direction,
+                state,
+                type
+            })),
+
+            spikes:DataManager.Instance.spikes.map(({x, y, type, CurCount})=>({
+                x,
+                y,
+                type,
+                CurCount
+            })),
+        }
+
+        DataManager.Instance.records.push(item);
+    }
+
+    revoke(){
+        const item = DataManager.Instance.records.pop();
+        if(item){
+            DataManager.Instance.player.x = DataManager.Instance.player.targetX = item.player.x;
+            DataManager.Instance.player.y = DataManager.Instance.player.targetY = item.player.y;
+            DataManager.Instance.player.state = item.player.state;
+            DataManager.Instance.player.direction = item.player.direction;
+
+            DataManager.Instance.door.x = item.door.x;
+            DataManager.Instance.door.y = item.door.y;
+            DataManager.Instance.door.state = item.door.state;
+            DataManager.Instance.door.direction = item.door.direction;
+
+            for(let i = 0; i < DataManager.Instance.enemies.length; i++){
+                const enemy = DataManager.Instance.enemies[i];
+                enemy.x = item.enemies[i].x;
+                enemy.y = item.enemies[i].y;
+                enemy.state = item.enemies[i].state;
+                enemy.direction = item.enemies[i].direction;
+            }
+
+            for(let i = 0; i < DataManager.Instance.bursts.length; i++){
+                const burst = DataManager.Instance.bursts[i];
+                burst.x = item.bursts[i].x;
+                burst.y = item.bursts[i].y;
+                burst.state = item.bursts[i].state;
+            }
+
+            for(let i = 0; i < DataManager.Instance.spikes.length; i++){
+                const spike = DataManager.Instance.spikes[i];
+                spike.x = item.spikes[i].x;
+                spike.y = item.spikes[i].y;
+                spike.type = item.spikes[i].type;
+                spike.CurCount = item.spikes[i].CurCount;
+            }
+        }
+    }
+
+
+    async outBattle(){
+        await FadeManager.Instance.fadeIn();
+        director.loadScene(SCENE_ENUM.Start);
+    }
+
+    
 }
 
 
